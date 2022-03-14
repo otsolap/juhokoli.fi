@@ -1,28 +1,30 @@
 import styles from '../styles/Home.module.css'
 import Head from "next/head"
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
+import Layout from '../components/Layout'
 
-export default class Home extends Component {
-  render() {
-    let { title, cats } = attributes;
-    return (
-      <>
-        <Head>
-        </Head>
-        <article>
-          <h1>{title}</h1>
-          <HomeContent />
-          <ul>
-            {cats.map((cat, k) => (
-              <li key={k}>
-                <h2>{cat.name}</h2>
-                <p>{cat.description}</p>
-              </li>
-            ))}
-          </ul>
-        </article>
-      </>
-    )
+const Index = ({ title, description, ...props }) => {
+  return (
+    <Layout pageTitle={title}>
+      <h1 className="title">Welcome to my blog!</h1>
+      <p className="description">
+        {description}
+      </p>
+      <main>
+        Posts go here!
+      </main>
+    </Layout>)
+}
+
+export default Index
+
+export async function getStaticProps() {
+  const configData = await import(`../content/siteconfig.json`)
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.description,
+    },
   }
 }

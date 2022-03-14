@@ -1,0 +1,13 @@
+{
+    "title": "Demo Blog",
+    "description": "This is a simple blog built with Next, easily deployable to Netlify!",
+    "aboutMe": {
+        "title": "Kultakammen",
+        "subtitle": "Otso Lappalainen",
+        "profession": "Full-Stack Web-devaaja",
+        "featuredImage": "/assets/OtsoEeco.png",
+        "salesPitch": "Koodaan verkkokauppoja Eecossa ja tubetan Metsän Otus kanavassa. Olen Koodarivelho, jonka sydän pumppaa intoa verkkosivuihin, kasvuhakkerointiin ja asiakaspolkujen kehitykseen Kiinnostuksen kohteenani ovat verkkosivut, joissa pääsen työskentelemään asiakaskokemuksien parissa sekä soveltamaan asiakaspoluista saatua web-analytiikka dataa. Jos haluat nähdä CV:ni voit kirjautua tästä sisään portfoliosivulleni.",
+        "CTA": "Palkkaa minut",
+        "CtaLink": "/#yhteydenotto"
+      }
+}
