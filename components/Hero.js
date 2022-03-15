@@ -4,11 +4,27 @@ const Hero = ({ hero }) => {
     return (
         <section className="hero">
             <div className="image-container">
-                <Image
-                    src={hero.DesktopHeroImage}
-                    alt={hero.heroTitle}
-                    width={55}
-                    height={150} />
+                <div className="desktop-only">
+                    <Image
+                        src={hero.DesktopHeroImage}
+                        alt={hero.heroTitle}
+                        width={150}
+                        height={150}
+                    />
+                </div>
+                <div className="mobile-only">
+                    <Image
+                        src={hero.MobileHeroImage}
+                        alt={hero.heroTitle}
+                        width={150}
+                        height={150}
+                    />
+                </div>
+                <div className="number-wrapper">
+                    <span>
+                        {hero.ElectionNumber}
+                    </span>
+                </div>
                 <div className="container">
                     <div className="content">
                         <h1>{hero.heroTitle}</h1>
