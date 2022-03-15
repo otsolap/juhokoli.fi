@@ -5,6 +5,8 @@ import Hero from '@components/Hero'
 import Themes from '@components/Themes'
 import ReferenceList from '@components/ReferenceList'
 import Newsletter from '@components/Newsletter'
+import Script from 'next/script'
+
 
 
 const Index = ({ meta, hero, themes, references, newsletter }) => {
@@ -25,6 +27,7 @@ const Index = ({ meta, hero, themes, references, newsletter }) => {
       <Meta
         meta={meta}
       />
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <main>
         <Hero
           hero={hero}

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 
 const Meta = ({ meta }) => (
     <Head>
@@ -20,7 +19,6 @@ const Meta = ({ meta }) => (
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:image" content={meta.image} />
         <link rel="canonical" href={meta.url} />
-        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
     </Head>
 )
 export default Meta
