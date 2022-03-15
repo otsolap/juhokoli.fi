@@ -3,7 +3,7 @@ import Hero from '@components/Hero'
 import Meta from '@components/Meta'
 import Layout from '../components/Layout'
 
-const Index = ({ meta, hero, ...props }) => {
+const Index = ({ meta, hero, references }) => {
   return (
     <Layout>
       <Meta
@@ -38,6 +38,10 @@ export async function getStaticProps() {
         CTA: cmsData.Hero.CTA,
         CtaLink: cmsData.Hero.CtaLink,
         ElectionNumber: cmsData.Hero.ElectionNumber,
+      },
+      references: {
+        sectionTitle: cmsData.ThemeSection.SectionTitle,
+        themes: cmsData.ThemeSection.themes
       }
     },
   }
