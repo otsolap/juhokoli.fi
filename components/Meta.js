@@ -4,7 +4,7 @@ const Meta = (props) => (
         <title>{props.title}</title>
         <meta name="description" content={props.description} />
         <meta property="og:type" content="website" />
-        <meta name="og:title" property="og:title" content={props.title} />
+        <meta name="og:title" property="og:title" content={props.titleTemplate} />
         <meta name="og:description" property="og:description" content={props.description} />
         <meta property="og:site_name" content="Juho Koli" />
         <meta property="og:url" content="" />
@@ -15,10 +15,9 @@ const Meta = (props) => (
         <meta name="twitter:creator" content="@juho_koli" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
         <link rel="apple-touch-icon" href="/public/favicon.ico" />
-        <link rel="stylesheet" href="" />
-        <meta property="og:image" content="" />
-        <meta name="twitter:image" content="" />
-        <link rel="canonical" href={props.canonical} />
+        <meta property="og:image" content={props.image} />
+        <meta name="twitter:image" content={props.image} />
+        <link rel="canonical" href={props.url} />
     </Head>
 )
 export default Meta

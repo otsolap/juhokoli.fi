@@ -10,7 +10,7 @@ const Index = ({ title, description, ...props }) => {
         description="description, this is it."
         canonical="https://www.kultakammen.fi"
       />
-      <h1 className="title">Welcome to my blog!</h1>
+      <h1 className="title">{title}</h1>
       <p className="description">
         {description}
       </p>
@@ -23,12 +23,12 @@ const Index = ({ title, description, ...props }) => {
 export default Index
 
 export async function getStaticProps() {
-  const configData = await import(`../content/siteconfig.json`)
+  const configData = await import(`../content/home.json`)
 
   return {
     props: {
-      title: configData.default.title,
-      description: configData.default.description,
+      title: configData.title,
+      description: configData.description,
     },
   }
 }
