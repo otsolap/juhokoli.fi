@@ -18,6 +18,7 @@ const Meta = ({ meta }) => (
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:image" content={meta.image} />
         <link rel="canonical" href={meta.url} />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </Head>
 )
 export default Meta

@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import { useEffect } from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
 import Themes from '@components/Themes'
@@ -7,6 +8,18 @@ import Newsletter from '@components/Newsletter'
 
 
 const Index = ({ meta, hero, themes, references, newsletter }) => {
+  useEffect(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/'
+          })
+        }
+      })
+    }
+  }, [])
+
   return (
     <div id="home">
       <Meta
