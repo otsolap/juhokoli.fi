@@ -1,5 +1,11 @@
 {
-    "google": {
+  "newsletter": {
+    "backgroundImage": "/images/Turku-Yo.png",
+    "title": "Liity tiimiin",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis odio lacus, hendrerit at erat non.",
+    "cta": "Tilaa Uutiskirje"
+  } ,
+  "Google": {
       "ga": "",
       "gtm": "GTM-TBFDWT8"
     }
