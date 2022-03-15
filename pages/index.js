@@ -7,10 +7,7 @@ const Index = ({ meta, hero, ...props }) => {
   return (
     <Layout>
       <Meta
-        title={meta.title}
-        description={meta.description}
-        canonical={meta.url}
-        image={meta.image}
+        meta={meta}
       />
       <div>
         <Hero
