@@ -2,17 +2,19 @@ import styles from '../styles/Home.module.css'
 import Meta from '@components/Meta'
 import Layout from '../components/Layout'
 
-const Index = ({ title, description, ...props }) => {
+const Index = ({ meta, ...props }) => {
+  console.log(meta)
   return (
-    <Layout pageTitle={title}>
+    <Layout>
       <Meta
-        title="Juho Koli"
-        description="description, this is it."
-        canonical="https://www.kultakammen.fi"
+        title={meta.title}
+        description={meta.description}
+        canonical={meta.url}
+        image={meta.image}
       />
-      <h1 className="title">{title}</h1>
+      <h1 className="title"></h1>
       <p className="description">
-        {description}
+
       </p>
       <main>
         Posts go here!
@@ -23,12 +25,16 @@ const Index = ({ title, description, ...props }) => {
 export default Index
 
 export async function getStaticProps() {
-  const configData = await import(`../content/home.json`)
+  const cmsData = await import(`../content/home.json`)
 
   return {
     props: {
-      title: configData.title,
-      description: configData.description,
+      meta: {
+        title: cmsData.meta.title,
+        description: cmsData.meta.description,
+        url: cmsData.meta.url,
+        image: cmsData.meta.image
+      },
     },
   }
 }
