@@ -3,20 +3,31 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/images
 public_folder: images
+# Uncomment local_backend when you need to develop in your local
+local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Sivut"
     files:
-    - label: "Home"
+    - label: "Etusivu"
       name: "home"
       file: "content/home.json"
       fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
+        - label: 'Teemat'
+          name: "themes"
           widget: list
           fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+            - { label: "Teeman otsikko", name: "title", widget: "string"}
+            - { label: "Kuvaus", name: "description", widget: "text"}
+            - { label: "Kuva", name: "image", widget: "image" }
+            - { label: "Napin teksti", name: "cta", widget: "string"}
+            - { label: "Linkki", name: "link", widget: "string"}
+        - label: "Referenssit"
+          name: "referees"
+          widget: list
+          fields:
+            - { label: "Referoija", name: "referee", widget: "string"}
+            - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
+            - { label: "Referenssi", name: "reference", widget: "text"}
+            - { label: "Kuva", name: "image", widget: "image" }
+
