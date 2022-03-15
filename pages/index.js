@@ -7,9 +7,8 @@ import ReferenceList from '@components/ReferenceList'
 import Newsletter from '@components/Newsletter'
 import Script from 'next/script'
 
-
-
 const Index = ({ meta, hero, themes, references, newsletter }) => {
+
   useEffect(() => {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {
