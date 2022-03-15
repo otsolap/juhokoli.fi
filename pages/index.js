@@ -1,20 +1,25 @@
 import styles from '../styles/Home.module.css'
-import Hero from '@components/Hero'
 import Meta from '@components/Meta'
-import Layout from '../components/Layout'
+import Hero from '@components/Hero'
+import Themes from '@components/Themes'
+import ReferenceList from '@components/ReferenceList'
 
-const Index = ({ meta, hero, references }) => {
+
+const Index = ({ meta, hero, themes, references }) => {
   return (
-    <Layout>
+    <div id="home">
       <Meta
         meta={meta}
       />
-      <div>
+      <main>
         <Hero
           hero={hero}
         />
-      </div>
-    </Layout>)
+        <Themes themes={themes} />
+        <ReferenceList references={references} />
+      </main>
+    </div>
+  )
 }
 
 export default Index
@@ -39,9 +44,13 @@ export async function getStaticProps() {
         CtaLink: cmsData.Hero.CtaLink,
         ElectionNumber: cmsData.Hero.ElectionNumber,
       },
-      references: {
+      themes: {
         sectionTitle: cmsData.ThemeSection.SectionTitle,
         themes: cmsData.ThemeSection.themes
+      },
+      references: {
+        sectionTitle: cmsData.ReferenceSection.SectionTitle,
+        referees: cmsData.ReferenceSection.referees
       }
     },
   }

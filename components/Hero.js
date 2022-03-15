@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Hero = ({ hero }) => {
     return (
-        <section className="hero">
+        <section id="hero">
             <div className="image-container">
                 <div className="desktop-only">
                     <Image

@@ -20,28 +20,28 @@
       "themes": 
         [
         {
-          "image": "",
+          "image": "/images/Tyollisuus.png",
           "title": "Työllisyys",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
           "cta": "Lue lisää",
           "link": "" },
         {
-          "image": "",
+          "image": "/images/Yrittajuus.png",
           "title": "Yrittäjyys",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
           "cta": "Lue lisää",
           "link": "" 
         },
         {
-          "image": "",
+          "image": "/images/Koulutus.png",
           "title": "Koulutus",
           "description": "Turussa on kuusi korkeakoulua ja yli 40.000 korkeakouluopiskelijaa. Valtuutettuna haluan varmistaa, että niillä on toimintaedellytykset, rahoitus ja jatkuva dialogi yrityselämän kanssa.",
           "cta": "Lue lisää",
           "link": "" 
         },
         {
-          "image": "",
-          "title": "Yrittäjyys",
+          "image": "/images/Tarkkatalous.png",
+          "title": "Tarkkatalous",
           "description": "Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki.",
           "cta": "Lue lisää",
           "link": "" 
@@ -50,27 +50,27 @@
     },
     "ReferenceSection": {
       "SectionTitle": "Mitä Juhosta sanotaan?",
-     "references": [
+      "referees": [
        {
-        "image": "",
+        "image": "/images/Taru.png",
         "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
         "referee": "Taru Säteri",
         "refereeTitle": "Rakennustekniikan insinööri"
       },
       {
-        "image": "",
+        "image": "/images/Matti.png",
         "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
         "referee": "Matti Meikäläinen",
         "refereeTitle": "Säästöpankin johtoherra"
       },
       {
-        "image": "",
+        "image": "/images/VeliMatti.png",
         "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
         "referee": "Veli-Matti Sandberg",
         "refereeTitle": "Rakennuttajainsinööri"
       },
       {
-        "image": "",
+        "image": "/images/Otso.png",
         "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
         "referee": "Otso Lappalainen",
         "refereeTitle": "Web-devaaja"

@@ -1,8 +1,21 @@
-const ReferenceList = ({ references }) => {
+import ReferenceItem from "./ReferenceItem";
+
+const ReferenceList = ({ references, }) => {
     return (
-        <div>
-            Hi Mom.
-        </div>
+        <section id="references">
+            <div className="container">
+                <header className="section-header">
+                    {references.sectionTitle}
+                </header>
+                <div className="references-container">
+                    <div className="referenceItem-container">
+                        <ReferenceItem
+                            referees={references.referees}
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 
 }
