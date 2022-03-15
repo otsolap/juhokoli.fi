@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Meta from '@components/Meta'
 import Layout from '../components/Layout'
+import Image from 'next/image'
 
 const Index = ({ meta, hero, ...props }) => {
   console.log(hero)
@@ -12,13 +13,15 @@ const Index = ({ meta, hero, ...props }) => {
         canonical={meta.url}
         image={meta.image}
       />
-      <h1 className="title"></h1>
-      <p className="description">
-
-      </p>
-      <main>
-        Posts go here!
-      </main>
+      <div>
+        <div className="img-container">
+          <Image
+            src={hero.DesktopHeroImage}
+            alt={hero.heroTitle}
+            width={55}
+            height={150} />
+        </div>
+      </div>
     </Layout>)
 }
 

@@ -3,13 +3,13 @@
       "title": "Juho Koli",
       "description": "Vahvan talouden Turku",
       "url": "http://juhokoli.fi/",
-      "image": "/public/images/JuhoKoliHero.png"
+      "image":"/images/JuhoKoliHero.png"
     },
     "Hero": {
         "HeroTitle": "Vahvan talouden Turku",
         "HeroSubtitle":"Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki!",
-        "DesktopHeroImage": "/public/images/JuhoKoliHero.png",
-        "MobileHeroImage": "/public/images/JuhoKoliMHero.png",
+        "DesktopHeroImage":"/images/JuhoKoliHero.png",
+        "MobileHeroImage":"/images/JuhoKoliMHero.png",
         "CTA": "Tutustu Juhoon",
         "CtaLink": "/teemat",
         "ElectionNumber": "606"
