@@ -1,0 +1,16 @@
+{
+    "meta": {
+      "title": "Kultakämmen",
+      "titleTemplate": "Web Wizard | Web Development / Design / Analytics & Marketing",
+      "description": "Koodaan moderneilla menetelmillä jotta nettisivusi olisivat entistä toimivampia, turvallisempia ja kustannustehokkaampia",
+      "siteUrl": "https://kultakammen.fi/",
+      "image": "/assets/Banner_v2.png",
+      "linkedInUsername": "https://www.linkedin.com/in/otsolap/",
+      "instagram": "@MetsanOtus",
+      "twitter": "@MetsanOtus"
+    },
+    "google": {
+      "ga": "",
+      "gtm": "GTM-TBFDWT8"
+    }
+  }

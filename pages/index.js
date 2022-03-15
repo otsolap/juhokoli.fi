@@ -1,11 +1,15 @@
 import styles from '../styles/Home.module.css'
-import Head from "next/head"
-import { Component } from 'react'
+import Meta from '@components/Meta'
 import Layout from '../components/Layout'
 
 const Index = ({ title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
+      <Meta
+        title="Juho Koli"
+        description="description, this is it."
+        canonical="https://www.kultakammen.fi"
+      />
       <h1 className="title">Welcome to my blog!</h1>
       <p className="description">
         {description}
