@@ -13,21 +13,57 @@ collections:
       name: "home"
       file: "content/home.json"
       fields:
-        - label: 'Teemat'
-          name: "themes"
-          widget: list
+        - label: "Herokuva"
+          name: "Hero"
+          widget: object
           fields:
-            - { label: "Teeman otsikko", name: "title", widget: "string"}
-            - { label: "Kuvaus", name: "description", widget: "text"}
-            - { label: "Kuva", name: "image", widget: "image" }
-            - { label: "Napin teksti", name: "cta", widget: "string"}
-            - { label: "Linkki", name: "link", widget: "string"}
-        - label: "Referenssit"
-          name: "referees"
-          widget: list
+            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
+            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string"}
+            - { label: "Linkki", name: "CtaLink", widget: "string"}
+            - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
+            - { label: "Vaalinumero", name: "ElectionNumber", widget: "string"}
+        - label: 'Teemat-osio'
+          name: "ThemeSection"
+          widget: object
           fields:
-            - { label: "Referoija", name: "referee", widget: "string"}
-            - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
-            - { label: "Referenssi", name: "reference", widget: "text"}
-            - { label: "Kuva", name: "image", widget: "image" }
-
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+          - label: "Teemat"
+            name: "themes"
+            widget: list
+            fields:
+              - { label: "Teeman otsikko", name: "title", widget: "string"}
+              - { label: "Kuvaus", name: "description", widget: "text"}
+              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Napin teksti", name: "cta", widget: "string"}
+              - { label: "Linkki", name: "link", widget: "string"}
+        - label: "Referenssit-osio"
+          name: "ReferenceSection"
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+          - label: "Referenssit"
+            name: "referees"
+            widget: list
+            fields:
+              - { label: "Referoija", name: "referee", widget: "string"}
+              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
+              - { label: "Referenssi", name: "reference", widget: "text"}
+              - { label: "Kuva", name: "image", widget: "image" }
+  - name: "general"
+    label: "Sivun asetukset"
+    files:
+    - label: "Yleiset osiot"
+      name: "site"
+      file: "content/site.json"
+      fields:
+        - label: "Uutiskirje"
+          name: "newsletter"
+          widget: object
+          fields:
+          - { label: "Otsikko", name: "title", widget: "string"}
+          - { label: "kuvaus", name: "description", widget: "string"}
+          - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
+          - { label: "Taustakuva", name: "backgroundImage", widget: "image"}

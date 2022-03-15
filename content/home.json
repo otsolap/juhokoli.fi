@@ -13,6 +13,7 @@
         "MobileHeroImage":"/images/JuhoKoliMHero.png",
         "CTA": "Tutustu Juhoon",
         "CtaLink": "/teemat",
+        "DisplayElectionNumber": true,
         "ElectionNumber": "606"
       },
     "ThemeSection": {
