@@ -2,8 +2,8 @@ import styles from '../styles/Home.module.css'
 import Meta from '@components/Meta'
 import Layout from '../components/Layout'
 
-const Index = ({ meta, ...props }) => {
-  console.log(meta)
+const Index = ({ meta, hero, ...props }) => {
+  console.log(hero)
   return (
     <Layout>
       <Meta
@@ -35,6 +35,15 @@ export async function getStaticProps() {
         url: cmsData.meta.url,
         image: cmsData.meta.image
       },
+      hero: {
+        heroTitle: cmsData.Hero.HeroTitle,
+        HeroSubtitle: cmsData.Hero.HeroSubtitle,
+        DesktopHeroImage: cmsData.Hero.DesktopHeroImage,
+        MobileHeroImage: cmsData.Hero.MobileHeroImage,
+        CTA: cmsData.Hero.CTA,
+        CtaLink: cmsData.Hero.CtaLink,
+        ElectionNumber: cmsData.Hero.ElectionNumber,
+      }
     },
   }
 }
