@@ -52,10 +52,10 @@ const Footer = () => {
         <footer>Footer Built by me!
             <div style={{ backgroundColor: 'blue' }}>
                 <Image
-                    src={Logo.Footer.logo}
+                    src={Logo.Footer.logo_image}
                     width={50}
                     height={50}
-                    alt="Kokoomus Turku logo"
+                    alt={Logo.Footer.logo_alt}
                 />
             </div>
             <p>Testing FA Icons:</p>

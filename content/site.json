@@ -1,4 +1,7 @@
 {
+  "Header": {
+
+  },
   "newsletter": {
     "logo": "/images/Ruiskukka_Koli.png",
     "backgroundImage": "/images/Turku-Yo.png",
@@ -7,7 +10,8 @@
     "cta": "Tilaa Uutiskirje"
   },
   "Footer": {
-    "logo": "/images/KokoomusTurku.png",
+    "logo_image": "/images/KokoomusTurku.png",
+    "logo_alt": "Kokoomus Turku",
     "socialMedia":
     [
       {

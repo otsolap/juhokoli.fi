@@ -52,6 +52,15 @@ collections:
               - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
               - { label: "Referenssi", name: "reference", widget: "text"}
               - { label: "Kuva", name: "image", widget: "image" }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string"}
+          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
+          - { label: "Sivun linkki", name: "url", widget: "string"}
+          - { label: "Sivun kuva", name: "image", widget: "image"}
+          - { label: "Twitter-tili", name: "twitter", widget: "@juho_koli"}
   - name: "general"
     label: "Sivun asetukset"
     files:
