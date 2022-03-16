@@ -20,11 +20,13 @@ const Hero = ({ hero }) => {
                         height={150}
                     />
                 </div>
-                <div className="number-wrapper">
-                    <span>
-                        {hero.ElectionNumber}
-                    </span>
-                </div>
+                {hero.DisplayElectionNumber && (
+                    <div className="number-wrapper">
+                        <span>
+                            {hero.ElectionNumber}
+                        </span>
+                    </div>
+                )}
                 <div className="container">
                     <div className="content">
                         <h1>{hero.heroTitle}</h1>

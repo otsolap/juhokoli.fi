@@ -1,6 +1,12 @@
 {
   "Header": {
-
+    "logo": "Juho Koli",
+    "mobileImageLogo": "/images/Kokoomus_Mobiili_Logo.png",
+    "mobileImageAlt": "Kokoomus Turku",
+    "homeTitle": "Etusivu",
+    "themesTitle": "Vaaliteemat",
+    "aboutMeTitle": "Juho",
+    "contactTitle": "Ota Yhteyttä"
   },
   "newsletter": {
     "logo": "/images/Ruiskukka_Koli.png",
@@ -10,8 +16,8 @@
     "cta": "Tilaa Uutiskirje"
   },
   "Footer": {
-    "logo_image": "/images/KokoomusTurku.png",
-    "logo_alt": "Kokoomus Turku",
+    "logoImage": "/images/KokoomusTurku.png",
+    "logoAlt": "Kokoomus Turku",
     "socialMedia":
     [
       {

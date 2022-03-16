@@ -68,6 +68,17 @@ collections:
       name: "site"
       file: "content/site.json"
       fields:
+        - label: "Yläpalkki"
+          name: "Header"
+          widget: object
+          fields:
+           - { label: "Logo", name: "logo", widget: "string"}
+           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image"}
+           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string"}
+           - { label: "Etusivu", name: "homeTitle", widget: "string"}
+           - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
+           - { label: "Juho", name: "aboutMeTitle", widget: "string"}
+           - { label: "Ota Yhteyttä", name: "contactTitle", widget: "string"}
         - label: "Uutiskirje"
           name: "newsletter"
           widget: object
@@ -77,3 +88,4 @@ collections:
           - { label: "kuvaus", name: "description", widget: "string"}
           - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
           - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
+          

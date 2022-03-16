@@ -49,17 +49,22 @@ const Footer = () => {
     })
 
     return (
-        <footer>Footer Built by me!
-            <div style={{ backgroundColor: 'blue' }}>
-                <Image
-                    src={Logo.Footer.logo_image}
-                    width={50}
-                    height={50}
-                    alt={Logo.Footer.logo_alt}
-                />
+        <footer>
+            <div className="desktop-only">
+                <div style={{ backgroundColor: 'blue' }}>
+                    <Image
+                        src={Logo.Footer.logoImage}
+                        width={50}
+                        height={50}
+                        alt={Logo.Footer.logoAlt}
+                    />
+                </div>
+                <p>Testing FA Icons:</p>
+                {SoMe}
             </div>
-            <p>Testing FA Icons:</p>
-            {SoMe}
+            <div className="mobile-only">
+                Hello Mom.
+            </div>
         </footer>
     )
 }
