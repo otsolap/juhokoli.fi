@@ -1,10 +1,37 @@
 {
   "newsletter": {
+    "logo": "/images/Ruiskukka_Koli.png",
     "backgroundImage": "/images/Turku-Yo.png",
     "title": "Liity tiimiin",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis odio lacus, hendrerit at erat non.",
     "cta": "Tilaa Uutiskirje"
-  } ,
+  },
+  "Footer": {
+    "logo": "/images/KokoomusTurku.png",
+    "socialMedia":
+    [
+      {
+        "icon": "Instagram",
+        "url": "https://www.instagram.com/jukoli/"
+      },
+      {
+        "icon": "Twitter",
+        "url": "https://twitter.com/juho_koli"
+      },
+      {
+        "icon": "LinkedIn",
+        "url": "https://www.linkedin.com/in/juhokoli/"
+      },
+      {
+        "icon": "Email",
+        "url": ""
+      },
+      {
+        "icon": "Puhelin",
+        "url": ""
+      }
+    ]
+  },
   "Google": {
       "ga": "",
       "gtm": "GTM-TBFDWT8"

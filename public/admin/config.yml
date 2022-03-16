@@ -63,6 +63,7 @@ collections:
           name: "newsletter"
           widget: object
           fields:
+          - { label: "Logo", name: "logo", widget: "image"}
           - { label: "Otsikko", name: "title", widget: "string"}
           - { label: "kuvaus", name: "description", widget: "string"}
           - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
