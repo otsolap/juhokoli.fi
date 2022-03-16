@@ -88,4 +88,33 @@ collections:
           - { label: "kuvaus", name: "description", widget: "string"}
           - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
           - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
-          
+        - label: "Alapalkki"
+          name: "Footer"
+          widget: object
+          fields:
+           - { label: "Pöytäkoneen Kokoomuslogo", name: "desktopLogoImage", widget: "image"}
+           - { label: "Kokoomuslogon täsmennys", name: "desktopLogoAlt", widget: "string"}
+           -    label: "Sosiaalinen Media"
+                name: "socialMedia"
+                widget: list
+                collapsed: true
+                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
+                fields:
+                  - label: "Icons"
+                    name: "icon"
+                    widget: "select"
+                    options:
+                      [
+                        "Twitter",
+                        "LinkedIn",
+                        "Instagram",
+                        "Email",
+                        "Phone",
+                      ]
+                    hint: "Valitse ikoni"
+                  - widget: string
+                    name: url
+                    label: url
+                    required: true
+                    hint: "Laita tähän URL:I SoMe kanavaasi"
+            

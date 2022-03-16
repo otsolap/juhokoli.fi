@@ -53,10 +53,10 @@ const Footer = () => {
             <div className="desktop-only">
                 <div style={{ backgroundColor: 'blue' }}>
                     <Image
-                        src={Logo.Footer.logoImage}
+                        src={Logo.Footer.desktopLogoImage}
                         width={50}
                         height={50}
-                        alt={Logo.Footer.logoAlt}
+                        alt={Logo.Footer.desktopLogoAlt}
                     />
                 </div>
                 <p>Testing FA Icons:</p>

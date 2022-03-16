@@ -16,8 +16,8 @@
     "cta": "Tilaa Uutiskirje"
   },
   "Footer": {
-    "logoImage": "/images/KokoomusTurku.png",
-    "logoAlt": "Kokoomus Turku",
+    "desktopLogoImage": "/images/KokoomusTurku.png",
+    "desktopLogoAlt": "Kokoomus Turku",
     "socialMedia":
     [
       {
