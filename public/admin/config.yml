@@ -60,7 +60,29 @@ collections:
           - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
           - { label: "Sivun linkki", name: "url", widget: "string"}
           - { label: "Sivun kuva", name: "image", widget: "image"}
-          - { label: "Twitter-tili", name: "twitter", widget: "@juho_koli"}
+    - label: "Vaaliteemat"
+      name: "themes"
+      file: content/themes.json
+      fields:
+        - label: "Herokuva"
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
+        - label: 'Teemat-osio'
+          name: "ThemeSection"
+          widget: object
+          fields:
+          - label: "Teemat"
+            name: "themes"
+            widget: list
+            fields:
+              - { label: "Teeman otsikko", name: "title", widget: "string"}
+              - { label: "Kuvaus", name: "description", widget: "text"}
+              - { label: "Kuva", name: "image", widget: "image" }
   - name: "general"
     label: "Sivun asetukset"
     files:
