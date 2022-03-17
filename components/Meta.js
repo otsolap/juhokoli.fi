@@ -12,8 +12,8 @@ const Meta = ({ meta }) => (
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:site" content={meta.twitter} />
-        <meta name="twitter:creator" content={meta.twitter} />
+        <meta name="twitter:site" content="@juho_koli" />
+        <meta name="twitter:creator" content="@juho_koli" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta property="og:image" content={meta.image} />

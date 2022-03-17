@@ -1,8 +1,8 @@
 import ThemeItem from "./ThemeItem";
 
-const Themes = ({ themes, }) => {
+const ThemesList = ({ themes, }) => {
     return (
-        <section id="themes">
+        <section id="themesList">
             <div className="container">
                 <header className="section-header">
                     {themes.sectionTitle}
@@ -20,4 +20,4 @@ const Themes = ({ themes, }) => {
 
 }
 
-export default Themes;
+export default ThemesList;

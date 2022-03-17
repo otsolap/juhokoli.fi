@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const ThemeItem = ({ themes }) => {
     return (
-        <div className="reference">
+        <>
             {themes.map((theme, i) => (
-                <div id={`refence-item-${i}`} key={i}>
+                <div id={`theme-item-${i}`} key={i}>
                     <div className="image-container">
                         <Image
                             width={50}
@@ -28,7 +28,7 @@ const ThemeItem = ({ themes }) => {
                     </div>
                 </div>
             ))}
-        </div>
+        </>
     )
 }
 
