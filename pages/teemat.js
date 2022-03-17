@@ -5,11 +5,11 @@ import Newsletter from "@components/Newsletter"
 
 const Themes = ({ meta, hero, themes, newsletter }) => {
     return (
-        <div id="themes">
+        <>
             <Meta
                 meta={meta}
             />
-            <main>
+            <main id="themes">
                 Themes Page.
                 <Hero
                     hero={hero}
@@ -19,7 +19,7 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
                 />
                 <Newsletter newsletter={newsletter} />
             </main>
-        </div>
+        </>
     )
 }
 

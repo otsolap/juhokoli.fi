@@ -1,9 +1,42 @@
-const Juho = ({ }) => {
+import Meta from "@components/Meta"
+import Hero from "@components/Hero"
+import Faq from "@components/aboutMePage/Faq"
+
+const aboutMe = ({ meta, hero, faq }) => {
     return (
-        <div>
-            Juho Page.
-        </div>
+        <>
+            <Meta meta={meta} />
+            <main id="Juho">
+                <Hero hero={hero} />
+                <Faq faq={faq} />
+            </main>
+        </>
     )
 }
 
-export default Juho
+export default aboutMe
+
+export async function getStaticProps() {
+    const aboutMe = await import(`../content/aboutMe.json`)
+    return {
+        props: {
+            meta: {
+                title: aboutMe.meta.title,
+                description: aboutMe.meta.description,
+                url: aboutMe.meta.url,
+                image: aboutMe.meta.image
+            },
+            hero: {
+                heroTitle: aboutMe.Hero.HeroTitle,
+                HeroSubtitle: aboutMe.Hero.HeroSubtitle,
+                DesktopHeroImage: aboutMe.Hero.DesktopHeroImage,
+                MobileHeroImage: aboutMe.Hero.MobileHeroImage,
+            },
+            faq: {
+                faqProfilePicture: aboutMe.FAQSection.faqProfilePicture,
+                faqProfilePictureAlt: aboutMe.FAQSection.faqProfilePictureAlt,
+                faqs: aboutMe.FAQSection.faqs
+            },
+        }
+    }
+}
