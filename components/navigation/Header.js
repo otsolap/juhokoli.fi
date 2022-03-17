@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navigation from '../content/site.json'
+import Navigation from '@content/site.json'
 
 export default function Header() {
     const { Header } = Navigation

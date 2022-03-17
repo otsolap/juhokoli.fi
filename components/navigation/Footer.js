@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Logo from '../content/site.json'
-import Icons from '../content/site.json'
+import Logo from '@content/site.json'
+import Icons from '@content/site.json'
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

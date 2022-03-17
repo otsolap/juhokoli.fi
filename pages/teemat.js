@@ -1,6 +1,6 @@
 import Hero from "@components/Hero"
 import Meta from "@components/Meta"
-import ThemeBlock from "@components/ThemeBlock"
+import ThemeBlock from "@components/themePage/ThemeBlock"
 import Newsletter from "@components/Newsletter"
 
 const Themes = ({ meta, hero, themes, newsletter }) => {
