@@ -60,6 +60,7 @@ export async function getStaticProps() {
         MobileHeroImage: home.Hero.MobileHeroImage,
         CTA: home.Hero.CTA,
         CtaLink: home.Hero.CtaLink,
+        DisplayElectionNumber: home.Hero.DisplayElectionNumber,
         ElectionNumber: home.Hero.ElectionNumber,
       },
       themes: {

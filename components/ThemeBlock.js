@@ -4,12 +4,14 @@ const ThemeBlock = ({ themes }) => {
     return (
         <>
             {themes.themes.map((theme, i) => {
+
                 const bgStyle = []
                 if (i % 2 === 0) {
                     bgStyle.push('white-bg')
                 } else {
                     bgStyle.push('gray-bg')
                 }
+
                 return (
                     <section
                         key={i}
