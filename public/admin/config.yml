@@ -70,8 +70,8 @@ collections:
           fields:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
@@ -83,6 +83,31 @@ collections:
               - { label: "Teeman otsikko", name: "title", widget: "string"}
               - { label: "Kuvaus", name: "description", widget: "text"}
               - { label: "Kuva", name: "image", widget: "image" }
+    - label: "Koli"
+      name: "aboutMe"
+      file: "content/aboutMe.json"
+      fields:
+        - label: "Herokuva"
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
+        - label: "Usein kysytyt kysymykset"
+          name: "FAQSection"
+          widget: object
+          fields:
+            - { label: "Pöytäkoneen Profiilikuva", name: "faqProfilePicture", widget: "image"}
+            - { label: "Profiilikuva selvennys", name: "faqProfilePictureAlt", widget: "string"}
+            - label: "Kysymykset"
+              name: "faqs"
+              widget: list
+              fields:
+                - { label: "Kysymys", name: "question", widget: "string"}
+                - { label: "Vastaus", name: "answer", widget: "text"}
+                - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean" }
   - name: "general"
     label: "Sivun asetukset"
     files:
