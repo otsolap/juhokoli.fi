@@ -1,0 +1,50 @@
+.header {
+	background-color: var(--primary);
+	color: var(--white);
+	max-height: 999px;
+}
+
+.header a.active {
+	text-decoration: underline;
+	text-decoration-color: var(--aquamarine);
+}
+
+.header a:focus,
+.header a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--aquamarine);
+	transition: color .15s ease-in-out;
+}
+
+.logoContainer {
+}
+
+.nav {
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+	.logo {
+		font-size: 2.5rem;
+	}
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+	.header {
+		min-height: 80px;
+	}
+
+	.logoContainer {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.mobileLogo {
+		height: 50px;
+	}
+
+	.logo {
+		font-size: 2rem;
+	}
+}

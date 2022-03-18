@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'

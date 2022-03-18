@@ -1,34 +1,45 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Navigation from '@content/site.json'
+import styles from '../../styles/Header.module.css'
 
-export default function Header() {
+
+const Header = () => {
+    const router = useRouter()
     const { Header } = Navigation
     return (
         <>
-            <header className="header">
-                <h1>{Header.logo}</h1>
-                <div className="mobile-only">
-                    <Image
-                        src={Header.mobileImageLogo}
-                        alt={Header.mobileImageAlt}
-                        width={25}
-                        height={25}
-                    />
+            <header className={styles.header}>
+                <div className={styles.logoContainer}>
+                    <h1 className={styles.logo}>{Header.logo}</h1>
+                    <div className={`mobile-only ${styles.mobileLogo}`}>
+                        <Image
+                            src={Header.mobileImageLogo}
+                            alt={Header.mobileImageAlt}
+
+                            height={50}
+                            width={60}
+                        />
+                    </div>
                 </div>
                 <div className="desktop-only">
-                    <nav className="nav">
+                    <nav className={styles.nav}>
                         <Link href="/">
-                            <a>{Header.homeTitle}</a>
+                            <a className={router.pathname == '/' ? 'active' : ''}
+                            >{Header.homeTitle}</a>
                         </Link>
                         <Link href="/teemat">
-                            <a>{Header.themesTitle}</a>
+                            <a className={router.pathname == '/teemat' ? 'active' : ''}
+                            >{Header.themesTitle}</a>
                         </Link>
                         <Link href="/juho">
-                            <a>{Header.aboutMeTitle}</a>
+                            <a className={router.pathname == '/juho' ? 'active' : ''}
+                            >{Header.aboutMeTitle}</a>
                         </Link>
                         <Link href="/yhteydenotto">
-                            <a>{Header.contactTitle}</a>
+                            <a className={router.pathname == '/yhteydenotto' ? 'active' : ''}
+                            >{Header.contactTitle}</a>
                         </Link>
                     </nav>
                 </div>
@@ -36,3 +47,5 @@ export default function Header() {
         </>
     )
 }
+
+export default Header
