@@ -26,19 +26,19 @@ const Header = () => {
                 <div className="desktop-only">
                     <nav className={styles.nav}>
                         <Link href="/">
-                            <a className={router.pathname == '/' ? 'active' : ''}
+                            <a className={router.pathname == '/' ? styles.active : ''}
                             >{Header.homeTitle}</a>
                         </Link>
                         <Link href="/teemat">
-                            <a className={router.pathname == '/teemat' ? 'active' : ''}
+                            <a className={router.pathname == '/teemat' ? styles.active : ''}
                             >{Header.themesTitle}</a>
                         </Link>
                         <Link href="/juho">
-                            <a className={router.pathname == '/juho' ? 'active' : ''}
+                            <a className={router.pathname == '/juho' ? styles.active : ''}
                             >{Header.aboutMeTitle}</a>
                         </Link>
                         <Link href="/yhteydenotto">
-                            <a className={router.pathname == '/yhteydenotto' ? 'active' : ''}
+                            <a className={router.pathname == '/yhteydenotto' ? styles.active : ''}
                             >{Header.contactTitle}</a>
                         </Link>
                     </nav>
