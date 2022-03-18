@@ -6,15 +6,18 @@
        [
          {
            "icon": "Instagram",
-           "url": "https://www.instagram.com/jukoli/"
+           "url": "https://www.instagram.com/jukoli/",
+           "description": "/jukoli"
          },
          {
            "icon": "Twitter",
-           "url": "https://twitter.com/juho_koli"
+           "url": "https://twitter.com/juho_koli",
+           "description": "/juho_koli"
          },
          {
            "icon": "LinkedIn",
-           "url": "https://www.linkedin.com/in/juhokoli/"
+           "url": "https://www.linkedin.com/in/juhokoli/",
+           "description": "/juhokoli"
          },
          {
            "icon": "Email",

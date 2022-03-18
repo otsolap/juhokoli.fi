@@ -108,6 +108,39 @@ collections:
                 - { label: "Kysymys", name: "question", widget: "string"}
                 - { label: "Vastaus", name: "answer", widget: "text"}
                 - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean" }
+    - label: "Yhteydenotto"
+      name: "contact"
+      file: "content/contact.json"
+      fields:
+        - label: "Yhteydenotto"
+          name: "ContactSection"
+          widget: object
+          fields: 
+            - { label: "Otsikko", name: "SectionTitle", widget: "string"}
+            - { label: "Kuvaus", name: "SectionDescription", widget: "text"}
+            -   label: "Sosiaalinen Media"
+                name: "socialMedia"
+                widget: list
+                collapsed: true
+                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
+                fields:
+                  - label: "Icons"
+                    name: "icon"
+                    widget: "select"
+                    options:
+                      [
+                        "Twitter",
+                        "LinkedIn",
+                        "Instagram",
+                        "Email",
+                        "Phone",
+                      ]
+                    hint: "Valitse ikoni"
+                  - widget: string
+                    name: url
+                    label: url
+                    required: true
+                    hint: "Laita tähän URL:I SoMe kanavaasi"
   - name: "general"
     label: "Sivun asetukset"
     files:
