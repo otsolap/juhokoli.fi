@@ -17,17 +17,11 @@
 	text-underline-offset: 2px;
 }
 
-.header a:focus,
 .header a:hover {
 	text-decoration: underline;
 	text-decoration-color: var(--aquamarine);
-	transition: color .15s ease-in-out;
-}
-
-.logoContainer {
-}
-
-.nav {
+	text-decoration-thickness: 30%;
+	text-underline-offset: 2px;
 }
 
 /* Desktop styles */
@@ -35,6 +29,7 @@
 	.header {
 		justify-content: space-evenly;
 		align-items: center;
+		padding: 1rem 0;
 	}
 
 	.logo {

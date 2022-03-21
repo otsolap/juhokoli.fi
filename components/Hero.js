@@ -1,3 +1,4 @@
+import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
 
 const Hero = ({ hero }) => {
@@ -12,25 +13,27 @@ const Hero = ({ hero }) => {
                         height={150}
                     />
                 </div>
-                <div className="mobile-only">
+                <div className={`mobile-only ${styles.mobileHero}`}>
                     <Image
                         src={hero.MobileHeroImage}
                         alt={hero.heroTitle}
-                        width={150}
-                        height={150}
+                        height={270}
+                        width={390}
                     />
                 </div>
                 {hero.DisplayElectionNumber && (
-                    <div className="number-wrapper">
-                        <span>
-                            {hero.ElectionNumber}
-                        </span>
+                    <div className={styles.circleWrapper}>
+                        <figure className={styles.circle}>
+                            <div className={styles.textWrapper}>
+                                <span className={styles.circleText}>{hero.ElectionNumber}</span>
+                            </div>
+                        </figure>
                     </div>
                 )}
-                <div className="container">
-                    <div className="content">
-                        <h1>{hero.heroTitle}</h1>
-                        <h3>{hero.heroSubtitle}</h3>
+                <div className={styles.container}>
+                    <div className={styles.content}>
+                        <h1>{hero.HeroTitle}</h1>
+                        <h3>{hero.HeroSubtitle}</h3>
                         {hero.CTA && (
                             <div className="button-wrapper">
                                 <a className="button"

@@ -17,7 +17,6 @@ const Header = () => {
                         <Image
                             src={Header.mobileImageLogo}
                             alt={Header.mobileImageAlt}
-
                             height={50}
                             width={60}
                         />

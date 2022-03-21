@@ -53,7 +53,7 @@ export async function getStaticProps() {
         image: home.meta.image
       },
       hero: {
-        heroTitle: home.Hero.HeroTitle,
+        HeroTitle: home.Hero.HeroTitle,
         HeroSubtitle: home.Hero.HeroSubtitle,
         DesktopHeroImage: home.Hero.DesktopHeroImage,
         MobileHeroImage: home.Hero.MobileHeroImage,

@@ -1,0 +1,49 @@
+.circleWrapper {
+	position: absolute;
+	top: 250px;
+	right: 60px;
+	z-index: 999;
+}
+
+.circle {
+	display: block;
+	background-color: var(--white);
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	margin: 0;
+}
+
+.textWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circleText {
+	font-size: 1.375rem;
+	color: var(--primary);
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+/* Textarea */
+.container {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+/* Mobile styles */
+
+@media only screen and (max-width: 767px) {
+	.mobileHero {
+		height: 270px;
+	}
+
+	.content h3 {
+		font-size: 1rem;
+	}
+}
