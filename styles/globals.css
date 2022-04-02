@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
 	--primary: #0525e2;
 	--black: #211f1b;
@@ -20,25 +24,11 @@ body,
 	font-family: 'Montserrat', sans-serif;
 }
 
-.button {
-	display: inline-block;
-	font-weight: 700;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	border: 1px solid var(--white);
-	background-color: var(--primary);
-	color: var(--white);
-	padding: 0.375rem 0.75rem;
-	font-size: .875rem;
-	line-height: 1.5;
-	transition: background-color .15s ease-in-out;
+.btn {
+	@apply bg-primary text-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine
 }
 
-.button:focus,
-.button:hover {
-	background-color: var(--aquamarine);
-}
+
 
 a {
 	color: inherit;

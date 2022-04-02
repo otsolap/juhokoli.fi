@@ -23,7 +23,7 @@ const ContactForm = () => {
                     <textarea name="message" id="message" />
                 </p>
                 <p>
-                    <button type="submit" className="button">Lähetä</button>
+                    <button type="submit" className="btn">Lähetä</button>
                 </p>
             </form>
         </section>

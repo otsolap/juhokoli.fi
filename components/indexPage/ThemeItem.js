@@ -19,7 +19,7 @@ const ThemeItem = ({ themes }) => {
                             <h4>{theme.description}</h4>
                         </div>
                         <div className="button-wrapper">
-                            <a className="button"
+                            <a className="btn"
                                 href={theme.link}
                             >
                                 {theme.cta}
