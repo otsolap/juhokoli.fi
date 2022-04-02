@@ -1,49 +1,27 @@
 .circleWrapper {
-	position: absolute;
-	top: 250px;
-	right: 60px;
-	z-index: 999;
+	@apply absolute top-[250px] right-[60px] z-[999];
 }
 
 .circle {
-	display: block;
-	background-color: var(--white);
-	border-radius: 50%;
-	height: 60px;
-	width: 60px;
-	margin: 0;
-}
-
-.textWrapper {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@apply block bg-white h-[60px] w-[60px] m-0 rounded-full;
 }
 
 .circleText {
-	font-size: 1.375rem;
-	color: var(--primary);
-	font-weight: 700;
-	margin: 0;
-	padding: 0;
+	@apply m-0 p-0 text-2xl text-primary;
 }
 
-/* Textarea */
+.textWrapper {
+	@apply h-full w-full flex justify-center items-center font-bold;
+}
+
 .container {
-	background-color: var(--primary);
-	color: var(--white);
+	@apply bg-primary text-white
 }
 
-/* Mobile styles */
+.mobileHero {
+	@apply sm:h-[270px]
+}
 
-@media only screen and (max-width: 767px) {
-	.mobileHero {
-		height: 270px;
-	}
-
-	.content h3 {
-		font-size: 1rem;
-	}
+.content h3 {
+	@apply sm:text-base
 }

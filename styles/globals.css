@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--primary: #0525e2;
-	--black: #211f1b;
-	--aquamarine: #69dee3;
-	--white: #ffffff;
-	--grey: #f2f2f2;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -28,21 +20,15 @@ body,
 	@apply bg-primary text-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine
 }
 
-
-
 a {
-	color: inherit;
-	text-decoration: none;
+	@apply text-inherit no-underline
 }
 
-@media only screen and (min-width: 768px) {
-	.mobile-only {
-		display: none;
-	}
+
+.mobile-only {
+	@apply block md:hidden
 }
 
-@media only screen and (max-width: 767px) {
-	.desktop-only {
-		display: none;
-	}
+.desktop-only {
+	@apply hidden md:block
 }
