@@ -1,5 +1,5 @@
 .header {
-	@apply bg-primary text-white flex max-h-[999px] md:py-4 md:items-center md:justify-evenly sm:min-h-[80px] sm:items-center sm:justify-center sm:sticky sm:top-0 sm:z-[9000]
+	@apply bg-primary text-white flex max-h-[999px] items-center justify-center md:py-4 md:items-center md:justify-evenly sm:min-h-[80px] sm:items-center sm:justify-center sm:sticky sm:top-0 sm:z-[9000]
 }
 
 .logo {
@@ -15,7 +15,7 @@
 }
 
 .logoContainer {
-	@apply sm:flex sm:justify-evenly sm:w-full;
+	@apply sm:flex sm:justify-evenly sm:w-full md:w-4/5;
 }
 
 .mobileLogo {
