@@ -14,10 +14,15 @@ body,
 	height: 100%;
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
+	color: #211f1b;
 }
 
 .btn {
-	@apply bg-primary text-white border-2 border-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine
+	@apply bg-primary text-white border-2 border-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine w-full flex justify-center
+}
+
+.buttonWrapper {
+	@apply my-6 
 }
 
 a {

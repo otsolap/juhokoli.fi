@@ -9,11 +9,9 @@ const ThemesList = ({ themes, }) => {
                     <h2>{themes.sectionTitle}</h2>
                 </header>
                 <div className="themes-container">
-                    <div className="themes-container">
-                        <ThemeItem
-                            themes={themes.themes}
-                        />
-                    </div>
+                    <ThemeItem
+                        themes={themes.themes}
+                    />
                 </div>
             </div>
         </section>

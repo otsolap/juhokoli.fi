@@ -35,8 +35,8 @@ const Hero = ({ hero }) => {
                         <h1>{hero.HeroTitle}</h1>
                         <h3>{hero.HeroSubtitle}</h3>
                         {hero.CTA && (
-                            <div className={styles.buttonWrapper}>
-                                <a className="btn"
+                            <div className="buttonWrapper">
+                                <a className={styles.btn}
                                     href={hero.CTALink}
                                 >
                                     {hero.CTA}

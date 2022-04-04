@@ -6,25 +6,25 @@ const ThemeItem = ({ themes }) => {
         <>
             {themes.map((theme, i) => (
                 <div id={`theme-item-${i}`} key={i}>
-                    <div className="image-container">
+                    <div className={styles.imageContainer}>
                         <Image
-                            width={50}
-                            height={50}
+                            width={390}
+                            height={220}
                             alt={theme.title}
                             src={theme.image}
                         />
                     </div>
                     <div className="container">
-                        <div className="content">
+                        <div className={styles.content}>
                             <h2>{theme.title}</h2>
                             <h4>{theme.description}</h4>
-                        </div>
-                        <div className="button-wrapper">
-                            <a className="btn"
-                                href={theme.link}
-                            >
-                                {theme.cta}
-                            </a>
+                            <div className="buttonWrapper">
+                                <a className="btn"
+                                    href={theme.link}
+                                >
+                                    {theme.cta}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
