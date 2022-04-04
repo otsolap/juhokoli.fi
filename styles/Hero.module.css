@@ -19,9 +19,21 @@
 }
 
 .mobileHero {
-	@apply sm:h-[270px]
+	@apply h-[270px] md:hidden
+}
+
+.content {
+	@apply p-4
+}
+
+.content h1 {
+	@apply font-bold text-[22px]
 }
 
 .content h3 {
-	@apply sm:text-base
+	@apply text-base md:text-2xl my-2
+}
+
+.buttonWrapper {
+	@apply my-6
 }

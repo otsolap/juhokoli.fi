@@ -17,13 +17,12 @@ body,
 }
 
 .btn {
-	@apply bg-primary text-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine
+	@apply bg-primary text-white border-2 border-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine
 }
 
 a {
 	@apply text-inherit no-underline
 }
-
 
 .mobile-only {
 	@apply block md:hidden

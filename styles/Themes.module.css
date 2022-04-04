@@ -1,0 +1,11 @@
+/* Theme List */
+.sectionHeader {
+    @apply p-4
+}
+
+.sectionHeader h2 {
+    @apply text-2xl font-semibold;
+}
+
+
+/* Theme Item */

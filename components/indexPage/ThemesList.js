@@ -1,11 +1,12 @@
+import styles from '../../styles/Themes.module.css'
 import ThemeItem from "./ThemeItem";
 
 const ThemesList = ({ themes, }) => {
     return (
         <section id="themesList">
             <div className="container">
-                <header className="section-header">
-                    {themes.sectionTitle}
+                <header className={styles.sectionHeader}>
+                    <h2>{themes.sectionTitle}</h2>
                 </header>
                 <div className="themes-container">
                     <div className="themes-container">

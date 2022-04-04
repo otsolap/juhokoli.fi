@@ -1,3 +1,4 @@
+import styles from '../../styles/Themes.module.css'
 import Image from 'next/image'
 
 const ThemeItem = ({ themes }) => {
