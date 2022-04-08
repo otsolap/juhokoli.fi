@@ -3,9 +3,9 @@ import ThemeItem from "./ThemeItem";
 
 const ThemesList = ({ themes, }) => {
     return (
-        <section id="themesList">
+        <section id={styles.themesList}>
             <div className="container">
-                <header className={styles.sectionHeader}>
+                <header className="sectionHeader">
                     <h2>{themes.sectionTitle}</h2>
                 </header>
                 <div className="themes-container">

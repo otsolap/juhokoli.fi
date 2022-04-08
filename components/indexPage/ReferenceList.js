@@ -1,11 +1,12 @@
 import ReferenceItem from "./ReferenceItem";
+import styles from '../../styles/References.module.css'
 
 const ReferenceList = ({ references, }) => {
     return (
-        <section id="references">
+        <section id={styles.referenceSection} className="alt-bg">
             <div className="container">
-                <header className="section-header">
-                    {references.sectionTitle}
+                <header className="sectionHeader">
+                    <h2>{references.sectionTitle}</h2>
                 </header>
                 <div className="references-container">
                     <div className="referenceItem-container">

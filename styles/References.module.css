@@ -1,0 +1,33 @@
+#referenceSection {
+    @apply py-triple;
+}
+
+.imageContainer {
+    @apply flex;
+    @apply justify-center;
+}
+
+.referenceBuble {
+    @apply relative;
+    @apply text-left;
+    @apply bg-white;
+    @apply rounded-xl;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply m-single;
+    @apply p-single;
+    @apply flex-col;
+}
+
+.referee {
+    @apply font-bold;
+    @apply text-left;
+    @apply w-full;
+    @apply pt-double;
+}
+
+.refereeWorkTitle {
+    @apply text-left;
+    @apply w-full;
+}

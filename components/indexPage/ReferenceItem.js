@@ -1,22 +1,23 @@
 import Image from 'next/image'
+import styles from '../../styles/References.module.css'
 
 const ReferenceItem = ({ referees }) => {
     return (
         <div className="reference">
             {referees.map((reference, i) => (
                 <div id={`refence-item-${i}`} key={i}>
-                    <div className="image-container">
+                    <div className={styles.imageContainer}>
                         <Image
-                            width={50}
-                            height={50}
+                            width={160}
+                            height={160}
                             alt={reference.referee}
                             src={reference.image}
                         />
                     </div>
-                    <div className="reference-bubble">
+                    <div className={styles.referenceBuble}>
                         <p>{reference.reference}</p>
-                        <h2>{reference.referee}</h2>
-                        <h4>{reference.refereeTitle}</h4>
+                        <h4 className={styles.referee}>{reference.referee}</h4>
+                        <h6 className={styles.refereeWorkTitle}>{reference.refereeTitle}</h6>
                     </div>
                 </div>
             ))}

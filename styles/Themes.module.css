@@ -1,19 +1,10 @@
 /* Theme List && Item */
-.sectionHeader,
-.content {
-    @apply p-single;
-}
-
-/* Theme List */
-.sectionHeader h2,
-.content h2 {
-    @apply text-2xl;
-    @apply font-bold;
-    @apply my-2;
+#themesSection {
+    @apply py-triple;
 }
 
 /* Theme Item */
 
 .content h2 {
-    @apply text-primary
+    @apply text-primary;
 }

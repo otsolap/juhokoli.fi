@@ -19,7 +19,8 @@ body,
 
 .btn {
 	@apply bg-primary; 
-	@apply 	text-white; 
+	@apply text-white;
+	@apply font-bold; 
 	@apply border-2; 
 	@apply border-white; 
 	@apply transition; 
@@ -42,6 +43,24 @@ a {
 	@apply text-inherit; 
 	@apply no-underline;
 }
+
+
+/* Section Intro */
+.sectionHeader {
+    @apply p-single;
+}
+
+.sectionHeader h2,
+.content h2 {
+	@apply text-2xl;
+    @apply font-bold;
+    @apply m-single;
+}
+
+.alt-bg {
+	@apply bg-grey
+}
+
 
 .mobile-only {
 	@apply block; 
