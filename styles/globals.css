@@ -18,21 +18,37 @@ body,
 }
 
 .btn {
-	@apply bg-primary text-white border-2 border-white transition ease-in-out duration-150 py-1.5 px-3 hover:bg-aquamarine focus:bg-aquamarine w-full flex justify-center
+	@apply bg-primary; 
+	@apply 	text-white; 
+	@apply border-2; 
+	@apply border-white; 
+	@apply transition; 
+	@apply ease-in-out; 
+	@apply duration-150; 
+	@apply py-1.5; 
+	@apply px-3; 
+	@apply hover:bg-aquamarine; 
+	@apply focus:bg-aquamarine; 
+	@apply w-full; 
+	@apply flex; 
+	@apply justify-center;
 }
 
 .buttonWrapper {
-	@apply my-6 
+	@apply my-6; 
 }
 
 a {
-	@apply text-inherit no-underline
+	@apply text-inherit; 
+	@apply no-underline;
 }
 
 .mobile-only {
-	@apply block md:hidden
+	@apply block; 
+	@apply md:hidden;
 }
 
 .desktop-only {
-	@apply hidden md:block
+	@apply hidden; 
+	@apply md:block;
 }

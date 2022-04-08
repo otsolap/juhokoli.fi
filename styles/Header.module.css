@@ -1,21 +1,46 @@
 .header {
-	@apply bg-primary text-white flex min-h-[80px] items-center justify-center sticky top-0 z-[9000] md:relative md:max-h-[999px] md:py-4 md:justify-evenly
+	@apply bg-primary; 
+	@apply text-white; 
+	@apply flex; 
+	@apply min-h-[80px]; 
+	@apply items-center; 
+	@apply justify-center; 
+	@apply sticky; 
+	@apply top-0; 
+	@apply z-[9000]; 
+	@apply md:relative; 
+	@apply md:max-h-[999px]; 
+	@apply md:py-4;
+	@apply md:justify-evenly;
 }
 
 .logo {
-	@apply text-[2rem] md:text-4xl
+	@apply text-[2rem];
+	@apply md:text-4xl;
 }
 
 .header a {
-	@apply px-1.5 mx-1.5 hover:underline hover:decoration-aquamarine hover:underline-offset-2 decoration-[30%];
+	@apply px-1.5; 
+	@apply mx-1.5; 
+	@apply hover:underline; 
+	@apply hover:decoration-aquamarine;
+	@apply hover:underline-offset-2;
+	@apply decoration-[30%];
 }
 
 .active {
-	@apply underline decoration-aquamarine underline-offset-2 decoration-2;
+	@apply underline; 
+	@apply decoration-aquamarine; 
+	@apply underline-offset-2;
+	@apply decoration-2;
 }
 
 .logoContainer {
-	@apply flex justify-evenly w-full md:block md:w-4/5;
+	@apply flex; 
+	@apply justify-evenly; 
+	@apply w-full; 
+	@apply md:block; 
+	@apply md:w-4/5;
 }
 
 .mobileLogo {

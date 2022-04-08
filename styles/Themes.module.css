@@ -1,13 +1,15 @@
 /* Theme List && Item */
 .sectionHeader,
 .content {
-    @apply p-4
+    @apply p-single
 }
 
 /* Theme List */
 .sectionHeader h2,
 .content h2 {
-    @apply text-2xl font-bold my-2;
+    @apply text-2xl font-bold
+    @apply font-bold;
+    @apply my-2;
 }
 
 /* Theme Item */
