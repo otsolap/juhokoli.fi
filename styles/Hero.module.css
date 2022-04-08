@@ -1,15 +1,15 @@
 .circleWrapper {
-	@apply absolute
-	@apply top-[250px]
-	@apply right-[60px]
-	@apply z-[999]
+	@apply absolute;
+	@apply top-64;
+	@apply right-14;
+	@apply z-10;
 }
 
 .circle {
 	@apply block;
 	@apply bg-white;
-	@apply h-[60px]
-	@apply w-[60px]
+	@apply h-14;
+	@apply w-14;
 	@apply m-0;
 	@apply rounded-full
 }
@@ -32,16 +32,16 @@
 
 .container {
 	@apply bg-primary;
-	@apply text-white
+	@apply text-white;
 }
 
 .mobileHero {
-	@apply h-[270px] ;
+	@apply h-[270px];
 	@apply md:hidden;
 }
 
 .content {
-	@apply p-single
+	@apply p-single;
 }
 
 .content h1 {
