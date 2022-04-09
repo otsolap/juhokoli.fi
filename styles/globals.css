@@ -61,6 +61,21 @@ a {
 	@apply bg-grey
 }
 
+#newsletter .newsletter-bg-img {
+/* 	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	z-index: -1; */
+}
+
+/* #newsletter .container {
+	position: relative;
+	z-index: 1;
+} */
+
+
+
 
 .mobile-only {
 	@apply block; 

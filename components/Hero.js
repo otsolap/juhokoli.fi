@@ -11,6 +11,7 @@ const Hero = ({ hero }) => {
                         alt={hero.heroTitle}
                         width={150}
                         height={150}
+                        quality={100}
                     />
                 </div>
                 <div className={`mobile-only ${styles.mobileHero}`}>

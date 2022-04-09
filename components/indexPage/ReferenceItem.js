@@ -10,6 +10,7 @@ const ReferenceItem = ({ referees }) => {
                         <Image
                             width={160}
                             height={160}
+                            quality={100}
                             alt={reference.referee}
                             src={reference.image}
                         />

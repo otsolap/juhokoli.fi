@@ -6,15 +6,20 @@ const Newsletter = ({ newsletter }) => {
             <div className="background-image-container">
                 <Image
                     src={newsletter.backgroundImage}
-                    width={50}
-                    height={50}
+                    /*             layout="fill" */
+                    height={500}
+                    width={150}
+                    objectFit='cover'
+                    quality={100}
+                    objectPosition="center"
                     alt={newsletter.title}
+                    className="newsletter-bg-img"
                 />
             </div>
             <div className="container">
                 <h2>{newsletter.title}</h2>
                 <div className="content">
-                    {newsletter.description}
+                    <p>{newsletter.description}</p>
                 </div>
             </div>
         </section>
