@@ -5,9 +5,18 @@
 .imageContainer {
     @apply flex;
     @apply justify-center;
+    @apply pb-2;
 }
 
 .referenceBuble {
+    @apply before:w-0;
+    @apply before:h-0;
+    @apply before:absolute;
+    @apply before:bottom-full;
+    @apply before:border-8;
+    @apply before:border-x-transparent;
+    @apply before:border-t-transparent;
+    @apply before:border-b-white;
     @apply relative;
     @apply text-left;
     @apply bg-white;
