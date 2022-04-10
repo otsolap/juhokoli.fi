@@ -8,7 +8,7 @@ const Newsletter = ({ newsletter }) => {
                     src={newsletter.backgroundImage}
                     /*             layout="fill" */
                     height={500}
-                    width={150}
+                    width={390}
                     objectFit='cover'
                     quality={100}
                     objectPosition="center"
