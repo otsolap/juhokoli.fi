@@ -61,10 +61,32 @@ a {
 	@apply bg-grey
 }
 
-.background-image-container{
+.newsletter-content {
 	position: relative;
+	width: 100%;
 }
 
+.newsletter-content img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 590px;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+	object-position: center;
+  }
+
+
+.newsletter-content > .content {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
 
 .mobile-only {
 	@apply block; 
