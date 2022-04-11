@@ -1,0 +1,41 @@
+.newsletterContent {
+	@apply relative;
+	@apply w-full;
+}
+
+.newsletterBGImg {
+	@apply absolute;
+	@apply top-0;
+	@apply left-0;
+	@apply w-full;
+	@apply right-0;
+	@apply bottom-0;
+	@apply object-cover; 
+
+
+	height: 590px;
+	object-position: center;
+  }
+
+.content {
+	@apply py-20;
+	@apply text-white;
+	@apply relative;
+	@apply z-10;
+}
+
+.btn {
+	@apply bg-primary; 
+	@apply text-white;
+	@apply font-bold; 
+	@apply transition; 
+	@apply ease-in-out; 
+	@apply duration-150; 
+	@apply py-1.5; 
+	@apply px-3; 
+	@apply hover:bg-aquamarine; 
+	@apply focus:bg-aquamarine; 
+	@apply w-full; 
+	@apply flex; 
+	@apply justify-center;
+}
