@@ -20,7 +20,7 @@ const Newsletter = ({ newsletter }) => {
         )
 
         const result = await res.json()
-        // result.user => 'Ada Lovelace'
+        // result.email => 'otso@kultakammen.fi'
 
     }
 
@@ -38,6 +38,13 @@ const Newsletter = ({ newsletter }) => {
                     className={styles.newsletterBGImg}
                 />
                 <div className={styles.content}>
+                    <Image
+                        src={newsletter.logo}
+                        alt={newsletter.title}
+                        height={50}
+                        width={60}
+                        quality={100}
+                    />
                     <h2>{newsletter.title}</h2>
                     <p>{newsletter.description}</p>
                     <div className={styles.formContainer}>
@@ -53,7 +60,7 @@ const Newsletter = ({ newsletter }) => {
                             <button
                                 className={styles.btn}
                                 type="submit">
-                                Tilaa uutiskirje
+                                {newsletter.cta}
                             </button>
                         </form>
                     </div>

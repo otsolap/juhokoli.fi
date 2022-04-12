@@ -40,3 +40,7 @@
     @apply text-left;
     @apply w-full;
 }
+
+.heart {
+    @apply ml-single;
+}

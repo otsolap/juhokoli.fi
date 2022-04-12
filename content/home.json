@@ -69,7 +69,9 @@
           "referee": "Otso Lappalainen",
           "refereeTitle": "Web-devaaja"
         }
-      ]
+      ],
+      "heart": "/images/sydan.png",
+      "heartAlt": "Sydän oikealla"
     },
     "meta": {
       "title": "Juho Koli",

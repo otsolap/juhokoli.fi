@@ -68,10 +68,13 @@ export async function getStaticProps() {
       },
       references: {
         sectionTitle: home.ReferenceSection.SectionTitle,
-        referees: home.ReferenceSection.referees
+        referees: home.ReferenceSection.referees,
+        heart: home.ReferenceSection.heart,
+        heartAlt: home.ReferenceSection.heartAlt,
       },
       newsletter: {
         backgroundImage: site.newsletter.backgroundImage,
+        logo: site.newsletter.logo,
         title: site.newsletter.title,
         description: site.newsletter.description,
         cta: site.newsletter.cta,

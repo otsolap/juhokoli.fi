@@ -12,6 +12,8 @@ const ReferenceList = ({ references, }) => {
                     <div className="referenceItem-container">
                         <ReferenceItem
                             referees={references.referees}
+                            heart={references.heart}
+                            heartAlt={references.heartAlt}
                         />
                     </div>
                 </div>

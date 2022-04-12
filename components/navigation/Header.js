@@ -19,6 +19,7 @@ const Header = () => {
                             alt={Header.mobileImageAlt}
                             height={50}
                             width={60}
+                            quality={100}
                         />
                     </div>
                 </div>
