@@ -55,19 +55,6 @@
 	@apply md:text-2xl;
 }
 
-.btn {
-	@apply bg-primary;
-	@apply text-white;
-	@apply border-2;
+.btnBorder {
 	@apply border-white;
-	@apply transition;
-	@apply ease-in-out;
-	@apply duration-150;
-	@apply py-1.5;
-	@apply px-3;
-	@apply hover:bg-aquamarine;
-	@apply focus:bg-aquamarine;
-	@apply flex;
-	@apply justify-center;
-	@apply  w-10/12;
 }

@@ -11,31 +11,32 @@
 	@apply right-0;
 	@apply bottom-0;
 	@apply object-cover; 
-
-
-	height: 590px;
+	height: 500px;
 	object-position: center;
   }
 
 .content {
-	@apply py-20;
+	@apply py-8;
 	@apply text-white;
 	@apply relative;
 	@apply z-10;
+	@apply mx-6;
 }
 
-.btn {
-	@apply bg-primary; 
-	@apply text-white;
-	@apply font-bold; 
-	@apply transition; 
-	@apply ease-in-out; 
-	@apply duration-150; 
-	@apply py-1.5; 
-	@apply px-3; 
-	@apply hover:bg-aquamarine; 
-	@apply focus:bg-aquamarine; 
-	@apply w-full; 
-	@apply flex; 
-	@apply justify-center;
+.content h2 {
+	@apply my-single mx-0;
+}
+
+.formContainer {
+	@apply my-single;
+}
+
+.formContainer input {
+	@apply h-14;
+	@apply w-full;
+	@apply mt-2;
+	@apply mb-double;
+	@apply border;
+	@apply rounded;
+	@apply pl-single;
 }

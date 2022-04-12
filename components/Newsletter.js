@@ -41,8 +41,8 @@ const Newsletter = ({ newsletter }) => {
                     <Image
                         src={newsletter.logo}
                         alt={newsletter.title}
-                        height={50}
-                        width={60}
+                        height={175}
+                        width={165}
                         quality={100}
                     />
                     <h2>{newsletter.title}</h2>
@@ -58,7 +58,7 @@ const Newsletter = ({ newsletter }) => {
                                 required
                             />
                             <button
-                                className={styles.btn}
+                                className={`btn`}
                                 type="submit">
                                 {newsletter.cta}
                             </button>

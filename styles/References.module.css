@@ -39,8 +39,6 @@
 .refereeWorkTitle {
     @apply text-left;
     @apply w-full;
-}
-
-.heart {
-    @apply ml-single;
+    @apply after:content-heart;
+    @apply after:ml-6
 }

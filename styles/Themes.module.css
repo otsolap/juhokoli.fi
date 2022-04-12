@@ -5,6 +5,10 @@
 
 /* Theme Item */
 
+.content {
+    @apply m-single;
+}
+
 .content h2 {
     @apply text-primary;
 }

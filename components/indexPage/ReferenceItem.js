@@ -18,17 +18,7 @@ const ReferenceItem = ({ referees, heart, heartAlt }) => {
                     <div className={styles.referenceBuble}>
                         <p>{reference.reference}</p>
                         <h4 className={styles.referee}>{reference.referee}</h4>
-                        <h6 className={styles.refereeWorkTitle}>{reference.refereeTitle}
-                            <span className={styles.heart}>
-                                <Image
-                                    src={heart}
-                                    alt={heartAlt}
-                                    quality={100}
-                                    width={30}
-                                    height={30}
-                                />
-                            </span>
-                        </h6>
+                        <h6 className={styles.refereeWorkTitle}>{reference.refereeTitle}</h6>
                     </div>
                 </div>
             ))}

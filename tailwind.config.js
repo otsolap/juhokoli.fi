@@ -28,6 +28,9 @@ module.exports = {
         triple: '3rem',
         14: '3.5rem',
       },
+      content: {
+        'heart': 'url("/images/sydan.png")'
+      },
     },
   },
   plugins: [],
