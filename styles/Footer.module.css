@@ -1,0 +1,45 @@
+.FooterBar {
+    @apply bg-primary;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 150;
+    text-align: center;
+}
+
+.mobileMenuWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.mobileMenuWrapper a {
+    color: white;
+    flex: 0 0 calc(100% / 4);
+    max-width: calc(100% / 4);
+    position: relative;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.mobileIcon {
+    font-size: 18px;
+    color: white;
+    margin-top: 11px;
+}
+
+
+.mobileLinkText {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    color: #FFF;
+    line-height: 1.6;
+}

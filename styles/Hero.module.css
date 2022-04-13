@@ -55,6 +55,19 @@
 	@apply md:text-2xl;
 }
 
-.btnBorder {
+.heroBTN {
+	@apply bg-primary; 
+	@apply text-white;
+	@apply font-bold; 
+	@apply transition; 
+	@apply ease-in-out; 
+	@apply duration-150; 
+	@apply py-1.5; 
+	@apply px-3; 
+	@apply hover:bg-aquamarine; 
+	@apply focus:bg-aquamarine; 
+	@apply w-full; 
+	@apply flex; 
+	@apply justify-center;
 	@apply border-white;
 }
