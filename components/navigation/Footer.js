@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import Logo from '@content/site.json'
 import Icons from '@content/site.json'
-import Link from 'next/link'
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope, faHouse, faBook, faUserTie, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from '../../styles/Footer.module.css'
 
@@ -51,8 +50,8 @@ const Footer = () => {
     })
 
     return (
-        <footer className={styles.FooterBar}>
-            <div className="desktop-only">
+        <footer id={styles.Footer}>
+            <div>
                 <div style={{ backgroundColor: 'blue' }}>
                     <Image
                         src={Logo.Footer.desktopLogoImage}
@@ -63,24 +62,6 @@ const Footer = () => {
                 </div>
                 <p>Testing FA Icons:</p>
                 {SoMe}
-            </div>
-            <div className={`mobile-only ${styles.mobileMenuWrapper}`}>
-                <Link href="/"><a>
-                    <FontAwesomeIcon className={styles.mobileIcon} aria-label="Etusivu" icon={faHouse} />
-                    <span className={styles.mobileLinkText}>Etusivu</span></a>
-                </Link>
-                <Link href="/teemat">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label="Vaaliteemat" icon={faBook} />
-                        <span className={styles.mobileLinkText}>Vaaliteemat</span></a>
-                </Link>
-                <Link href="/koli">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label="Kolista" icon={faUserTie} />
-                        <span className={styles.mobileLinkText}>Koli</span></a>
-                </Link>
-                <Link href="/yhteydenotto">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label="Yhteydenotto" icon={faEnvelopeOpenText} />
-                        <span className={styles.mobileLinkText}>Yhteydenotto</span></a>
-                </Link>
             </div>
         </footer>
     )

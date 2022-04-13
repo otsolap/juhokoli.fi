@@ -1,45 +1,47 @@
-.FooterBar {
+#Footer {
+    @apply pb-20;
+}
+
+.MobileFooterBar {
     @apply bg-primary;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
-    z-index: 150;
-    text-align: center;
+    @apply fixed;
+    @apply bottom-0;
+    @apply left-0;
+    @apply h-16;
+    @apply w-full;
+    @apply z-50;
+    @apply text-center;
 }
 
 .mobileMenuWrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @apply flex;
+    @apply flex-row;
+    @apply flex-wrap;
+    @apply justify-center
 }
 
 .mobileMenuWrapper a {
-    color: white;
+    @apply text-white;
+    @apply relative;
+    @apply w-20;
+    @apply h-16;
+    @apply text-center;
+    @apply z-10;
+    @apply cursor-pointer;
     flex: 0 0 calc(100% / 4);
     max-width: calc(100% / 4);
-    position: relative;
-    width: 70px;
-    height: 60px;
-    text-align: center;
-    z-index: 10;
-    cursor: pointer;
 }
 
 .mobileIcon {
-    font-size: 18px;
-    color: white;
-    margin-top: 11px;
+    @apply text-lg;
+    @apply mt-3
 }
 
-
 .mobileLinkText {
-    position: absolute;
-    bottom: 4px;
-    left: 0;
-    width: 100%;
-    font-size: 10px;
-    color: #FFF;
-    line-height: 1.6;
+    @apply absolute;
+    @apply bottom-1;
+    @apply left-0;
+    @apply w-full;
+    @apply text-base;
+    @apply leading-relaxed;
 }
