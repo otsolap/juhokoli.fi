@@ -1,25 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Question from './Question'
-import useToggle from 'hooks/useToggleState'
+import useFAQState from 'hooks/useFAQState'
 
 const Faq = ({ faq }) => {
-    const [faqs, setFaqs] = useState([faq.faqs])
-    const [questionActive, toggle] = useToggle(false)
-
-    const toggleQuestion = index => {
-        setFaqs(faqs.map((faq, i) => {
-            if (i === index) {
-                faq.open = !faq.open
-            } else {
-                faq.open = false
-            }
-            return faq
-        }))
-    }
+    const initialFaqs = faq.faqs
+    const { toggleFAQ } = useFAQState(initialFaqs)
 
     return (
-        <section id="faq">
+        <section id="faqSection">
             <div className="desktop-only">
                 <Image
                     src={faq.faqProfilePicture}
@@ -31,12 +20,11 @@ const Faq = ({ faq }) => {
             </div>
             <div className="container">
                 <div className="content">
-                    {faq.faqs.map((faq, i) => (
+                    {faq.faqs.map((faq) => (
                         <Question
-                            faq={faq}
-                            key={i}
-                            index={i}
-                            toggleQuestion={toggleQuestion}
+                            {...faq}
+                            key={faq.id}
+                            toggleFAQ={toggleFAQ}
                         />
                     ))}
                 </div>
