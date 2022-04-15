@@ -1,0 +1,8 @@
+.faq > .faqQuestion {
+    @apply bg-grey;
+}
+
+.faq.open > .faqQuestion {
+    @apply bg-primary;
+    @apply text-white;
+}

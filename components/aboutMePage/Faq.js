@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Question from './Question'
+import useToggle from 'hooks/useToggleState'
 
 const Faq = ({ faq }) => {
     const [faqs, setFaqs] = useState([faq.faqs])
+    const [questionActive, toggle] = useToggle(false)
 
     const toggleQuestion = index => {
         setFaqs(faqs.map((faq, i) => {
@@ -22,8 +24,9 @@ const Faq = ({ faq }) => {
                 <Image
                     src={faq.faqProfilePicture}
                     alt={faq.faqProfilePictureAlt}
-                    width={50}
-                    height={50}
+                    width={850}
+                    height={1240}
+                    quality={100}
                 />
             </div>
             <div className="container">

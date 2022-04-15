@@ -27,7 +27,7 @@ export async function getStaticProps() {
                 image: aboutMe.meta.image
             },
             hero: {
-                heroTitle: aboutMe.Hero.HeroTitle,
+                HeroTitle: aboutMe.Hero.HeroTitle,
                 HeroSubtitle: aboutMe.Hero.HeroSubtitle,
                 DesktopHeroImage: aboutMe.Hero.DesktopHeroImage,
                 MobileHeroImage: aboutMe.Hero.MobileHeroImage,

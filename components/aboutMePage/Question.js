@@ -1,16 +1,18 @@
+import styles from '../../styles/FAQ.module.css'
+
 const Question = ({ faq, index, toggleQuestion }) => {
     return (
         <div
-            className={`${faq} + ${faq.open ? 'open' : ''}`}
+            className={`${styles.faq} ${faq.open ? `${styles.open}` : ''}`}
             key={index}
-            onClick={() => toggleQuestion(index)}
         >
-            <div className="faq-question">
+            <div className={styles.faqQuestion}>
                 {faq.question}
             </div>
-            <div className="faq-answer">
+            <div className={styles.faqAnswer}>
                 {faq.answer}
             </div>
+            <button onClick={() => toggleQuestion(index)}>Klikkaa Mua</button>
         </div>
     )
 }
