@@ -1,4 +1,4 @@
-import Hero from "@components/Hero"
+import HeroAlt from "@components/HeroAlt"
 import Meta from "@components/Meta"
 import ThemeBlock from "@components/themePage/ThemeBlock"
 import Newsletter from "@components/Newsletter"
@@ -10,10 +10,7 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
                 meta={meta}
             />
             <main id="themes">
-                Themes Page.
-                <Hero
-                    hero={hero}
-                />
+                <HeroAlt hero={hero} />
                 <ThemeBlock
                     themes={themes}
                 />
@@ -38,8 +35,7 @@ export async function getStaticProps() {
                 image: themes.meta.image
             },
             hero: {
-                heroTitle: themes.Hero.HeroTitle,
-                HeroSubtitle: themes.Hero.HeroSubtitle,
+                HeroTitle: themes.Hero.HeroTitle,
                 DesktopHeroImage: themes.Hero.DesktopHeroImage,
                 MobileHeroImage: themes.Hero.MobileHeroImage,
             },
@@ -48,6 +44,7 @@ export async function getStaticProps() {
             },
             newsletter: {
                 backgroundImage: site.newsletter.backgroundImage,
+                logo: site.newsletter.logo,
                 title: site.newsletter.title,
                 description: site.newsletter.description,
                 cta: site.newsletter.cta,

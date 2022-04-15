@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo from '@content/site.json'
+import FooterContent from '@content/site.json'
 import Icons from '@content/site.json'
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -55,18 +55,18 @@ const Footer = () => {
             <div className={styles.footerContainer}>
                 <div className={`desktop-only ${styles.footerLogoContainer}`}>
                     <Image
-                        src={Logo.Footer.desktopLogoImage}
+                        src={FooterContent.Footer.desktopLogoImage}
                         width={50}
                         height={50}
-                        alt={Logo.Footer.desktopLogoAlt}
+                        alt={FooterContent.Footer.desktopLogoAlt}
                     />
                 </div>
                 <div className={styles.footerSoMEContainer}>
                     {SoMe}
                 </div>
                 <div className={styles.footerDetailsContainer}>
-                    <p className={styles.detailsTxt}>&copy; Juho Koli</p>
-                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>Tietosuojaseloste</a></Link>
+                    <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
+                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                     <div className={styles.footerKultakammen}>
                         <a
                             target="_blank"

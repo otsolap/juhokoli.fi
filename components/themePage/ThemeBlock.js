@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import styles from '../../styles/Themes.module.css'
 
 const ThemeBlock = ({ themes }) => {
     return (
@@ -7,9 +8,9 @@ const ThemeBlock = ({ themes }) => {
 
                 const bgStyle = []
                 if (i % 2 === 0) {
-                    bgStyle.push('white-bg')
+                    bgStyle.push('bg-white')
                 } else {
-                    bgStyle.push('gray-bg')
+                    bgStyle.push('bg-grey')
                 }
 
                 return (
@@ -19,12 +20,12 @@ const ThemeBlock = ({ themes }) => {
                         className={bgStyle}
                     >
                         <div className="container">
-                            <div className="image-container">
+                            <div className={styles.imageContainer}>
                                 <Image
                                     src={theme.image}
                                     alt={theme.title}
-                                    width={50}
-                                    height={50}
+                                    width={390}
+                                    height={220}
                                 />
                             </div>
                             <div className="content">
