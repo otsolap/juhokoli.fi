@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Logo from '@content/site.json'
 import Icons from '@content/site.json'
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +10,7 @@ import styles from '../../styles/Footer.module.css'
 const Footer = () => {
     const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
         return (
-            <span className="some-icons" key={i}>
+            <span className={styles.someIcons} key={i}>
                 {icons.icon === 'Instagram' ? (
                     <a href={icons.url} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon aria-label="Instagram profiili" icon={faInstagram} />
@@ -51,8 +52,8 @@ const Footer = () => {
 
     return (
         <footer id={styles.Footer}>
-            <div>
-                <div style={{ backgroundColor: 'blue' }}>
+            <div className={styles.footerContainer}>
+                <div className={`desktop-only ${styles.footerLogoContainer}`}>
                     <Image
                         src={Logo.Footer.desktopLogoImage}
                         width={50}
@@ -60,8 +61,25 @@ const Footer = () => {
                         alt={Logo.Footer.desktopLogoAlt}
                     />
                 </div>
-                <p>Testing FA Icons:</p>
-                {SoMe}
+                <div className={styles.footerSoMEContainer}>
+                    {SoMe}
+                </div>
+                <div className={styles.footerDetailsContainer}>
+                    <p className={styles.detailsTxt}>&copy; Juho Koli</p>
+                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>Tietosuojaseloste</a></Link>
+                    <div className={styles.footerKultakammen}>
+                        <a
+                            target="_blank"
+                            href="https://www.kultakammen.fi">
+                            <Image
+                                src="/images/Kultakammen_white.png"
+                                height={30}
+                                width={30}
+                                alt="Toteutuksen tehnyt Kultakammen.fi"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     )

@@ -1,13 +1,50 @@
 #Footer {
     @apply pb-20;
+    @apply bg-primary;
+    @apply text-white;
 }
+
+.footerSoMEContainer {
+    @apply pt-double;
+    @apply pb-single;
+    @apply flex;
+    @apply justify-center;
+    @apply gap-4;
+}
+
+.someIcons {
+    @apply text-3xl;
+}
+
+.footerDetailsContainer {
+    @apply flex;
+    @apply justify-center;
+    @apply py-single;
+}
+
+
+.detailsTxt {
+    @apply px-1;
+    @apply mx-1;
+    @apply after:content-['|'];
+    @apply after:ml-1;
+}
+
+.footerKultakammen {
+    @apply ml-2;
+}
+
 
 .MobileFooterBar {
     @apply bg-primary;
+    @apply border;
+    @apply border-t-white;
+    @apply border-x-transparent;
+    @apply border-b-transparent;
     @apply fixed;
     @apply bottom-0;
     @apply left-0;
-    @apply h-16;
+    @apply h-20;
     @apply w-full;
     @apply z-50;
     @apply text-center;
@@ -17,7 +54,7 @@
     @apply flex;
     @apply flex-row;
     @apply flex-wrap;
-    @apply justify-center
+    @apply justify-center;
 }
 
 .mobileMenuWrapper a {
@@ -33,15 +70,15 @@
 }
 
 .mobileIcon {
-    @apply text-lg;
-    @apply mt-3
+    @apply mt-3;
+    @apply text-3xl;
 }
 
 .mobileLinkText {
     @apply absolute;
-    @apply bottom-1;
+    @apply -bottom-4;
     @apply left-0;
     @apply w-full;
-    @apply text-base;
+    @apply text-xs;
     @apply leading-relaxed;
 }

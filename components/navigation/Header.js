@@ -12,7 +12,7 @@ const Header = () => {
         <>
             <header className={styles.header}>
                 <div className={styles.logoContainer}>
-                    <h1 className={styles.logo}>{Header.logo}</h1>
+                    <Link href="/"><a className={styles.noDecoration}>  <h1 className={styles.logo}>{Header.logo}</h1></a></Link>
                     <div className={`mobile-only ${styles.mobileLogo}`}>
                         <Image
                             src={Header.mobileImageLogo}

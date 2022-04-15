@@ -28,6 +28,12 @@
 	@apply decoration-[30%];
 }
 
+.noDecoration {
+	@apply hover:no-underline;
+	@apply hover:text-white;
+	@apply hover:decoration-transparent;
+}
+
 .active {
 	@apply underline; 
 	@apply decoration-aquamarine; 

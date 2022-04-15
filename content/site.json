@@ -18,6 +18,8 @@
   "Footer": {
     "desktopLogoImage": "/images/KokoomusTurku.png",
     "desktopLogoAlt": "Kokoomus Turku",
+    "Owner": "Juho Koli",
+    "privacyPolicy": "Tietosuojaseloste",
     "socialMedia":
     [
       {

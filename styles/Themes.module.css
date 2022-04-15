@@ -6,7 +6,7 @@
 /* Theme Item */
 
 .content {
-    @apply my-single;
+    @apply m-single;
 }
 
 .content h2 {
