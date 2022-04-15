@@ -60,3 +60,14 @@
 	@apply border-white;
 	@apply w-4/5;
 }
+
+/* ALT HERO COMPONENT */
+
+.altContainer {
+	@apply absolute;
+	@apply top-1/4;
+	@apply left-16;
+	@apply text-white;
+	@apply text-4xl;
+	@apply font-bold;
+}

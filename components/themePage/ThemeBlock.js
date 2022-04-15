@@ -17,19 +17,19 @@ const ThemeBlock = ({ themes }) => {
                     <section
                         key={i}
                         id={theme.title}
-                        className={bgStyle}
+                        className={`${styles.themeSection} ${bgStyle}`}
                     >
                         <div className="container">
-                            <div className={styles.imageContainer}>
-                                <Image
-                                    src={theme.image}
-                                    alt={theme.title}
-                                    width={390}
-                                    height={220}
-                                />
-                            </div>
-                            <div className="content">
+                            <div className={`${styles.content} ${styles.altTitle}`}>
                                 <h2>{theme.title}</h2>
+                                <div className={styles.altImageContainer}>
+                                    <Image
+                                        src={theme.image}
+                                        alt={theme.title}
+                                        width={390}
+                                        height={220}
+                                    />
+                                </div>
                                 <p>{theme.description}</p>
                             </div>
                         </div>

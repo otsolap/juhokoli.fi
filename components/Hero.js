@@ -20,6 +20,7 @@ const Hero = ({ hero }) => {
                         alt={hero.heroTitle}
                         height={270}
                         width={390}
+                        quality={100}
                     />
                 </div>
                 {hero.DisplayElectionNumber && (

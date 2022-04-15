@@ -12,6 +12,15 @@
 
 /* Theme Item */
 
+.imageContainer {
+    @apply border;
+    @apply border-transparent;
+}
+
+.imageContainer img {
+    @apply rounded-md;
+}
+
 .content {
     @apply m-single;
 }
@@ -20,9 +29,27 @@
     @apply text-primary;
 }
 
-
 /********
 *
 * Themes Page
 *
 **********/
+
+.themeSection {
+    @apply py-single;
+}
+
+.content.altTitle h2 {
+    @apply text-black;
+}
+
+.altImageContainer {
+    @apply border;
+    @apply border-transparent;
+    @apply -m-single;
+    @apply py-double;
+}
+
+.altImageContainer img {
+    @apply rounded-md;
+}
