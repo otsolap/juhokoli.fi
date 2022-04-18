@@ -2,8 +2,17 @@
    "ContactSection": {
        "SectionTitle": "Ota Yhteyttä",
        "SectionDescription": "Voit ottaa minuun yhteyttä some-kanavieni kautta, soittaa/viestitellä numeroon(02) 330 000 tai jättää viestin lomakkeen kautta.",
+       "cta": "Lähetä",
        "socialMedia":
        [
+         {
+           "icon": "Email",
+           "url": "juho.koli@turku.fi"
+         },
+         {
+           "icon": "Phone",
+           "url": "(02) 330 000"
+         },
          {
            "icon": "Instagram",
            "url": "https://www.instagram.com/jukoli/",
@@ -18,14 +27,6 @@
            "icon": "LinkedIn",
            "url": "https://www.linkedin.com/in/juhokoli/",
            "description": "/juhokoli"
-         },
-         {
-           "icon": "Email",
-           "url": "juho.koli@turku.fi"
-         },
-         {
-           "icon": "Phone",
-           "url": "(02) 330 000"
          }
        ]
    },

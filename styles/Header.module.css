@@ -43,7 +43,7 @@
 
 .logoContainer {
 	@apply flex; 
-	@apply justify-evenly; 
+	@apply justify-between; 
 	@apply w-full; 
 	@apply md:block; 
 	@apply md:w-4/5;

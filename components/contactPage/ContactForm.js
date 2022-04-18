@@ -1,31 +1,70 @@
-const ContactForm = () => {
-    return (
-        <section id="contactForm">
+import styles from '../../styles/Contact.module.css'
 
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="contact" value="contact" />
-                <p>
-                    <input type="text" name="fullname" id="fullname" />
-                    <label htmlFor="fullname">
-                        Nimi:
-                    </label>
-                </p>
-                <p>
-                    <input type="text" name="email" id="email" />
-                    <label htmlFor="email">
-                        Sähköposti:
-                    </label>
-                </p>
-                <p>
-                    <label htmlFor="message">
-                        Viesti:
-                    </label>
-                    <textarea name="message" id="message" />
-                </p>
-                <p>
-                    <button type="submit" className="btn">Lähetä</button>
-                </p>
-            </form>
+const ContactForm = ({ contact }) => {
+    const contactSubmit = (e) => {
+        e.preventDefault()
+        console.log('hello mom')
+    }
+
+    return (
+        <section id={styles.formSection}>
+            <div className={styles.formContainer}>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    onSubmit={contactSubmit}
+                >
+                    <input type="hidden" name="contact" value="contact" />
+                    <div className={styles.formControl}>
+                        <label htmlFor="fullname">Nimi *</label>
+                        <input
+                            placeholder="Nimi *"
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            autoComplete="name"
+                            required
+                        />
+                    </div>
+                    <div className={styles.formControl}>
+                        <label htmlFor="email">Sähköposti *</label>
+                        <input
+                            placeholder="Sähköposti *"
+                            type="email"
+                            autoComplete="email"
+                            name="email"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div className={styles.formControl}>
+                        <label htmlFor="message">Viesti *</label>
+                        <textarea
+                            placeholder="Viesti *"
+                            name="message"
+                            id="message"
+                            required
+                        />
+                    </div>
+                    <div className={styles.formControl}>
+                        <input
+                            className={styles.newsletterCheckBox}
+                            type="checkbox"
+                            id="newsletter"
+                            name="newsletter"
+                        />
+                        <label className={styles.newsletterLabel} htmlFor="newsletter">Haluan tilata uutiskirjeen</label>
+                    </div>
+                    <div className={styles.formControl}>
+                        <button
+                            type="submit"
+                            className="btn">
+                            {contact.cta}
+                        </button>
+                    </div>
+                </form>
+            </div>
         </section>
     )
 }

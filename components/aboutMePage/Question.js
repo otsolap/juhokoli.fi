@@ -30,7 +30,7 @@ const Question = ({ answer, question }) => {
                     </div>
                 </div>
                 <div ref={contentRef} className={active ? `${styles.faqAnswer} ${styles.faqAnswerDivider}` : `${styles.faqAnswer}`} >
-                    <p>{answer}</p>
+                    <p className={styles.faqAnswerText}>{answer}</p>
                 </div>
             </div>
         </button >

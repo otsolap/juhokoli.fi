@@ -1,47 +1,48 @@
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from '../../styles/Contact.module.css'
 
 const ContactDetails = ({ contact }) => {
     const SoMe = contact.socialMedia.map((icons, i) => {
         return (
             <span className="some-icons" key={i}>
                 {icons.icon === 'Email' ? (
-                    <a href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Email" icon={faEnvelope} />
-                        <span className="some-text">{icons.url}</span>
+                    <a className={styles.someLink} href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="Email" icon={faEnvelope} />
+                        <span className={styles.someText}>{icons.url}</span>
                     </a>
                 ) : (
                     ""
                 )}
                 {icons.icon === 'Phone' ? (
-                    <a href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Phone" icon={faPhone} />
-                        <span className="some-text">{icons.url}</span>
+                    <a className={styles.someLink} href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="Phone" icon={faPhone} />
+                        <span className={styles.someText}>{icons.url}</span>
                     </a>
                 ) : (
                     ""
                 )}
                 {icons.icon === 'Instagram' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Instagram profile" icon={faInstagram} />
-                        <span className="some-text">{icons.description}</span>
+                    <a className={styles.someLink} href={icons.url} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="Instagram profile" icon={faInstagram} />
+                        <span className={styles.someText}>{icons.description}</span>
                     </a>
                 ) : (
                     ""
                 )}
                 {icons.icon === 'Twitter' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Twitter profile" icon={faTwitter} />
-                        <span className="some-text">{icons.description}</span>
+                    <a className={styles.someLink} href={icons.url} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="Twitter profile" icon={faTwitter} />
+                        <span className={styles.someText}>{icons.description}</span>
                     </a>
                 ) : (
                     ""
                 )}
                 {icons.icon === 'LinkedIn' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="LinkedIn profile" icon={faLinkedin} />
-                        <span className="some-text">{icons.description}</span>
+                    <a className={styles.someLink} href={icons.url} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="LinkedIn profile" icon={faLinkedin} />
+                        <span className={styles.someText}>{icons.description}</span>
                     </a>
                 ) : (
                     ""
@@ -52,11 +53,11 @@ const ContactDetails = ({ contact }) => {
 
 
     return (
-        <section>
-            <div className="container">
+        <section className={styles.detailsSection}>
+            <div className={styles.container}>
                 <h1>{contact.SectionTitle}</h1>
                 <p>{contact.SectionDescription}</p>
-                <div className="content">
+                <div className={styles.someContent}>
                     {SoMe}
                 </div>
             </div>

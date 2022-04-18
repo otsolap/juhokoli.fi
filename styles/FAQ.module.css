@@ -39,6 +39,7 @@
     @apply cursor-pointer;
     @apply mr-single;
     @apply ml-auto;
+    @apply text-3xl;
 }
 
 .faqClosed {
@@ -62,4 +63,9 @@
     @apply bg-white;
     @apply text-black;
     @apply mx-2;
+}
+
+.faqAnswerText {
+    @apply py-single;
+    @apply px-2;
 }

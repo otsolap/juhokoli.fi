@@ -1,0 +1,109 @@
+/*
+*
+*  Page
+*
+*/
+
+#contactPage {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+}
+
+/*** Details **/
+
+.detailsSection {
+    @apply pt-single;
+}
+
+.formSection {
+    @apply pb-single;
+}
+
+.container {
+    @apply p-single;
+}
+
+.container h1 {
+    @apply font-bold;
+    @apply text-3xl;
+    @apply pb-6;
+}
+
+.someLink {
+    @apply py-2;
+}
+
+.someContent {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-start;
+    @apply pt-3;
+}
+
+.someIcon {
+    @apply text-3xl;
+    @apply text-primary;
+}
+
+.someText {
+    @apply ml-6;
+}
+
+/*** Form **/
+
+#formSection {
+    @apply py-single;
+    @apply mb-single
+}
+
+.formContainer {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply p-single;
+}
+
+.formControl {
+    @apply my-2;
+    @apply w-full;
+}
+
+.formControl label {
+   @apply block;
+   @apply mb-2;
+   @apply ml-3;
+}
+
+.newsletterLabel {
+    @apply inline-block;
+}
+
+
+.formControl textarea,
+.formControl input {
+	@apply mt-2;
+	@apply mb-single;
+	@apply border;
+    @apply border-black;
+	@apply rounded;
+	@apply pl-single;
+    @apply bg-grey;
+    @apply text-black;
+    @apply w-full;
+}
+
+.formControl textarea {
+    @apply h-28;
+    @apply pt-single;
+}
+
+.formControl input {
+    @apply h-14;
+    @apply pt-0;
+}
+
+.formControl input.newsletterCheckBox {
+    @apply h-8;
+}

@@ -1,14 +1,15 @@
 import ContactDetails from "@components/contactPage/ContactDetails"
 import ContactForm from "@components/contactPage/contactForm"
 import Meta from "@components/Meta"
+import styles from '../styles/Contact.module.css'
 
 const Contact = ({ meta, contact }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="contact">
+            <main id={styles.contactPage}>
                 <ContactDetails contact={contact} />
-                <ContactForm />
+                <ContactForm contact={contact} />
             </main>
         </>
     )
@@ -21,8 +22,9 @@ export async function getStaticProps() {
     return {
         props: {
             contact: {
-                sectionTitle: contact.ContactSection.SectionTitle,
+                SectionTitle: contact.ContactSection.SectionTitle,
                 SectionDescription: contact.ContactSection.SectionDescription,
+                cta: contact.ContactSection.cta,
                 socialMedia: contact.ContactSection.socialMedia
             },
             meta: {
