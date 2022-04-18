@@ -20,10 +20,14 @@ const Question = ({ answer, question }) => {
         <button onClick={toggleAccordion}>
             <div className={styles.faq}>
                 <div className={active ? `${styles.faqOpen}` : `${styles.faqClosed}`}>
-                    <h4 className={styles.faqQuestionHeading}>
-                        {question}
-                        <FontAwesomeIcon className={styles.faqIcon} aria-label="Usein kysytty kysymys Juho Kolista" icon={active ? faAngleUp : faAngleDown} />
-                    </h4>
+                    <div className={styles.faqFlexBox}>
+                        <h4 className={styles.faqQuestionHeading}>
+                            {question}
+                        </h4>
+                        <FontAwesomeIcon
+                            className={styles.faqIcon} aria-label="Usein kysytty kysymys Juho Kolista" icon={active ? faAngleUp : faAngleDown}
+                        />
+                    </div>
                 </div>
                 <div ref={contentRef} className={active ? `${styles.faqAnswer} ${styles.faqAnswerDivider}` : `${styles.faqAnswer}`} >
                     <p>{answer}</p>
