@@ -111,5 +111,6 @@
 
 .formControl input.newsletterCheckBox {
     @apply h-9;
+    @apply w-9;
     @apply inline-block;
 }
