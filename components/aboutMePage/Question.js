@@ -1,18 +1,35 @@
+import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/FAQ.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-const Question = ({ id, open, answer, question, toggleFAQ }) => {
+const Question = ({ answer, question }) => {
+    const contentRef = useRef(null)
+    const [active, setActive] = useState(false);
+    useEffect(() => {
+        contentRef.current.style.maxHeight = active
+            ? `${contentRef.current.scrollHeight}px`
+            : "0px";
+    }, [contentRef, active]);
+
+    const toggleAccordion = () => {
+        setActive(!active);
+    };
+
     return (
-        <div
-            className={`${styles.faq} ${open ? `${styles.open}` : ''}`}
-            key={id}>
-            <div className={styles.faqQuestion}>
-                {question}
+        <button onClick={toggleAccordion}>
+            <div className={styles.faq}>
+                <div className={active ? `${styles.faqOpen}` : `${styles.faqClosed}`}>
+                    <h4 className={styles.faqQuestionHeading}>
+                        {question}
+                        <FontAwesomeIcon className={styles.faqIcon} aria-label="Usein kysytty kysymys Juho Kolista" icon={active ? faAngleUp : faAngleDown} />
+                    </h4>
+                </div>
+                <div ref={contentRef} className={active ? `${styles.faqAnswer} ${styles.faqAnswerDivider}` : `${styles.faqAnswer}`} >
+                    <p>{answer}</p>
+                </div>
             </div>
-            <div className={styles.faqAnswer}>
-                {answer}
-            </div>
-            <button className="bg-red-700" onClick={() => toggleFAQ(id)}>Klikkaa Mua</button>
-        </div>
+        </button >
     )
 }
 

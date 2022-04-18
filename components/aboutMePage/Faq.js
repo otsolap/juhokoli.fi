@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Question from './Question'
-import useFAQState from 'hooks/useFAQState'
+import styles from '../../styles/FAQ.module.css'
 
 const Faq = ({ faq }) => {
-    const initialFaqs = faq.faqs
-    const { toggleFAQ } = useFAQState(initialFaqs)
+    const [faqs, setFaqs] = useState([faq.faqs])
 
     return (
-        <section id="faqSection">
+        <section id={styles.faqSection}>
             <div className="desktop-only">
                 <Image
                     src={faq.faqProfilePicture}
@@ -18,13 +17,12 @@ const Faq = ({ faq }) => {
                     quality={100}
                 />
             </div>
-            <div className="container">
-                <div className="content">
-                    {faq.faqs.map((faq) => (
+            <div className={styles.container}>
+                <div className={styles.content}>
+                    {faq.faqs.map((faq, i) => (
                         <Question
+                            key={i}
                             {...faq}
-                            key={faq.id}
-                            toggleFAQ={toggleFAQ}
                         />
                     ))}
                 </div>
