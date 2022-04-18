@@ -47,7 +47,7 @@ const ContactForm = ({ contact }) => {
                             required
                         />
                     </div>
-                    <div className={styles.formControl}>
+                    <div className={`${styles.formControl} ${styles.newsletterControl}`}>
                         <input
                             className={styles.newsletterCheckBox}
                             type="checkbox"
