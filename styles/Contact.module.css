@@ -82,7 +82,9 @@
 }
 
 .newsletterLabel {
+    @apply my-1;
     @apply inline-block;
+    @apply ml-2;
 }
 
 
@@ -113,4 +115,5 @@
     @apply h-9;
     @apply w-9;
     @apply inline-block;
+    @apply ml-1;
 }
