@@ -13,9 +13,16 @@ body,
 #root {
 	@apply h-full;
 	@apply w-full;
+	@apply max-w-screen-3xl;
+	@apply mx-auto; 
 	font-family: 'Montserrat', sans-serif;
-	color: #211f1b;
+	@apply text-black;
 }
+
+main {
+	@apply relative;
+}
+
 
 .btn {
 	@apply bg-primary; 
@@ -49,7 +56,15 @@ a {
 	@apply pb-single;
 }
 
-.sectionHeader h2,
+.container > .sectionHeader h2 {
+	@apply text-2xl;
+    @apply font-bold;
+    @apply m-single;
+	@apply md:pl-single;
+    @apply md:text-4xl;
+    @apply md:pt-double;
+}
+
 .content h2 {
 	@apply text-2xl;
     @apply font-bold;

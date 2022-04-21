@@ -6,11 +6,23 @@
 
 
 /* Theme List && Item */
-#themesSection {
+.themesSection {
     @apply py-triple;
 }
 
+.themesContainer {
+    @apply md:flex;
+    @apply md:flex-wrap;
+    @apply md:flex-row;
+}
+
 /* Theme Item */
+
+.themeItem {
+    @apply md:flex-[50%];
+    @apply md:max-w-[50%]; 
+    @apply md:p-double;
+}
 
 .imageContainer {
     @apply border;

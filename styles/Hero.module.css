@@ -39,8 +39,8 @@
 	@apply bg-primary;
 	@apply text-white;
 	@apply md:absolute;
-	@apply md:top-1/4;
-	@apply md:left-[9%];
+	@apply md:top-[4%];
+	@apply md:left-[3%];
 }
 
 .mobileHero {
@@ -56,6 +56,8 @@
 .content h1 {
 	@apply font-bold;
 	@apply text-[22px];
+	@apply md:text-4xl;
+	@apply md:pb-2;
 }
 
 .content h3 {

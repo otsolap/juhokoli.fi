@@ -17,7 +17,7 @@
 .logo {
 	@apply text-[2rem];
 	@apply md:text-4xl;
-	@apply md:pl-32;
+	@apply md:pl-14;
 }
 
 .header a {
