@@ -1,6 +1,6 @@
 .circleWrapper {
 	@apply absolute;
-	@apply top-64;
+	@apply top-44;
 	@apply right-14;
 	@apply z-10;
 	@apply md:top-[45%];

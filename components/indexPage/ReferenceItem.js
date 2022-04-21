@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../../styles/References.module.css'
 
-const ReferenceItem = ({ referees, heart, heartAlt }) => {
+const ReferenceItem = ({ referees }) => {
     return (
         <div className="reference">
             {referees.map((reference, i) => (
@@ -13,6 +13,7 @@ const ReferenceItem = ({ referees, heart, heartAlt }) => {
                             quality={100}
                             alt={reference.referee}
                             src={reference.image}
+                            layout="responsive"
                         />
                     </div>
                     <div className={styles.referenceBuble}>

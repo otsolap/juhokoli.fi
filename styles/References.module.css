@@ -3,9 +3,8 @@
 }
 
 .imageContainer {
-    @apply flex;
-    @apply justify-center;
-    @apply pb-2;
+    @apply w-40;
+    @apply mx-auto;
 }
 
 .referenceBuble {
