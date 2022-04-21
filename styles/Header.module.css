@@ -17,6 +17,7 @@
 .logo {
 	@apply text-[2rem];
 	@apply md:text-4xl;
+	@apply md:pl-32;
 }
 
 .header a {
@@ -53,4 +54,10 @@ a.noDecoration {
 .mobileLogo {
 	@apply h-[50px];
 	@apply mr-double;
+}
+
+/* DESKTOP STYLES */
+
+.desktopLinks {
+	@apply w-full;
 }

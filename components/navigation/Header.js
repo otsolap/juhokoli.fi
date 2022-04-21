@@ -26,7 +26,7 @@ const Header = () => {
                         />
                     </div>
                 </div>
-                <div className="desktop-only">
+                <div className={`desktop-only ${styles.desktopLinks}`}>
                     <nav className={styles.nav}>
                         <Link href="/">
                             <a className={router.pathname == '/' ? styles.active : ''}

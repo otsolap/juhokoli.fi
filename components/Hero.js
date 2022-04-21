@@ -9,9 +9,10 @@ const Hero = ({ hero }) => {
                     <Image
                         src={hero.DesktopHeroImage}
                         alt={hero.heroTitle}
-                        width={150}
-                        height={150}
+                        height={658}
+                        width={1440}
                         quality={100}
+                        layout="responsive"
                     />
                 </div>
                 <div className={`mobile-only ${styles.mobileHero}`}>

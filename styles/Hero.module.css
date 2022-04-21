@@ -3,6 +3,8 @@
 	@apply top-64;
 	@apply right-14;
 	@apply z-10;
+	@apply md:top-[45%];
+	@apply md:right-[5%]
 }
 
 .circle {
@@ -11,7 +13,9 @@
 	@apply h-14;
 	@apply w-14;
 	@apply m-0;
-	@apply rounded-full
+	@apply rounded-full;
+	@apply md:h-48;
+	@apply md:w-48;
 }
 
 .circleText {
@@ -19,6 +23,7 @@
 	@apply p-0;
 	@apply text-2xl;
 	@apply text-primary;
+	@apply md:text-6xl;
 }
 
 .textWrapper {
@@ -33,6 +38,9 @@
 .container {
 	@apply bg-primary;
 	@apply text-white;
+	@apply md:absolute;
+	@apply md:top-1/4;
+	@apply md:left-[9%];
 }
 
 .mobileHero {
@@ -42,6 +50,7 @@
 
 .content {
 	@apply p-single;
+	@apply md:max-w-md;
 }
 
 .content h1 {
