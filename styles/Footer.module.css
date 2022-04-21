@@ -8,8 +8,8 @@
     @apply pt-double;
     @apply pb-single;
     @apply flex;
-    @apply justify-center;
-    @apply gap-4;
+    @apply justify-evenly;
+    @apply mx-single;
 }
 
 .someIcons {

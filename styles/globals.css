@@ -45,7 +45,8 @@ a {
 
 /* Section Intro */
 .sectionHeader {
-    @apply p-single;
+    @apply px-single;
+	@apply pb-single;
 }
 
 .sectionHeader h2,
