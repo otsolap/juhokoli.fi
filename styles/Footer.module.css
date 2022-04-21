@@ -75,9 +75,9 @@
 }
 
 .mobileLinkText {
-    @apply absolute;
-    @apply -bottom-4;
-    @apply left-0;
+    @apply flex;
+    @apply justify-center;
+    @apply pt-2;
     @apply w-full;
     @apply text-xs;
     @apply leading-relaxed;

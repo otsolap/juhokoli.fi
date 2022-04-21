@@ -28,7 +28,8 @@
 	@apply decoration-[30%];
 }
 
-.noDecoration {
+a.noDecoration {
+	@apply ml-single;
 	@apply hover:no-underline;
 	@apply hover:text-white;
 	@apply hover:decoration-transparent;
@@ -50,5 +51,6 @@
 }
 
 .mobileLogo {
-	@apply h-[50px]
+	@apply h-[50px];
+	@apply mr-double;
 }

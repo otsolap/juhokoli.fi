@@ -6,7 +6,7 @@ import styles from '../../styles/Contact.module.css'
 const ContactDetails = ({ contact }) => {
     const SoMe = contact.socialMedia.map((icons, i) => {
         return (
-            <span className="some-icons" key={i}>
+            <span className={styles.someIconContainer} key={i}>
                 {icons.icon === 'Email' ? (
                     <a className={styles.someLink} href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon className={styles.someIcon} aria-label="Email" icon={faEnvelope} />
