@@ -5,7 +5,7 @@ const ReferenceItem = ({ referees }) => {
     return (
         <div className="reference">
             {referees.map((reference, i) => (
-                <div id={`refence-item-${i}`} key={i}>
+                <div className={styles.referenceItem} id={`refence-item-${i}`} key={i}>
                     <div className={styles.imageContainer}>
                         <Image
                             width={160}

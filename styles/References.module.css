@@ -4,7 +4,12 @@
 
 .imageContainer {
     @apply w-40;
-    @apply mx-auto;
+}
+
+.referenceItem {
+    @apply md:flex;
+    @apply even:md:flex-row-reverse;
+    @apply md:py-double;
 }
 
 .referenceBuble {
@@ -26,7 +31,13 @@
     @apply m-single;
     @apply p-single;
     @apply flex-col;
+    @apply md:w-2/4;
+    @apply md:before:border-y-transparent;
+    @apply md:before:border-l-transparent;
+    @apply md:before:border-r-white;
 }
+
+
 
 .referee {
     @apply font-bold;
