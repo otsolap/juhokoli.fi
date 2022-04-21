@@ -69,6 +69,7 @@ const Footer = () => {
                     <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                     <div className={styles.footerKultakammen}>
                         <a
+                            rel="noreferrer"
                             target="_blank"
                             href="https://www.kultakammen.fi">
                             <Image

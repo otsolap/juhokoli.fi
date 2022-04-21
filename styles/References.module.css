@@ -4,6 +4,7 @@
 
 .imageContainer {
     @apply w-40;
+    @apply md:mx-auto;
 }
 
 .referenceItem {
@@ -31,6 +32,7 @@
     @apply m-single;
     @apply p-single;
     @apply flex-col;
+    @apply md:mx-auto;
     @apply md:w-2/4;
     @apply md:before:border-y-transparent;
     @apply md:before:border-l-transparent;
