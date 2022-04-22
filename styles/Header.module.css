@@ -8,16 +8,16 @@
 	@apply sticky; 
 	@apply top-0; 
 	@apply z-[9000]; 
-	@apply md:relative; 
-	@apply md:max-h-[999px]; 
-	@apply md:py-4;
-	@apply md:justify-evenly;
+	@apply lg:relative; 
+	@apply lg:max-h-[999px]; 
+	@apply lg:py-4;
+	@apply lg:justify-evenly;
 }
 
 .logo {
 	@apply text-[2rem];
-	@apply md:text-4xl;
-	@apply md:pl-14;
+	@apply lg:text-4xl;
+	@apply lg:pl-14;
 }
 
 .header a {
@@ -47,8 +47,8 @@ a.noDecoration {
 	@apply flex; 
 	@apply justify-between; 
 	@apply w-full; 
-	@apply md:block; 
-	@apply md:w-4/5;
+	@apply lg:block; 
+	@apply lg:w-4/5;
 }
 
 .mobileLogo {

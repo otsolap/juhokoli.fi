@@ -60,9 +60,9 @@ a {
 	@apply text-2xl;
     @apply font-bold;
     @apply m-single;
-	@apply md:pl-single;
-    @apply md:text-4xl;
-    @apply md:pt-double;
+	@apply lg:pl-single;
+    @apply lg:text-4xl;
+    @apply lg:pt-double;
 }
 
 .content h2 {

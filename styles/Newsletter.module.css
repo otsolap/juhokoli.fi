@@ -21,6 +21,7 @@
 	@apply relative;
 	@apply z-10;
 	@apply mx-6;
+	@apply lg:max-w-md;
 }
 
 .content h2 {

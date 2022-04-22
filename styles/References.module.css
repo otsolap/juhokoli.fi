@@ -4,13 +4,13 @@
 
 .imageContainer {
     @apply w-40;
-    @apply md:mx-auto;
+    @apply lg:mx-auto;
 }
 
 .referenceItem {
-    @apply md:flex;
-    @apply even:md:flex-row-reverse;
-    @apply md:py-double;
+    @apply lg:flex;
+    @apply even:lg:flex-row-reverse;
+    @apply lg:py-double;
 }
 
 .Hello {
@@ -33,29 +33,29 @@
     @apply m-single;
     @apply p-single;
     @apply flex-col;
-    @apply md:mx-auto;
-    @apply md:w-2/4;
-    @apply md:before:bottom-1/2
+    @apply lg:mx-auto;
+    @apply lg:w-2/4;
+    @apply lg:before:bottom-1/2
 }
 
 .referenceBuble.even {
     @apply before:border-x-transparent;
     @apply before:border-t-transparent;
     @apply before:border-b-white;
-    @apply md:before:border-y-transparent;
-    @apply md:before:border-l-transparent;
-    @apply md:before:border-r-white;
-    @apply md:before:-left-single;
+    @apply lg:before:border-y-transparent;
+    @apply lg:before:border-l-transparent;
+    @apply lg:before:border-r-white;
+    @apply lg:before:-left-single;
 }
 
 .referenceBuble.odd {
     @apply before:border-x-transparent;
     @apply before:border-t-transparent;
     @apply before:border-b-white;
-    @apply md:before:border-y-transparent;
-    @apply md:before:border-r-transparent;
-    @apply md:before:border-l-white;
-    @apply md:before:-right-single;
+    @apply lg:before:border-y-transparent;
+    @apply lg:before:border-r-transparent;
+    @apply lg:before:border-l-white;
+    @apply lg:before:-right-single;
 }
 
 

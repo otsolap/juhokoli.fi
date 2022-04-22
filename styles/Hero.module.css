@@ -3,8 +3,8 @@
 	@apply top-44;
 	@apply right-14;
 	@apply z-10;
-	@apply md:top-[10%];
-	@apply md:right-[5%]
+	@apply lg:top-[10%];
+	@apply lg:right-[5%]
 }
 
 .circle {
@@ -14,8 +14,8 @@
 	@apply w-14;
 	@apply m-0;
 	@apply rounded-full;
-	@apply md:h-48;
-	@apply md:w-48;
+	@apply lg:h-48;
+	@apply lg:w-48;
 }
 
 .circleText {
@@ -23,7 +23,7 @@
 	@apply p-0;
 	@apply text-2xl;
 	@apply text-primary;
-	@apply md:text-6xl;
+	@apply lg:text-6xl;
 }
 
 .textWrapper {
@@ -38,32 +38,32 @@
 .container {
 	@apply bg-primary;
 	@apply text-white;
-	@apply md:absolute;
-	@apply md:top-[4%];
-	@apply md:left-[3%];
+	@apply lg:absolute;
+	@apply lg:top-[4%];
+	@apply lg:left-[3%];
 }
 
 .mobileHero {
 	@apply h-[270px];
-	@apply md:hidden;
+	@apply lg:hidden;
 }
 
 .content {
 	@apply p-single;
-	@apply md:max-w-md;
+	@apply lg:max-w-md;
 }
 
 .content h1 {
 	@apply font-bold;
 	@apply text-[22px];
-	@apply md:text-4xl;
-	@apply md:pb-2;
+	@apply lg:text-4xl;
+	@apply lg:pb-2;
 }
 
 .content h3 {
 	@apply text-base; 
 	@apply my-2;
-	@apply md:text-2xl;
+	@apply lg:text-2xl;
 }
 
 .heroBTN {

@@ -11,17 +11,17 @@
 }
 
 .themesContainer {
-    @apply md:flex;
-    @apply md:flex-wrap;
-    @apply md:flex-row;
+    @apply lg:flex;
+    @apply lg:flex-wrap;
+    @apply lg:flex-row;
 }
 
 /* Theme Item */
 
 .themeItem {
-    @apply md:flex-[50%];
-    @apply md:max-w-[50%]; 
-    @apply md:p-double;
+    @apply lg:flex-[50%];
+    @apply lg:max-w-[50%]; 
+    @apply lg:p-double;
 }
 
 .imageContainer {

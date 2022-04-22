@@ -53,11 +53,11 @@ const Footer = () => {
     return (
         <footer id={styles.Footer}>
             <div className={styles.footerContainer}>
-                <div className={`desktop-only ${styles.footerLogoContainer}`}>
+                <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
                     <Image
                         src={FooterContent.Footer.desktopLogoImage}
-                        width={50}
-                        height={50}
+                        width={250}
+                        height={150}
                         alt={FooterContent.Footer.desktopLogoAlt}
                     />
                 </div>
