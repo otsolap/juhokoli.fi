@@ -30,39 +30,41 @@ const Newsletter = ({ newsletter }) => {
             <div className={styles.newsletterContent}>
                 <Image
                     src={newsletter.backgroundImage}
-                    layout="fill"
-                    objectFit='cover'
-                    quality={100}
-                    objectPosition="center"
                     alt={newsletter.title}
                     className={styles.newsletterBGImg}
+                    quality={100}
+                    layout="fill"
+                    objectFit='cover'
+                    objectPosition="center"
                 />
-                <div className={styles.content}>
-                    <Image
-                        src={newsletter.logo}
-                        alt={newsletter.title}
-                        height={175}
-                        width={165}
-                        quality={100}
-                    />
-                    <h2>{newsletter.title}</h2>
-                    <p>{newsletter.description}</p>
-                    <div className={styles.formContainer}>
-                        <form className="newsletterForm" onSubmit={registerNewsletter}>
-                            <input
-                                placeholder="Sähköposti* "
-                                id="newsletterEmail"
-                                name="newsletterEmail"
-                                type="email"
-                                autoComplete="email"
-                                required
-                            />
-                            <button
-                                className={`btn`}
-                                type="submit">
-                                {newsletter.cta}
-                            </button>
-                        </form>
+                <div className="container">
+                    <div className={styles.content}>
+                        <Image
+                            src={newsletter.logo}
+                            alt={newsletter.title}
+                            height={175}
+                            width={165}
+                            quality={100}
+                        />
+                        <h2>{newsletter.title}</h2>
+                        <p>{newsletter.description}</p>
+                        <div className={styles.formContainer}>
+                            <form className="newsletterForm" onSubmit={registerNewsletter}>
+                                <input
+                                    placeholder="Sähköposti* "
+                                    id="newsletterEmail"
+                                    name="newsletterEmail"
+                                    type="email"
+                                    autoComplete="email"
+                                    required
+                                />
+                                <button
+                                    className={`btn`}
+                                    type="submit">
+                                    {newsletter.cta}
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

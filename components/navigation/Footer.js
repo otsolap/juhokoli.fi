@@ -52,7 +52,7 @@ const Footer = () => {
 
     return (
         <footer id={styles.Footer}>
-            <div className={styles.footerContainer}>
+            <div className={`container ${styles.footerContainer}`}>
                 <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
                     <Image
                         src={FooterContent.Footer.desktopLogoImage}
@@ -64,22 +64,22 @@ const Footer = () => {
                 <div className={styles.footerSoMEContainer}>
                     {SoMe}
                 </div>
-                <div className={styles.footerDetailsContainer}>
-                    <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
-                    <div className={styles.footerKultakammen}>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://www.kultakammen.fi">
-                            <Image
-                                src="/images/Kultakammen_white.png"
-                                height={30}
-                                width={30}
-                                alt="Toteutuksen tehnyt Kultakammen.fi"
-                            />
-                        </a>
-                    </div>
+            </div>
+            <div className={styles.footerDetailsContainer}>
+                <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
+                <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
+                <div className={styles.footerKultakammen}>
+                    <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.kultakammen.fi">
+                        <Image
+                            src="/images/Kultakammen_white.png"
+                            height={30}
+                            width={30}
+                            alt="Toteutuksen tehnyt Kultakammen.fi"
+                        />
+                    </a>
                 </div>
             </div>
         </footer>

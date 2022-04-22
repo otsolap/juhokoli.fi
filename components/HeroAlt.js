@@ -4,7 +4,7 @@ import Image from 'next/image'
 const HeroAlt = ({ hero }) => {
     return (
         <section id="hero">
-            <div className="image-container">
+            <div className={styles.imageContainer}>
                 <div className="desktop-only">
                     <Image
                         src={hero.DesktopHeroImage}

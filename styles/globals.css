@@ -13,14 +13,13 @@ body,
 #root {
 	@apply h-full;
 	@apply w-full;
-	@apply max-w-screen-3xl;
-	@apply mx-auto; 
 	font-family: 'Montserrat', sans-serif;
 	@apply text-black;
 }
 
 main {
 	@apply relative;
+	@apply mx-auto; 
 }
 
 

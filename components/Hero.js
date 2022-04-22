@@ -4,16 +4,17 @@ import Image from 'next/image'
 const Hero = ({ hero }) => {
     return (
         <section id="hero">
-            <div className="image-container">
+            <div className={styles.imageContainer}>
                 <div className="desktop-only">
-                    <Image
-                        src={hero.DesktopHeroImage}
-                        alt={hero.heroTitle}
-                        height={658}
-                        width={1440}
-                        quality={100}
-                        layout="responsive"
-                    />
+                    <div style={{ position: 'relative', width: '100%', height: '658px' }}>
+                        <Image
+                            src={hero.DesktopHeroImage}
+                            alt={hero.heroTitle}
+                            layout="fill"
+                            objectFit='cover'
+                            objectPosition='center'
+                        />
+                    </div>
                 </div>
                 <div className={`mobile-only ${styles.mobileHero}`}>
                     <Image
