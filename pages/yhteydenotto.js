@@ -1,5 +1,5 @@
 import ContactDetails from "@components/contactPage/ContactDetails"
-import ContactForm from "@components/contactPage/contactForm"
+import ContactForm from "@components/contactPage/ContactForm"
 import Meta from "@components/Meta"
 import styles from '../styles/Contact.module.css'
 
