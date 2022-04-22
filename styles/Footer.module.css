@@ -2,6 +2,7 @@
     @apply pb-20;
     @apply bg-primary;
     @apply text-white;
+    @apply lg:pb-0;
 }
 
 .footerSoMEContainer {
@@ -11,18 +12,25 @@
     @apply justify-evenly;
     @apply mx-single;
     @apply lg:max-w-[50%];
+    @apply lg:items-center;
+    @apply lg:ml-triple;
 }
 
 .someIcons {
     @apply text-3xl;
+    @apply lg:text-4xl;
+    @apply lg:px-single;
 }
 
 .footerDetailsContainer {
     @apply flex;
     @apply justify-center;
     @apply py-single;
+    @apply lg:w-full;
+    @apply lg:justify-start;
+    @apply lg:border-t-2;
+    @apply lg:border-white;
 }
-
 
 .detailsTxt {
     @apply px-1;
@@ -33,6 +41,8 @@
 
 .footerKultakammen {
     @apply ml-2;
+    @apply lg:ml-auto;
+    @apply lg:mr-double;
 }
 
 
