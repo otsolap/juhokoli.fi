@@ -77,10 +77,10 @@ a {
 
 .mobile-only {
 	@apply block; 
-	@apply md:hidden;
+	@apply lg:hidden;
 }
 
 .desktop-only {
 	@apply hidden; 
-	@apply md:block;
+	@apply lg:block;
 }

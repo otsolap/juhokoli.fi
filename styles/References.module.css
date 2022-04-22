@@ -13,15 +13,16 @@
     @apply md:py-double;
 }
 
+.Hello {
+    background-color: green;
+}
+
 .referenceBuble {
     @apply before:w-0;
     @apply before:h-0;
     @apply before:absolute;
     @apply before:bottom-full;
     @apply before:border-8;
-    @apply before:border-x-transparent;
-    @apply before:border-t-transparent;
-    @apply before:border-b-white;
     @apply relative;
     @apply text-left;
     @apply bg-white;
@@ -34,11 +35,28 @@
     @apply flex-col;
     @apply md:mx-auto;
     @apply md:w-2/4;
+    @apply md:before:bottom-1/2
+}
+
+.referenceBuble.even {
+    @apply before:border-x-transparent;
+    @apply before:border-t-transparent;
+    @apply before:border-b-white;
     @apply md:before:border-y-transparent;
     @apply md:before:border-l-transparent;
     @apply md:before:border-r-white;
+    @apply md:before:-left-single;
 }
 
+.referenceBuble.odd {
+    @apply before:border-x-transparent;
+    @apply before:border-t-transparent;
+    @apply before:border-b-white;
+    @apply md:before:border-y-transparent;
+    @apply md:before:border-r-transparent;
+    @apply md:before:border-l-white;
+    @apply md:before:-right-single;
+}
 
 
 .referee {
