@@ -6,13 +6,16 @@ const HeroAlt = ({ hero }) => {
         <section id="hero">
             <div className={styles.altImageContainer}>
                 <div className="desktop-only">
-                    <Image
-                        src={hero.DesktopHeroImage}
-                        alt={hero.heroTitle}
-                        width={150}
-                        height={150}
-                        quality={100}
-                    />
+                    <div style={{ position: 'relative', width: '100%', height: '658px' }}>
+                        <Image
+                            src={hero.DesktopHeroImage}
+                            alt={hero.heroTitle}
+                            layout="fill"
+                            objectFit='cover'
+                            objectPosition='center'
+                            quality={100}
+                        />
+                    </div>
                 </div>
                 <div className={`mobile-only ${styles.mobileHero}`}>
                     <Image

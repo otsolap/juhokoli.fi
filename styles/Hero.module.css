@@ -40,7 +40,7 @@
 	@apply text-white;
 	@apply lg:absolute;
 	@apply lg:top-[4%];
-	@apply lg:left-[23%];
+	@apply lg:left-1/4;
 }
 
 .mobileHero {
@@ -85,4 +85,6 @@
 	@apply text-white;
 	@apply text-4xl;
 	@apply font-bold;
+	@apply lg:text-[80px];
+	@apply lg:left-1/4
 }

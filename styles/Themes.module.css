@@ -47,21 +47,45 @@
 *
 **********/
 
-.themeSection {
+.themeBlockSection {
     @apply py-single;
+    @apply lg:flex;
+    @apply lg:py-double;
+    @apply lg:mt-triple;
 }
 
-.content.altTitle h2 {
+.blockContent {
+    @apply lg:flex;
+    @apply lg:flex-row-reverse;
+}
+
+.odd .blockContent {
+    @apply lg:flex-row
+}
+
+.blockContent h2 {
     @apply text-black;
 }
 
-.altImageContainer {
+.themeBlockImageContainer {
     @apply border;
     @apply border-transparent;
-    @apply -m-single;
     @apply py-double;
+    @apply lg:m-auto;
+    @apply lg:flex-[50%];
+    @apply lg:max-w-[50%]; 
 }
 
 .altImageContainer img {
     @apply rounded-md;
+}
+
+.themeDescriptionContainer {
+    @apply lg:mx-auto;
+    @apply lg:flex-[50%];
+    @apply lg:max-w-[50%]; 
+}
+
+.themeDescriptionContainer p {
+    @apply lg:p-single;
 }

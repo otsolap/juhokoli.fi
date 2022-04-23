@@ -32,6 +32,11 @@
     @apply lg:border-white;
 }
 
+.DetailsDesktopContainer {
+    @apply lg:flex;
+    @apply lg:justify-start;
+}
+
 .detailsTxt {
     @apply px-1;
     @apply mx-1;
@@ -41,8 +46,8 @@
 
 .footerKultakammen {
     @apply ml-2;
-    @apply lg:ml-auto;
-    @apply lg:mr-double;
+    @apply lg:ml-0;
+    @apply lg:mr-double; 
 }
 
 

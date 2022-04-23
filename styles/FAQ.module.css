@@ -1,5 +1,8 @@
 #faqSection {
     @apply py-double;
+    @apply lg:flex;
+    @apply lg:flex-row;
+    @apply lg:flex-wrap;
 }
 
 .container {

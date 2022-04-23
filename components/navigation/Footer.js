@@ -66,8 +66,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footerDetailsContainer}>
-                <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
+                <div className={`inline-flex lg:flex lg:container ${styles.DetailsDesktopContainer}`}>
+                    <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
+                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
+                </div>
                 <div className={styles.footerKultakammen}>
                     <a
                         rel="noreferrer"
