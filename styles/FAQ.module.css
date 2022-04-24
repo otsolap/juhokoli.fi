@@ -1,8 +1,9 @@
 #faqSection {
     @apply py-double;
+}
+
+.faqSectionContainer {
     @apply lg:flex;
-    @apply lg:flex-row;
-    @apply lg:justify-center;
 }
 
 .profilePic {
