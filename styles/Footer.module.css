@@ -11,7 +11,7 @@
     @apply flex;
     @apply justify-evenly;
     @apply mx-single;
-    @apply lg:max-w-[50%];
+    @apply lg:max-w-half;
     @apply lg:items-center;
     @apply lg:ml-triple;
 }
@@ -109,6 +109,6 @@
 
 .footerDesktopLogoContainer {
     @apply lg:p-double;
-    @apply lg:max-w-[50%];
+    @apply lg:max-w-half;
     @apply lg:flex-half;
 }

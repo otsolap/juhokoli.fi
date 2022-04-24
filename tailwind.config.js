@@ -34,6 +34,9 @@ module.exports = {
       flex: {
         half: '0 0 50%'
       },
+      maxWidth: {
+        half: '50%',
+      },
       content: {
         'heart': 'url("/images/sydan.png")'
       },

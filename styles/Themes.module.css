@@ -20,7 +20,7 @@
 
 .themeItem {
     @apply lg:flex-half;
-    @apply lg:max-w-[50%]; 
+    @apply lg:max-w-half;
     @apply lg:p-double;
 }
 
@@ -73,7 +73,7 @@
     @apply py-double;
     @apply lg:m-auto;
     @apply lg:flex-half;
-    @apply lg:max-w-[50%]; 
+    @apply lg:max-w-half;
 }
 
 .altImageContainer img {
@@ -83,7 +83,7 @@
 .themeDescriptionContainer {
     @apply lg:mx-auto;
     @apply lg:flex-half;
-    @apply lg:max-w-[50%]; 
+    @apply lg:max-w-half;
 }
 
 .themeDescriptionContainer p {

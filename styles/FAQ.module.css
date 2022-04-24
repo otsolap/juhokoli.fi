@@ -8,7 +8,7 @@
 }
 
 .profilePic {
-    @apply lg:max-w-[50%];
+    @apply lg:max-w-half;
     @apply lg:flex-half;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .FAQ_container {
-    @apply lg:max-w-[50%];
+    @apply lg:max-w-half;
     @apply lg:flex-half;
     @apply lg:flex;
     @apply lg:flex-col;
