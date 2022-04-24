@@ -4,7 +4,7 @@
 
 .imageContainer {
     @apply w-40;
-    @apply lg:mx-auto;
+    @apply mx-auto;
 }
 
 .referenceItem {
