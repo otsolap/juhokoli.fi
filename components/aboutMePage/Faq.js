@@ -8,7 +8,7 @@ const Faq = ({ faq }) => {
 
     return (
         <section id={styles.faqSection}>
-            <div className="desktop-only">
+            <div className={`desktop-only ${styles.profilePic}`}>
                 <Image
                     src={faq.faqProfilePicture}
                     alt={faq.faqProfilePictureAlt}

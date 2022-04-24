@@ -2,7 +2,12 @@
     @apply py-double;
     @apply lg:flex;
     @apply lg:flex-row;
-    @apply lg:flex-wrap;
+    @apply lg:justify-center;
+}
+
+.profilePic {
+    @apply lg:max-w-[50%];
+    @apply lg:flex-half;
 }
 
 .container {
@@ -14,6 +19,15 @@
     @apply border-2;
     @apply border-black;
     @apply rounded-md;
+}
+
+.FAQ_container {
+    @apply lg:max-w-[50%];
+    @apply lg:flex-half;
+    @apply lg:flex;
+    @apply lg:flex-col;
+    @apply lg:justify-start;
+    @apply lg:flex-half;
 }
 
 .faq {

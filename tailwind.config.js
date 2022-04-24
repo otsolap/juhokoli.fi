@@ -31,6 +31,9 @@ module.exports = {
       container: {
         center: true
       },
+      flex: {
+        half: '0 0 50%'
+      },
       content: {
         'heart': 'url("/images/sydan.png")'
       },

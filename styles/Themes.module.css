@@ -19,7 +19,7 @@
 /* Theme Item */
 
 .themeItem {
-    @apply lg:flex-[50%];
+    @apply lg:flex-half;
     @apply lg:max-w-[50%]; 
     @apply lg:p-double;
 }
@@ -72,7 +72,7 @@
     @apply border-transparent;
     @apply py-double;
     @apply lg:m-auto;
-    @apply lg:flex-[50%];
+    @apply lg:flex-half;
     @apply lg:max-w-[50%]; 
 }
 
@@ -82,7 +82,7 @@
 
 .themeDescriptionContainer {
     @apply lg:mx-auto;
-    @apply lg:flex-[50%];
+    @apply lg:flex-half;
     @apply lg:max-w-[50%]; 
 }
 

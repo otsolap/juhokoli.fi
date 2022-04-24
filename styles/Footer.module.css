@@ -110,4 +110,5 @@
 .footerDesktopLogoContainer {
     @apply lg:p-double;
     @apply lg:max-w-[50%];
+    @apply lg:flex-half;
 }
