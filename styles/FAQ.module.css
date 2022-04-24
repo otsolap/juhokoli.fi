@@ -1,5 +1,6 @@
 #faqSection {
-    @apply py-double;
+    @apply pb-single;
+    @apply lg:py-double;
 }
 
 .faqSectionContainer {
