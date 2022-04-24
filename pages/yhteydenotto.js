@@ -8,8 +8,10 @@ const Contact = ({ meta, contact }) => {
         <>
             <Meta meta={meta} />
             <main id={styles.contactPage}>
-                <ContactDetails contact={contact} />
-                <ContactForm contact={contact} />
+                <div className={`container ${styles.contactPageContainer}`}>
+                    <ContactDetails contact={contact} />
+                    <ContactForm contact={contact} />
+                </div>
             </main>
         </>
     )
