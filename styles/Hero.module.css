@@ -43,11 +43,6 @@
 	@apply lg:left-1/4;
 }
 
-.mobileHero {
-	@apply h-[270px];
-	@apply lg:hidden;
-}
-
 .content {
 	@apply p-single;
 	@apply lg:max-w-md;

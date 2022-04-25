@@ -16,12 +16,15 @@ const Hero = ({ hero }) => {
                     />
                 </div>
             </div>
-            <div className={`mobile-only ${styles.mobileHero}`}>
+            <div
+                style={{ position: 'relative', width: '100%', height: '270px' }}
+                className="mobile-only">
                 <Image
                     src={hero.MobileHeroImage}
                     alt={hero.heroTitle}
-                    height={270}
-                    width={390}
+                    layout="fill"
+                    objectFit='cover'
+                    objectPosition='center'
                     quality={100}
                 />
             </div>
