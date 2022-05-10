@@ -18,7 +18,7 @@ const HeroAlt = ({ hero }) => {
                     </div>
                 </div>
                 <div
-                    style={{ position: 'relative', width: '100%', height: '270px' }}
+                    style={{ position: 'relative', width: '100%', height: '390px' }}
                     className="mobile-only">
                     <Image
                         src={hero.MobileHeroImage}

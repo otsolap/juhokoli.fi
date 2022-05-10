@@ -81,5 +81,5 @@
 	@apply text-4xl;
 	@apply font-bold;
 	@apply lg:text-[80px];
-	@apply lg:left-1/4
+	@apply lg:left-[23%];
 }
