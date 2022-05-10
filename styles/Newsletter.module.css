@@ -20,12 +20,13 @@
 	@apply text-white;
 	@apply relative;
 	@apply z-10;
-	@apply mx-6;
+	@apply mx-10;
 	@apply lg:max-w-md;
 }
 
 .content h2 {
 	@apply my-single mx-0;
+	@apply lg:text-4xl;
 }
 
 .formContainer {

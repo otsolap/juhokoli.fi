@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footerDetailsContainer}>
-                <div className={`inline-flex lg:flex lg:container ${styles.DetailsDesktopContainer}`}>
+                <div className={`inline-flex lg:flex lg:container lg:w-1/2 ${styles.DetailsDesktopContainer}`}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
                     <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                 </div>
