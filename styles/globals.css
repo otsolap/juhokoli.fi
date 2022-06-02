@@ -2,30 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--primary: #0525e2;
+	--black: #211f1b;
+	--aquamarine: #69dee3;
+	--white: #ffffff;
+	--grey: #f2f2f2;
+	--single: 1rem;
+	--double: 2rem;
+	--triple: 3rem;
+}
+
 * {
-	@apply m-0;
-	@apply p-0;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
 html,
 body,
 #root {
-	@apply h-full;
-	@apply w-full;
+	height: auto;
+	width: 100%;
 	font-family: 'Montserrat', sans-serif;
-	@apply text-black;
+	color: var(--black)
 }
 
 main {
-	@apply relative;
-	@apply mx-auto; 
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
 
 .btn {
-	@apply bg-primary; 
-	@apply text-white;
+	background-color: var(--primary);
+	color: var(--white);
 	@apply font-bold; 
 	@apply transition; 
 	@apply ease-in-out; 

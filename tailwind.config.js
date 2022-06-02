@@ -28,9 +28,6 @@ module.exports = {
         triple: '3rem',
         14: '3.5rem',
       },
-      container: {
-        center: true
-      },
       flex: {
         half: '0 0 50%'
       },
