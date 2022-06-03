@@ -1,64 +1,85 @@
 .header {
-	@apply bg-primary; 
-	@apply text-white; 
-	@apply flex; 
-	@apply min-h-[80px]; 
-	@apply items-center; 
-	@apply justify-center; 
-	@apply sticky; 
-	@apply top-0; 
-	@apply z-[9000]; 
-	@apply lg:relative; 
-	@apply lg:max-h-[999px]; 
-	@apply lg:py-4;
-	@apply lg:justify-evenly;
+	background-color: var(--primary);
+	color: var(--white);
+	display: flex;
+	min-height: 80px;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	z-index: 200; 
 }
 
 .logo {
-	@apply text-[2rem];
-	@apply lg:text-4xl;
-	@apply lg:pl-14;
-	@apply lg:text-center;
+	font-size: var(--double);
 }
 
 .header a {
-	@apply px-1.5; 
-	@apply mx-1.5; 
-	@apply hover:underline; 
-	@apply hover:decoration-aquamarine;
-	@apply hover:underline-offset-2;
-	@apply decoration-[30%];
+	padding-left: 0.375rem;
+    padding-right: 0.375rem;
+	margin-left: 0.375rem;
+    margin-right: 0.375rem;
+	text-decoration-thickness: 30%;
+}
+
+.header a:hover,
+.header a:focus {
+	text-decoration-line: underline;
+	text-decoration-color: var(--aquamarine);
+	text-underline-offset: 2px;
 }
 
 a.noDecoration {
-	@apply ml-single;
-	@apply hover:no-underline;
-	@apply hover:text-white;
-	@apply hover:decoration-transparent;
+	margin-left: var(--single);
+}
+
+a.noDecoration {
+	text-decoration-line: none;
+	color: var(--white);
+	text-decoration-color: transparent;
 }
 
 .active {
-	@apply underline; 
-	@apply decoration-aquamarine; 
-	@apply underline-offset-2;
-	@apply decoration-2;
+	text-decoration-line: underline;
+	text-decoration-color: var(--aquamarine);
+	text-underline-offset: 2px;
+	text-decoration-thickness: 2px;
 }
 
 .logoContainer {
-	@apply flex; 
-	@apply justify-between; 
-	@apply w-full; 
-	@apply lg:block; 
-	@apply lg:w-full;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .mobileLogo {
-	@apply h-[50px];
-	@apply mr-double;
+	height: 50px;
+	margin-right: var(--double);
 }
 
 /* DESKTOP STYLES */
+@media (min-width: 1024px) {
+	.header {
+		position: relative;
+		max-height: 999px;
+		padding-top: var(--single);
+		padding-bottom: var(--single);
+		justify-content: space-evenly;
+	}
 
-.desktopLinks {
-	@apply w-full;
+	.logo {
+		font-size: 2.25rem;
+        line-height: 2.5rem;
+		padding-left: 3.5rem;
+		text-align: center;
+	}
+
+	.logoContainer {
+		display: block;
+		width: 100%;
+	}
+
+	.desktopLinks {
+		width: 100%;
+	}
 }
