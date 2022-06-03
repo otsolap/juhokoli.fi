@@ -1,114 +1,144 @@
 #Footer {
-    @apply pb-20;
-    @apply bg-primary;
-    @apply text-white;
-    @apply lg:pb-0;
+    padding-bottom: 5rem;
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .footerSoMEContainer {
-    @apply pt-double;
-    @apply pb-single;
-    @apply flex;
-    @apply justify-evenly;
-    @apply mx-single;
-    @apply lg:max-w-half;
-    @apply lg:items-center;
-    @apply lg:ml-triple;
+    padding-top: var(--double);
+    padding-bottom: var(--single);
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: var(--single);
+    margin-right: var(--single);
 }
 
 .someIcons {
-    @apply text-3xl;
-    @apply lg:text-4xl;
-    @apply lg:px-single;
+    font-size: 1.875rem/* 30px */;
+    line-height: 2.25rem/* 36px */;
 }
 
 .footerDetailsContainer {
-    @apply flex;
-    @apply justify-center;
-    @apply py-single;
-    @apply lg:w-full;
-    @apply lg:justify-start;
-    @apply lg:border-t-2;
-    @apply lg:border-white;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--single);
+    padding-bottom: var(--single);
 }
 
-.DetailsDesktopContainer {
-    @apply lg:flex;
-    @apply lg:justify-start;
-}
 
 .detailsTxt {
-    @apply px-1;
-    @apply mx-1;
-    @apply after:content-['|'];
-    @apply after:ml-1;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.detailsTxt::after {
+    content:'|';
+    margin-left: .25rem;
 }
 
 .footerKultakammen {
-    @apply ml-2;
-    @apply lg:ml-0;
-    @apply lg:mr-double; 
+    margin-left: .5rem;
 }
 
 
 .MobileFooterBar {
-    @apply bg-primary;
-    @apply border;
-    @apply border-t-white;
-    @apply border-x-transparent;
-    @apply border-b-transparent;
-    @apply fixed;
-    @apply bottom-0;
-    @apply left-0;
-    @apply h-[4.5rem];
-    @apply w-full;
-    @apply z-50;
-    @apply text-center;
+    background-color: var(--primary);
+    border-width: 1px;
+    border-top-color: var(--white);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
 }
 
 .mobileMenuWrapper {
-    @apply flex;
-    @apply flex-row;
-    @apply flex-wrap;
-    @apply justify-center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .mobileMenuWrapper a {
-    @apply text-white;
-    @apply relative;
-    @apply w-20;
-    @apply h-16;
-    @apply text-center;
-    @apply z-10;
-    @apply cursor-pointer;
+    color: var(--white);
+    position: relative;
+    width: 5rem;
+    height: 4rem;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
     flex: 0 0 calc(100% / 4);
     max-width: calc(100% / 4);
 }
 
 .mobileIcon {
-    @apply mt-3;
-    @apply text-3xl;
+    margin-top: 0.75rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
 .mobileLinkText {
-    @apply flex;
-    @apply justify-center;
-    @apply pt-2;
-    @apply w-full;
-    @apply text-xs;
-    @apply leading-relaxed;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.625;
 }
 
-/** DESKTOP STYLES **/
+/* DESKTOP STYLES */
+@media (min-width: 1024px) {
 
-.footerContainer {
-    @apply lg:flex;
-    @apply lg:flex-wrap;
-    @apply lg:flex-row;
-}
+    #Footer {
+        padding-bottom: 0;
+    }
 
-.footerDesktopLogoContainer {
-    @apply lg:p-double;
-    @apply lg:max-w-half;
-    @apply lg:flex-half;
+    .footerSoMEContainer {
+        max-width: 50%;
+        align-items: center;
+        margin-left: var(--triple);
+    }
+
+    .someIcons {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        padding-left: var(--single);
+        padding-right: var(--single);
+    }
+
+    .footerDetailsContainer {
+        width: 100%;
+        justify-content: flex-start;
+        border-top-width: 2px;
+        border-color: var(--white);
+    }
+
+    .DetailsDesktopContainer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footerKultakammen {
+        margin-left: 0;
+        margin-right: var(--double);
+    }
+    
+    .footerContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .footerDesktopLogoContainer {
+        padding: var(--double);
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
 }
