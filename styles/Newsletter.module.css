@@ -1,16 +1,13 @@
 .newsletterContent {
-	@apply relative;
-	@apply w-full;
+	position: relative;
+	width: 100%;
 }
 
 .newsletterBGImg {
-	@apply absolute;
-	@apply top-0;
-	@apply left-0;
-	@apply w-full;
-	@apply right-0;
-	@apply bottom-0;
-	@apply object-cover; 
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	object-fit: cover;
 	height: 500px;
 	object-position: center;
   }
@@ -41,4 +38,8 @@
 	@apply border;
 	@apply rounded;
 	@apply pl-single;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1024px) {
 }
