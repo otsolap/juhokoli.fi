@@ -9,53 +9,39 @@
     margin-right: auto;
 }
 
-.referenceItem {
-    @apply lg:flex;
-    @apply even:lg:flex-row-reverse;
-    @apply lg:py-double;
+.referenceItem:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .referenceBuble {
-    @apply before:w-0;
-    @apply before:h-0;
-    @apply before:absolute;
-    @apply before:bottom-full;
-    @apply before:border-8;
-    @apply relative;
-    @apply text-left;
-    @apply bg-white;
-    @apply rounded-xl;
-    @apply flex;
-    @apply justify-start;
-    @apply items-center;
-    @apply m-single;
-    @apply p-single;
-    @apply flex-col;
-    @apply lg:mx-auto;
-    @apply lg:w-2/4;
-    @apply lg:before:bottom-1/2
+    position: relative; 
+    text-align: left;
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: var(--single);
+    padding: var(--single);
+    flex-direction: column;
 }
 
-.referenceBuble.even {
-    @apply before:border-x-transparent;
-    @apply before:border-t-transparent;
-    @apply before:border-b-white;
-    @apply lg:before:border-y-transparent;
-    @apply lg:before:border-l-transparent;
-    @apply lg:before:border-r-white;
-    @apply lg:before:-left-single;
+.referenceBuble::before {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 100%;
+    border-width: 8px;
 }
 
-.referenceBuble.odd {
-    @apply before:border-x-transparent;
-    @apply before:border-t-transparent;
-    @apply before:border-b-white;
-    @apply lg:before:border-y-transparent;
-    @apply lg:before:border-r-transparent;
-    @apply lg:before:border-l-white;
-    @apply lg:before:-right-single;
+.referenceBuble.even::before,
+.referenceBuble.odd::before {
+    content: "";
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: var(--white);
 }
-
 
 .referee {
     font-weight: 700;
@@ -65,15 +51,49 @@
 }
 
 .refereeWorkTitle {
-    @apply after:content-heart;
-    @apply after:ml-10;
-    @apply -mt-8;
+    margin-top: -2rem;
     text-align: left;
     width: 100%;
-    
+}
+
+.refereeWorkTitle::after {
+    content: url("/images/sydan.png");
+    margin-left: 2.5rem;
 }
 
 /* DESKTOP STYLES */
 @media (min-width: 1024px) {
 
+    .referenceItem {
+        padding-top: var(--double);
+        padding-bottom: var(--double);
+        display: flex;
+    }
+
+    .referenceBuble {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .referenceBuble:before {
+        bottom: 50%;
+    }
+
+    .referenceBuble.even::before {
+        left: -1rem;
+        border-left-color: transparent;
+        border-right-color: var(--white);
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .referenceBuble.odd::before {
+        right: -1rem;
+        border-left-color: var(--white);
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+    
 }
