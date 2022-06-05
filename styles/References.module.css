@@ -1,20 +1,18 @@
 #referenceSection {
-    @apply py-single;
+    padding-top: var(--single);
+    padding-bottom: var(--single);
 }
 
 .imageContainer {
-    @apply w-40;
-    @apply mx-auto;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .referenceItem {
     @apply lg:flex;
     @apply even:lg:flex-row-reverse;
     @apply lg:py-double;
-}
-
-.Hello {
-    background-color: green;
 }
 
 .referenceBuble {
@@ -60,16 +58,22 @@
 
 
 .referee {
-    @apply font-bold;
-    @apply text-left;
-    @apply w-full;
-    @apply pt-double;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    padding-top: var(--double);
 }
 
 .refereeWorkTitle {
-    @apply text-left;
-    @apply w-full;
     @apply after:content-heart;
     @apply after:ml-10;
     @apply -mt-8;
+    text-align: left;
+    width: 100%;
+    
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1024px) {
+
 }
