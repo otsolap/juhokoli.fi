@@ -1,4 +1,5 @@
 @import "partials/mixins";
+@import "partials/variables";
 
 #faqSection {
     padding-bottom: var(--single);
@@ -11,7 +12,7 @@
 .content {
     width: 100%;
     @include border(2px solid);
-    border-color: var(--black);
+    border-color: $black;
     @include border-radius(.375rem);
 }
 
@@ -19,7 +20,7 @@
     text-align: left;
     width: 100%;
     @include border(1px solid);
-    border-color: var(--black); 
+    border-color: $black; 
     min-height: 10px;
 }
 
@@ -65,7 +66,7 @@
     max-height: 0;
     overflow: hidden;
     background-color: var(--white);
-    color: var(--black);
+    color: $black;
     margin-left: .5rem;
     margin-right: .5rem;
 }

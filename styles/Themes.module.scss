@@ -1,4 +1,5 @@
 @import "partials/mixins";
+@import "partials/variables";
 
 /********
 *
@@ -9,8 +10,8 @@
 
 /* Theme List && Item */
 .themesSection {
-    padding-top: var(--triple);
-    padding-bottom: var(--triple);
+    padding-top: $triple;
+    padding-bottom: $triple;
 }
 
 .themesContainer {

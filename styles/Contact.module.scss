@@ -1,4 +1,5 @@
 @import "partials/mixins";
+@import "partials/variables";
 /*
 *
 *  Page
@@ -14,13 +15,13 @@
 /*** Details **/
 
 .detailsSection {
-    padding-top: var(--single);
+    padding-top: $single;
 }
 
 .container {
-    padding-right: var(--single);
-    padding-left: var(--single);
-    padding-top: var(--single);
+    padding-right: $single;
+    padding-left: $single;
+    padding-top: $single;
 
     h1 {
         font-weight: 700;
@@ -32,12 +33,12 @@
 
 
 .someIconContainer {
-    padding-top: var(--single);
-    padding-bottom: var(--single);
+    padding-top: $single;
+    padding-bottom: $single;
 }
 
 .someContent {
-        @include display-flex;
+    @include display-flex;
     @include flex-direction(column);
     justify-content: center;
     align-items: flex-start;
@@ -47,7 +48,7 @@
 .someIcon {
     font-size: 1.875rem;
     line-height: 2.25rem;
-    color: var(--primary);
+    color: $primary;
 }
 
 .someText {
@@ -57,14 +58,14 @@
 /*** Form **/
 
 #formSection {
-    padding-bottom: var(--single);
+    padding-bottom: $single;
 }
 
 .formContainer {
-        @include display-flex;
+    @include display-flex;
     @include flex-direction(column);
     justify-content: center;
-    padding: var(--single);
+    padding: $single;
 }
 
 .formControl {
@@ -81,7 +82,7 @@
 }
 
 .newsletterControl {
-        @include display-flex;
+    @include display-flex;
     align-items:center; 
 }
 
@@ -96,19 +97,19 @@
 .formControl textarea,
 .formControl input {
     margin-top: 0.5rem;
-    margin-bottom: var(--double);
+    margin-bottom: $double;
     @include border(1px solid);
-    border-color: var(--black);
+    border-color: $black;
     @include border-radius(.25rem);
     padding-left: 1rem;
-    background-color: var(--grey);
-    color: var(--black);
+    background-color: $grey;
+    color: $black;
     width: 100%;
 }
 
 .formControl textarea {
     height: 7rem;
-    padding-top: var(--single);
+    padding-top: $single;
 }
 
 .formControl input {

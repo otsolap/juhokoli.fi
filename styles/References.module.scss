@@ -1,8 +1,9 @@
 @import "partials/mixins";
+@import "partials/variables";
 
 #referenceSection {
-    padding-top: var(--single);
-    padding-bottom: var(--single);
+    padding-top: $single;
+    padding-bottom: $single;
 }
 
 .imageContainer {
@@ -18,13 +19,13 @@
 .referenceBuble {
     position: relative; 
     text-align: left;
-    background-color: var(--white);
+    background-color: $white;
     @include border-radius(.75rem);
     @include display-flex;
     justify-content: flex-start;
     align-items: center;
-    margin: var(--single);
-    padding: var(--single);
+    margin: $single;
+    padding: $single;
     @include flex-direction(column);
 
     &::before {
@@ -43,14 +44,14 @@
     border-left-color: transparent;
     border-right-color: transparent;
     border-top-color: transparent;
-    border-bottom-color: var(--white);
+    border-bottom-color: $white;
 }
 
 .referee {
     font-weight: 700;
     text-align: left;
     width: 100%;
-    padding-top: var(--double);
+    padding-top: $double;
 }
 
 .refereeWorkTitle {
@@ -68,9 +69,9 @@
 @media (min-width: 1024px) {
 
     .referenceItem {
-        padding-top: var(--double);
-        padding-bottom: var(--double);
-          @include display-flex;
+        padding-top: $double;
+        padding-bottom: $double;
+        @include display-flex;
     }
 
     .referenceBuble {
@@ -86,14 +87,14 @@
     .referenceBuble.even::before {
         left: -1rem;
         border-left-color: transparent;
-        border-right-color: var(--white);
+        border-right-color: $white;
         border-top-color: transparent;
         border-bottom-color: transparent;
     }
 
     .referenceBuble.odd::before {
         right: -1rem;
-        border-left-color: var(--white);
+        border-left-color: $white;
         border-right-color: transparent;
         border-top-color: transparent;
         border-bottom-color: transparent;

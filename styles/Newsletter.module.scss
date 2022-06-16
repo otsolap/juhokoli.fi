@@ -1,4 +1,5 @@
 @import "partials/mixins";
+@import "partials/variables";
 
 .newsletterContent {
 	position: relative;
@@ -15,17 +16,17 @@
   }
 
 .content {
-	padding-top: var(--double);
-    padding-bottom: var(--double);
-	color: var(--white);
+	padding-top: $double;
+    padding-bottom: $double;
+	color: $white;
 	position: relative;
 	z-index: 10;
 	margin-left: 2.5rem;
     margin-right: 2.5rem;
 
 	h2 {
-		margin-top: var(--single);
-		margin-bottom: var(--single);
+		margin-top: $single;
+		margin-bottom: $single;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
@@ -33,17 +34,17 @@
 
 
 .formContainer {
-	margin-top: var(--single);
-    margin-bottom: var(--single);
+	margin-top: $single;
+    margin-bottom: $single;
 
 	input {
 		height: 3.5rem;
 		width: 100%;
 		margin-top: 0.5rem;
-		margin-bottom: var(--double);
+		margin-bottom: $double;
 		@include border(1px solid);
 		@include border-radius(.25rem);
-		padding-left: var(--single);
+		padding-left: $single;
 	}
 	
 }

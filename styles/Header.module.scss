@@ -1,9 +1,10 @@
 @import "partials/mixins";
+@import "partials/variables";
 
 .header {
-	background-color: var(--primary);
-	color: var(--white);
-	  @include display-flex;
+	background-color: $primary;
+	color: $white;
+	@include display-flex;
 	min-height: 80px;
 	align-items: center;
 	justify-content: center;
@@ -21,30 +22,30 @@
 		&:hover,
 		&:focus {
 		text-decoration-line: underline;
-		text-decoration-color: var(--aquamarine);
+		text-decoration-color: $aquamarine;
 		text-underline-offset: 2px;
 		}
 	}
 }
 
 .logo {
-	font-size: var(--double);
+	font-size: $double;
 }
 
 
 a.noDecoration {
-	margin-left: var(--single);
+	margin-left: $single;
 }
 
 a.noDecoration {
 	text-decoration-line: none;
-	color: var(--white);
+	color: $white;
 	text-decoration-color: transparent;
 }
 
 .active {
 	text-decoration-line: underline;
-	text-decoration-color: var(--aquamarine);
+	text-decoration-color: $aquamarine;
 	text-underline-offset: 2px;
 	text-decoration-thickness: 2px;
 }
@@ -57,7 +58,8 @@ a.noDecoration {
 
 .mobileLogo {
 	height: 50px;
-	margin-right: var(--double);
+	width: 60px;
+	margin-right: $double;
 }
 
 /* DESKTOP STYLES */
@@ -65,8 +67,8 @@ a.noDecoration {
 	.header {
 		position: relative;
 		max-height: 999px;
-		padding-top: var(--single);
-		padding-bottom: var(--single);
+		padding-top: $single;
+		padding-bottom: $single;
 		justify-content: space-evenly;
 	}
 
