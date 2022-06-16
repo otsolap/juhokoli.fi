@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Links from '@content/site.json'
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/Header.module.scss'
 
 
 const Header = () => {

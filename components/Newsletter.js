@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/Newsletter.module.css'
+import styles from '../styles/Newsletter.module.scss'
 
 const Newsletter = ({ newsletter }) => {
 

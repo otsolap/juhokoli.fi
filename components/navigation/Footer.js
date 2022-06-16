@@ -5,7 +5,7 @@ import Icons from '@content/site.json'
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from '../../styles/Footer.module.css'
+import styles from '../../styles/Footer.module.scss'
 
 const Footer = () => {
     const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
@@ -66,22 +66,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footerDetailsContainer}>
-                <div className={`inline-flex lg:flex lg:container lg:w-1/2 ${styles.DetailsDesktopContainer}`}>
+                <div className={styles.DetailsDesktopContainer}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
                     <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
-                </div>
-                <div className={styles.footerKultakammen}>
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.kultakammen.fi">
-                        <Image
-                            src="/images/Kultakammen_white.png"
-                            height={30}
-                            width={30}
-                            alt="Toteutuksen tehnyt Kultakammen.fi"
-                        />
-                    </a>
+                    <div className={styles.footerKultakammen}>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.kultakammen.fi">
+                            <Image
+                                src="/images/Kultakammen_white.png"
+                                height={30}
+                                width={30}
+                                alt="Toteutuksen tehnyt Kultakammen.fi"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

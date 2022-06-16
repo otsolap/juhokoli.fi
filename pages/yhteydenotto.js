@@ -1,7 +1,7 @@
 import ContactDetails from "@components/contactPage/ContactDetails"
 import ContactForm from "@components/contactPage/ContactForm"
 import Meta from "@components/Meta"
-import styles from '../styles/Contact.module.css'
+import styles from '../styles/Contact.module.scss'
 
 const Contact = ({ meta, contact }) => {
     return (

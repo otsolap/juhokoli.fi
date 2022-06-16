@@ -1,3 +1,5 @@
+@import "partials/mixins";
+
 #referenceSection {
     padding-top: var(--single);
     padding-bottom: var(--single);
@@ -10,29 +12,30 @@
 }
 
 .referenceItem:nth-child(even) {
-    flex-direction: row-reverse;
+    @include flex-direction(row-reverse);
 }
 
 .referenceBuble {
     position: relative; 
     text-align: left;
     background-color: var(--white);
-    border-radius: 0.75rem;
-    display: flex;
+    @include border-radius(.75rem);
+    @include display-flex;
     justify-content: flex-start;
     align-items: center;
     margin: var(--single);
     padding: var(--single);
-    flex-direction: column;
+    @include flex-direction(column);
+
+    &::before {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        bottom: 100%;
+        @include border(8px solid);
+    }
 }
 
-.referenceBuble::before {
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    bottom: 100%;
-    border-width: 8px;
-}
 
 .referenceBuble.even::before,
 .referenceBuble.odd::before {
@@ -67,7 +70,7 @@
     .referenceItem {
         padding-top: var(--double);
         padding-bottom: var(--double);
-        display: flex;
+          @include display-flex;
     }
 
     .referenceBuble {

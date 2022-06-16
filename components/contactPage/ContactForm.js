@@ -1,4 +1,4 @@
-import styles from '../../styles/Contact.module.css'
+import styles from '../../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
     const contactSubmit = (e) => {

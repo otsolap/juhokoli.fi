@@ -1,3 +1,5 @@
+@import "partials/mixins";
+
 .circleWrapper {
 	position: absolute;
 	top: 11rem;
@@ -11,7 +13,7 @@
 	height: 3.5rem;
 	width: 3.5rem;
 	margin: 0;
-	border-radius: 9999px;
+	@include border-radius(9999px);
 }
 
 .circleText {
@@ -25,7 +27,7 @@
 .textWrapper {
 	height: 100%;
 	width: 100%;
-	display: flex;
+	@include display-flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
@@ -38,22 +40,26 @@
 
 .content {
 	padding: var(--single);
+
+	h1 {
+		font-weight: 700;
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: var(--single);
+		line-height: 1.5rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	
 }
 
-.content h1 {
-	font-weight: 700;
-	font-size: 22px;
-}
 
-.content h3 {
-	font-size: var(--single);
-    line-height: 1.5rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
+
 
 .heroBTN {
-	border-width: 1px;
+	@include border(1px solid);
 	border-color: var(--white);
 	width: 80%;
 }
@@ -97,17 +103,17 @@
 
 	.content {
 		max-width: 28rem/* 448px */;
-	}
 
-	.content h1 {
-		padding-bottom: var(--double);
-		font-size: 2.25rem;
-        line-height: 2.5rem;
-	}
-
-	.content h3 {
-		font-size: 1.5rem;
-        line-height: 2rem;
+		h1 {
+			padding-bottom: var(--double);
+			font-size: 2.25rem;
+			line-height: 2.5rem;
+		}
+	
+		h3 {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
 	}
 
 	.altContainer {

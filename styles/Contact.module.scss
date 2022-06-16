@@ -1,3 +1,4 @@
+@import "partials/mixins";
 /*
 *
 *  Page
@@ -5,8 +6,8 @@
 */
 
 .contactPageContainer {
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
+    @include flex-direction(column);
     justify-content: center;
 }
 
@@ -20,14 +21,15 @@
     padding-right: var(--single);
     padding-left: var(--single);
     padding-top: var(--single);
+
+    h1 {
+        font-weight: 700;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
-.container h1 {
-    font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    padding-bottom: 1.5rem;
-}
 
 .someIconContainer {
     padding-top: var(--single);
@@ -35,8 +37,8 @@
 }
 
 .someContent {
-    display: flex;
-    flex-direction: column;
+        @include display-flex;
+    @include flex-direction(column);
     justify-content: center;
     align-items: flex-start;
     padding-top: 0.75rem;
@@ -59,8 +61,8 @@
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
+        @include display-flex;
+    @include flex-direction(column);
     justify-content: center;
     padding: var(--single);
 }
@@ -69,16 +71,17 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     width: 100%;
-}
 
-.formControl label {
-   display: block;
-   margin-bottom: 0.5rem;
-   margin-left: 0.75rem;
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-left: 0.75rem;
+     }
+
 }
 
 .newsletterControl {
-    display: flex;
+        @include display-flex;
     align-items:center; 
 }
 
@@ -94,9 +97,9 @@
 .formControl input {
     margin-top: 0.5rem;
     margin-bottom: var(--double);
-    border-width: 1px;
+    @include border(1px solid);
     border-color: var(--black);
-    border-radius: 0.25rem;
+    @include border-radius(.25rem);
     padding-left: 1rem;
     background-color: var(--grey);
     color: var(--black);
@@ -123,7 +126,7 @@
 /* DESKTOP STYLES */
 @media (min-width: 1024px) {
     .contactPageContainer {
-        flex-direction: row;
+        @include flex-direction(row);
     }
 
     .detailsSection,

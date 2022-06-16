@@ -1,3 +1,5 @@
+@import "partials/mixins";
+
 #faqSection {
     padding-bottom: var(--single);
 }
@@ -8,21 +10,21 @@
 
 .content {
     width: 100%;
-    border-width: 2px;
+    @include border(2px solid);
     border-color: var(--black);
-    border-radius: 0.375rem /* 6px */;
+    @include border-radius(.375rem);
 }
 
 .faq {
     text-align: left;
     width: 100%;
-    border-width: 1px;
+    @include border(1px solid);
     border-color: var(--black); 
     min-height: 10px;
 }
 
 .faqFlexBox {
-    display: flex;
+     @include display-flex;
     align-items: center
 }
 
@@ -36,7 +38,7 @@
 
 .faqIcon {
     background-image: none;
-    border-width: 0;
+    @include border(0px solid);
     cursor: pointer;
     margin-right: var(--single);
     margin-left: auto;
@@ -80,7 +82,7 @@
     }
 
     .faqSectionContainer {
-       display: flex;
+        @include display-flex;
     }
     
     .profilePic,
@@ -90,7 +92,7 @@
     }
 
     .FAQ_container {
-        flex-direction: column;
+        @include flex-direction(column);
         justify-content: flex-start;
     }
 }

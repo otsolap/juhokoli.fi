@@ -1,3 +1,5 @@
+@import "partials/mixins";
+
 #Footer {
     padding-bottom: 5rem;
     background-color: var(--primary);
@@ -7,7 +9,7 @@
 .footerSoMEContainer {
     padding-top: var(--double);
     padding-bottom: var(--single);
-    display: flex;
+    @include display-flex;
     justify-content: space-evenly;
     margin-left: var(--single);
     margin-right: var(--single);
@@ -19,10 +21,15 @@
 }
 
 .footerDetailsContainer {
-    display: flex;
+    @include display-flex;
     justify-content: center;
     padding-top: var(--single);
     padding-bottom: var(--single);
+}
+
+.DetailsDesktopContainer {
+    display: inline-flex;
+    width: fit-content;
 }
 
 
@@ -31,11 +38,11 @@
     padding-right: 0.25rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-}
 
-.detailsTxt::after {
-    content:'|';
-    margin-left: .25rem;
+    &::after {
+        content:'|';
+        margin-left: .25rem;
+    }
 }
 
 .footerKultakammen {
@@ -60,23 +67,25 @@
 }
 
 .mobileMenuWrapper {
-    display: flex;
-    flex-direction: row;
+    @include display-flex;
+    @include flex-direction(row);
     flex-wrap: wrap;
     justify-content: center;
+
+    a {
+        color: var(--white);
+        position: relative;
+        width: 5rem;
+        height: 4rem;
+        text-align: center;
+        z-index: 10;
+        cursor: pointer;
+        flex: 0 0 calc(100% / 4);
+        max-width: calc(100% / 4);
+    }
 }
 
-.mobileMenuWrapper a {
-    color: var(--white);
-    position: relative;
-    width: 5rem;
-    height: 4rem;
-    text-align: center;
-    z-index: 10;
-    cursor: pointer;
-    flex: 0 0 calc(100% / 4);
-    max-width: calc(100% / 4);
-}
+
 
 .mobileIcon {
     margin-top: 0.75rem;
@@ -85,7 +94,7 @@
 }
 
 .mobileLinkText {
-    display: flex;
+    @include display-flex;
     justify-content: center;
     padding-top: 0.5rem;
     width: 100%;
@@ -121,19 +130,16 @@
     }
 
     .DetailsDesktopContainer {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .footerKultakammen {
-        margin-left: 0;
-        margin-right: var(--double);
+        @include display-flex;
+        justify-content: center;
+        max-width: 55%;
+        width: 100%;
     }
     
     .footerContainer {
-        display: flex;
+        @include display-flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        @include flex-direction(row);
     }
     
     .footerDesktopLogoContainer {

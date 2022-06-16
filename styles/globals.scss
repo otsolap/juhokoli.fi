@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "partials/mixins";
 
 :root {
 	--primary: #0525e2;
@@ -53,7 +54,7 @@ main {
 	padding-left: 0.75rem;
     padding-right: 0.75rem;
 	width: 100%;
-	display: flex;
+    @include display-flex;
 	justify-content: center;
 }
 

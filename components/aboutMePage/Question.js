@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import styles from '../../styles/FAQ.module.css'
+import styles from '../../styles/FAQ.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,33 +1,36 @@
+@import "partials/mixins";
+
 .header {
 	background-color: var(--primary);
 	color: var(--white);
-	display: flex;
+	  @include display-flex;
 	min-height: 80px;
 	align-items: center;
 	justify-content: center;
 	position: sticky;
 	top: 0;
 	z-index: 200; 
+	
+	a {
+		padding-left: 0.375rem;
+		padding-right: 0.375rem;
+		margin-left: 0.375rem;
+		margin-right: 0.375rem;
+		text-decoration-thickness: 30%;
+
+		&:hover,
+		&:focus {
+		text-decoration-line: underline;
+		text-decoration-color: var(--aquamarine);
+		text-underline-offset: 2px;
+		}
+	}
 }
 
 .logo {
 	font-size: var(--double);
 }
 
-.header a {
-	padding-left: 0.375rem;
-    padding-right: 0.375rem;
-	margin-left: 0.375rem;
-    margin-right: 0.375rem;
-	text-decoration-thickness: 30%;
-}
-
-.header a:hover,
-.header a:focus {
-	text-decoration-line: underline;
-	text-decoration-color: var(--aquamarine);
-	text-underline-offset: 2px;
-}
 
 a.noDecoration {
 	margin-left: var(--single);
@@ -47,7 +50,7 @@ a.noDecoration {
 }
 
 .logoContainer {
-	display: flex;
+	  @include display-flex;
 	justify-content: space-between;
 	width: 100%;
 }

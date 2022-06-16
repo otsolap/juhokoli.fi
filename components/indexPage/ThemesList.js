@@ -1,4 +1,4 @@
-import styles from '../../styles/Themes.module.css'
+import styles from '../../styles/Themes.module.scss'
 import ThemeItem from "./ThemeItem";
 
 const ThemesList = ({ themes, }) => {
