@@ -17,7 +17,7 @@ const ThemeItem = ({ themes }) => {
                     </div>
                     <div className={styles.content}>
                         <h2>{theme.title}</h2>
-                        <h4>{theme.description}</h4>
+                        <p>{theme.description}</p>
                         <div className="buttonWrapper">
                             <a className="btn"
                                 href={theme.link}

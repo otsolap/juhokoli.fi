@@ -1,5 +1,6 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
 
 /********
 *
@@ -14,35 +15,22 @@
     padding-bottom: $triple;
 }
 
-.themesContainer {
-    @apply lg:flex;
-    @apply lg:flex-wrap;
-    @apply lg:flex-row;
-}
-
 /* Theme Item */
 
-.themeItem {
-    @apply lg:flex-half;
-    @apply lg:max-w-half;
-    @apply lg:p-double;
-}
-
 .imageContainer {
-    @apply border;
-    @apply border-transparent;
+    @include border(1px transparent);
 }
 
 .imageContainer img {
-    @apply rounded-md;
+    @include border-radius(0.375rem);
 }
 
 .content {
-    @apply m-single;
+    margin: $single;
 }
 
 .content h2 {
-    @apply text-primary;
+    color: $primary;
 }
 
 /********
@@ -52,47 +40,69 @@
 **********/
 
 .themeBlockSection {
-    @apply py-single;
-    @apply lg:flex;
-    @apply lg:py-double;
-    @apply lg:mt-triple;
+    padding-top: $single;
+    padding-bottom: $single;
 }
 
-.blockContent {
-    @apply lg:flex;
-    @apply lg:flex-row-reverse;
-}
-
-.odd .blockContent {
-    @apply lg:flex-row
-}
 
 .blockContent h2 {
-    @apply text-black;
+    color: $black;
 }
 
 .themeBlockImageContainer {
-    @apply border;
-    @apply border-transparent;
-    @apply py-double;
-    @apply lg:m-auto;
-    @apply lg:flex-half;
-    @apply lg:max-w-half;
+    @include border(1px transparent);
+    padding-top: $double;
+    padding-bottom: $double;
 }
 
 .altImageContainer img {
-    @apply rounded-md;
-}
-
-.themeDescriptionContainer {
-    @apply lg:mx-auto;
-    @apply lg:flex-half;
-    @apply lg:max-w-half;
+    @include border-radius(0.375rem);
 }
 
 .themeDescriptionContainer p {
     @apply p-single;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
+    .themesContainer {
+        @include display-flex;
+        flex-wrap: wrap;
+        @include flex-direction(row);
+    }
+
+    .themeItem {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: $double;
+    }
+
+    .themeBlockSection {
+        @include display-flex;
+        padding-top: $double;
+        padding-bottom: $double;
+        margin-top: $triple;
+    }
+
+    .blockContent {
+        @include display-flex;
+        @include flex-direction(row-reverse)
+    }
+    
+    .odd .blockContent {
+        @include flex-direction(row-reverse)
+    }
+
+    .themeBlockImageContainer {
+        margin: auto;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .themeDescriptionContainer {
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
 }

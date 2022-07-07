@@ -1,5 +1,7 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
+
 /*
 *
 *  Page
@@ -125,7 +127,7 @@
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
     .contactPageContainer {
         @include flex-direction(row);
     }

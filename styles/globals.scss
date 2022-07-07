@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
 
 * {
 	margin: 0;
@@ -16,24 +14,25 @@ body,
 	height: auto;
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
-	color:var(--black);
+	color:$black;
 }
 
 main {
-	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
 .btn {
-	background-color: var(--primary);
-	color: var(--white);
+	background-color: $primary;
+	color: $white;
 	font-weight: 700;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,7 +49,7 @@ main {
 
 .btn:hover,
 .btn:focus {
-	background-color: var(--aquamarine);
+	background-color: $aquamarine;
 }
 
 .buttonWrapper {
@@ -66,21 +65,21 @@ a {
 
 /* Section Intro */
 .sectionHeader {
-	padding-left: var(--single);
-    padding-right: var(--single);
-	padding-bottom: var(--single);
+	padding-left: $single;
+    padding-right: $single;
+	padding-bottom: $single;
 }
 
 .container > .sectionHeader h2,
 .content h2 {
-	margin: var(--single);
+	margin: $single;
 	font-weight: 700;
 	font-size: 1.5rem;
     line-height: 2rem;
 }
 
 .alt-bg {
-	background-color: var(--grey);
+	background-color: $grey;
 }
 
 .mobile-only {
@@ -93,7 +92,7 @@ a {
 
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
 	.mobile-only {
 		display: none;
 	}
@@ -101,10 +100,14 @@ a {
 		display: block;
 	}
 
+	.container {
+		max-width: $container-desktop;
+	}
+
 	.container > .sectionHeader h2 {
-		padding-left: var(--single);
+		padding-left: $single;
 		font-size: 2.25rem;
         line-height: 2.5rem;
-		padding-top: var(--double);
+		padding-top: $double;
 	}
 }

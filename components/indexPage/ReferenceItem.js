@@ -19,7 +19,7 @@ const ReferenceItem = ({ referees }) => {
                     <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
                         <p>{reference.reference}</p>
                         <h4 className={styles.referee}>{reference.referee}</h4>
-                        <h6 className={styles.refereeWorkTitle}>{reference.refereeTitle}</h6>
+                        <p className={styles.refereeWorkTitle}>{reference.refereeTitle}</p>
                     </div>
                 </div>
             ))}

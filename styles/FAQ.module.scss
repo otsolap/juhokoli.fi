@@ -1,12 +1,14 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
+
 
 #faqSection {
-    padding-bottom: var(--single);
+    padding-bottom: $single;
 }
 
 .container {
-   padding: var(--single);
+   padding: $single;
 }
 
 .content {
@@ -31,9 +33,9 @@
 
 .faqQuestionHeading {
     font-weight: 700;
-    margin-left: var(--single);
-    padding-top: var(--single);
-    padding-bottom: var(--single);
+    margin-left: $single;
+    padding-top: $single;
+    padding-bottom: $single;
 }
 
 
@@ -41,23 +43,23 @@
     background-image: none;
     @include border(0px solid);
     cursor: pointer;
-    margin-right: var(--single);
+    margin-right: $single;
     margin-left: auto;
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
 
 .faqClosed {
-    background-color: var(--grey);
+    background-color: $grey;
 }
 
 .faqOpen {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: $primary;
+    color: $white;
 }
 
 .faqAnswerDivider {
-    border-color: var(--grey);
+    border-color: $grey;
     border-top-width: 2px;
 }
 
@@ -65,18 +67,18 @@
     transition: max-height 0.6s ease;
     max-height: 0;
     overflow: hidden;
-    background-color: var(--white);
+    background-color: $white;
     color: $black;
     margin-left: .5rem;
     margin-right: .5rem;
 }
 
 .faqAnswerText {
-    padding: var(--single) .5rem;
+    padding: $single .5rem;
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
     #faqSection {
         padding-top: 2rem;
         padding-bottom: 2rem;

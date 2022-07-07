@@ -1,5 +1,7 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
+
 
 #referenceSection {
     padding-top: $single;
@@ -63,10 +65,10 @@
 .refereeWorkTitle::after {
     content: url("/images/sydan.png");
     margin-left: 2.5rem;
-}
+} 
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
 
     .referenceItem {
         padding-top: $double;

@@ -1,18 +1,20 @@
 @import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
 
 #Footer {
     padding-bottom: 5rem;
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: $primary;
+    color: $white;
 }
 
 .footerSoMEContainer {
-    padding-top: var(--double);
-    padding-bottom: var(--single);
+    padding-top: $double;
+    padding-bottom: $single;
     @include display-flex;
     justify-content: space-evenly;
-    margin-left: var(--single);
-    margin-right: var(--single);
+    margin-left: $single;
+    margin-right: $single;
 }
 
 .someIcons {
@@ -23,8 +25,8 @@
 .footerDetailsContainer {
     @include display-flex;
     justify-content: center;
-    padding-top: var(--single);
-    padding-bottom: var(--single);
+    padding-top: $single;
+    padding-bottom: $single;
 }
 
 .DetailsDesktopContainer {
@@ -51,9 +53,9 @@
 
 
 .MobileFooterBar {
-    background-color: var(--primary);
+    background-color: $primary;
     border-width: 1px;
-    border-top-color: var(--white);
+    border-top-color: $white;
     border-left-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -73,7 +75,7 @@
     justify-content: center;
 
     a {
-        color: var(--white);
+        color: $white;
         position: relative;
         width: 5rem;
         height: 4rem;
@@ -103,7 +105,7 @@
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
 
     #Footer {
         padding-bottom: 0;
@@ -112,21 +114,21 @@
     .footerSoMEContainer {
         max-width: 50%;
         align-items: center;
-        margin-left: var(--triple);
+        margin-left: $triple;
     }
 
     .someIcons {
         font-size: 2.25rem;
         line-height: 2.5rem;
-        padding-left: var(--single);
-        padding-right: var(--single);
+        padding-left: $single;
+        padding-right: $single;
     }
 
     .footerDetailsContainer {
         width: 100%;
         justify-content: flex-start;
         border-top-width: 2px;
-        border-color: var(--white);
+        border-color: $white;
     }
 
     .DetailsDesktopContainer {
@@ -143,7 +145,7 @@
     }
     
     .footerDesktopLogoContainer {
-        padding: var(--double);
+        padding: $double;
         max-width: 50%;
         flex: 0 0 50%;
     }

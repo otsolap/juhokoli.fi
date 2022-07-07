@@ -1,5 +1,6 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/breakpoints";
 
 .circleWrapper {
 	position: absolute;
@@ -22,7 +23,7 @@
 	margin: 0;
 	font-size: 1.5rem;
     line-height: 2rem;
-	color: var(--primary);
+	color: $primary;
 }
 
 .textWrapper {
@@ -35,12 +36,12 @@
 }
 
 .container {
-	background-color: var(--primary);
+	background-color: $primary;
 	color: $white;
 }
 
 .content {
-	padding: var(--single);
+	padding: $single;
 
 	h1 {
 		font-weight: 700;
@@ -48,7 +49,7 @@
 	}
 
 	h3 {
-		font-size: var(--single);
+		font-size: $single;
 		line-height: 1.5rem;
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
@@ -77,7 +78,7 @@
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: $container-desktop) {
 	.circleWrapper {
 		top: 10%;
 		right: 5%;
