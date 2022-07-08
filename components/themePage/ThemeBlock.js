@@ -9,7 +9,7 @@ const ThemeBlock = ({ themes }) => {
                     <section
                         key={i}
                         id={theme.title}
-                        className={`${styles.themeBlockSection} ${i % 2 === 0 ? `bg-white` : `bg-grey ${styles.odd}`}`}
+                        className={`${styles.themeBlockSection} ${i % 2 === 0 ? `` : `${styles.odd}`}`}
                     >
                         <div className="container">
                             <h2 className="mobile-only">{theme.title}</h2>

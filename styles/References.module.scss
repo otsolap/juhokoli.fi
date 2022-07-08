@@ -70,6 +70,11 @@
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
 
+    .reference {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .referenceItem {
         padding-top: $double;
         padding-bottom: $double;
@@ -77,8 +82,8 @@
     }
 
     .referenceBuble {
-        margin-left: auto;
-        margin-right: auto;
+/*         margin-left: auto;
+        margin-right: auto; */
         width: 50%;
     }
 
