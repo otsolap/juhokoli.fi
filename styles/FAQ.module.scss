@@ -18,6 +18,11 @@
     @include border-radius(.375rem);
 }
 
+.faqButton {
+    border: none;
+    background-color: $white;
+}
+
 .faq {
     text-align: left;
     width: 100%;

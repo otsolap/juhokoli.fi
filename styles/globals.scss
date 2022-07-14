@@ -13,8 +13,16 @@ body,
 #root {
 	height: auto;
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color:$black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a, p, input, span, button, strong {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 main {

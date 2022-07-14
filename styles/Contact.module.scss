@@ -79,6 +79,10 @@
         display: block;
         margin-bottom: 0.5rem;
         margin-left: 0.75rem;
+
+        &:last-child {
+            margin-bottom: 1.5rem;
+        }
      }
 
 }
@@ -99,7 +103,7 @@
 .formControl textarea,
 .formControl input {
     margin-top: 0.5rem;
-    margin-bottom: $double;
+    margin-bottom: $single;
     @include border(1px solid);
     border-color: $black;
     @include border-radius(.25rem);

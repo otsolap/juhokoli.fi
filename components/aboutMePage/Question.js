@@ -17,7 +17,7 @@ const Question = ({ answer, question }) => {
     };
 
     return (
-        <button onClick={toggleAccordion}>
+        <button className={styles.faqButton} onClick={toggleAccordion}>
             <div className={styles.faq}>
                 <div className={active ? `${styles.faqOpen}` : `${styles.faqClosed}`}>
                     <div className={styles.faqFlexBox}>
