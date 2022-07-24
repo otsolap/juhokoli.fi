@@ -10,6 +10,7 @@ const Faq = ({ faq }) => {
         <section id={styles.faqSection}>
             <div className={`container ${styles.faqSectionContainer}`}>
                 <div className={styles.container}>
+                    <h4 className={styles.sectionTitle}></h4>
                     <div className={styles.content}>
                         {faq.faqs.map((faq, i) => (
                             <Question

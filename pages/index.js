@@ -36,7 +36,7 @@ const Index = ({ meta, hero, themes, references, faq, contact }) => {
         <ThemeBlock themes={themes} />
         <ReferenceList references={references} />
         <Faq faq={faq} />
-        <div className="ContactContainer">
+        <div className="container ContactContainer">
           <ContactDetails contact={contact} />
           <ContactForm contact={contact} />
         </div>
@@ -75,12 +75,9 @@ export async function getStaticProps() {
       references: {
         sectionTitle: home.ReferenceSection.SectionTitle,
         referees: home.ReferenceSection.referees,
-        heart: home.ReferenceSection.heart,
-        heartAlt: home.ReferenceSection.heartAlt,
       },
       faq: {
-        faqProfilePicture: home.FAQSection.faqProfilePicture,
-        faqProfilePictureAlt: home.FAQSection.faqProfilePictureAlt,
+        sectionTitle: home.FAQSection.SectionTitle,
         faqs: home.FAQSection.faqs
       },
       contact: {

@@ -49,8 +49,7 @@
       ]
     },
   "FAQSection": {
-    "faqProfilePicture": "/images/FAQ_Koli.png",
-    "faqProfilePictureAlt": "Juho Koli",
+    "SectionTitle": "Usein Kysyttyjä Kysymyksiä",
     "faqs": 
     [
       {

@@ -54,8 +54,7 @@ collections:
           name: "FAQSection"
           widget: object
           fields:
-            - { label: "Pöytäkoneen Profiilikuva", name: "faqProfilePicture", widget: "image"}
-            - { label: "Profiilikuva selvennys", name: "faqProfilePictureAlt", widget: "string"}
+            - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
             - label: "Kysymykset"
               name: "faqs"
               widget: list

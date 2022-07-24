@@ -54,6 +54,7 @@
     text-align: left;
     width: 100%;
     padding-top: $double;
+    padding-bottom: $double;
 }
 
 .refereeWorkTitle {
@@ -61,11 +62,6 @@
     text-align: left;
     width: 100%;
 }
-
-.refereeWorkTitle::after {
-    content: url("/images/sydan.png");
-    margin-left: 2.5rem;
-} 
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
@@ -82,8 +78,6 @@
     }
 
     .referenceBuble {
-/*         margin-left: auto;
-        margin-right: auto; */
         width: 50%;
     }
 
