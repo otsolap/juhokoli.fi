@@ -13,7 +13,7 @@ const aboutMe = ({ meta, hero, themes, contact }) => {
                 <ThemeBlock
                     themes={themes}
                 />
-                <div class="ContactContainer">
+                <div className="ContactContainer">
                     <ContactDetails contact={contact} />
                     <ContactForm id="yhteydenotto" contact={contact} />
                 </div>

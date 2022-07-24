@@ -36,7 +36,7 @@ const Index = ({ meta, hero, themes, references, faq, contact }) => {
         <ThemeBlock themes={themes} />
         <ReferenceList references={references} />
         <Faq faq={faq} />
-        <div class="ContactContainer">
+        <div className="ContactContainer">
           <ContactDetails contact={contact} />
           <ContactForm contact={contact} />
         </div>
