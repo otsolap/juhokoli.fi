@@ -5,7 +5,7 @@ const Hero = ({ hero }) => {
     return (
         <section id="hero">
             <div className="desktop-only">
-                <div style={{ position: 'relative', width: '100%', height: '658px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
                     <Image
                         src={hero.DesktopHeroImage}
                         alt={hero.heroTitle}
@@ -17,7 +17,7 @@ const Hero = ({ hero }) => {
                 </div>
             </div>
             <div
-                style={{ position: 'relative', width: '100%', height: '270px' }}
+                style={{ position: 'relative', width: '100%', height: '270px', overflow: 'hidden' }}
                 className="mobile-only">
                 <Image
                     src={hero.MobileHeroImage}

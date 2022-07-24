@@ -14,6 +14,8 @@ const ReferenceItem = ({ referees }) => {
                             alt={reference.referee}
                             src={reference.image}
                             layout="responsive"
+                            objectFit='cover'
+                            objectPosition='center'
                         />
                     </div>
                     <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>

@@ -6,7 +6,7 @@ const HeroAlt = ({ hero }) => {
         <section id="hero">
             <div className={styles.altImageContainer}>
                 <div className="desktop-only">
-                    <div style={{ position: 'relative', width: '100%', height: '658px' }}>
+                    <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}
@@ -18,7 +18,7 @@ const HeroAlt = ({ hero }) => {
                     </div>
                 </div>
                 <div
-                    style={{ position: 'relative', width: '100%', height: '390px' }}
+                    style={{ position: 'relative', width: '100%', height: '390px', overflow: 'hidden' }}
                     className="mobile-only">
                     <Image
                         src={hero.MobileHeroImage}

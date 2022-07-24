@@ -16,6 +16,8 @@ const Faq = ({ faq }) => {
                         width={850}
                         height={1240}
                         quality={100}
+                        objectFit='cover'
+                        objectPosition='center'
                     />
                 </div>
                 <div className={styles.container}>

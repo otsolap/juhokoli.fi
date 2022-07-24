@@ -21,6 +21,9 @@ const ThemeBlock = ({ themes }) => {
                                         width={390}
                                         height={220}
                                         layout="responsive"
+                                        objectFit='cover'
+                                        objectPosition='center'
+                                        quality={100}
                                     />
                                 </div>
                                 <div className={styles.themeDescriptionContainer}>

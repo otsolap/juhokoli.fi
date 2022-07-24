@@ -13,6 +13,9 @@ const ThemeItem = ({ themes }) => {
                             alt={theme.title}
                             src={theme.image}
                             layout="responsive"
+                            quality={100}
+                            objectFit='cover'
+                            objectPosition='center'
                         />
                     </div>
                     <div className={styles.content}>
