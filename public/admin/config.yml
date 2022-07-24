@@ -105,8 +105,8 @@ collections:
           widget: object
           fields:
            - { label: "Logo", name: "logo", widget: "string"}
-           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image"}
-           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string"}
+           - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image"}
+           - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string"}
            - { label: "Etusivu", name: "homeTitle", widget: "string"}
            - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
            - { label: "Juho", name: "aboutMeTitle", widget: "string"}
@@ -144,8 +144,8 @@ collections:
           name: "Footer"
           widget: object
           fields:
-           - { label: "Pöytäkoneen Kokoomuslogo", name: "desktopLogoImage", widget: "image"}
-           - { label: "Kokoomuslogon täsmennys", name: "desktopLogoAlt", widget: "string"}
+           - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image"}
+           - { label: "logon täsmennys", name: "desktopLogoAlt", widget: "string"}
            -    label: "Sosiaalinen Media"
                 name: "socialMedia"
                 widget: list

@@ -28,6 +28,17 @@ const ContactForm = ({ contact }) => {
                         />
                     </div>
                     <div className={styles.formControl}>
+                        <label htmlFor="tel">Puhelinnumero *</label>
+                        <input
+                            placeholder="Puhelinnumero *"
+                            type="tel"
+                            autoComplete="tel"
+                            name="tel"
+                            id="tel"
+                            required
+                        />
+                    </div>
+                    <div className={styles.formControl}>
                         <label htmlFor="email">Sähköposti *</label>
                         <input
                             placeholder="Sähköposti *"
@@ -35,7 +46,6 @@ const ContactForm = ({ contact }) => {
                             autoComplete="email"
                             name="email"
                             id="email"
-                            required
                         />
                     </div>
                     <div className={styles.formControl}>
