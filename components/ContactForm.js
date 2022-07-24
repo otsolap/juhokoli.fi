@@ -47,15 +47,6 @@ const ContactForm = ({ contact }) => {
                             required
                         />
                     </div>
-                    <div className={`${styles.formControl} ${styles.newsletterControl}`}>
-                        <input
-                            className={styles.newsletterCheckBox}
-                            type="checkbox"
-                            id="newsletter"
-                            name="newsletter"
-                        />
-                        <label className={styles.newsletterLabel} htmlFor="newsletter">Haluan tilata uutiskirjeen</label>
-                    </div>
                     <div className={styles.formControl}>
                         <button
                             type="submit"
