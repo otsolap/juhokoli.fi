@@ -97,8 +97,8 @@
 
 	.container {
 		position: absolute;
-		top: 4%;
-		left: 4%;
+		top: 4.5%;
+		left: 1%;
 	}
 
 	.content {
@@ -118,6 +118,16 @@
 
 	.altContainer {
 		font-size: 80px;
+		left: 1%;
+	}
+}
+
+/* Yuge Desktop Screens */
+@media (min-width: 1536px) {
+
+	.container,
+	.altContainer {
 		left: 23%;
 	}
+
 }
