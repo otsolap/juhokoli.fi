@@ -14,10 +14,6 @@ const MobileFooter = () => {
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.homeTitle} icon={faHouse} />
                     <span className={styles.mobileLinkText}>{Navigation.homeTitle}</span></a>
                 </Link>
-                <Link href="/teemat">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.themesTitle} icon={faBook} />
-                        <span className={styles.mobileLinkText}>{Navigation.themesTitle}</span></a>
-                </Link>
                 <Link href="/juho">
                     <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.aboutMeTitle} icon={faUserTie} />
                         <span className={styles.mobileLinkText}>{Navigation.aboutMeTitle}</span></a>
