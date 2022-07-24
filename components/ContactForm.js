@@ -1,11 +1,6 @@
 import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
-    const contactSubmit = (e) => {
-        e.preventDefault()
-        console.log('hello mom')
-    }
-
     return (
         <section id={styles.formSection}>
             <div id="yhteydenotto" className={styles.formContainer}>
@@ -13,8 +8,10 @@ const ContactForm = ({ contact }) => {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    onSubmit={contactSubmit}
+                    netlify-honeypot="bot-field"
                 >
+                    <input type="hidden" name="subject" value="Prospekti yhteydenotto Juhokoli.fi" />
+                    <input type="hidden" name="bot-field" />
                     <input type="hidden" name="contact" value="contact" />
                     <div className={styles.formControl}>
                         <label htmlFor="fullname">Nimi *</label>
