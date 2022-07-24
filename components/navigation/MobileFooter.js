@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Links from '@content/site.json'
-import { faHouse, faBook, faUserTie, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faUserTie, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from '../../styles/Footer.module.scss'
 
