@@ -2,17 +2,6 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
-/*
-*
-*  Page
-*
-*/
-
-.contactPageContainer {
-    @include display-flex;
-    @include flex-direction(column);
-    justify-content: center;
-}
 
 /*** Details **/
 

@@ -10,35 +10,12 @@
     "ElectionNumber": "606"
   },
   "ThemeSection": {
-    "SectionTitle": "Vaaliteemat",
     "themes": 
     [
       {
         "image": "/images/Tyollisuus.png",
         "title": "Työllisyys",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
-        "cta": "Lue lisää",
-        "link": "" },
-        {
-          "image": "/images/Yrittajuus.png",
-          "title": "Yrittäjyys",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
-          "cta": "Lue lisää",
-          "link": "" 
-        },
-        {
-          "image": "/images/Koulutus.png",
-          "title": "Koulutus",
-          "description": "Turussa on kuusi korkeakoulua ja yli 40.000 korkeakouluopiskelijaa. Valtuutettuna haluan varmistaa, että niillä on toimintaedellytykset, rahoitus ja jatkuva dialogi yrityselämän kanssa.",
-          "cta": "Lue lisää",
-          "link": "" 
-        },
-        {
-          "image": "/images/Tarkkatalous.png",
-          "title": "Tarkkatalous",
-          "description": "Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki.",
-          "cta": "Lue lisää",
-          "link": "" 
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
         }
       ]
     },
@@ -72,6 +49,42 @@
       ],
       "heart": "/images/sydan.png",
       "heartAlt": "Sydän oikealla"
+    },
+  "FAQSection": {
+    "faqProfilePicture": "/images/FAQ_Koli.png",
+    "faqProfilePictureAlt": "Juho Koli",
+    "faqs": 
+    [
+      {
+        "question": "Lyhyesti",
+        "answer": "Olen turkulainen rahoitusalan ammattilainen, jolle tärkeitä aiheita ovat vahvalla pohjalla oleva kuntatalous, yrittäjyys ja työllisyys, sekä muut hyvinvoinnin luomiseen tähtäävät talouselämän ilmiöt. Olen liikunnallinen isä, ja suuri musiikinystävä. Turku on minulle rakas kaupunki ja sen, sekä sen asukkaiden hyvinvointi intohimoni!"
+      },
+        {
+          "question": "Pidemmin",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        },
+        {
+          "question": "CV",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        },
+        {
+
+          "question": "Koulutus",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        },
+        {
+          "question": "Reserviläispalvelu",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        },
+        {
+          "question": "Luottamustoimet",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        },
+        {
+          "question": "Vapaa-aika",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
+        }
+      ]
     },
     "meta": {
       "title": "Juho Koli",

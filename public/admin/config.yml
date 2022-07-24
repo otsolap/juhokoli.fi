@@ -29,16 +29,14 @@ collections:
           name: "ThemeSection"
           widget: object
           fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
-          - label: "Teemat"
-            name: "themes"
-            widget: list
-            fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
-              - { label: "Napin teksti", name: "cta", widget: "string"}
-              - { label: "Linkki", name: "link", widget: "string"}
+        - label: "Teemat"
+          name: "themes"
+          widget: list
+          max: 1
+          fields:
+            - { label: "Teeman otsikko", name: "title", widget: "string"}
+            - { label: "Kuvaus", name: "description", widget: "text"}
+            - { label: "Kuva", name: "image", widget: "image" }
         - label: "Referenssit-osio"
           name: "ReferenceSection"
           widget: object
@@ -52,49 +50,6 @@ collections:
               - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
               - { label: "Referenssi", name: "reference", widget: "text"}
               - { label: "Kuva", name: "image", widget: "image" }
-        - label: "Sivuston metatiedot"
-          name: "meta"
-          widget: object
-          fields:
-          - { label: "Sivun otsikko", name: "title", widget: "string"}
-          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
-          - { label: "Sivun linkki", name: "url", widget: "string"}
-          - { label: "Sivun kuva", name: "image", widget: "image"}
-    - label: "Vaaliteemat"
-      name: "themes"
-      file: content/themes.json
-      fields:
-        - label: "Herokuva"
-          name: "Hero"
-          widget: object
-          fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
-        - label: 'Teemat-osio'
-          name: "ThemeSection"
-          widget: object
-          fields:
-          - label: "Teemat"
-            name: "themes"
-            widget: list
-            fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
-    - label: "Koli"
-      name: "aboutMe"
-      file: "content/aboutMe.json"
-      fields:
-        - label: "Herokuva"
-          name: "Hero"
-          widget: object
-          fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
@@ -108,10 +63,55 @@ collections:
                 - { label: "Kysymys", name: "question", widget: "string"}
                 - { label: "Vastaus", name: "answer", widget: "text"}
                 - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean" }
-    - label: "Yhteydenotto"
-      name: "contact"
-      file: "content/contact.json"
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string"}
+          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
+          - { label: "Sivun linkki", name: "url", widget: "string"}
+          - { label: "Sivun kuva", name: "image", widget: "image"}
+    - label: "Koli"
+      name: "aboutMe"
+      file: "content/aboutMe.json"
       fields:
+        - label: "Herokuva"
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
+        - label: 'Teemat-osio'
+          name: "ThemeSection"
+          widget: object
+          fields:
+        - label: "Teemat"
+          name: "themes"
+          widget: list
+          fields:
+            - { label: "Teeman otsikko", name: "title", widget: "string"}
+            - { label: "Kuvaus", name: "description", widget: "text"}
+            - { label: "Kuva", name: "image", widget: "image" }
+  - name: "general"
+    label: "Sivun asetukset"
+    files:
+    - label: "Yleiset osiot"
+      name: "site"
+      file: "content/site.json"
+      fields:
+        - label: "Yläpalkki"
+          name: "Header"
+          widget: object
+          fields:
+           - { label: "Logo", name: "logo", widget: "string"}
+           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image"}
+           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string"}
+           - { label: "Etusivu", name: "homeTitle", widget: "string"}
+           - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
+           - { label: "Juho", name: "aboutMeTitle", widget: "string"}
+           - { label: "Ota Yhteyttä", name: "contactTitle", widget: "string"}
         - label: "Yhteydenotto"
           name: "ContactSection"
           widget: object
@@ -141,33 +141,6 @@ collections:
                     label: url
                     required: true
                     hint: "Laita tähän URL:I SoMe kanavaasi"
-  - name: "general"
-    label: "Sivun asetukset"
-    files:
-    - label: "Yleiset osiot"
-      name: "site"
-      file: "content/site.json"
-      fields:
-        - label: "Yläpalkki"
-          name: "Header"
-          widget: object
-          fields:
-           - { label: "Logo", name: "logo", widget: "string"}
-           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image"}
-           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string"}
-           - { label: "Etusivu", name: "homeTitle", widget: "string"}
-           - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
-           - { label: "Juho", name: "aboutMeTitle", widget: "string"}
-           - { label: "Ota Yhteyttä", name: "contactTitle", widget: "string"}
-        - label: "Uutiskirje"
-          name: "newsletter"
-          widget: object
-          fields:
-          - { label: "Logo", name: "logo", widget: "image"}
-          - { label: "Otsikko", name: "title", widget: "string"}
-          - { label: "kuvaus", name: "description", widget: "string"}
-          - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
-          - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
         - label: "Alapalkki"
           name: "Footer"
           widget: object

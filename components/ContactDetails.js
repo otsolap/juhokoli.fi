@@ -1,7 +1,7 @@
 import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from '../../styles/Contact.module.scss'
+import styles from '../styles/Contact.module.scss'
 
 const ContactDetails = ({ contact }) => {
     const SoMe = contact.socialMedia.map((icons, i) => {

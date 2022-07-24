@@ -1,14 +1,22 @@
 import Meta from "@components/Meta"
 import HeroAlt from "@components/HeroAlt"
-import Faq from "@components/aboutMePage/Faq"
+import ThemeBlock from "@components/ThemeBlock"
+import ContactDetails from "@components/ContactDetails"
+import ContactForm from "@components/ContactForm"
 
-const aboutMe = ({ meta, hero, faq }) => {
+const aboutMe = ({ meta, hero, themes, contact }) => {
     return (
         <>
             <Meta meta={meta} />
             <main id="Juho">
                 <HeroAlt hero={hero} />
-                <Faq faq={faq} />
+                <ThemeBlock
+                    themes={themes}
+                />
+                <div class="ContactContainer">
+                    <ContactDetails contact={contact} />
+                    <ContactForm id="yhteydenotto" contact={contact} />
+                </div>
             </main>
         </>
     )
@@ -18,6 +26,8 @@ export default aboutMe
 
 export async function getStaticProps() {
     const aboutMe = await import(`../content/aboutMe.json`)
+    const site = await import(`../content/site.json`)
+
     return {
         props: {
             meta: {
@@ -32,10 +42,14 @@ export async function getStaticProps() {
                 DesktopHeroImage: aboutMe.Hero.DesktopHeroImage,
                 MobileHeroImage: aboutMe.Hero.MobileHeroImage,
             },
-            faq: {
-                faqProfilePicture: aboutMe.FAQSection.faqProfilePicture,
-                faqProfilePictureAlt: aboutMe.FAQSection.faqProfilePictureAlt,
-                faqs: aboutMe.FAQSection.faqs
+            themes: {
+                themes: aboutMe.ThemeSection.themes
+            },
+            contact: {
+                SectionTitle: site.ContactSection.SectionTitle,
+                SectionDescription: site.ContactSection.SectionDescription,
+                cta: site.ContactSection.cta,
+                socialMedia: site.ContactSection.socialMedia
             },
         }
     }

@@ -1,4 +1,4 @@
-import styles from '../../styles/Contact.module.scss'
+import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
     const contactSubmit = (e) => {
@@ -8,7 +8,7 @@ const ContactForm = ({ contact }) => {
 
     return (
         <section id={styles.formSection}>
-            <div className={styles.formContainer}>
+            <div id="yhteydenotto" className={styles.formContainer}>
                 <form
                     name="contact"
                     method="POST"

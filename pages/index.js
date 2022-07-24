@@ -1,12 +1,15 @@
 import { useEffect } from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
-import ThemesList from '@components/indexPage/ThemesList'
-import ReferenceList from '@components/indexPage/ReferenceList'
-import Newsletter from '@components/Newsletter'
+import ThemeBlock from "@components/ThemeBlock"
+import ReferenceList from '@components/landingPage/ReferenceList'
+import Faq from "@components/landingPage/Faq"
+import ContactDetails from "@components/ContactDetails"
+import ContactForm from "@components/ContactForm"
+
 import Script from 'next/script'
 
-const Index = ({ meta, hero, themes, references, newsletter }) => {
+const Index = ({ meta, hero, themes, references, faq, contact }) => {
 
   useEffect(() => {
     if (window.netlifyIdentity) {
@@ -30,9 +33,13 @@ const Index = ({ meta, hero, themes, references, newsletter }) => {
         <Hero
           hero={hero}
         />
-        <ThemesList themes={themes} />
+        <ThemeBlock themes={themes} />
         <ReferenceList references={references} />
-        <Newsletter newsletter={newsletter} />
+        <Faq faq={faq} />
+        <div class="ContactContainer">
+          <ContactDetails contact={contact} />
+          <ContactForm contact={contact} />
+        </div>
       </main>
     </>
   )
@@ -63,7 +70,6 @@ export async function getStaticProps() {
         ElectionNumber: home.Hero.ElectionNumber,
       },
       themes: {
-        sectionTitle: home.ThemeSection.SectionTitle,
         themes: home.ThemeSection.themes
       },
       references: {
@@ -72,12 +78,16 @@ export async function getStaticProps() {
         heart: home.ReferenceSection.heart,
         heartAlt: home.ReferenceSection.heartAlt,
       },
-      newsletter: {
-        backgroundImage: site.newsletter.backgroundImage,
-        logo: site.newsletter.logo,
-        title: site.newsletter.title,
-        description: site.newsletter.description,
-        cta: site.newsletter.cta,
+      faq: {
+        faqProfilePicture: home.FAQSection.faqProfilePicture,
+        faqProfilePictureAlt: home.FAQSection.faqProfilePictureAlt,
+        faqs: home.FAQSection.faqs
+      },
+      contact: {
+        SectionTitle: site.ContactSection.SectionTitle,
+        SectionDescription: site.ContactSection.SectionDescription,
+        cta: site.ContactSection.cta,
+        socialMedia: site.ContactSection.socialMedia
       }
     },
   }

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../../styles/Themes.module.scss'
+import styles from '../styles/Themes.module.scss'
 
 const ThemeBlock = ({ themes }) => {
     return (

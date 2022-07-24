@@ -9,17 +9,6 @@ const Faq = ({ faq }) => {
     return (
         <section id={styles.faqSection}>
             <div className={`container ${styles.faqSectionContainer}`}>
-                <div className={`desktop-only ${styles.profilePic}`}>
-                    <Image
-                        src={faq.faqProfilePicture}
-                        alt={faq.faqProfilePictureAlt}
-                        width={850}
-                        height={1240}
-                        quality={100}
-                        objectFit='cover'
-                        objectPosition='center'
-                    />
-                </div>
                 <div className={styles.container}>
                     <div className={styles.content}>
                         {faq.faqs.map((faq, i) => (

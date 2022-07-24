@@ -32,16 +32,12 @@ const Header = () => {
                             <a className={router.pathname == '/' ? styles.active : ''}
                             >{Navigation.homeTitle}</a>
                         </Link>
-                        <Link href="/teemat">
-                            <a className={router.pathname == '/teemat' ? styles.active : ''}
-                            >{Navigation.themesTitle}</a>
-                        </Link>
                         <Link href="/juho">
                             <a className={router.pathname == '/juho' ? styles.active : ''}
                             >{Navigation.aboutMeTitle}</a>
                         </Link>
-                        <Link href="/yhteydenotto">
-                            <a className={router.pathname == '/yhteydenotto' ? styles.active : ''}
+                        <Link href="/#yhteydenotto">
+                            <a className={router.pathname == '/#yhteydenotto' ? styles.active : ''}
                             >{Navigation.contactTitle}</a>
                         </Link>
                     </nav>
