@@ -9,6 +9,7 @@ const ContactForm = ({ contact }) => {
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
+                    action='/success'
                 >
                     <input type="hidden" name="subject" value="Prospekti yhteydenotto Juhokoli.fi" />
                     <input type="hidden" name="bot-field" />
