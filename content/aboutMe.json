@@ -1,24 +1,23 @@
 {
-    "Hero": {
-        "HeroTitle": "Juho Koli",
-        "HeroSubtitle":"",
-        "DesktopHeroImage":"/images/Koli_Hero.png",
-        "MobileHeroImage":"/images/Koli_Hero_Mobiili.png"
-      },
-    "ThemeSection": {
-      "themes": 
-      [
-        {
-          "image": "/images/Tyollisuus.png",
-          "title": "Työllisyys",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer."
-          }
-        ]
-      },
-      "meta": {
-        "title": "Juho Koli",
-        "description": "Minusta",
-        "url": "https://juhokoli.fi/koli",
-        "image":"/images/Koli_Hero_Mobiili.png"
+  "Hero": {
+    "HeroTitle": "Juho Koli",
+    "HeroSubtitle": "Pakollinen alaotsikko",
+    "DesktopHeroImage": "/images/Koli_Hero.png",
+    "MobileHeroImage": "/images/Koli_Hero_Mobiili.png"
+  },
+  "ThemeSection": {
+    "themes": [
+      {
+        "image": "/images/Turku-Yo.png",
+        "title": "Kuka olen?",
+        "description": "Olen 46-vuotias pankkiammattilainen, jolla on myös vahva myyntikokemus. Olen koulutukseltani liiketoiminnan kehittämiseen erikoistunut tradenomi.\n\nHarrastan maanpuolustusta, sotilasarvoltani olen kapteeniluutnantti. Kaikki liikunta on mukavaa, mutta sydäntä lähimpänä crossfit ja hölkkä.\n\nMinulla on kaksi tytärtä ja olen onnellisesti naimisissa."
       }
+    ]
+  },
+  "meta": {
+    "title": "Juho Koli",
+    "description": "Minusta",
+    "url": "https://juhokoli.fi/koli",
+    "image": "/images/Koli_Hero_Mobiili.png"
+  }
 }

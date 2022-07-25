@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: public/images
-public_folder: images
+media_folder: "public/images"
+public_folder: "/images"
 # Uncomment local_backend when you need to develop in your local
 local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
@@ -22,21 +22,21 @@ collections:
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
             - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string"}
-            - { label: "Linkki", name: "CtaLink", widget: "string"}
+            - { label: "Linkki", name: "CTALink", widget: "string"}
             - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
             - { label: "Vaalinumero", name: "ElectionNumber", widget: "string"}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
           fields:
-        - label: "Teemat"
-          name: "themes"
-          widget: list
-          max: 1
-          fields:
-            - { label: "Teeman otsikko", name: "title", widget: "string"}
-            - { label: "Kuvaus", name: "description", widget: "text"}
-            - { label: "Kuva", name: "image", widget: "image" }
+          - label: "Teemat"
+            name: "themes"
+            widget: list
+            max: 1
+            fields:
+              - { label: "Teeman otsikko", name: "title", widget: "string"}
+              - { label: "Kuvaus", name: "description", widget: "text"}
+              - { label: "Kuva", name: "image", widget: "image" }
         - label: "Referenssit-osio"
           name: "ReferenceSection"
           widget: object
@@ -86,13 +86,13 @@ collections:
           name: "ThemeSection"
           widget: object
           fields:
-        - label: "Teemat"
-          name: "themes"
-          widget: list
-          fields:
-            - { label: "Teeman otsikko", name: "title", widget: "string"}
-            - { label: "Kuvaus", name: "description", widget: "text"}
-            - { label: "Kuva", name: "image", widget: "image" }
+          - label: "Teemat"
+            name: "themes"
+            widget: list
+            fields:
+              - { label: "Teeman otsikko", name: "title", widget: "string"}
+              - { label: "Kuvaus", name: "description", widget: "text"}
+              - { label: "Kuva", name: "image", widget: "image" }
   - name: "general"
     label: "Sivun asetukset"
     files:
@@ -108,9 +108,7 @@ collections:
            - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image"}
            - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string"}
            - { label: "Etusivu", name: "homeTitle", widget: "string"}
-           - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
            - { label: "Juho", name: "aboutMeTitle", widget: "string"}
-           - { label: "Ota Yhteyttä", name: "contactTitle", widget: "string"}
         - label: "Yhteydenotto"
           name: "ContactSection"
           widget: object

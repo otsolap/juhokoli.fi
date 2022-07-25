@@ -9,10 +9,9 @@
   },
   "ContactSection": {
     "SectionTitle": "Ota Yhteyttä",
-    "SectionDescription": "Voit ottaa minuun yhteyttä some-kanavieni kautta, soittaa/viestitellä numeroon(02) 330 000 tai jättää viestin lomakkeen kautta.",
+    "SectionDescription": "Ole yhteydessä, niin sovitaan tapaaminen joko fyysisesti, tai verkossa. Asiakkuutesi on minulle tärkeä ja teen työtäni palvellakseni ja auttaakseni yrityksesi kasvua!",
     "cta": "Lähetä",
-    "socialMedia":
-    [
+    "socialMedia": [
       {
         "icon": "Email",
         "url": "juho.koli@turku.fi"
@@ -43,8 +42,7 @@
     "desktopLogoAlt": "Kokoomus Turku",
     "Owner": "Juho Koli",
     "privacyPolicy": "Tietosuojaseloste",
-    "socialMedia":
-    [
+    "socialMedia": [
       {
         "icon": "Instagram",
         "url": "https://www.instagram.com/jukoli/"
@@ -68,7 +66,16 @@
     ]
   },
   "Google": {
-      "ga": "",
-      "gtm": "GTM-TBFDWT8"
-    }
+    "ga": "",
+    "gtm": "GTM-TBFDWT8"
+  },
+  "Header": {
+    "logo": "Juho Koli",
+    "mobileImageLogo": "images/Matti.png",
+    "mobileImageAlt": "Säästöpankki",
+    "homeTitle": "Etusivu",
+    "themesTitle": "Vaaliteemat",
+    "aboutMeTitle": "Juho",
+    "contactTitle": "Ota Yhteyttä"
+  }
 }
