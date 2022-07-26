@@ -39,6 +39,7 @@ const ContactForm = ({ contact }) => {
                     data-netlify="true"
                     netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
+                    name="contact"
                 >
                     <input type="hidden" name="subject" value="Prospekti yhteydenotto Juhokoli.fi" />
                     <input type="hidden" name="bot-field" />
