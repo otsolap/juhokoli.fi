@@ -6,18 +6,20 @@ const ReferenceItem = ({ referees }) => {
         <div className="reference">
             {referees.map((reference, i) => (
                 <div className={styles.referenceItem} id={`refence-item-${i}`} key={i}>
-                    <div className={styles.imageContainer}>
-                        <Image
-                            width={160}
-                            height={160}
-                            quality={100}
-                            alt={reference.referee}
-                            src={reference.image}
-                            layout="responsive"
-                            objectFit='cover'
-                            objectPosition='center'
-                        />
-                    </div>
+                    {reference.image && (
+                        <div className={styles.imageContainer}>
+                            <Image
+                                alt={reference.referee}
+                                src={reference.image}
+                                width={160}
+                                height={160}
+                                quality={100}
+                                layout="responsive"
+                                objectFit='cover'
+                                objectPosition='center'
+                            />
+                        </div>
+                    )}
                     <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
                         <p>{reference.reference}</p>
                         <h4 className={styles.referee}>{reference.referee}</h4>

@@ -54,12 +54,15 @@ const Footer = () => {
         <footer id={styles.Footer}>
             <div className={`container ${styles.footerContainer}`}>
                 <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
-                    <Image
-                        src={FooterContent.Footer.desktopLogoImage}
-                        width={250}
-                        height={150}
-                        alt={FooterContent.Footer.desktopLogoAlt}
-                    />
+                    {FooterContent.Footer.desktopLogoImage && (
+                        <Image
+                            src={FooterContent.Footer.desktopLogoImage}
+                            alt={FooterContent.Footer.desktopLogoAlt}
+                            width={250}
+                            height={150}
+                            quality={100}
+                        />
+                    )}
                 </div>
                 <div className={styles.footerSoMEContainer}>
                     {SoMe}
@@ -79,6 +82,7 @@ const Footer = () => {
                                 height={30}
                                 width={30}
                                 alt="Toteutuksen tehnyt Kultakammen.fi"
+                                quality={100}
                             />
                         </a>
                     </div>

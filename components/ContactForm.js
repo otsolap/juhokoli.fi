@@ -58,7 +58,7 @@ const ContactForm = ({ contact }) => {
                         <button
                             type="submit"
                             className="btn">
-                            {contact.cta}
+                            {contact.CTA}
                         </button>
                     </div>
                 </form>

@@ -5,9 +5,25 @@ const Hero = ({ hero }) => {
     return (
         <section id="hero">
             <div className="desktop-only">
-                <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
+                {hero.DesktopHeroImage && (
+                    <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
+                        <Image
+                            src={hero.DesktopHeroImage}
+                            alt={hero.heroTitle}
+                            layout="fill"
+                            objectFit='cover'
+                            objectPosition='center'
+                            quality={100}
+                        />
+                    </div>
+                )}
+            </div>
+            {hero.MobileHeroImage && (
+                <div
+                    style={{ position: 'relative', width: '100%', height: '270px', overflow: 'hidden' }}
+                    className="mobile-only">
                     <Image
-                        src={hero.DesktopHeroImage}
+                        src={hero.MobileHeroImage}
                         alt={hero.heroTitle}
                         layout="fill"
                         objectFit='cover'
@@ -15,19 +31,7 @@ const Hero = ({ hero }) => {
                         quality={100}
                     />
                 </div>
-            </div>
-            <div
-                style={{ position: 'relative', width: '100%', height: '270px', overflow: 'hidden' }}
-                className="mobile-only">
-                <Image
-                    src={hero.MobileHeroImage}
-                    alt={hero.heroTitle}
-                    layout="fill"
-                    objectFit='cover'
-                    objectPosition='center'
-                    quality={100}
-                />
-            </div>
+            )}
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h1>{hero.HeroTitle}</h1>

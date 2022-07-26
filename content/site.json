@@ -10,7 +10,7 @@
   "ContactSection": {
     "SectionTitle": "",
     "SectionDescription": "",
-    "cta": "Lähetä",
+    "CTA": "Lähetä",
     "socialMedia": []
   },
   "Footer": {
@@ -21,8 +21,8 @@
     "socialMedia": []
   },
   "Google": {
-    "ga": "",
-    "gtm": "GTM-TBFDWT8"
+    "GA": "",
+    "GTM": "GTM-TBFDWT8"
   },
   "Header": {
     "logo": "",

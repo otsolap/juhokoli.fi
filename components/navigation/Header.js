@@ -16,15 +16,17 @@ const Header = () => {
                         <h1 className={styles.logo}>{Navigation.logo}</h1>
                     </a>
                     </Link>
-                    <div className={`mobile-only ${styles.mobileLogo}`}>
-                        <Image
-                            src={Navigation.mobileImageLogo}
-                            alt={Navigation.mobileImageAlt}
-                            height={50}
-                            width={60}
-                            quality={100}
-                        />
-                    </div>
+                    {Navigation.mobileImageLogo && (
+                        <div className={`mobile-only ${styles.mobileLogo}`}>
+                            <Image
+                                src={Navigation.mobileImageLogo}
+                                alt={Navigation.mobileImageAlt}
+                                height={50}
+                                width={60}
+                                quality={100}
+                            />
+                        </div>
+                    )}
                 </div>
                 <div className={`desktop-only ${styles.desktopLinks}`}>
                     <nav className={styles.nav}>
