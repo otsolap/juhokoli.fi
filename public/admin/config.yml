@@ -3,6 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "/images"
+show_preview_links: false
 # Uncomment local_backend when you need to develop in your local
 local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
@@ -17,14 +18,12 @@ collections:
           name: "Hero"
           widget: object
           fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
-            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string"}
-            - { label: "Linkki", name: "CTALink", widget: "string"}
-            - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
-            - { label: "Vaalinumero", name: "ElectionNumber", widget: "string"}
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
+            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string", required: false}
+            - { label: "Linkki", name: "CTALink", widget: "string", required: false}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
@@ -34,42 +33,42 @@ collections:
             widget: list
             max: 1
             fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Teeman otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false}
         - label: "Referenssit-osio"
           name: "ReferenceSection"
           widget: object
           fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
           - label: "Referenssit"
             name: "referees"
             widget: list
             fields:
-              - { label: "Referoija", name: "referee", widget: "string"}
-              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
-              - { label: "Referenssi", name: "reference", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Referoija", name: "referee", widget: "string", required: false}
+              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string", required: false}
+              - { label: "Referenssi", name: "reference", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
           fields:
-            - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+            - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false }  
             - label: "Kysymykset"
               name: "faqs"
               widget: list
               fields:
-                - { label: "Kysymys", name: "question", widget: "string"}
-                - { label: "Vastaus", name: "answer", widget: "text"}
-                - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean" }
+                - { label: "Kysymys", name: "question", widget: "string", required: false}
+                - { label: "Vastaus", name: "answer", widget: "text", required: false}
+                - { label: "Vastaus näkyvissä?", name: "open", default: false, widget: "boolean", required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
           widget: object
           fields:
-          - { label: "Sivun otsikko", name: "title", widget: "string"}
-          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
-          - { label: "Sivun linkki", name: "url", widget: "string"}
-          - { label: "Sivun kuva", name: "image", widget: "image"}
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Koli"
       name: "aboutMe"
       file: "content/aboutMe.json"
@@ -78,10 +77,10 @@ collections:
           name: "Hero"
           widget: object
           fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
@@ -90,9 +89,9 @@ collections:
             name: "themes"
             widget: list
             fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Teeman otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
   - name: "general"
     label: "Sivun asetukset"
     files:
@@ -104,17 +103,17 @@ collections:
           name: "Header"
           widget: object
           fields:
-           - { label: "Logo", name: "logo", widget: "string"}
-           - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image"}
-           - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string"}
-           - { label: "Etusivu", name: "homeTitle", widget: "string"}
-           - { label: "Juho", name: "aboutMeTitle", widget: "string"}
+           - { label: "Logo", name: "logo", widget: "string", required: false}
+           - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image", required: false}
+           - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string", required: false}
+           - { label: "Etusivu", name: "homeTitle", widget: "string", required: false}
+           - { label: "Juho", name: "aboutMeTitle", widget: "string", required: false}
         - label: "Yhteydenotto"
           name: "ContactSection"
           widget: object
           fields: 
-            - { label: "Otsikko", name: "SectionTitle", widget: "string"}
-            - { label: "Kuvaus", name: "SectionDescription", widget: "text"}
+            - { label: "Otsikko", name: "SectionTitle", widget: "string", required: false}
+            - { label: "Kuvaus", name: "SectionDescription", widget: "text", required: false}
             -   label: "Sosiaalinen Media"
                 name: "socialMedia"
                 widget: list
@@ -142,8 +141,8 @@ collections:
           name: "Footer"
           widget: object
           fields:
-           - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image"}
-           - { label: "logon täsmennys", name: "desktopLogoAlt", widget: "string"}
+           - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image", required: false}
+           - { label: "logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
            -    label: "Sosiaalinen Media"
                 name: "socialMedia"
                 widget: list

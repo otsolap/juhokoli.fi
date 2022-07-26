@@ -28,15 +28,6 @@ const Hero = ({ hero }) => {
                     quality={100}
                 />
             </div>
-            {hero.DisplayElectionNumber && (
-                <div className={styles.circleWrapper}>
-                    <figure className={styles.circle}>
-                        <div className={styles.textWrapper}>
-                            <span className={styles.circleText}>{hero.ElectionNumber}</span>
-                        </div>
-                    </figure>
-                </div>
-            )}
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h1>{hero.HeroTitle}</h1>

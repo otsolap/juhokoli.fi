@@ -1,66 +1,27 @@
 {
   "Hero": {
-    "ElectionNumber": "606",
-    "DisplayElectionNumber": false,
-    "DesktopHeroImage": "/images/koliyritysrahoitus.jpeg",
-    "CTALink": "/#yhteydenotto",
-    "CTA": "Tutustu Juhoon",
+    "DesktopHeroImage": "",
+    "CTALink": "",
+    "CTA": "",
     "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
-    "HeroTitle": "Juho Koli",
-    "MobileHeroImage": "/images/koliyritysrahoitus.jpeg"
+    "HeroTitle": "",
+    "MobileHeroImage": ""
   },
   "ThemeSection": {
-    "themes": [
-      {
-        "image": "/images/Koulutus.png",
-        "title": "Pakolline otsikko",
-        "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi.\n\nSuomalaisen kansantalouden kannalta pk-yritysten kasvu, menestys ja työllistämistoimet ovat kaikkein tärkeintä. Tätä kehitystä haluan ja Someron Säästöpankki haluaa olla tukemassa. Samoin tärkeää on alkutuotanto, jonka rahoitusmahdollisuuksista keskustelen myös mielelläni lisää.\n\nSomeron Säästöpankki tekee rahoituspäätökset paikallisesti, alueelliset seikat huomioiden."
-      }
-    ]
+    "themes": []
   },
   "ReferenceSection": {
-    "SectionTitle": "Mitä Juhosta sanotaan?",
-    "referees": [
-      {
-        "image": "/images/Taru.png",
-        "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-        "referee": "Taru Säteri",
-        "refereeTitle": "Rakennustekniikan insinööri"
-      },
-      {
-        "image": "/images/Matti.png",
-        "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-        "referee": "Matti Meikäläinen",
-        "refereeTitle": "Säästöpankin johtoherra"
-      },
-      {
-        "image": "/images/VeliMatti.png",
-        "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-        "referee": "Veli-Matti Sandberg",
-        "refereeTitle": "Rakennuttajainsinööri"
-      },
-      {
-        "image": "/images/Otso.png",
-        "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-        "referee": "Otso Lappalainen",
-        "refereeTitle": "Web-devaaja"
-      }
-    ]
+    "SectionTitle": "",
+    "referees": []
   },
   "FAQSection": {
-    "SectionTitle": "Usein Kysyttyjä Kysymyksiä",
-    "faqs": [
-      {
-        "question": "Lyhyesti",
-        "answer": "Olen turkulainen rahoitusalan ammattilainen, jolle tärkeitä aiheita ovat vahvalla pohjalla oleva kuntatalous, yrittäjyys ja työllisyys, sekä muut hyvinvoinnin luomiseen tähtäävät talouselämän ilmiöt. Olen liikunnallinen isä, ja suuri musiikinystävä. Turku on minulle rakas kaupunki ja sen, sekä sen asukkaiden hyvinvointi intohimoni!",
-        "open": true
-      }
-    ]
+    "SectionTitle": "",
+    "faqs": []
   },
   "meta": {
-    "title": "Juho Koli",
-    "description": "Vahvan talouden Turku",
-    "url": "https://juhokoli.fi/",
+    "title": "",
+    "description": "",
+    "url": "",
     "image": ""
   }
 }

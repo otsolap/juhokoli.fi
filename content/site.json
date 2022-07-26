@@ -8,74 +8,29 @@
     "contactTitle": "Ota Yhteyttä"
   },
   "ContactSection": {
-    "SectionTitle": "Ota Yhteyttä",
-    "SectionDescription": "Ole yhteydessä, niin sovitaan tapaaminen joko fyysisesti, tai verkossa. Asiakkuutesi on minulle tärkeä ja teen työtäni palvellakseni ja auttaakseni yrityksesi kasvua!",
+    "SectionTitle": "",
+    "SectionDescription": "",
     "cta": "Lähetä",
-    "socialMedia": [
-      {
-        "icon": "Email",
-        "url": "juho.koli@turku.fi"
-      },
-      {
-        "icon": "Phone",
-        "url": "(02) 330 000"
-      },
-      {
-        "icon": "Instagram",
-        "url": "https://www.instagram.com/jukoli/",
-        "description": "/jukoli"
-      },
-      {
-        "icon": "Twitter",
-        "url": "https://twitter.com/juho_koli",
-        "description": "/juho_koli"
-      },
-      {
-        "icon": "LinkedIn",
-        "url": "https://www.linkedin.com/in/juhokoli/",
-        "description": "/juhokoli"
-      }
-    ]
+    "socialMedia": []
   },
   "Footer": {
-    "desktopLogoImage": "/images/KokoomusTurku.png",
-    "desktopLogoAlt": "Kokoomus Turku",
+    "desktopLogoImage": "",
+    "desktopLogoAlt": "",
     "Owner": "Juho Koli",
     "privacyPolicy": "Tietosuojaseloste",
-    "socialMedia": [
-      {
-        "icon": "Instagram",
-        "url": "https://www.instagram.com/jukoli/"
-      },
-      {
-        "icon": "Twitter",
-        "url": "https://twitter.com/juho_koli"
-      },
-      {
-        "icon": "LinkedIn",
-        "url": "https://www.linkedin.com/in/juhokoli/"
-      },
-      {
-        "icon": "Email",
-        "url": "juho.koli@turku.fi"
-      },
-      {
-        "icon": "Phone",
-        "url": "(02) 330 000"
-      }
-    ]
+    "socialMedia": []
   },
   "Google": {
     "ga": "",
     "gtm": "GTM-TBFDWT8"
   },
   "Header": {
-    "logo": "Juho Koli",
-    "mobileImageLogo": "images/Matti.png",
-    "mobileImageAlt": "Säästöpankki",
-    "homeTitle": "Etusivu",
+    "logo": "",
+    "mobileImageLogo": "",
+    "mobileImageAlt": "",
+    "homeTitle": "",
     "themesTitle": "Vaaliteemat",
-    "aboutMeTitle": "Juho",
+    "aboutMeTitle": "",
     "contactTitle": "Ota Yhteyttä"
   }
 }
