@@ -66,7 +66,7 @@ const ContactForm = ({ contact }) => {
                         />
                     </div>
                     <div className={styles.formControl}>
-                        <label htmlFor="email">Sähköposti *</label>
+                        <label htmlFor="email">Sähköposti</label>
                         <input
                             placeholder="Sähköposti"
                             type="email"
