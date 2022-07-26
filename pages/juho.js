@@ -48,7 +48,7 @@ export async function getStaticProps() {
             contact: {
                 SectionTitle: site.ContactSection.SectionTitle,
                 SectionDescription: site.ContactSection.SectionDescription,
-                cta: site.ContactSection.cta,
+                CTA: site.ContactSection.CTA,
                 socialMedia: site.ContactSection.socialMedia
             },
         }
