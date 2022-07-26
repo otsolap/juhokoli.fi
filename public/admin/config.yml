@@ -3,9 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "/images"
-show_preview_links: false
-# Uncomment local_backend when you need to develop in your local
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+# Uncomment local_backend when you need to develop in your local local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     label: "Sivut"
