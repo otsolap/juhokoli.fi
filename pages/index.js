@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useRouter } from "next/router";
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
 import ThemeBlock from "@components/ThemeBlock"
@@ -10,13 +11,14 @@ import ContactForm from "@components/ContactForm"
 import Script from 'next/script'
 
 const Index = ({ meta, hero, themes, references, faq, contact }) => {
+  const router = useRouter()
 
   useEffect(() => {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/'
+            router.push(/admin/)
           })
         }
       })

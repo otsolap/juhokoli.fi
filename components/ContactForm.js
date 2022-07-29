@@ -4,6 +4,7 @@ import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
     const [submitterName, setSubmitterName] = useState("");
+    const [submitterPhone, setSubmitterPhone] = useState("");
     const router = useRouter();
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
@@ -25,10 +26,8 @@ const ContactForm = ({ contact }) => {
 
         const response = await fetch('/form.html', {
             method: 'POST',
+            headers: { 'Content-Type': 'application/json', },
             body: JSONdata,
-            headers: {
-                'Content-Type': 'application/json',
-            },
         })
         const result = await response.json()
         console.log(result)
@@ -52,12 +51,11 @@ const ContactForm = ({ contact }) => {
     const theContactForm = (
         <form
             name="contact-form"
-            action={handleSubmit}
-            method="POST"
+            onSubmit={handleSubmit}
             data-netlify="true"
             netlify-honeypot="bot-field"
         >
-            <input type="hidden" name="subject" value={`Prospekti ${submitterName} otti yhteyttä Juhokoli.fi`} />
+            <input type="hidden" name="subject" value={`${submitterName}, puh: ${submitterPhone} otti yhteyttä Juhokoli.fi:sta`} />
             <input type="hidden" name="contact-form" value="contact-form" />
             <input type="hidden" name="bot-field" />
             <div className={styles.formControl}>
@@ -81,6 +79,7 @@ const ContactForm = ({ contact }) => {
                     name="tel"
                     id="tel"
                     required
+                    onChange={(e) => setSubmitterPhone(e.target.value)}
                 />
             </div>
             <div className={styles.formControl}>
