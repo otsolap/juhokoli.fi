@@ -3,15 +3,39 @@ import { useRouter } from "next/router";
 import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
-
     const [submitterName, setSubmitterName] = useState("");
     const router = useRouter();
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
     const formVisible = !confirmationScreenVisible;
 
+    // Handle the submit event on form submit.
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+
+        const data = {
+            fullName: event.target.fullName.value,
+            tel: event.target.tel.value,
+            email: event.target.email.value,
+            message: event.target.message.value,
+        }
+
+        const JSONdata = JSON.stringify(data)
+        console.log(JSONdata)
+
+        const response = await fetch('/form.html', {
+            method: 'POST',
+            body: JSONdata,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        const result = await response.json()
+        console.log(result)
+    }
+
     const ConfirmationMessage = (
-        <React.Fragment>
+        <>
             <p>
                 Thank you for submitting this form. Someone should get back to you
                 within 24-48 hours.
@@ -22,14 +46,14 @@ const ContactForm = ({ contact }) => {
             >
                 Submit Another Response
             </button>
-        </React.Fragment>
+        </>
     );
 
     const theContactForm = (
         <form
             name="contact-form"
+            action={handleSubmit}
             method="POST"
-            action="/?success=true"
             data-netlify="true"
             netlify-honeypot="bot-field"
         >
