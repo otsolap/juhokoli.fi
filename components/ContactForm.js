@@ -10,7 +10,6 @@ const ContactForm = ({ contact }) => {
         router.query?.success && router.query.success === "true";
     const formVisible = !confirmationScreenVisible;
 
-    // Handle the submit event on form submit.
     const handleSubmit = async (event) => {
         event.preventDefault()
 
