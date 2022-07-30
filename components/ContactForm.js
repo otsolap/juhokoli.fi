@@ -23,7 +23,7 @@ const ContactForm = ({ contact }) => {
         const JSONdata = JSON.stringify(data)
         console.log(JSONdata)
 
-        const response = await fetch('/form.html', {
+        const response = await fetch('/form', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', },
             body: JSONdata,
