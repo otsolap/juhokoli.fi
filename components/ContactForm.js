@@ -31,7 +31,7 @@ const ContactForm = ({ contact }) => {
                     Don’t fill this out: <input name="bot-field" />
                 </label>
             </p>
-            <input type="hidden" name="contact-form" value="contact-form" />
+            <input type="hidden" name="form-name" value="contact-form" />
             <div className={styles.formControl}>
                 <label htmlFor="fullName">Nimi *</label>
                 <input
