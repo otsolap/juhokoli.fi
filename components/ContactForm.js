@@ -21,12 +21,16 @@ const ContactForm = ({ contact }) => {
     const theContactForm = (
         <form
             name="contact-form"
-            action="?success=true"
+            action="/form.html?success=true"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
         >
-            <input type="hidden" name="bot-field" />
+            <p hidden>
+                <label>
+                    Don’t fill this out: <input name="bot-field" />
+                </label>
+            </p>
             <input type="hidden" name="contact-form" value="contact-form" />
             <div className={styles.formControl}>
                 <label htmlFor="fullName">Nimi *</label>
