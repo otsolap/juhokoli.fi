@@ -112,6 +112,7 @@ collections:
           fields: 
             - { label: "Otsikko", name: "SectionTitle", widget: "string", required: false}
             - { label: "Kuvaus", name: "SectionDescription", widget: "text", required: false}
+            - { label: "Kiitosviesti lomakkeen lähetyksestä", name: "SuccessMessage", widget: "string", required: false}
             -   label: "Sosiaalinen Media"
                 name: "socialMedia"
                 widget: list
