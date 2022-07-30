@@ -55,8 +55,8 @@ const ContactForm = ({ contact }) => {
             netlify-honeypot="bot-field"
         >
             <input type="hidden" name="subject" value={`${submitterName}, puh: ${submitterPhone} otti yhteyttä Juhokoli.fi:sta`} />
-            <input type="hidden" name="contact-form" value="contact-form" />
             <input type="hidden" name="bot-field" />
+            <input type="hidden" name="contact-form" value="contact-form" />
             <div className={styles.formControl}>
                 <label htmlFor="fullName">Nimi *</label>
                 <input
