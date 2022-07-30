@@ -4,6 +4,7 @@ import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
     const [submitterName, setSubmitterName] = useState("");
+    const [submitterPhone, setSubmitterPhone] = useState("");
     const router = useRouter();
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
@@ -32,7 +33,7 @@ const ContactForm = ({ contact }) => {
                     Don’t fill this out: <input name="bot-field" />
                 </label>
             </p>
-            <input type="hidden" name="subject" value={`You've got mail from ${submitterName}`}
+            <input type="hidden" name="subject" value={`You've got mail from ${submitterName}, tel: ${submitterPhone}`}
             />
             <input type="hidden" name="form-name" value="contact-form" />
             <div className={styles.formControl}>
@@ -55,6 +56,7 @@ const ContactForm = ({ contact }) => {
                     autoComplete="tel"
                     name="tel"
                     id="tel"
+                    onChange={(e) => setSubmitterPhone(e.target.value)}
                     required
                 />
             </div>
