@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import styles from '../styles/Contact.module.scss'
 
 const ContactForm = ({ contact }) => {
-    const [submitterName, setSubmitterName] = useState("");
-    const [submitterPhone, setSubmitterPhone] = useState("");
     const router = useRouter();
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
@@ -44,7 +42,6 @@ const ContactForm = ({ contact }) => {
                     name="fullName"
                     id="fullName"
                     autoComplete="name"
-                    onChange={(e) => setSubmitterName(e.target.value)}
                     required
                 />
             </div>
@@ -57,7 +54,6 @@ const ContactForm = ({ contact }) => {
                     name="tel"
                     id="tel"
                     required
-                    onChange={(e) => setSubmitterPhone(e.target.value)}
                 />
             </div>
             <div className={styles.formControl}>
