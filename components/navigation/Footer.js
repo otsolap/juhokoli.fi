@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from '../../styles/Footer.module.scss'
 
 const Footer = () => {
-    const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
+    const SoMe = Icons.ContactSection.socialMedia.map((icons, i) => {
         return (
             <span className={styles.someIcons} key={i}>
                 {icons.icon === 'Instagram' ? (

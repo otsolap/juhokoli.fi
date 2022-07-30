@@ -8,17 +8,41 @@
     "contactTitle": "Ota Yhteyttä"
   },
   "ContactSection": {
-    "SectionTitle": "",
-    "SectionDescription": "",
+    "SectionTitle": "Otsikko",
+    "SectionDescription": "Tämä n testaamista",
     "CTA": "Lähetä",
-    "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä."
+    "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä.",
+    "socialMedia": [
+      {
+        "icon": "Email",
+        "url": "juho.koli@turku.fi"
+      },
+      {
+        "icon": "Phone",
+        "url": "(02) 330 000"
+      },
+      {
+        "icon": "Instagram",
+        "url": "https://www.instagram.com/jukoli/",
+        "description": "/jukoli"
+      },
+      {
+        "icon": "Twitter",
+        "url": "https://twitter.com/juho_koli",
+        "description": "/juho_koli"
+      },
+      {
+        "icon": "LinkedIn",
+        "url": "https://www.linkedin.com/in/juhokoli/",
+        "description": "/juhokoli"
+      }
+    ]
   },
   "Footer": {
     "desktopLogoImage": "",
     "desktopLogoAlt": "",
     "Owner": "Juho Koli",
-    "privacyPolicy": "Tietosuojaseloste",
-    "socialMedia": []
+    "privacyPolicy": "Tietosuojaseloste"
   },
   "Google": {
     "GA": "",

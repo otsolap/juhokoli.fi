@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from "next/router";
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'

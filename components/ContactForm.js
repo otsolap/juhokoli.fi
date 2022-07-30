@@ -11,9 +11,7 @@ const ContactForm = ({ contact }) => {
 
     const ConfirmationMessage = (
         <>
-            <p>
-                {contact.SuccessMessage}
-            </p>
+            <p>{contact.SuccessMessage}</p>
         </>
     );
 
