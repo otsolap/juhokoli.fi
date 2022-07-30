@@ -10,27 +10,6 @@ const ContactForm = ({ contact }) => {
         router.query?.success && router.query.success === "true";
     const formVisible = !confirmationScreenVisible;
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-
-        const data = {
-            fullName: event.target.fullName.value,
-            tel: event.target.tel.value,
-            email: event.target.email.value,
-            message: event.target.message.value,
-        }
-
-        const JSONdata = JSON.stringify(data)
-        console.log(JSONdata)
-
-        const response = await fetch('/form.html', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', },
-            body: JSONdata,
-        })
-        const result = await response.json()
-        console.log(result)
-    }
 
     const ConfirmationMessage = (
         <>
@@ -50,7 +29,8 @@ const ContactForm = ({ contact }) => {
     const theContactForm = (
         <form
             name="contact-form"
-            onSubmit={handleSubmit}
+            action="?success=true"
+            method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
         >
