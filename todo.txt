@@ -1,0 +1,3 @@
+#1 Footer Text
+#2 Fix Logos
+#3 check Images on all block-elements.
