@@ -9,7 +9,7 @@
   },
   "ContactSection": {
     "SectionTitle": "Otsikko",
-    "SectionDescription": "Tämä n testaamista",
+    "SectionDescription": "Ole yhteydessä, niin sovitaan tapaaminen joko fyysisesti, tai verkossa. Asiakkuutesi on minulle tärkeä ja teen työtäni palvellakseni ja auttaakseni yrityksesi kasvua!",
     "CTA": "Lähetä",
     "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä.",
     "socialMedia": [
@@ -39,7 +39,7 @@
     ]
   },
   "Footer": {
-    "desktopLogoImage": "",
+    "desktopLogoImage": "/images/Matti.png",
     "desktopLogoAlt": "",
     "Owner": "Juho Koli",
     "privacyPolicy": "Tietosuojaseloste"
@@ -49,8 +49,8 @@
     "GTM": "GTM-TBFDWT8"
   },
   "Header": {
-    "logo": "",
-    "mobileImageLogo": "",
+    "logo": "Juho Koli",
+    "mobileImageLogo": "/images/Matti.png",
     "mobileImageAlt": "",
     "homeTitle": "",
     "themesTitle": "Vaaliteemat",
