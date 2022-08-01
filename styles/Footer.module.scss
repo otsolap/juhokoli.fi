@@ -44,6 +44,7 @@
     padding-right: 0.25rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
+    
 
     &::after {
         content:'|';
@@ -112,6 +113,9 @@
 
     .footerSoMEContainer {
         align-items: center;
+        margin-left: initial;
+        margin-right: initial;
+        justify-content: initial;
     }
 
     .someIcons {
@@ -126,6 +130,8 @@
         @include flex-direction(column);
         justify-content: center;
         align-content: center;
+        margin-left: initial;
+        margin-right: initial;
     }
 
     .footerSubContainer {
@@ -135,16 +141,18 @@
         border-color: $white;
     }
 
+
     .subDesktopContainer {
         @include display-flex;
         justify-content: center;
-        max-width: 55%;
+        max-width: 100%;
         width: 100%;
     }
     
     .footerPrimaryContainer {
         @include display-flex;
         @include flex-direction(row);
+        flex-wrap: wrap;
 
         div {
             flex: 0 0 calc(100% / 3);
@@ -156,5 +164,21 @@
         padding: $double;
         max-width: 50%;
         flex: 0 0 50%;
+    }
+
+    .detailsTxt:first-child{
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    .detailsTxt:nth-child(2) {
+        &::after {
+            content:'';
+            margin-left: initial;
+        }
+    }
+
+    .footerKultakammen {
+        margin-left: auto;
     }
 }
