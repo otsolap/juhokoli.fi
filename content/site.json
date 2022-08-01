@@ -1,8 +1,8 @@
 {
   "Navigation": {
     "logo": "Juho Koli",
-    "mobileImageLogo": "/images/Kokoomus_Mobiili_Logo.png",
-    "mobileImageAlt": "Kokoomus Turku",
+    "mobileImageLogo": "/images/Saastopankki.png",
+    "mobileImageAlt": "Someron säästöpankki yritysrahoitus",
     "homeTitle": "Etusivu",
     "aboutMeTitle": "Juho",
     "contactTitle": "Ota Yhteyttä"
@@ -15,11 +15,11 @@
     "socialMedia": [
       {
         "icon": "Email",
-        "url": "juho.koli@turku.fi"
+        "url": "juho.koli@saastopankki.fi"
       },
       {
         "icon": "Phone",
-        "url": "(02) 330 000"
+        "url": "0505998943"
       },
       {
         "icon": "Instagram",
@@ -39,11 +39,11 @@
     ]
   },
   "Footer": {
-    "desktopLogoImage": "/images/Matti.png",
+    "desktopLogoImage": "/images/Saastopankki.png",
     "desktopLogoAlt": "",
     "Owner": "Juho Koli",
     "privacyPolicy": "Tietosuojaseloste",
-    "valueProposition:": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
+    "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
   },
   "Google": {
     "GA": "",
@@ -51,7 +51,7 @@
   },
   "Header": {
     "logo": "Juho Koli",
-    "mobileImageLogo": "/images/Matti.png",
+    "mobileImageLogo": "/images/Saastopankki.png",
     "mobileImageAlt": "",
     "homeTitle": "",
     "themesTitle": "Vaaliteemat",

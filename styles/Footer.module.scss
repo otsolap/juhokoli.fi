@@ -17,19 +17,23 @@
     margin-right: $single;
 }
 
-.someIcons {
-    font-size: 1.875rem/* 30px */;
-    line-height: 2.25rem/* 36px */;
+.footerPropsitionContainer {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-.footerDetailsContainer {
+.someIcons {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.footerSubContainer {
     @include display-flex;
     justify-content: center;
-    padding-top: $single;
-    padding-bottom: $single;
 }
 
-.DetailsDesktopContainer {
+.subDesktopContainer {
     display: inline-flex;
     width: fit-content;
 }
@@ -49,16 +53,13 @@
 
 .footerKultakammen {
     margin-left: .5rem;
+    margin-top: -0.5rem;
 }
 
 
 .MobileFooterBar {
     background-color: $primary;
-    border-width: 1px;
-    border-top-color: $white;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
+    border-top: $white 1px solid;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -87,8 +88,6 @@
     }
 }
 
-
-
 .mobileIcon {
     margin-top: 0.75rem;
     font-size: 1.875rem;
@@ -112,9 +111,7 @@
     }
 
     .footerSoMEContainer {
-        max-width: 50%;
         align-items: center;
-        margin-left: $triple;
     }
 
     .someIcons {
@@ -124,24 +121,35 @@
         padding-right: $single;
     }
 
-    .footerDetailsContainer {
+    .footerPropsitionContainer {
+        @include display-flex;
+        @include flex-direction(column);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footerSubContainer {
         width: 100%;
         justify-content: flex-start;
         border-top-width: 2px;
         border-color: $white;
     }
 
-    .DetailsDesktopContainer {
+    .subDesktopContainer {
         @include display-flex;
         justify-content: center;
         max-width: 55%;
         width: 100%;
     }
     
-    .footerContainer {
+    .footerPrimaryContainer {
         @include display-flex;
-        flex-wrap: wrap;
         @include flex-direction(row);
+
+        div {
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
     }
     
     .footerDesktopLogoContainer {

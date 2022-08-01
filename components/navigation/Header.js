@@ -22,8 +22,10 @@ const Header = () => {
                                 src={Navigation.mobileImageLogo}
                                 alt={Navigation.mobileImageAlt}
                                 height={50}
-                                width={60}
+                                width={50}
                                 quality={100}
+                                objectFit='contain'
+                                objectPosition='center'
                             />
                         </div>
                     )}

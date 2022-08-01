@@ -52,27 +52,30 @@ const Footer = () => {
 
     return (
         <footer id={styles.Footer}>
-            <div className={`container ${styles.footerContainer}`}>
-                <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
-                    {FooterContent.Footer.desktopLogoImage && (
+            <div className={`container ${styles.footerPrimaryContainer}`}>
+                {FooterContent.Footer.desktopLogoImage && (
+                    <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
                         <Image
                             src={FooterContent.Footer.desktopLogoImage}
                             alt={FooterContent.Footer.desktopLogoAlt}
                             width={250}
-                            height={150}
+                            height={100}
                             quality={100}
+                            layout="responsive"
+                            objectFit='contain'
+                            objectPosition='center'
                         />
-                    )}
-                </div>
+                    </div>
+                )}
                 <div className={styles.footerSoMEContainer}>
                     {SoMe}
                 </div>
-                <div className={styles.footerDescriptionContainer}>
+                <div className={styles.footerPropsitionContainer}>
                     <p>{FooterContent.Footer.valueProposition}</p>
                 </div>
             </div>
-            <div className={styles.footerDetailsContainer}>
-                <div className={styles.DetailsDesktopContainer}>
+            <div className={styles.footerSubContainer}>
+                <div className={styles.subDesktopContainer}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
                     <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                     <div className={styles.footerKultakammen}>

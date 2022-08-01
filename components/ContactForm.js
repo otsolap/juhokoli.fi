@@ -42,13 +42,14 @@ const ContactForm = ({ contact }) => {
             </div>
             <div className={styles.formControl}>
                 <label htmlFor="tel">Puhelinnumero *</label>
+                <small><em>Numero ilman välilyöntejä.</em></small>
                 <input
                     placeholder="Puhelinnumero *"
                     type="tel"
                     autoComplete="tel"
                     name="tel"
                     id="tel"
-                    pattern="[0-9]{7-13}"
+                    pattern="[+, 0-9]{7,20}"
                     required
                 />
             </div>
