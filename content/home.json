@@ -1,27 +1,46 @@
 {
   "Hero": {
-    "DesktopHeroImage": "",
+    "DesktopHeroImage": "/images/Vaaliteemat_Hero.png",
     "CTALink": "",
     "CTA": "",
     "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
-    "HeroTitle": "",
-    "MobileHeroImage": ""
+    "HeroTitle": "Tähän Joku ytimekäs otsikko Juho tai poista tämä!",
+    "MobileHeroImage": "/images/Vaaliteemat_Hero_Mobiili.png"
   },
   "ThemeSection": {
-    "themes": []
+    "themes": [
+      {
+        "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi.",
+        "title": "Saa laittaa otsikon jos haluaa",
+        "image": "/images/koliyritysrahoitus.jpeg"
+      }
+    ]
   },
   "ReferenceSection": {
-    "SectionTitle": "",
-    "referees": []
+    "SectionTitle": "Mitä Juhosta sanotaan?",
+    "referees": [
+      {
+        "referee": "Otso Lappalainen",
+        "refereeTitle": "Web-devaaja",
+        "reference": "Kolikon kääntöpuoli auttaa sinua takomaan rahaa",
+        "image": "/images/Otso.png"
+      }
+    ]
   },
   "FAQSection": {
-    "SectionTitle": "",
-    "faqs": []
+    "SectionTitle": "Usein kysyttyjä kysymyksiä",
+    "faqs": [
+      {
+        "open": false,
+        "question": "Paljonko pitää olla omaa pääomaa aloittaakseen?",
+        "answer": "Paritonnia riittää."
+      }
+    ]
   },
   "meta": {
-    "title": "",
-    "description": "",
+    "title": "Juho Koli",
+    "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
     "url": "",
-    "image": ""
+    "image": "/images/koliyritysrahoitus.jpeg"
   }
 }
