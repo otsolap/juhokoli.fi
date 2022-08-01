@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import Question from './Question'
 import styles from '../../styles/FAQ.module.scss'
 
@@ -8,17 +7,17 @@ const Faq = ({ faq }) => {
 
     return (
         <section id={styles.faqSection}>
-            <div className={`container ${styles.faqSectionContainer}`}>
-                <div className={styles.container}>
-                    <h2 className={styles.sectionTitle}>{faq.sectionTitle}</h2>
-                    <div className={styles.content}>
-                        {faq.faqs.map((faq, i) => (
-                            <Question
-                                key={i}
-                                {...faq}
-                            />
-                        ))}
-                    </div>
+            <div className={`container ${styles.container}`}>
+                <header className="sectionHeader">
+                    <h2>{faq.sectionTitle}</h2>
+                </header>
+                <div className={styles.content}>
+                    {faq.faqs.map((faq, i) => (
+                        <Question
+                            key={i}
+                            {...faq}
+                        />
+                    ))}
                 </div>
             </div>
         </section>

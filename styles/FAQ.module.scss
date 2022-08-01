@@ -7,12 +7,6 @@
     padding-bottom: $single;
 }
 
-.sectionTitle {
-    padding: $single;
-    margin-top: $single;
-    margin-bottom: $single;
-}
-
 .container {
    padding: $single;
 }
@@ -22,18 +16,19 @@
     @include border(2px solid);
     border-color: $black;
     @include border-radius(.375rem);
+    @include display-flex;
+    @include flex-direction(column)
 }
 
 .faqButton {
-    border: none;
     background-color: $white;
+    @include border(1px solid);
+    border-color: $black; 
 }
 
 .faq {
     text-align: left;
     width: 100%;
-    @include border(1px solid);
-    border-color: $black; 
     min-height: 10px;
 }
 
@@ -98,10 +93,5 @@
     .content {
         max-width: 50%;
         flex: 0 0 50%;
-    }
-
-    .FAQ_container {
-        @include flex-direction(column);
-        justify-content: flex-start;
     }
 }

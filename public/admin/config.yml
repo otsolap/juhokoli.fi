@@ -14,6 +14,7 @@ collections:
       file: "content/home.json"
       fields:
         - label: "Herokuva"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
