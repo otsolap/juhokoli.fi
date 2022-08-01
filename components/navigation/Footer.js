@@ -67,6 +67,9 @@ const Footer = () => {
                 <div className={styles.footerSoMEContainer}>
                     {SoMe}
                 </div>
+                <div className={styles.footerDescriptionContainer}>
+                    <p>{FooterContent.Footer.valueProposition}</p>
+                </div>
             </div>
             <div className={styles.footerDetailsContainer}>
                 <div className={styles.DetailsDesktopContainer}>

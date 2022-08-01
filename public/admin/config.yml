@@ -95,7 +95,7 @@ collections:
   - name: "general"
     label: "Sivun asetukset"
     files:
-    - label: "Yleiset osiot"
+    - label: "Ylä- ja alatunniste, some."
       name: "site"
       file: "content/site.json"
       fields:
@@ -143,5 +143,5 @@ collections:
           widget: object
           fields:
            - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image", required: false}
-           - { label: "logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
-           - { label: "Juhokoli.fi arvolupaus", name: "FooterSiteDescription", widget: "string", required: false}
+           - { label: "Logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
+           - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
