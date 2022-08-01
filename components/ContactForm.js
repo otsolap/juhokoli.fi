@@ -48,6 +48,7 @@ const ContactForm = ({ contact }) => {
                     autoComplete="tel"
                     name="tel"
                     id="tel"
+                    pattern="[0-9]{7-13}"
                     required
                 />
             </div>
