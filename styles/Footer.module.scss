@@ -145,7 +145,7 @@
     .subDesktopContainer {
         @include display-flex;
         justify-content: center;
-        max-width: 100%;
+        max-width: $container-desktop;
         width: 100%;
     }
     

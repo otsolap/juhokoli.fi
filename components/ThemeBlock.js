@@ -23,7 +23,7 @@ const ThemeBlock = ({ themes }) => {
                                             height={220}
                                             layout="responsive"
                                             objectFit='cover'
-                                            objectPosition='center'
+                                            objectPosition='center center'
                                             quality={100}
                                         />
                                     </div>
