@@ -64,17 +64,17 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 
 /* ALT HERO COMPONENT */
 
-.altImageContainer {
+/* .altImageContainer {
 	position: relative;
-}
+} */
 
-.altContainer {
+/* .altContainer {
 	position: absolute;
 	top: 50%;
 	left: 4rem;
 	color: $white;
 	font-weight: 700;
-}
+} */
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
@@ -98,10 +98,5 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 			font-size: 1.5rem;
 			line-height: 2rem;
 		}
-	}
-
-	.altContainer {
-		font-size: 80px;
-		left: 1%;
 	}
 }

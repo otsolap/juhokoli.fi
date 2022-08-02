@@ -1,22 +1,16 @@
 import Meta from "@components/Meta"
-import HeroAlt from "@components/HeroAlt"
+import Hero from "@components/Hero"
 import ThemeBlock from "@components/ThemeBlock"
-import ContactDetails from "@components/ContactDetails"
-import ContactForm from "@components/ContactForm"
 
 const aboutMe = ({ meta, hero, themes, contact }) => {
     return (
         <>
             <Meta meta={meta} />
             <main id="Juho">
-                <HeroAlt hero={hero} />
+                <Hero hero={hero} />
                 <ThemeBlock
                     themes={themes}
                 />
-                <div className="container ContactContainer">
-                    <ContactDetails contact={contact} />
-                    <ContactForm id="yhteydenotto" contact={contact} />
-                </div>
             </main>
         </>
     )
@@ -26,7 +20,6 @@ export default aboutMe
 
 export async function getStaticProps() {
     const aboutMe = await import(`../content/aboutMe.json`)
-    const site = await import(`../content/site.json`)
 
     return {
         props: {
@@ -44,12 +37,6 @@ export async function getStaticProps() {
             },
             themes: {
                 themes: aboutMe.ThemeSection.themes
-            },
-            contact: {
-                SectionTitle: site.ContactSection.SectionTitle,
-                SectionDescription: site.ContactSection.SectionDescription,
-                CTA: site.ContactSection.CTA,
-                socialMedia: site.ContactSection.socialMedia
             },
         }
     }
