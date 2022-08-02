@@ -15,13 +15,14 @@ body,
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
 	color:$black;
+	scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a, p, input, span, button, strong {
+a, p, input, span, button, strong, small {
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -98,6 +99,8 @@ a {
 .desktop-only {
 	display: none;
 }
+
+
 
 .ContactContainer {
 	@include display-flex;
