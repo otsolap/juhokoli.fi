@@ -102,16 +102,18 @@
         }
     }
 
-    .themeBlockImageContainer {
-        padding-top: $double;
-    }
-
     .themeBlockImageContainer,
     .themeDescriptionContainer {
         margin-left: auto;
         margin-right: auto;
-        flex: 0 0 50%;
         max-width: 50%;
     }
-    
+
+    .themeDescriptionContainer {
+        flex: 0 0 50%;
+    }
+
+    .themeBlockImageContainer {
+        padding-top: $double;
+    }
 }

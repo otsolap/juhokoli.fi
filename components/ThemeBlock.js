@@ -13,7 +13,7 @@ const ThemeBlock = ({ themes }) => {
                     >
                         <div className="container">
                             <h2 className="mobile-only">{theme.title}</h2>
-                            <div className={`${styles.blockContent}`}>
+                            <div className={styles.blockContent}>
                                 {theme.image && (
                                     <div className={styles.themeBlockImageContainer}>
                                         <Image
@@ -21,7 +21,6 @@ const ThemeBlock = ({ themes }) => {
                                             alt={theme.title}
                                             width={390}
                                             height={220}
-                                            layout="responsive"
                                             objectFit='cover'
                                             objectPosition='center center'
                                             quality={100}

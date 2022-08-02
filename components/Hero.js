@@ -1,12 +1,16 @@
+import { useRouter } from 'next/router'
 import styles from '../styles/Hero.module.scss'
 import Image from 'next/image'
 
 const Hero = ({ hero }) => {
+    const router = useRouter()
+    console.log(router.pathname)
+
     return (
         <section id={styles.hero}>
             <div className="desktop-only">
                 {hero.DesktopHeroImage && (
-                    <div style={{ position: 'absolute', width: '100%', height: '658px', overflow: 'hidden', inset: '0', }}>
+                    <div style={{ position: 'absolute', width: '100%', overflow: 'hidden', inset: '0', }}>
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}
@@ -32,8 +36,8 @@ const Hero = ({ hero }) => {
                     />
                 </div>
             )}
-            <div className={styles.contentContainer}>
-                <div className={styles.content}>
+            <div className={`${router.pathname === '/' ? `${styles.contentContainer}` : `${styles.contentAltContainer}`}`}>
+                <div className={`${router.pathname === '/' ? `${styles.content}` : `${styles.contentAlt}`}`}>
                     <h1>{hero.HeroTitle}</h1>
                     <h3>{hero.HeroSubtitle}</h3>
                     {hero.CTA && (
