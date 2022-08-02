@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HeroAlt = ({ hero }) => {
     return (
-        <section id="hero">
+        <section id="altHero">
             <div className={styles.altImageContainer}>
                 <div className="desktop-only">
                     {hero.DesktopHeroImage && (
@@ -13,7 +13,7 @@ const HeroAlt = ({ hero }) => {
                                 alt={hero.heroTitle}
                                 layout="fill"
                                 objectFit='cover'
-                                objectPosition='center'
+                                objectPosition='center center'
                                 quality={100}
                             />
                         </div>

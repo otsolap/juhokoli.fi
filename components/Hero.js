@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 const Hero = ({ hero }) => {
     return (
-        <section id="hero">
+        <section id={styles.hero}>
             <div className="desktop-only">
                 {hero.DesktopHeroImage && (
-                    <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', width: '100%', height: '658px', overflow: 'hidden', inset: '0', }}>
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}
@@ -27,12 +27,12 @@ const Hero = ({ hero }) => {
                         alt={hero.heroTitle}
                         layout="fill"
                         objectFit='cover'
-                        objectPosition='center'
+                        objectPosition='center center'
                         quality={100}
                     />
                 </div>
             )}
-            <div className={styles.container}>
+            <div className={styles.contentContainer}>
                 <div className={styles.content}>
                     <h1>{hero.HeroTitle}</h1>
                     <h3>{hero.HeroSubtitle}</h3>
