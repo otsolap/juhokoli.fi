@@ -3,9 +3,9 @@ import styles from '../../styles/FAQ.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-const Question = ({ answer, question }) => {
+const Question = ({ answer, question, open }) => {
     const contentRef = useRef(null)
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(open);
     useEffect(() => {
         contentRef.current.style.maxHeight = active
             ? `${contentRef.current.scrollHeight}px`
@@ -25,7 +25,7 @@ const Question = ({ answer, question }) => {
                             {question}
                         </h4>
                         <FontAwesomeIcon
-                            className={styles.faqIcon} aria-label="Usein kysytty kysymys Juho Kolista" icon={active ? faAngleUp : faAngleDown}
+                            className={styles.faqIcon} aria-label="Usein kysytty kysymys" icon={active ? faAngleUp : faAngleDown}
                         />
                     </div>
                 </div>
