@@ -38,8 +38,12 @@ const Hero = ({ hero }) => {
             )}
             <div className={`${router.pathname === '/' ? `${styles.contentContainer}` : `${styles.contentAltContainer}`}`}>
                 <div className={`${router.pathname === '/' ? `${styles.content}` : `${styles.contentAlt}`}`}>
-                    <h1>{hero.HeroTitle}</h1>
-                    <h3>{hero.HeroSubtitle}</h3>
+                    {hero.HeroTitle && (
+                        <h1>{hero.HeroTitle}</h1>
+                    )}
+                    {hero.HeroSubtitle && (
+                        <h3>{hero.HeroSubtitle}</h3>
+                    )}
                     {hero.CTA && (
                         <div className="buttonWrapper">
                             <a className={`btn ${styles.heroBTN}`}
