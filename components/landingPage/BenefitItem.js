@@ -3,7 +3,7 @@ import styles from '../../styles/Benefits.module.scss'
 
 const BenefitItem = ({ benefits }) => {
     return (
-        <div className="benefit">
+        <div className={styles.benefits}>
             {benefits.map((benefit, i) => (
                 <div className={styles.benefitItem} id={`benefit-item-${i}`} key={i}>
                     {benefit.image && (
@@ -11,9 +11,10 @@ const BenefitItem = ({ benefits }) => {
                             <Image
                                 alt={benefit.title}
                                 src={benefit.image}
+                                quality={100}
                                 width={230}
                                 height={230}
-                                quality={100}
+                                layout="responsive"
                                 objectFit='cover'
                                 objectPosition='center'
                             />

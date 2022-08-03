@@ -3,7 +3,7 @@ import styles from '../../styles/References.module.scss'
 
 const ReferenceItem = ({ referees }) => {
     return (
-        <div className="reference">
+        <div className={styles.references}>
             {referees.map((reference, i) => (
                 <div className={styles.referenceItem} id={`refence-item-${i}`} key={i}>
                     {reference.image && (

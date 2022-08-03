@@ -55,8 +55,10 @@ const ContactDetails = ({ contact }) => {
     return (
         <section className={styles.detailsSection}>
             <div className={styles.container}>
-                <h2>{contact.SectionTitle}</h2>
-                <p>{contact.SectionDescription}</p>
+                <header className="sectionHeader">
+                    <h2>{contact.SectionTitle}</h2>
+                    <p>{contact.SectionDescription}</p>
+                </header>
                 <div className={styles.someContent}>
                     {SoMe}
                 </div>
