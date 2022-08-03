@@ -4,13 +4,14 @@ import Meta from '@components/Meta'
 import Hero from '@components/Hero'
 import ThemeBlock from "@components/ThemeBlock"
 import ReferenceList from '@components/landingPage/ReferenceList'
+import BenefitList from '@components/landingPage/BenefitList'
 import Faq from "@components/landingPage/Faq"
 import ContactDetails from "@components/ContactDetails"
 import ContactForm from "@components/ContactForm"
 
 import Script from 'next/script'
 
-const Index = ({ meta, hero, themes, references, faq, contact }) => {
+const Index = ({ meta, hero, themes, benefits, references, faq, contact }) => {
   const router = useRouter()
 
   useEffect(() => {
@@ -36,6 +37,7 @@ const Index = ({ meta, hero, themes, references, faq, contact }) => {
           hero={hero}
         />
         <ThemeBlock themes={themes} />
+        <BenefitList benefits={benefits} />
         <ReferenceList references={references} />
         <Faq faq={faq} />
         <div className="container ContactContainer">
@@ -71,6 +73,10 @@ export async function getStaticProps() {
       },
       themes: {
         themes: home.ThemeSection.themes
+      },
+      benefits: {
+        sectionTitle: home.BenefitsSection.SectionTitle,
+        benefits: home.BenefitsSection.benefits,
       },
       references: {
         sectionTitle: home.ReferenceSection.SectionTitle,

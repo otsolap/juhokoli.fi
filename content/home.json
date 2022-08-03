@@ -27,6 +27,26 @@
       }
     ]
   },
+  "BenefitsSection": {
+    "SectionTitle": "Mitä Juhosta sanotaan?",
+    "benefits": [
+      {
+        "title": "Maksuliikenne-palvelut",
+        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "image": "/images/Saastopankki.png"
+      },
+      {
+        "title": "Sijoittaminen",
+        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "image": "/images/Saastopankki.png"
+      },
+      {
+        "title": "Varainhoito",
+        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "image": "/images/Saastopankki.png"
+      }
+    ]
+  },
   "FAQSection": {
     "SectionTitle": "Usein kysyttyjä kysymyksiä",
     "faqs": [

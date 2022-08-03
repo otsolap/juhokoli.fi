@@ -1,0 +1,14 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+#benefitsSection {
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+  
+}
