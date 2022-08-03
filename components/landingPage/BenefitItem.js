@@ -11,10 +11,9 @@ const BenefitItem = ({ benefits }) => {
                             <Image
                                 alt={benefit.title}
                                 src={benefit.image}
-                                width={160}
-                                height={160}
+                                width={230}
+                                height={230}
                                 quality={100}
-                                layout="responsive"
                                 objectFit='cover'
                                 objectPosition='center'
                             />
