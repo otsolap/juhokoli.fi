@@ -49,6 +49,19 @@ collections:
               - { label: "Referoijan nimike", name: "refereeTitle", widget: "string", required: false}
               - { label: "Referenssi", name: "reference", widget: "text", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Hyödyt-osio"
+          name: "BenefitsSection"
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+          - label: "Hyödyt"
+            name: "benefits"
+            widget: list
+            max: 3
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
