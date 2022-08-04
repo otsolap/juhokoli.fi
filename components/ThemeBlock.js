@@ -19,10 +19,11 @@ const ThemeBlock = ({ themes }) => {
                                         <Image
                                             src={theme.image}
                                             alt={theme.title}
-                                            width={390}
-                                            height={220}
-                                            layout="responsive"
-                                            objectFit='cover'
+                                            width={544}
+                                            height={454}
+                                            layout="fill"
+                                            /** KORJAA TÄMÄ OTSO */
+                                            objectFit='contain'
                                             objectPosition='center'
                                             quality={100}
                                         />
