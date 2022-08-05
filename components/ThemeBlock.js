@@ -21,8 +21,7 @@ const ThemeBlock = ({ themes }) => {
                                             alt={theme.title}
                                             width={544}
                                             height={454}
-                                            layout="fill"
-                                            /** KORJAA TÄMÄ OTSO */
+                                            layout='responsive'
                                             objectFit='contain'
                                             objectPosition='center'
                                             quality={100}

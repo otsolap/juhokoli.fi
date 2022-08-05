@@ -70,6 +70,7 @@
     padding: $single;
 }
 
+/* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
 
     .themesContainer {
@@ -86,8 +87,8 @@
 
     .themeBlockSection {
         @include display-flex;
-        padding-top: $double;
-        padding-bottom: $double;
+        padding-top: initial;
+        padding-bottom: initial;
         background-color: $white;
     }
 
@@ -112,6 +113,10 @@
     }
 
     .themeDescriptionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         h2 {
             font-size: 2.25rem;
         }
@@ -119,7 +124,8 @@
     }
 
     .themeBlockImageContainer {
-        margin-top: $double;
-        width: 390px;
+        padding-bottom: initial;
+        width: 454px;
+        height: 544px;
     }
 }
