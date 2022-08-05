@@ -3,14 +3,15 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "/images"
+publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
 local_backend: true # run npx netlify-cms-proxy-server for local testing
-editor:
-     preview: false
 collections:
   - name: "pages"
     description: "Etusivun sekä Minusta-sivun asetukset."
     label: "Sivut"
+    editor:
+     preview: false
     files:
     - label: "Etusivu"
       name: "home"
@@ -43,6 +44,7 @@ collections:
               - { label: "Kuva", name: "image", widget: "image", required: false}
         - label: "Referenssit-osio"
           name: "ReferenceSection"
+          hint: "Suositeltu koko referenssikuville on 160 x 160 pikseliä."
           widget: object
           fields:
           - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
@@ -81,6 +83,7 @@ collections:
                 - { label: "Vastaus näkyvissä?", name: "open", default: false, widget: "boolean", required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa."
           widget: object
           fields:
           - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
@@ -113,6 +116,15 @@ collections:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "description", widget: "text", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa."
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
   - name: "general"
     description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, sosiaalinen media sekä lomake."
     label: "Sivun asetukset"
@@ -129,9 +141,9 @@ collections:
            - { label: "Logo", name: "logo", widget: "string", required: false}
            - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image", required: false}
            - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string", required: false}
-           - { label: "Etusivun otsikko", name: "homeTitle", widget: "string", required: false}
-           - { label: "Minusta-sivun otsikko", name: "aboutMeTitle", widget: "string", required: false}
-           - { label: "Yhteydenotto otsikko", name: "contactTitle", widget: "string", required: false}
+           - { label: "Etusivu linkin otsikko", name: "homeTitle", widget: "string", required: false}
+           - { label: "Minusta-sivun linkin otsikko", name: "aboutMeTitle", widget: "string", required: false}
+           - { label: "Yhteydenotto linkin otsikko", name: "contactTitle", widget: "string", required: false}
         - label: "Yhteydenotto"
           name: "ContactSection"
           widget: object
