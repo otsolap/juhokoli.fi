@@ -15,6 +15,7 @@ collections:
     - label: "Etusivu"
       name: "home"
       file: "content/home.json"
+      preview_path: /etusivu
       fields:
         - label: "Herokuva"
           hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000."
@@ -89,6 +90,7 @@ collections:
     - label: "Koli"
       name: "aboutMe"
       file: "content/aboutMe.json"
+      preview_path: about-juho
       fields:
         - label: "Herokuva"
           name: "Hero"
@@ -145,7 +147,7 @@ collections:
            - { label: "Logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
            - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
         - label: "Sosiaalinen Media"
-          name: "socialMedia"
+          name: "SocialMedia"
           hint: "Somekanavat näkyvät yhteydenotto-osiossa sekä sivun alatunnisteessa"
           widget: object
           fields:

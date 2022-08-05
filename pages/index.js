@@ -93,7 +93,7 @@ export async function getStaticProps() {
         SuccessMessage: site.ContactSection.SuccessMessage
       },
       some: {
-        socialMediaList: site.socialMedia.socialMediaList
+        socialMediaList: site.SocialMedia.socialMediaList
       }
     },
   }
