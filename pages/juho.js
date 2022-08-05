@@ -36,7 +36,7 @@ export async function getStaticProps() {
                 MobileHeroImage: aboutMe.Hero.MobileHeroImage,
             },
             themes: {
-                themes: aboutMe.ThemeSection.themes
+                themes: aboutMe.TextImageSection.themes
             },
         }
     }

@@ -3,8 +3,8 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from '../styles/Contact.module.scss'
 
-const ContactDetails = ({ contact }) => {
-    const SoMe = contact.socialMedia.map((icons, i) => {
+const ContactDetails = ({ contact, some }) => {
+    const SoMe = some.socialMediaList.map((icons, i) => {
         return (
             <span className={styles.someIconContainer} key={i}>
                 {icons.icon === 'Email' ? (

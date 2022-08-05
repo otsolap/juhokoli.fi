@@ -11,8 +11,10 @@
     "SectionTitle": "Otsikko",
     "SectionDescription": "Ole yhteydessä, niin sovitaan tapaaminen joko fyysisesti, tai verkossa. Asiakkuutesi on minulle tärkeä ja teen työtäni palvellakseni ja auttaakseni yrityksesi kasvua!",
     "CTA": "Lähetä",
-    "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä.",
-    "socialMedia": [
+    "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä."
+  },
+  "SocialMedia": {
+    "socialMediaList": [
       {
         "icon": "Email",
         "url": "juho.koli@saastopankki.fi"

@@ -11,7 +11,7 @@ import ContactForm from "@components/ContactForm"
 
 import Script from 'next/script'
 
-const Index = ({ meta, hero, themes, benefits, references, faq, contact }) => {
+const Index = ({ meta, hero, themes, benefits, references, faq, contact, some }) => {
   const router = useRouter()
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Index = ({ meta, hero, themes, benefits, references, faq, contact }) => {
         <ReferenceList references={references} />
         <Faq faq={faq} />
         <div className="container ContactContainer">
-          <ContactDetails contact={contact} />
+          <ContactDetails contact={contact} some={some} />
           <ContactForm contact={contact} />
         </div>
       </main>
@@ -72,7 +72,7 @@ export async function getStaticProps() {
         CTALink: home.Hero.CTALink,
       },
       themes: {
-        themes: home.ThemeSection.themes
+        themes: home.TextImageSection.themes
       },
       benefits: {
         sectionTitle: home.BenefitsSection.SectionTitle,
@@ -90,8 +90,10 @@ export async function getStaticProps() {
         SectionTitle: site.ContactSection.SectionTitle,
         SectionDescription: site.ContactSection.SectionDescription,
         CTA: site.ContactSection.CTA,
-        socialMedia: site.ContactSection.socialMedia,
         SuccessMessage: site.ContactSection.SuccessMessage
+      },
+      some: {
+        socialMediaList: site.socialMedia.socialMediaList
       }
     },
   }

@@ -25,7 +25,7 @@
 		&:focus {
 		text-decoration-line: underline;
 		text-decoration-color: $aquamarine;
-		text-underline-offset: 2px;
+		text-underline-offset: 5px;
 		}
 	}
 }
@@ -42,7 +42,7 @@
 .active {
 	text-decoration-line: underline;
 	text-decoration-color: $aquamarine;
-	text-underline-offset: 2px;
+	text-underline-offset: 5px;
 	text-decoration-thickness: 2px;
 }
 

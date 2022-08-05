@@ -7,7 +7,7 @@
     "HeroTitle": "Tähän Joku ytimekäs otsikko Juho tai poista tämä!",
     "MobileHeroImage": "/images/Vaaliteemat_Hero_Mobiili.png"
   },
-  "ThemeSection": {
+  "TextImageSection": {
     "themes": [
       {
         "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi.",
