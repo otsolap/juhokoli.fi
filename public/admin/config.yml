@@ -19,7 +19,7 @@ collections:
       preview_path: /etusivu
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000."
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000. Laita linkiksi #yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen."
           name: "Hero"
           widget: object
           fields:
@@ -128,6 +128,8 @@ collections:
   - name: "general"
     description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, sosiaalinen media sekä lomake."
     label: "Sivun asetukset"
+    editor:
+     preview: false
     files:
     - label: "Ylä- ja alatunniste, some."
       name: "site"
