@@ -18,7 +18,7 @@ const MobileFooter = () => {
                     <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.aboutMeTitle} icon={faUserTie} />
                         <span className={styles.mobileLinkText}>{Navigation.aboutMeTitle}</span></a>
                 </Link>
-                <Link href="/yhteydenotto">
+                <Link href="/#yhteydenotto">
                     <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.contactTitle} icon={faEnvelopeOpenText} />
                         <span className={styles.mobileLinkText}>{Navigation.contactTitle}</span></a>
                 </Link>

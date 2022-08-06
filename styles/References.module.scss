@@ -9,7 +9,7 @@
 }
 
 .imageContainer {
-    width: 10rem;
+    width: 10rem /* 160px */;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,17 +51,20 @@
 
 .referee {
     font-weight: 700;
+    padding-top: $double;
+}
+
+.referee,
+.referenceQuote,
+.refereeWorkTitle {
     text-align: left;
     width: 100%;
-    padding-top: $double;
-    padding-bottom: $double;
 }
 
 .refereeWorkTitle {
-    margin-top: -2rem;
-    text-align: left;
-    width: 100%;
+    padding-top: .25rem;
 }
+
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
