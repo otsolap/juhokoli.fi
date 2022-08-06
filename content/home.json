@@ -4,7 +4,7 @@
     "CTALink": "#yhteydenotto",
     "CTA": "Haluan ottaa yhteyttä!",
     "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
-    "HeroTitle": "Tähän Joku ytimekäs otsikko Juho tai poista tämä!",
+    "HeroTitle": "",
     "MobileHeroImage": "/images/Vaaliteemat_Hero_Mobiili.png"
   },
   "TextImageSection": {
@@ -66,6 +66,6 @@
     "title": "Juho Koli",
     "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. ",
     "url": "juhokoli.fi",
-    "image": "/images/Vaaliteemat_Hero_Mobiili.png"
+    "image": "/images/Vaaliteemat_Hero.png"
   }
 }
