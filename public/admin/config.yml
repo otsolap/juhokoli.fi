@@ -5,7 +5,7 @@ media_folder: "public/images"
 public_folder: "/images"
 publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+# local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     description: "Etusivun sekä Minusta-sivun asetukset."
@@ -16,7 +16,7 @@ collections:
     - label: "Etusivu"
       name: "home"
       file: "content/home.json"
-      preview_path: /
+      preview_path: home
       fields:
         - label: "Herokuva"
           hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000. Laita linkiksi #yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen."
