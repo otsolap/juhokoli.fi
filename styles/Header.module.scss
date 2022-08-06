@@ -68,6 +68,13 @@
 		justify-content: space-evenly;
 	}
 
+	.navContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.logo {
 		font-size: 2.25rem;
         line-height: 2.5rem;
@@ -76,7 +83,7 @@
 	}
 
 	.logoContainer {
-		display: block;
+		display: flex;
 		width: 100%;
 	}
 
