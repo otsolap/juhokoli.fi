@@ -18,7 +18,7 @@ const ContactForm = ({ contact }) => {
     const theContactForm = (
         <form
             name="contact-form"
-            action="/form.html?success=true"
+            action="/form.html?success=true#yhteydenotto"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
