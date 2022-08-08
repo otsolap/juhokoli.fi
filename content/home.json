@@ -1,28 +1,28 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/Vaaliteemat_Hero.png",
+    "DesktopHeroImage": "/images/juho1.jpg",
     "CTALink": "#yhteydenotto",
     "CTA": "Haluan ottaa yhteyttä!",
-    "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
+    "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen avulla. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
     "HeroTitle": "",
-    "MobileHeroImage": "/images/Vaaliteemat_Hero_Mobiili.png"
+    "MobileHeroImage": "/images/juho1.jpg"
   },
   "TextImageSection": {
     "themes": [
       {
-        "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi.",
-        "title": "Saa laittaa otsikon jos haluaa",
+        "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi. Lähtökohtaisesti kaikenlaiset rahoitustarpeet ovat kiinnostavia ja kaikki käsitellään tapauskohtaisesti.",
+        "title": "Missä hankkeissa pankkion mukana?",
         "image": "/images/koliyritysrahoitus_600x500.jpg"
       }
     ]
   },
   "ReferenceSection": {
-    "SectionTitle": "Mitä Juhosta sanotaan?",
+    "SectionTitle": "Referenssejä",
     "referees": [
       {
         "referee": "Otso Lappalainen",
         "refereeTitle": "Web-devaaja",
-        "reference": "Kolikon kääntöpuoli auttaa sinua takomaan rahaa",
+        "reference": "Koli on nopea, asiallinen ja osaava",
         "image": "/images/Otso.png"
       }
     ]
@@ -31,18 +31,18 @@
     "SectionTitle": "Miten autan sinua tavoittamaan unelmasi",
     "benefits": [
       {
-        "title": "Maksuliikenne-palvelut",
-        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "title": "Rahoitus",
+        "valueProposition": "Vastuullisesti ja ammattitaitoisesti löydän ratkaisun tarpeeseesi. Jokainen tarve käsitellään yksilöllisesti, paikallisesti ja riittävän nopeasti. Saat käyttöösi asiakkaanamme suoran numeroni ja palveluni.",
         "image": "/images/Saastopankki.png"
       },
       {
-        "title": "Sijoittaminen",
-        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "title": "Maksuliikenne",
+        "valueProposition": "Säästöpankkiryhmän maksuliikenne on toimivaa ja helppoa. Autan maksuliikenteen osalta niin paljon, kuin pystyn, minkä lisäksi käytössäsi on asiakkaanamme Säästöpankkipalveluiden keskitetty maksuliikennetuki. He ovat puhelimen päässä, tavoitettavissa 8-18 numerosta 0100 5454. Keskimääräinen vastausaika n. 20 sekuntia!",
         "image": "/images/Saastopankki.png"
       },
       {
-        "title": "Varainhoito",
-        "valueProposition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.",
+        "title": "Sijoittaminen ja Varainhoito",
+        "valueProposition": "Sijoittamisen ja varainhoidon osalta ohjaan sinulle pankistamme osaavimman kumppanin ja olen tarvittaessa mukana aihealueen tapaamisissa.",
         "image": "/images/Saastopankki.png"
       }
     ]
@@ -53,7 +53,7 @@
       {
         "open": true,
         "question": "Paljonko pitää olla omaa pääomaa aloittaakseen?",
-        "answer": "Paritonnia riittää."
+        "answer": "Jokainen tapaus käsitellään tapauskohtaisesti. Ota yhteyttä, keskustellaan, tavataan ja mietitään yrityksellesi sopivin ratkaisu!"
       },
       {
         "open": false,
@@ -66,6 +66,6 @@
     "title": "Juho Koli",
     "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. ",
     "url": "juhokoli.fi",
-    "image": "/images/Vaaliteemat_Hero.png"
+    "image": "/images/juho1.jpg"
   }
 }
