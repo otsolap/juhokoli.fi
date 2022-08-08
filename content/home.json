@@ -1,11 +1,11 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/juho1.jpg",
+    "DesktopHeroImage": "/images/koli_hero_august_22.jpg",
     "CTALink": "#yhteydenotto",
     "CTA": "Haluan ottaa yhteyttä!",
     "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen avulla. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
     "HeroTitle": "",
-    "MobileHeroImage": "/images/juho1.jpg"
+    "MobileHeroImage": "/images/koli_hero_august_22.jpg"
   },
   "TextImageSection": {
     "themes": [
@@ -66,6 +66,6 @@
     "title": "Juho Koli",
     "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. ",
     "url": "juhokoli.fi",
-    "image": "/images/juho1.jpg"
+    "image": "/images/koli_hero_august_22.jpg"
   }
 }
