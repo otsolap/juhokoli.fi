@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 import styles from '../styles/Hero.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
+import { scrollBtn } from '@utils/main'
 
 const Hero = ({ hero }) => {
     const router = useRouter()
@@ -44,13 +46,16 @@ const Hero = ({ hero }) => {
                     {hero.HeroSubtitle && (
                         <h3>{hero.HeroSubtitle}</h3>
                     )}
-                    {hero.CTA && (
+                    {hero.CTA && hero.CTALink === 'yhteydenotto' && (
                         <div className="buttonWrapper">
-                            <a className={`btn ${styles.heroBTN}`}
-                                href={hero.CTALink}
-                            >
-                                {hero.CTA}
-                            </a>
+                            <button className={`btn ${styles.heroBTN}`} scrollTo={hero.CTALink} onClick={scrollBtn}>{hero.CTA}</button >
+                        </div>
+                    )}
+                    {hero.CTA && hero.CTALink != 'yhteydenotto' && (
+                        <div className="buttonWrapper">
+                            <Link href={hero.CTALink}>
+                                <a className={`btn ${styles.heroBTN}`}>{hero.CTA}</a>
+                            </Link>
                         </div>
                     )}
                 </div>

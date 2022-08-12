@@ -8,7 +8,6 @@ import BenefitList from '@components/landingPage/BenefitList'
 import Faq from "@components/landingPage/Faq"
 import ContactDetails from "@components/ContactDetails"
 import ContactForm from "@components/ContactForm"
-
 import Script from 'next/script'
 
 const Index = ({ meta, hero, themes, benefits, references, faq, contact, some }) => {
