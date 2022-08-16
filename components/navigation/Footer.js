@@ -77,7 +77,7 @@ const Footer = () => {
             <div className={styles.footerSubContainer}>
                 <div className={styles.subDesktopContainer}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
+                    <Link href="/tietoa-evasteista"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                     <div className={styles.footerKultakammen}>
                         <a
                             rel="noreferrer"

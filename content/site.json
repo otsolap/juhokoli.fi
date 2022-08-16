@@ -44,12 +44,21 @@
     "desktopLogoImage": "/images/Saastopankki.png",
     "desktopLogoAlt": "",
     "Owner": "Juho Koli",
-    "privacyPolicy": "Tietosuojaseloste",
+    "privacyPolicy": "Tietoa evästeistä",
     "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
   },
   "Google": {
     "GA": "",
     "GTM": "GTM-TBFDWT8"
+  },
+  "Cookies": {
+    "SectionTitle": "Tietoa evästeistä (cookies)",
+    "SectionDescription": "Sivustollamme käytetään evästeitä, jotka mahdollistavat sivuston toiminnan ja voivat kerätä tietoa sivuston käytöstä. Osa evästeistä (ns. pysyvät evästeet) tallentuvat käyttäjän päätelaitteelle (kuten tietokone, puhelin tai tabletti) pidemmäksi ajaksi ja ovat jälleen käytettävissä, kun käyttäjä palaa takaisin sivustolle. Istuntoevästeet poistuvat, kun käyttäjä sulkee selaimen. Evästeisiin ei tallenneta henkilötietoa.",
+    "moreInformationTitle": "Lisätietoa evästeistä",
+    "wikipediaTitle": "Wikipedia",
+    "linkToWikipedia": "https://fi.wikipedia.org/wiki/Ev%C3%A4ste",
+    "traficomTitle": "Liikenne- ja viestintäviraston Kyberturvallisuuskeskus",
+    "linkToTraficom": "https://www.kyberturvallisuuskeskus.fi/fi/toimintamme/saantely-ja-valvonta/evasteet"
   },
   "Header": {
     "logo": "Juho Koli",

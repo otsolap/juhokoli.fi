@@ -72,6 +72,19 @@ a {
 	text-decoration-line: none;
 }
 
+div.externalLinkWrapper {
+	margin-top: $single;
+	margin-bottom: $single;
+	margin-left: $single;
+}
+
+a.externalLink {
+	display: block;
+	color: $primary;
+	text-decoration: underline;
+	margin-top: $single;
+	margin-bottom: $single;
+}
 
 /* Section Intro */
 .sectionHeader {
@@ -99,8 +112,6 @@ a {
 .desktop-only {
 	display: none;
 }
-
-
 
 .ContactContainer {
 	@include display-flex;
