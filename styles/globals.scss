@@ -72,20 +72,6 @@ a {
 	text-decoration-line: none;
 }
 
-div.externalLinkWrapper {
-	margin-top: $single;
-	margin-bottom: $single;
-	margin-left: $single;
-}
-
-a.externalLink {
-	display: block;
-	color: $primary;
-	text-decoration: underline;
-	margin-top: $single;
-	margin-bottom: $single;
-}
-
 /* Section Intro */
 .sectionHeader {
 	padding-left: $single;
@@ -118,6 +104,29 @@ a.externalLink {
     @include flex-direction(column);
     justify-content: center;
 }
+
+// Cookies Page //
+div.externalLinkWrapper {
+	margin-top: $single;
+	margin-bottom: $single;
+	margin-left: $single;
+}
+
+a.externalLink {
+	display: block;
+	color: $primary;
+	text-decoration: underline;
+	margin-top: $single;
+	margin-bottom: $single;
+}
+
+.cookieWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {

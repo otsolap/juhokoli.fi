@@ -54,6 +54,24 @@
   "Cookies": {
     "SectionTitle": "Tietoa evästeistä (cookies)",
     "SectionDescription": "Sivustollamme käytetään evästeitä, jotka mahdollistavat sivuston toiminnan ja voivat kerätä tietoa sivuston käytöstä. Osa evästeistä (ns. pysyvät evästeet) tallentuvat käyttäjän päätelaitteelle (kuten tietokone, puhelin tai tabletti) pidemmäksi ajaksi ja ovat jälleen käytettävissä, kun käyttäjä palaa takaisin sivustolle. Istuntoevästeet poistuvat, kun käyttäjä sulkee selaimen. Evästeisiin ei tallenneta henkilötietoa.",
+    "cookieListTitle": "Sivustolla käytetyt evästeet",
+    "cookieList": [
+      {
+        "name": "_ga",
+        "description": "Verkkoanalytiikka, käyttäjän yksilöinti anonymisoiduin tiedoin (Google Analytics).",
+        "type":"Kolmannen osapuolen pysyvä eväste, 24 kuukautta"
+      },
+      {
+        "name": "_gid",
+        "description": "Verkkoanalytiikka, käyttäjän yksilöinti anonymisoiduin tiedoin (Google Analytics).",
+        "type":"Kolmannen osapuolen pysyvä eväste, 24 tuntia"
+      },
+      {
+        "name": "_gat",
+        "description": "Verkkoanalytiikka, palveluun kohdistustuvien kyselyjen määrän rajoittaminen (Google Analytics).",
+        "type":"Kolmannen osapuolen pysyvä eväste, 1 minuutti"
+      }
+    ],
     "moreInformationTitle": "Lisätietoa evästeistä",
     "wikipediaTitle": "Wikipedia",
     "linkToWikipedia": "https://fi.wikipedia.org/wiki/Ev%C3%A4ste",

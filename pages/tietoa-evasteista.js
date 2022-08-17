@@ -3,6 +3,21 @@ import Meta from '@components/Meta'
 import Link from 'next/link'
 
 const PrivacyPolicyPage = ({ meta, cookies }) => {
+    const cookiesList = cookies.cookieList.map((cookie, i) => {
+        return (
+            <article className="cookieCard" key={i}>
+                <header><strong>Evästeen nimi:</strong>{cookie.name}</header>
+                <div className="cookieCardBody">
+                    <strong>Evästeen käyttötarkoitus:</strong>{cookie.description}
+                </div>
+                <div className="cookieCardFooter">
+                    <strong>Evästeen tyyppi, säilytysaika:</strong> {cookie.type}
+                </div>
+            </article>
+        )
+    })
+
+
     return (
         <>
             <Meta
@@ -15,7 +30,11 @@ const PrivacyPolicyPage = ({ meta, cookies }) => {
                         <p>{cookies.sectionDescription}</p>
                     </header>
                     <div className="content">
-                        <h2>{cookies.moreInformationTitle}</h2>
+                        <h2>{cookies.cookieListTitle}</h2>
+                        <div className="cookieWrapper">
+                            {cookiesList}
+                        </div>
+                        <h3>{cookies.moreInformationTitle}</h3>
                         <div className="externalLinkWrapper">
                             <Link href={cookies.linkToWikipedia}><a className="externalLink">{cookies.wikipediaTitle}</a></Link>
                             <Link href={cookies.linkToTraficom}><a className="externalLink">{cookies.traficomTitle}</a></Link>
@@ -44,6 +63,8 @@ export async function getStaticProps() {
             cookies: {
                 sectionTitle: site.Cookies.SectionTitle,
                 sectionDescription: site.Cookies.SectionDescription,
+                cookieListTitle: site.Cookies.cookieListTitle,
+                cookieList: site.Cookies.cookieList,
                 moreInformationTitle: site.Cookies.moreInformationTitle,
                 wikipediaTitle: site.Cookies.wikipediaTitle,
                 linkToWikipedia: site.Cookies.linkToWikipedia,

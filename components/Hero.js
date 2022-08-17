@@ -48,7 +48,7 @@ const Hero = ({ hero }) => {
                     )}
                     {hero.CTA && hero.CTALink === 'yhteydenotto' && (
                         <div className="buttonWrapper">
-                            <button className={`btn ${styles.heroBTN}`} scrollTo={hero.CTALink} onClick={scrollBtn}>{hero.CTA}</button >
+                            <button className={`btn ${styles.heroBTN}`} scrollto={hero.CTALink} onClick={scrollBtn}>{hero.CTA}</button >
                         </div>
                     )}
                     {hero.CTA && hero.CTALink != 'yhteydenotto' && (
