@@ -6,14 +6,27 @@ const PrivacyPolicyPage = ({ meta, cookies }) => {
     const cookiesList = cookies.cookieList.map((cookie, i) => {
         return (
             <article className="cookieCard" key={i}>
-                <header><strong>Evästeen nimi:</strong>{cookie.name}</header>
+                <header>
+                    <strong>Evästeen nimi:</strong>
+                    {cookie.name}
+                </header>
                 <div className="cookieCardBody">
-                    <strong>Evästeen käyttötarkoitus:</strong>{cookie.description}
+                    <strong>Evästeen käyttötarkoitus:</strong>
+                    {cookie.description}
                 </div>
                 <div className="cookieCardFooter">
-                    <strong>Evästeen tyyppi, säilytysaika:</strong> {cookie.type}
+                    <strong>Evästeen tyyppi, säilytysaika:</strong>
+                    {cookie.type}
                 </div>
             </article>
+        )
+    })
+
+    const linkList = cookies.linkList.map((link, i) => {
+        return (
+            <Link href={link.link} key={i}>
+                <a className="externalLink" target="_blank" rel="noopener noreferrer">{link.title}</a>
+            </Link>
         )
     })
 
@@ -36,8 +49,7 @@ const PrivacyPolicyPage = ({ meta, cookies }) => {
                         </div>
                         <h3>{cookies.moreInformationTitle}</h3>
                         <div className="externalLinkWrapper">
-                            <Link href={cookies.linkToWikipedia}><a className="externalLink">{cookies.wikipediaTitle}</a></Link>
-                            <Link href={cookies.linkToTraficom}><a className="externalLink">{cookies.traficomTitle}</a></Link>
+                            {linkList}
                         </div>
                     </div>
                 </div>
@@ -66,10 +78,7 @@ export async function getStaticProps() {
                 cookieListTitle: site.Cookies.cookieListTitle,
                 cookieList: site.Cookies.cookieList,
                 moreInformationTitle: site.Cookies.moreInformationTitle,
-                wikipediaTitle: site.Cookies.wikipediaTitle,
-                linkToWikipedia: site.Cookies.linkToWikipedia,
-                traficomTitle: site.Cookies.traficomTitle,
-                linkToTraficom: site.Cookies.linkToTraficom
+                linkList: site.Cookies.linkList
             }
         },
     }

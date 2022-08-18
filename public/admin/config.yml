@@ -134,7 +134,7 @@ collections:
     editor:
      preview: false
     files:
-    - label: "Ylä- ja alatunniste, some."
+    - label: "Ylä- ja alatunniste, SoMe ja evästeet."
       name: "site"
       file: "content/site.json"
       fields:
@@ -191,3 +191,28 @@ collections:
                     label: url
                     required: true
                     hint: "Laita tähän URL:I SoMe kanavaasi"
+        - label: "Evästeet"
+          name: "Cookies"
+          hint: "Listaa vierailijalle mitä evästeitä sovellat sivussa."
+          widget: object
+          fields:
+            - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+            - { label: "Osion kuvaus", name: "SectionDescription", widget: "string", required: false} 
+            - { label: "Osion alaotsikko", name: "cookieListTitle", widget: "string", required: false}   
+            -   label: "Evästekeksit"
+                name: "cookieList"
+                widget: list
+                collapsed: true
+                fields:
+                  - { label: "Otsikko", name: "name", widget: "string", required: false}
+                  - { label: "Kuvaus", name: "description", widget: "text", required: false}
+                  - { label: "Kuva", name: "type", widget: "string", required: false }
+            - { label: "Lisätietojen otsikko", name: "moreInformationTitle", widget: "string", required: false}  
+            -   label: "Lisätieto linkkejä ulkoisiin sivustoihin"
+                name: "linkList"
+                widget: list
+                hint: "Anna ihmisille hyödyllisiä lähteitä, joista hän voi lukea lisää evästeistä ja niiden käyttötarkoituksesta"
+                collapsed: true
+                fields:
+                  - { label: "Otsikko", name: "title", widget: "string", required: false}
+                  - { label: "Kuvaus", name: "link", widget: "text", required: false}

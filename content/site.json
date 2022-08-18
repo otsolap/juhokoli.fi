@@ -73,10 +73,16 @@
       }
     ],
     "moreInformationTitle": "Lisätietoa evästeistä",
-    "wikipediaTitle": "Wikipedia",
-    "linkToWikipedia": "https://fi.wikipedia.org/wiki/Ev%C3%A4ste",
-    "traficomTitle": "Liikenne- ja viestintäviraston Kyberturvallisuuskeskus",
-    "linkToTraficom": "https://www.kyberturvallisuuskeskus.fi/fi/toimintamme/saantely-ja-valvonta/evasteet"
+    "linkList": [
+      {
+        "title": "Wikipedia",
+        "link": "https://fi.wikipedia.org/wiki/Ev%C3%A4ste"
+      },
+      {
+        "title": "Liikenne- ja viestintäviraston Kyberturvallisuuskeskus",
+        "link": "https://www.kyberturvallisuuskeskus.fi/fi/toimintamme/saantely-ja-valvonta/evasteet"
+      }
+    ]
   },
   "Header": {
     "logo": "Juho Koli",
