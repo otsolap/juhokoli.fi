@@ -40,8 +40,6 @@
 
 
 .detailsTxt {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
     
@@ -169,12 +167,5 @@
     .detailsTxt:first-child{
         padding-left: 1rem;
         margin-left: 1rem;
-    }
-
-    .detailsTxt:nth-child(2) {
-        &::after {
-            content:'';
-            margin-left: initial;
-        }
     }
 }
