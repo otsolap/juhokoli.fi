@@ -83,14 +83,5 @@
         "link": "https://www.kyberturvallisuuskeskus.fi/fi/toimintamme/saantely-ja-valvonta/evasteet"
       }
     ]
-  },
-  "Header": {
-    "logo": "Juho Koli",
-    "mobileImageLogo": "/images/Saastopankki.png",
-    "mobileImageAlt": "",
-    "homeTitle": "",
-    "themesTitle": "Vaaliteemat",
-    "aboutMeTitle": "",
-    "contactTitle": "Ota Yhteyttä"
   }
 }
