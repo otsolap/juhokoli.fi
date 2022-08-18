@@ -37,7 +37,7 @@ const PrivacyPolicyPage = ({ meta, cookies }) => {
                 meta={meta}
             />
             <main id="cookies">
-                <div class="container">
+                <div className="container">
                     <header className="sectionHeader">
                         <h1>{cookies.sectionTitle}</h1>
                         <p>{cookies.sectionDescription}</p>
