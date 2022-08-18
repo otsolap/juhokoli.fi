@@ -87,6 +87,12 @@ a {
     line-height: 2rem;
 }
 
+.content h3 {
+	margin: $single;
+	font-weight: 600;
+	line-height: 1.5rem;
+}
+
 .alt-bg {
 	background-color: $grey;
 }
@@ -124,6 +130,14 @@ a.externalLink {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin-top: $single;
+	margin-bottom: $single;
+}
+
+.cookieCard {
+	@include border(1px $grey);
+	@include border-radius(0.375rem);
+	margin: $single;
 }
 
 
