@@ -3,7 +3,6 @@ import Question from './Question'
 import styles from '../../styles/FAQ.module.scss'
 
 const Faq = ({ faq }) => {
-    const [faqs, setFaqs] = useState([faq.faqs])
 
     return (
         <section id={styles.faqSection}>
