@@ -32,7 +32,7 @@ collections:
             - { label: "Linkki", name: "CTALink", widget: "string", required: false}
         - label: 'Kuva- ja teksti-osio'
           name: "TextImageSection"
-          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 720px leveä ja 500px korkea."
           widget: object
           fields:
           - label: "Kuva ja teksti"
@@ -108,7 +108,7 @@ collections:
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
         - label: 'Kuva- ja teksti-osio'
           name: "TextImageSection"
-          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 720px leveä ja 500px korkea."
           widget: object
           fields:
           - label: "Kuva ja teksti"

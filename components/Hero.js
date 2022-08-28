@@ -6,28 +6,23 @@ import { scrollBtn } from '@utils/main'
 
 const Hero = ({ hero }) => {
     const router = useRouter()
-    console.log(router.pathname)
 
     return (
         <section id={styles.hero}>
-            <div className="desktop-only">
-                {hero.DesktopHeroImage && (
-                    <div style={{ position: 'absolute', width: '100%', overflow: 'hidden', inset: '0', }}>
-                        <Image
-                            src={hero.DesktopHeroImage}
-                            alt={hero.heroTitle}
-                            layout="fill"
-                            objectFit='cover'
-                            objectPosition='center'
-                            quality={100}
-                        />
-                    </div>
-                )}
-            </div>
+            {hero.DesktopHeroImage && (
+                <div className={`desktop-only ${styles.imageContainer}`}>
+                    <Image
+                        src={hero.DesktopHeroImage}
+                        alt={hero.heroTitle}
+                        layout="fill"
+                        objectFit='cover'
+                        objectPosition='center'
+                        quality={100}
+                    />
+                </div>
+            )}
             {hero.MobileHeroImage && (
-                <div
-                    style={{ position: 'relative', width: '100%', height: '270px', overflow: 'hidden' }}
-                    className="mobile-only">
+                <div className={`mobile-only ${styles.imageContainer}`}>
                     <Image
                         src={hero.MobileHeroImage}
                         alt={hero.heroTitle}

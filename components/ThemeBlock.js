@@ -19,10 +19,10 @@ const ThemeBlock = ({ themes }) => {
                                         <Image
                                             src={theme.image}
                                             alt={theme.title}
-                                            width={600}
+                                            width={720}
                                             height={500}
                                             layout='responsive'
-                                            objectFit='contain'
+                                            objectFit='cover'
                                             objectPosition='center'
                                             quality={100}
                                             className={styles.themeBlockImage}

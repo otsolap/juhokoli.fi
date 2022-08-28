@@ -16,6 +16,13 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 	}
 }
 
+.imageContainer {
+	position: relative;
+	width: 100%;
+	height: 270px;
+	overflow: hidden;
+}
+
 .textWrapper {
 	height: 100%;
 	width: 100%;
@@ -48,7 +55,6 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 		min-height: calc(($hero-max-width / 100) * $hero-max-height-ratio);
 	}
 }
-
 
 .content,
 .contentAlt {
@@ -89,6 +95,12 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
+
+	.imageContainer {
+		height: 100%;
+		position: absolute;
+		inset: 0;
+	}
 
 	.contentContainer,
 	.contentAltContainer {
