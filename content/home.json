@@ -1,9 +1,9 @@
 {
   "Hero": {
     "DesktopHeroImage": "/images/koli_hero_august_22.jpg",
-    "CTALink": "yhteydenotto",
+    "CTALink": "www.pasmiini.fi",
     "CTA": "Haluan ottaa yhteyttä!",
-    "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen avulla. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
+    "HeroSubtitle": "Moi Moi",
     "HeroTitle": "",
     "MobileHeroImage": "/images/koli_hero_august_22_mobile.jpg"
   },
@@ -24,6 +24,12 @@
         "refereeTitle": "Web-devaaja",
         "reference": "Koli on nopea, asiallinen ja osaava",
         "image": "/images/Otso.png"
+      },
+      {
+        "referee": "Jasmiini Peuramäki",
+        "refereeTitle": "Fysioterapeutti",
+        "reference": "Moi Moi",
+        "image": "/images/Kultakammen_white.png"
       }
     ]
   },
