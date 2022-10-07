@@ -81,6 +81,7 @@ const Footer = () => {
                     <div className={styles.footerKultakammen}>
                         <a
                             target="_blank"
+                            rel="noreferrer" 
                             href="https://www.kultakammen.fi">
                             <Image
                                 src="/images/Kultakammen_white.png"
