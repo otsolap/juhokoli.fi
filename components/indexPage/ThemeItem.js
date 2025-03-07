@@ -1,5 +1,5 @@
 import styles from '../../styles/themes.module.css'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const ThemeItem = ({ themes }) => {
     return (
