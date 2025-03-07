@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from 'next/image'
 import Link from 'next/link'
 import FooterContent from '@content/site.json'
 import Icons from '@content/site.json'
@@ -8,47 +8,47 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from '../../styles/footer.module.css'
 
 const Footer = () => {
-    const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
-        return (
-            <span className={styles.someIcons} key={i}>
-                {icons.icon === 'Instagram' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Instagram profiili" icon={faInstagram} />
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Twitter' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Twitter profiili" icon={faTwitter} />
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'LinkedIn' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="LinkedIn profiili" icon={faLinkedin} />
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Email' ? (
-                    <a href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Sähköposti" icon={faEnvelope} />
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Phone' ? (
-                    <a href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon aria-label="Puhelin" icon={faPhone} />
-                    </a>
-                ) : (
-                    ""
-                )}
-            </span>
-        )
-    })
+    // const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
+    //     return (
+    //         <span className={styles.someIcons} key={i}>
+    //             {icons.icon === 'Instagram' ? (
+    //                 <a href={icons.url} target="_blank" rel="noopener noreferrer">
+    //                     <FontAwesomeIcon aria-label="Instagram profiili" icon={faInstagram} />
+    //                 </a>
+    //             ) : (
+    //                 ""
+    //             )}
+    //             {icons.icon === 'Twitter' ? (
+    //                 <a href={icons.url} target="_blank" rel="noopener noreferrer">
+    //                     <FontAwesomeIcon aria-label="Twitter profiili" icon={faTwitter} />
+    //                 </a>
+    //             ) : (
+    //                 ""
+    //             )}
+    //             {icons.icon === 'LinkedIn' ? (
+    //                 <a href={icons.url} target="_blank" rel="noopener noreferrer">
+    //                     <FontAwesomeIcon aria-label="LinkedIn profiili" icon={faLinkedin} />
+    //                 </a>
+    //             ) : (
+    //                 ""
+    //             )}
+    //             {icons.icon === 'Email' ? (
+    //                 <a href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
+    //                     <FontAwesomeIcon aria-label="Sähköposti" icon={faEnvelope} />
+    //                 </a>
+    //             ) : (
+    //                 ""
+    //             )}
+    //             {icons.icon === 'Phone' ? (
+    //                 <a href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
+    //                     <FontAwesomeIcon aria-label="Puhelin" icon={faPhone} />
+    //                 </a>
+    //             ) : (
+    //                 ""
+    //             )}
+    //         </span>
+    //     )
+    // })
 
     return (
         <footer id={styles.Footer}>
@@ -62,13 +62,13 @@ const Footer = () => {
                     />
                 </div>
                 <div className={styles.footerSoMEContainer}>
-                    {SoMe}
+                    { /* SoMe*/ }
                 </div>
             </div>
             <div className={styles.footerDetailsContainer}>
                 <div className={styles.DetailsDesktopContainer}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                    <Link href="/tietosuojaseloste" className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</Link>
+                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
                     <div className={styles.footerKultakammen}>
                         <a
                             rel="noreferrer"
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    );
+    )
 }
 
 export default Footer;
