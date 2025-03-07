@@ -12,9 +12,9 @@ const Header = () => {
         <>
             <header className={styles.header}>
                 <div className={styles.logoContainer}>
-                    <Link href="/"><a className={styles.noDecoration}>
+                    <Link href="/" className={styles.noDecoration}>
                         <h1 className={styles.logo}>{Navigation.logo}</h1>
-                    </a>
+
                     </Link>
                     <div className={`mobile-only ${styles.mobileLogo}`}>
                         <Image
@@ -28,27 +28,27 @@ const Header = () => {
                 </div>
                 <div className={`desktop-only ${styles.desktopLinks}`}>
                     <nav className={styles.nav}>
-                        <Link href="/">
-                            <a className={router.pathname == '/' ? styles.active : ''}
-                            >{Navigation.homeTitle}</a>
+                        <Link href="/" className={router.pathname == '/' ? styles.active : ''}>
+                            {Navigation.homeTitle}
                         </Link>
-                        <Link href="/teemat">
-                            <a className={router.pathname == '/teemat' ? styles.active : ''}
-                            >{Navigation.themesTitle}</a>
+                        <Link
+                            href="/teemat"
+                            className={router.pathname == '/teemat' ? styles.active : ''}>
+                            {Navigation.themesTitle}
                         </Link>
-                        <Link href="/juho">
-                            <a className={router.pathname == '/juho' ? styles.active : ''}
-                            >{Navigation.aboutMeTitle}</a>
+                        <Link href="/juho" className={router.pathname == '/juho' ? styles.active : ''}>
+                            {Navigation.aboutMeTitle}
                         </Link>
-                        <Link href="/yhteydenotto">
-                            <a className={router.pathname == '/yhteydenotto' ? styles.active : ''}
-                            >{Navigation.contactTitle}</a>
+                        <Link
+                            href="/yhteydenotto"
+                            className={router.pathname == '/yhteydenotto' ? styles.active : ''}>
+                            {Navigation.contactTitle}
                         </Link>
                     </nav>
                 </div>
             </header>
         </>
-    )
+    );
 }
 
 export default Header

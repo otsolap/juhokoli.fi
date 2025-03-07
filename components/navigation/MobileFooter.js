@@ -10,25 +10,25 @@ const MobileFooter = () => {
     return (
         <footer className={`mobile-only ${styles.MobileFooterBar}`}>
             <div className={styles.mobileMenuWrapper}>
-                <Link href="/"><a>
+                <Link href="/">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.homeTitle} icon={faHouse} />
-                    <span className={styles.mobileLinkText}>{Navigation.homeTitle}</span></a>
+                    <span className={styles.mobileLinkText}>{Navigation.homeTitle}</span>
                 </Link>
                 <Link href="/teemat">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.themesTitle} icon={faBook} />
-                        <span className={styles.mobileLinkText}>{Navigation.themesTitle}</span></a>
+                    <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.themesTitle} icon={faBook} />
+                    <span className={styles.mobileLinkText}>{Navigation.themesTitle}</span>
                 </Link>
                 <Link href="/juho">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.aboutMeTitle} icon={faUserTie} />
-                        <span className={styles.mobileLinkText}>{Navigation.aboutMeTitle}</span></a>
+                    <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.aboutMeTitle} icon={faUserTie} />
+                    <span className={styles.mobileLinkText}>{Navigation.aboutMeTitle}</span>
                 </Link>
                 <Link href="/yhteydenotto">
-                    <a><FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.contactTitle} icon={faEnvelopeOpenText} />
-                        <span className={styles.mobileLinkText}>{Navigation.contactTitle}</span></a>
+                    <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.contactTitle} icon={faEnvelopeOpenText} />
+                    <span className={styles.mobileLinkText}>{Navigation.contactTitle}</span>
                 </Link>
             </div>
         </footer>
-    )
+    );
 }
 
 export default MobileFooter;
