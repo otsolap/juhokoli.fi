@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import styles from '../styles/newsletter.module.css'
 
 const Newsletter = ({ newsletter }) => {
@@ -33,10 +33,12 @@ const Newsletter = ({ newsletter }) => {
                     alt={newsletter.title}
                     className={styles.newsletterBGImg}
                     quality={100}
-                    layout="fill"
-                    objectFit='cover'
-                    objectPosition="center"
-                />
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                    }} />
                 <div className="container">
                     <div className={styles.content}>
                         <Image
@@ -45,7 +47,10 @@ const Newsletter = ({ newsletter }) => {
                             height={175}
                             width={165}
                             quality={100}
-                        />
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                         <h2>{newsletter.title}</h2>
                         <p>{newsletter.description}</p>
                         <div className={styles.formContainer}>
@@ -69,7 +74,7 @@ const Newsletter = ({ newsletter }) => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Newsletter

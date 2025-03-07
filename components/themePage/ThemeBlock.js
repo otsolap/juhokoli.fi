@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import styles from '../../styles/themes.module.css'
 
 const ThemeBlock = ({ themes }) => {
@@ -20,11 +20,14 @@ const ThemeBlock = ({ themes }) => {
                                         alt={theme.title}
                                         width={390}
                                         height={220}
-                                        layout="responsive"
-                                        objectFit='cover'
-                                        objectPosition='center'
                                         quality={100}
-                                    />
+                                        sizes="100vw"
+                                        style={{
+                                            width: "100%",
+                                            height: "auto",
+                                            objectFit: "cover",
+                                            objectPosition: "center"
+                                        }} />
                                 </div>
                                 <div className={styles.themeDescriptionContainer}>
                                     <h2 className="desktop-only">{theme.title}</h2>
@@ -33,10 +36,10 @@ const ThemeBlock = ({ themes }) => {
                             </div>
                         </div>
                     </section>
-                )
+                );
             })}
         </>
-    )
+    );
 }
 
 export default ThemeBlock

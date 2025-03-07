@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Links from '@content/site.json'
@@ -23,7 +23,10 @@ const Header = () => {
                             height={50}
                             width={60}
                             quality={100}
-                        />
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </div>
                 </div>
                 <div className={`desktop-only ${styles.desktopLinks}`}>

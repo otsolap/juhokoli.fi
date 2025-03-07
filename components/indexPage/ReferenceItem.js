@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import styles from '../../styles/references.module.css'
 
 const ReferenceItem = ({ referees }) => {
@@ -13,10 +13,13 @@ const ReferenceItem = ({ referees }) => {
                             quality={100}
                             alt={reference.referee}
                             src={reference.image}
-                            layout="responsive"
-                            objectFit='cover'
-                            objectPosition='center'
-                        />
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                                objectPosition: "center"
+                            }} />
                     </div>
                     <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
                         <p>{reference.reference}</p>
@@ -26,7 +29,7 @@ const ReferenceItem = ({ referees }) => {
                 </div>
             ))}
         </div>
-    )
+    );
 }
 
 export default ReferenceItem

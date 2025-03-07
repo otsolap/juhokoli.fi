@@ -1,5 +1,5 @@
 import styles from '../styles/hero.module.css'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 const Hero = ({ hero }) => {
     return (
@@ -9,11 +9,13 @@ const Hero = ({ hero }) => {
                     <Image
                         src={hero.DesktopHeroImage}
                         alt={hero.heroTitle}
-                        layout="fill"
-                        objectFit='cover'
-                        objectPosition='center'
                         quality={100}
-                    />
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "center"
+                        }} />
                 </div>
             </div>
             <div
@@ -22,11 +24,13 @@ const Hero = ({ hero }) => {
                 <Image
                     src={hero.MobileHeroImage}
                     alt={hero.heroTitle}
-                    layout="fill"
-                    objectFit='cover'
-                    objectPosition='center'
                     quality={100}
-                />
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                    }} />
             </div>
             {hero.DisplayElectionNumber && (
                 <div className={styles.circleWrapper}>
@@ -53,7 +57,7 @@ const Hero = ({ hero }) => {
                 </div>
             </div>
         </section >
-    )
+    );
 }
 
 export default Hero

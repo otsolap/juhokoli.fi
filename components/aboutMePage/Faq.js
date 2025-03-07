@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Question from './Question'
 import styles from '../../styles/faq.module.css'
 
@@ -16,9 +16,12 @@ const Faq = ({ faq }) => {
                         width={850}
                         height={1240}
                         quality={100}
-                        objectFit='cover'
-                        objectPosition='center'
-                    />
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto",
+                            objectFit: "cover",
+                            objectPosition: "center"
+                        }} />
                 </div>
                 <div className={styles.container}>
                     <div className={styles.content}>
@@ -32,7 +35,7 @@ const Faq = ({ faq }) => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Faq

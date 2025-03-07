@@ -1,5 +1,5 @@
 import styles from '../../styles/themes.module.css'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 const ThemeItem = ({ themes }) => {
     return (
@@ -12,11 +12,14 @@ const ThemeItem = ({ themes }) => {
                             height={220}
                             alt={theme.title}
                             src={theme.image}
-                            layout="responsive"
                             quality={100}
-                            objectFit='cover'
-                            objectPosition='center'
-                        />
+                            sizes="100vw"
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                                objectPosition: "center"
+                            }} />
                     </div>
                     <div className={styles.content}>
                         <h2>{theme.title}</h2>
@@ -32,7 +35,7 @@ const ThemeItem = ({ themes }) => {
                 </div>
             ))}
         </>
-    )
+    );
 }
 
 export default ThemeItem

@@ -1,7 +1,8 @@
 import styles from '../styles/hero.module.css'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 const HeroAlt = ({ hero }) => {
+    console.log(hero.DesktopHeroImage)
     return (
         <section id="hero">
             <div className={styles.altImageContainer}>
@@ -10,11 +11,13 @@ const HeroAlt = ({ hero }) => {
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}
-                            layout="fill"
-                            objectFit='cover'
-                            objectPosition='center'
                             quality={100}
-                        />
+                            fill
+                            sizes="100vw"
+                            style={{
+                                objectFit: "cover",
+                                objectPosition: "center"
+                            }} />
                     </div>
                 </div>
                 <div
@@ -23,18 +26,20 @@ const HeroAlt = ({ hero }) => {
                     <Image
                         src={hero.MobileHeroImage}
                         alt={hero.heroTitle}
-                        layout="fill"
-                        objectFit='cover'
-                        objectPosition='center'
                         quality={100}
-                    />
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "center"
+                        }} />
                 </div>
                 <div className={styles.altContainer}>
                     <h1>{hero.HeroTitle}</h1>
                 </div>
             </div>
         </section >
-    )
+    );
 }
 
 export default HeroAlt
