@@ -68,7 +68,7 @@ const Footer = () => {
             <div className={styles.footerDetailsContainer}>
                 <div className={styles.DetailsDesktopContainer}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                    <Link href="/tietosuojaseloste"><a className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</a></Link>
+                    <Link href="/tietosuojaseloste" className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</Link>
                     <div className={styles.footerKultakammen}>
                         <a
                             rel="noreferrer"
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;

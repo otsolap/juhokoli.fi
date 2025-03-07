@@ -12,7 +12,7 @@ const Header = () => {
         <>
             <header className={styles.header}>
                 <div className={styles.logoContainer}>
-                    <Link href="/" className={styles.noDecoration}>
+                    <Link href="/" className={styles.noDecoration} >
                         <h1 className={styles.logo}>{Navigation.logo}</h1>
 
                     </Link>
@@ -28,20 +28,28 @@ const Header = () => {
                 </div>
                 <div className={`desktop-only ${styles.desktopLinks}`}>
                     <nav className={styles.nav}>
-                        <Link href="/" className={router.pathname == '/' ? styles.active : ''}>
+                        <Link
+                            href="/"
+                            className={router.pathname == '/' ? styles.active : ''}
+                            >
                             {Navigation.homeTitle}
                         </Link>
                         <Link
                             href="/teemat"
-                            className={router.pathname == '/teemat' ? styles.active : ''}>
+                            className={router.pathname == '/teemat' ? styles.active : ''}
+                            >
                             {Navigation.themesTitle}
                         </Link>
-                        <Link href="/juho" className={router.pathname == '/juho' ? styles.active : ''}>
+                        <Link
+                            href="/juho"
+                            className={router.pathname == '/juho' ? styles.active : ''}
+                            >
                             {Navigation.aboutMeTitle}
                         </Link>
                         <Link
                             href="/yhteydenotto"
-                            className={router.pathname == '/yhteydenotto' ? styles.active : ''}>
+                            className={router.pathname == '/yhteydenotto' ? styles.active : ''}
+                            >
                             {Navigation.contactTitle}
                         </Link>
                     </nav>
