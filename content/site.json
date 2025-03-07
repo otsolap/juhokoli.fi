@@ -1,0 +1,51 @@
+{
+  "Navigation": {
+    "logo": "Juho Koli",
+    "mobileImageLogo": "/images/Kokoomus_Mobiili_Logo.png",
+    "mobileImageAlt": "Kokoomus Turku",
+    "homeTitle": "Etusivu",
+    "themesTitle": "Vaaliteemat",
+    "aboutMeTitle": "Juho",
+    "contactTitle": "Ota Yhteyttä"
+  },
+  "newsletter": {
+    "logo": "/images/Ruiskukka_Koli.png",
+    "backgroundImage": "/images/Turku-Yo.png",
+    "title": "Liity tiimiin",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis odio lacus, hendrerit at erat non.",
+    "cta": "Tilaa Uutiskirje"
+  },
+  "Footer": {
+    "desktopLogoImage": "/images/KokoomusTurku.png",
+    "desktopLogoAlt": "Kokoomus Turku",
+    "Owner": "Juho Koli",
+    "privacyPolicy": "Tietosuojaseloste",
+    "socialMedia":
+    [
+      {
+        "icon": "Instagram",
+        "url": "https://www.instagram.com/jukoli/"
+      },
+      {
+        "icon": "Twitter",
+        "url": "https://twitter.com/juho_koli"
+      },
+      {
+        "icon": "LinkedIn",
+        "url": "https://www.linkedin.com/in/juhokoli/"
+      },
+      {
+        "icon": "Email",
+        "url": "juho.koli@turku.fi"
+      },
+      {
+        "icon": "Phone",
+        "url": "(02) 330 000"
+      }
+    ]
+  },
+  "Google": {
+      "ga": "",
+      "gtm": "GTM-TBFDWT8"
+    }
+}

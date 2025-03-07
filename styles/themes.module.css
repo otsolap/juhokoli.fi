@@ -1,0 +1,113 @@
+.themesSection {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.imageContainer {
+    -webkit-border: 1px transparent;
+    -moz-border: 1px transparent;
+    -ms-border: 1px transparent;
+    border: 1px transparent;
+}
+.imageContainer img {
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+}
+.content {
+    margin: 1rem;
+}
+.content h2 {
+    color: #0525e2;
+}
+.themeBlockSection {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.themeBlockSection.odd {
+    background-color: #f2f2f2;
+}
+.blockContent h2 {
+    color: #211f1b;
+}
+.themeBlockImageContainer {
+    padding-top: initial;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    -webkit-border: 1px transparent;
+    -moz-border: 1px transparent;
+    -ms-border: 1px transparent;
+    border: 1px transparent;
+}
+.themeBlockImageContainer img {
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+}
+.themeDescriptionContainer p {
+    padding: 1rem;
+}
+@media
+ (min-width: 1440px) {
+    .themesContainer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+.themeItem {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 2rem;
+}
+
+.themeBlockSection {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    background-color: #ffffff;
+}
+
+.blockContent {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.themeBlockSection.odd .blockContent {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.themeBlockImageContainer {
+    padding-top: 2rem;
+}
+
+.themeBlockImageContainer,
+.themeDescriptionContainer {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
