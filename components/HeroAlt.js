@@ -2,7 +2,6 @@ import styles from '../styles/hero.module.css'
 import Image from "next/image"
 
 const HeroAlt = ({ hero }) => {
-    console.log(hero.DesktopHeroImage)
     return (
         <section id="hero">
             <div className={styles.altImageContainer}>

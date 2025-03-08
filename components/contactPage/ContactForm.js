@@ -3,7 +3,6 @@ import styles from '../../styles/contact.module.css'
 const ContactForm = ({ contact }) => {
     const contactSubmit = (e) => {
         e.preventDefault()
-        console.log('hello mom')
     }
 
     return (
