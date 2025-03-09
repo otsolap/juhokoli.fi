@@ -1,43 +1,4 @@
-
-.imageDesktopWrapper,
-.imageMobileWrapper {
-    position: relative; 
-    width: 100%; 
-    height: 270px; 
-    overflow: hidden; 
-}
-
-.heroImage {
-    object-fit: cover;
-    object-position: center;
-}
-
 .circleWrapper {
-    position: absolute;
-    top: 11rem;
-    right: 3.5rem;
-    z-index: 10;
-}
-
-.circle {
-    display: block;
-    background-color: var(--color-white);
-    height: 3.5rem;
-    width: 3.5rem;
-    margin: 0;
-    border-radius: 9999px;
-}
-
-
-@media (width >= 1440px) {
-    .imageDesktopWrapper {
-        height: 658px;
-    }
-
-}
-
-
-/* .circleWrapper {
     position: absolute;
     top: 11rem;
     right: 3.5rem;
@@ -92,8 +53,17 @@
     border-color: #ffffff;
     width: 80%;
 }
-
-@media 
+.altImageContainer {
+    position: relative;
+}
+.altContainer {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+@media
  (min-width: 1440px) {
     .circleWrapper {
         top: 10%;
@@ -129,4 +99,9 @@
     font-size: 1.5rem;
     line-height: 2rem;
 }
-} */
+
+.altContainer {
+    font-size: 80px;
+    left: 23%;
+}
+}

@@ -21,8 +21,8 @@ collections:
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
-            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string"}
-            - { label: "Linkki", name: "CtaLink", widget: "string"}
+            - { label: "Toimintakehotteen teksti", name: "CTAText", widget: "string"}
+            - { label: "Linkki", name: "CTALink", widget: "string"}
             - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
             - { label: "Vaalinumero", name: "ElectionNumber", widget: "string"}
         - label: 'Teemat-osio'

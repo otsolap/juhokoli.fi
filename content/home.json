@@ -4,7 +4,7 @@
     "HeroSubtitle":"Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki!",
     "DesktopHeroImage":"/images/JuhoKoliHero.png",
     "MobileHeroImage":"/images/JuhoKoliMHero.png",
-    "CTA": "Tutustu Juhoon",
+    "CTAText": "Tutustu Juhoon",
     "CTALink": "/teemat",
     "DisplayElectionNumber": true,
     "ElectionNumber": "606"

@@ -1,10 +1,8 @@
 :root {
-    /* Layout widths */
     --width-max-layout: 100%;
-
-    /* Breakpoints for containers */
+    --width-max-article: 800px;
     --container-desktop: 1440px;
     --container-ipad: 770px;
     --container-ipad-landscape: 1024px;
     --container-mobile: 480px;
-}
+  }

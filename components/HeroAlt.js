@@ -1,4 +1,4 @@
-import styles from '../styles/hero.module.css'
+import styles from '../styles/hero-alt.module.css'
 import Image from "next/image"
 
 const HeroAlt = ({ hero }) => {

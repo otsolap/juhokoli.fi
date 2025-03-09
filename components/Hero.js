@@ -1,37 +1,30 @@
-import styles from '../styles/hero.module.css'
+import styles from '@/styles/hero.module.css'
 import Image from "next/image"
 
 const Hero = ({ hero }) => {
     return (
-        <section id="hero">
-            <div className="desktop-only">
-                <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
-                    <Image
-                        src={hero.DesktopHeroImage}
-                        alt={hero.heroTitle}
-                        quality={100}
-                        fill
-                        sizes="100vw"
-                        style={{
-                            objectFit: "cover",
-                            objectPosition: "center"
-                        }} />
-                </div>
-            </div>
-            <div
-                style={{ position: 'relative', width: '100%', height: '270px', overflow: 'hidden' }}
-                className="mobile-only">
+        <div id="hero">
+            <figure className={`${styles.imageDesktopWrapper} desktop-only`} >
+                <Image
+                    src={hero.DesktopHeroImage}
+                    alt={hero.heroTitle}
+                    className={styles.heroImage}
+                    quality={100}
+                    fill
+                    sizes="100vw" 
+                    />
+            </figure>
+            <figure
+                className={`${styles.imageMobileWrapper} mobile-only`}>
                 <Image
                     src={hero.MobileHeroImage}
                     alt={hero.heroTitle}
+                    className={styles.heroImage}
                     quality={100}
                     fill
                     sizes="100vw"
-                    style={{
-                        objectFit: "cover",
-                        objectPosition: "center"
-                    }} />
-            </div>
+                />
+            </figure>
             {hero.DisplayElectionNumber && (
                 <div className={styles.circleWrapper}>
                     <figure className={styles.circle}>
@@ -45,18 +38,18 @@ const Hero = ({ hero }) => {
                 <div className={styles.content}>
                     <h1>{hero.HeroTitle}</h1>
                     <h3>{hero.HeroSubtitle}</h3>
-                    {hero.CTA && (
+                    {hero.CTAText && (
                         <div className="buttonWrapper">
                             <a className={`btn ${styles.heroBTN}`}
                                 href={hero.CTALink}
                             >
-                                {hero.CTA}
+                                {hero.CTAText}
                             </a>
                         </div>
                     )}
                 </div>
             </div>
-        </section >
+        </div>
     );
 }
 

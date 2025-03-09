@@ -1,0 +1,110 @@
+#referenceSection {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.imageContainer {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.referenceItem:nth-child(even) {
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.referenceBuble {
+    position: relative;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: .75rem;
+    -webkit-border-radius: .75rem;
+    -moz-border-radius: .75rem;
+    -ms-border-radius: .75rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.referenceBuble::before {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 100%;
+    -webkit-border: 8px solid;
+    -moz-border: 8px solid;
+    -ms-border: 8px solid;
+    border: 8px solid;
+}
+.referenceBuble.even::before,
+.referenceBuble.odd::before {
+    content: "";
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: #ffffff;
+}
+.referee {
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    padding-top: 2rem;
+}
+.refereeWorkTitle {
+    margin-top: -2rem;
+    text-align: left;
+    width: 100%;
+}
+.refereeWorkTitle::after {
+    content: url("/images/sydan.png");
+    margin-left: 2.5rem;
+}
+@media
+ (min-width: 1440px) {
+    .reference {
+        margin-left: auto;
+        margin-right: auto;
+    }
+.referenceItem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.referenceBuble {
+    width: 50%;
+}
+
+.referenceBuble:before {
+    bottom: 50%;
+}
+
+.referenceBuble.even::before {
+    left: -1rem;
+    border-left-color: transparent;
+    border-right-color: #ffffff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.referenceBuble.odd::before {
+    right: -1rem;
+    border-left-color: #ffffff;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+}
