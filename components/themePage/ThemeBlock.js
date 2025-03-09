@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from '../../styles/themes.module.css'
+import styles from '@/styles/themes.module.css'
 
 const ThemeBlock = ({ themes }) => {
     return (
@@ -9,12 +9,12 @@ const ThemeBlock = ({ themes }) => {
                     <section
                         key={i}
                         id={theme.title}
-                        className={`${styles.themeBlockSection} ${i % 2 === 0 ? `` : `${styles.odd}`}`}
+                        className={`${styles.block} ${i % 2 === 0 ? `` : `${styles.odd}`}`}
                     >
-                        <div className="container">
+                        <div className={styles.blockWrapper}>
                             <h2 className="mobile-only">{theme.title}</h2>
-                            <div className={`${styles.blockContent}`}>
-                                <div className={styles.themeBlockImageContainer}>
+                            <div className={styles.blockContent}>
+                                <figure className={styles.blockImageContainer}>
                                     <Image
                                         src={theme.image}
                                         alt={theme.title}
@@ -22,16 +22,12 @@ const ThemeBlock = ({ themes }) => {
                                         height={220}
                                         quality={100}
                                         sizes="100vw"
-                                        style={{
-                                            width: "100%",
-                                            height: "auto",
-                                            objectFit: "cover",
-                                            objectPosition: "center"
-                                        }} />
-                                </div>
-                                <div className={styles.themeDescriptionContainer}>
-                                    <h2 className="desktop-only">{theme.title}</h2>
-                                    <p>{theme.description}</p>
+                                        className={styles.image} 
+                                    />
+                                </figure>
+                                <div className={styles.blockTextContainer}>
+                                    <h2 className={`${styles.title} desktop-only`}>{theme.title}</h2>
+                                    <p className={styles.blockDescription}>{theme.description}</p>
                                 </div>
                             </div>
                         </div>

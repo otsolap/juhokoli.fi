@@ -1,113 +1,119 @@
-.themesSection {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.imageContainer {
-    -webkit-border: 1px transparent;
-    -moz-border: 1px transparent;
-    -ms-border: 1px transparent;
-    border: 1px transparent;
-}
-.imageContainer img {
-    border-radius: 0.375rem;
-    -webkit-border-radius: 0.375rem;
-    -moz-border-radius: 0.375rem;
-    -ms-border-radius: 0.375rem;
-}
-.content {
-    margin: 1rem;
-}
-.content h2 {
-    color: #0525e2;
-}
-.themeBlockSection {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.themeBlockSection.odd {
-    background-color: #f2f2f2;
-}
-.blockContent h2 {
-    color: #211f1b;
-}
-.themeBlockImageContainer {
-    padding-top: initial;
-    padding-bottom: 2rem;
-    overflow: hidden;
-    -webkit-border: 1px transparent;
-    -moz-border: 1px transparent;
-    -ms-border: 1px transparent;
-    border: 1px transparent;
-}
-.themeBlockImageContainer img {
-    border-radius: 0.375rem;
-    -webkit-border-radius: 0.375rem;
-    -moz-border-radius: 0.375rem;
-    -ms-border-radius: 0.375rem;
-}
-.themeDescriptionContainer p {
-    padding: 1rem;
-}
-@media
- (min-width: 1440px) {
-    .themesContainer {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        flex-wrap: wrap;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-.themeItem {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 2rem;
+/* Theme: List */
+
+.header {
+    padding-left: var(--spacing-single);
+	padding-right: var(--spacing-single);
+	padding-bottom: var(--spacing-single);
 }
 
-.themeBlockSection {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+.title {
+    margin: var(--spacing-single);
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.themeTitle {
+    margin: var(--spacing-single);
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.wrapper {
     display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 3rem;
-    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+
+.imagecontainer {
+    border: 1px transparent;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.375rem;
+}
+
+.content {
+    margin: var(--spacing-single);
+}
+
+.title {
+    color: var(--color-primary);
+}
+
+/* Theme: Block */
+
+.block.odd {
+    background-color: #f2f2f2;
+}
+
+.blockWrapper {
+    margin: 0 auto;
+	width: 100%;
 }
 
 .blockContent {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row-reverse;
-    -moz-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    gap: 1rem;
+    align-items: center;
 }
 
-.themeBlockSection.odd .blockContent {
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+
+.blockDescription {
+    padding: var(--spacing-single);
 }
 
-.themeBlockImageContainer {
-    padding-top: 2rem;
+.blockImageContainer {
+    padding-top: 0;
+    padding-bottom: var(--spacing-double);
+    overflow: hidden;
+    border: 1px transparent;
 }
 
-.themeBlockImageContainer,
-.themeDescriptionContainer {
-    margin-left: auto;
-    margin-right: auto;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
+
+
+@media (width >= 1440px) {
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+
+    .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 2rem;
+    }
+
+    /* Theme: Block */
+    .block {
+        display: flex;
+        background-color: var(--color-white);
+    }
+
+    .blockWrapper {
+		max-width: var(--container-desktop);
+	}
+
+    .blockContent {
+        flex-direction: row-reverse;
+    }
+
+    .block.odd .blockContent {
+        flex-direction: row;
+    }
+
+    .blockImageContainer,
+    .blockTextContainer {
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
 }

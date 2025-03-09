@@ -3,6 +3,7 @@
 @import './partials/typography.css';
 @import './partials/utils.css';
 
+/* Global Styles */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +16,9 @@ body,
 	height: auto;
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
-	color: #211f1b;
+	color: var(--color-primary);
+	scroll-behavior: smooth;
+	line-height: 1.5;
 }
 
 main {
@@ -26,32 +29,41 @@ main {
 	position: relative;
 }
 
-a {
-	color: inherit;
-	text-decoration-line: none;
+section {
+	padding-top: var(--spacing-double);
+	padding-bottom: var(--spacing-double);
+	margin-bottom: var(--spacing-double);
+	max-width: var(--container-desktop);
 }
-.sectionHeader {
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 1rem;
+
+section > header {
+	padding-left: var(--spacing-single);
+	padding-right: var(--spacing-single);
+	padding-bottom: var(--spacing-single);
 }
-.container > .sectionHeader h2,
+
+section > header h2,
 .content h2 {
-	margin: 1rem;
+	margin: var(--spacing-single);
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2rem;
 }
+
 .alt-bg {
 	background-color: #f2f2f2;
 }
+
 .mobile-only {
 	display: block;
 }
+
 .desktop-only {
 	display: none;
 }
+
 @media (width >= 1440px) {
+
 	.mobile-only {
 		display: none;
 	}
@@ -59,14 +71,16 @@ a {
 		display: block;
 	}
 
-	.container {
-		max-width: 1440px;
+	section {
+		padding-top: var(--spacing-triple);
+		padding-bottom: var(--spacing-triple);
+		margin-bottom: var(--spacing-triple);
 	}
 
 	.container > .sectionHeader h2 {
-		padding-left: 1rem;
+		padding-top: var(--spacing-double);
+		padding-left: var(--spacing-single);
 		font-size: 2.25rem;
 		line-height: 2.5rem;
-		padding-top: 2rem;
 	}
 }

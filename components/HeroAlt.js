@@ -31,7 +31,7 @@ const HeroAlt = ({ hero }) => {
                         }} />
                 </figure>
                 <div className={styles.altContainer}>
-                    {hero.HeroTitle && <h1>{hero.HeroTitle}</h1>}
+                    {hero.HeroTitle && <h1 className={styles.title}>{hero.HeroTitle}</h1>}
                 </div>
             </div>
         </div>

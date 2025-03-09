@@ -9,7 +9,7 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
             <Meta
                 meta={meta}
             />
-            <main id="themes">
+            <main id="themes" className="container">
                 <HeroAlt hero={hero} />
                 <ThemeBlock
                     themes={themes}

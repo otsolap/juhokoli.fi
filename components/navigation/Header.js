@@ -14,7 +14,6 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.noDecoration} >
                         <h1 className={styles.logo}>{Navigation.logo}</h1>
-
                     </Link>
                     <div className={`mobile-only ${styles.mobileLogo}`}>
                         <Image

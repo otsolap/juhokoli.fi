@@ -7,8 +7,8 @@ const Contact = ({ meta, contact }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id={styles.contactPage}>
-                <div className={`container ${styles.contactPageContainer}`}>
+            <main id="yhteydenotto" className={`container ${styles.contactPage}`}>
+                <div className={styles.contactPageContainer}>
                     <ContactDetails contact={contact} />
                     <ContactForm contact={contact} />
                 </div>

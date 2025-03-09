@@ -30,8 +30,9 @@
 }
 
 @media (width >= 1440px) {
+
 	.container {
-		max-width: 1440px;
+		max-width: var(--container-desktop);
 	}
 
 	.container > .sectionHeader h2 {

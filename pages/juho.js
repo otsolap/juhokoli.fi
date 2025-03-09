@@ -6,7 +6,7 @@ const aboutMe = ({ meta, hero, faq }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="Juho">
+            <main id="Juho" className="container">
                 <HeroAlt hero={hero} />
                 <Faq faq={faq} />
             </main>
