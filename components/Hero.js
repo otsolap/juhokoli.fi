@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Hero = ({ hero }) => {
     return (
-        <div id="hero">
+        <div className={styles.hero}>
             <figure className={`${styles.imageDesktopWrapper} desktop-only`} >
                 <Image
                     src={hero.DesktopHeroImage}
@@ -28,19 +28,19 @@ const Hero = ({ hero }) => {
             {hero.DisplayElectionNumber && (
                 <div className={styles.circleWrapper}>
                     <figure className={styles.circle}>
-                        <div className={styles.textWrapper}>
+                        <div className={styles.circleTextWrapper}>
                             <span className={styles.circleText}>{hero.ElectionNumber}</span>
                         </div>
                     </figure>
                 </div>
             )}
-            <div className={styles.container}>
+            <div className={styles.contentWrapper}>
                 <div className={styles.content}>
-                    <h1>{hero.HeroTitle}</h1>
-                    <h3>{hero.HeroSubtitle}</h3>
+                    {hero.HeroTitle && <h1 className={styles.title}>{hero.HeroTitle}</h1>}
+                    {hero.HeroSubtitle && <h3 className={styles.subtitle}>{hero.HeroSubtitle}</h3>}
                     {hero.CTAText && (
                         <div className="buttonWrapper">
-                            <a className={`btn ${styles.heroBTN}`}
+                            <a className={`btn ${styles.heroButton}`}
                                 href={hero.CTALink}
                             >
                                 {hero.CTAText}

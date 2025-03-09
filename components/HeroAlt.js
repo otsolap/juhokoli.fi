@@ -1,27 +1,24 @@
-import styles from '../styles/hero-alt.module.css'
+import styles from '@/styles/hero.module.css'
 import Image from "next/image"
 
 const HeroAlt = ({ hero }) => {
     return (
-        <section id="hero">
+        <div className={styles.hero}>
             <div className={styles.altImageContainer}>
-                <div className="desktop-only">
-                    <div style={{ position: 'relative', width: '100%', height: '658px', overflow: 'hidden' }}>
-                        <Image
-                            src={hero.DesktopHeroImage}
-                            alt={hero.heroTitle}
-                            quality={100}
-                            fill
-                            sizes="100vw"
-                            style={{
-                                objectFit: "cover",
-                                objectPosition: "center"
-                            }} />
-                    </div>
-                </div>
-                <div
-                    style={{ position: 'relative', width: '100%', height: '390px', overflow: 'hidden' }}
-                    className="mobile-only">
+                <figure className={`${styles.imageDesktopWrapper} desktop-only`} >
+                    <Image
+                        src={hero.DesktopHeroImage}
+                        alt={hero.heroTitle}
+                        quality={100}
+                        fill
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "center"
+                    }} />
+                </figure>
+                <figure
+                     className={`${styles.imageMobileWrapper} mobile-only`}>
                     <Image
                         src={hero.MobileHeroImage}
                         alt={hero.heroTitle}
@@ -32,12 +29,12 @@ const HeroAlt = ({ hero }) => {
                             objectFit: "cover",
                             objectPosition: "center"
                         }} />
-                </div>
+                </figure>
                 <div className={styles.altContainer}>
-                    <h1>{hero.HeroTitle}</h1>
+                    {hero.HeroTitle && <h1>{hero.HeroTitle}</h1>}
                 </div>
             </div>
-        </section >
+        </div>
     );
 }
 

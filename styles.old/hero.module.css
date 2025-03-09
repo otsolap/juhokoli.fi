@@ -1,26 +1,3 @@
-
-.imageDesktopWrapper,
-.imageMobileWrapper {
-    position: relative; 
-    width: 100%; 
-    height: 270px; 
-    overflow: hidden; 
-}
-
-.heroImage {
-    object-fit: cover;
-    object-position: center;
-}
-
-
-@media (width >= 1440px) {
-    .imageDesktopWrapper {
-        height: 658px;
-    }
-
-}
-
-
 /* .circleWrapper {
     position: absolute;
     top: 11rem;

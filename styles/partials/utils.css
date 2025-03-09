@@ -3,16 +3,16 @@
 	width: 100%;
 }
 .btn {
-	background-color: #0525e2;
-	color: #ffffff;
+	background-color: var(--color-primary);
+	color: var(--color-white);
 	font-weight: 700;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 	padding-top: 0.375rem;
 	padding-bottom: 0.375rem;
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+	padding-left: var(--spacing-three-quarters);
+	padding-right: var(--spacing-three-quarters);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -23,9 +23,10 @@
 .btn:focus {
 	background-color: #69dee3;
 }
+
 .buttonWrapper {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-top: var(--spacing-single-half);
+	margin-bottom: var(--spacing-single-half);
 }
 
 @media (width >= 1440px) {
@@ -37,6 +38,6 @@
 		padding-left: 1rem;
 		font-size: 2.25rem;
 		line-height: 2.5rem;
-		padding-top: 2rem;
+		padding-top: var(--spacing-double);
 	}
 }
