@@ -3,53 +3,47 @@ import Icons from '@content/site.json'
 import styles from '../../styles/footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
+import { 
+    faInstagram,
+    faXTwitter,
+    faLinkedin,
+    faWhatsapp 
+  } from "@fortawesome/free-brands-svg-icons";
+  
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
-    const SoMe = Icons.Footer.socialMedia.map((icons, i) => {
+
+    const socialMediaMappings = {
+        Instagram: { icon: faInstagram, prefix: '' },
+        Twitter: { icon: faXTwitter, prefix: '' },  // Using XTwitter instead of Twitter
+        LinkedIn: { icon: faLinkedin, prefix: '' },
+        Email: { icon: faEnvelope, prefix: 'mailto:' },
+        Phone: { icon: faPhone, prefix: 'tel:' },
+        WhatsApp: { icon: faWhatsapp, prefix: 'https://wa.me/' }
+      };
+      
+      const SoMe = Icons.Footer.socialMedia.map((item, i) => {
+        const mapping = socialMediaMappings[item.icon];
+        
+        // Skip if the icon type isn't in our mappings
+        if (!mapping) return null;
+      
+        const href = `${mapping.prefix}${item.url}`;
+      
         return (
-            <span className={styles.someIcons} key={i}>
-                {icons.icon === 'Instagram' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                    
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Twitter' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                       
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'LinkedIn' ? (
-                    <a href={icons.url} target="_blank" rel="noopener noreferrer">
-                      
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Email' ? (
-                    <a href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                      
-                    </a>
-                ) : (
-                    ""
-                )}
-                {icons.icon === 'Phone' ? (
-                    <a href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faPhone} />
-                        Soita
-                    </a>
-                ) : (
-                    ""
-                )}
-            </span>
-        )
-    })
+          <span className={styles.someIcons} key={i}>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon 
+                className={styles.mobileIcon} 
+                icon={mapping.icon} 
+                aria-label={item.icon}
+              />
+            </a>
+          </span>
+        );
+      });
 
     return (
         <footer id={styles.Footer}>
@@ -63,7 +57,7 @@ const Footer = () => {
                     />
                 </div>
                 <div className={styles.footerSoMEContainer}>
-                    {/*SoMe*/}
+                    {SoMe}
                 </div>
             </div>
             <div className={styles.footerDetailsContainer}>
