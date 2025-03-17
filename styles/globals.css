@@ -4,6 +4,7 @@
 @import './partials/utils.css';
 
 /* Global Styles */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -30,24 +31,11 @@ main {
 }
 
 section {
-	padding-top: var(--spacing-double);
-	padding-bottom: var(--spacing-double);
+	padding: var(--spacing-double) var(--spacing-single);
 	margin-bottom: var(--spacing-double);
 	max-width: var(--container-desktop);
 }
 
-/* section > header {
-	padding-left: var(--spacing-single);
-	padding-right: var(--spacing-single);
-	padding-bottom: var(--spacing-single);
-} */
-
-/* section > header h2,
-.content h2 {
-	font-weight: 700;
-	font-size: 1.5rem;
-	line-height: 2rem;
-} */
 
 .alt-bg {
 	background-color: #f2f2f2;
@@ -71,8 +59,7 @@ section {
 	}
 
 	section {
-		padding-top: var(--spacing-triple);
-		padding-bottom: var(--spacing-triple);
+		padding-top: var(--spacing-triple) var(--spacing-double);
 		margin-bottom: var(--spacing-triple);
 		margin-left: auto;
 		margin-right: auto;

@@ -7,10 +7,16 @@
     --color-grey: #f2f2f2;
 
     /* Spacing */
+    --spacing-quarter: .25rem;
     --spacing-half: .5rem;
     --spacing-three-quarters: .75rem;
     --spacing-single: 1rem;
+    --spacing-single-quarter: 1.25rem;
     --spacing-single-half: 1.5rem;
+    --spacing-single-three-quarters: 1.75rem;
     --spacing-double: 2rem;
     --spacing-triple: 3rem;
+    --spacing-quadruple: 4rem;
+    --spacing-quintuple: 5rem;
+    --spacing-sextuple: 6rem;
   }

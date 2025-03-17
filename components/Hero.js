@@ -25,7 +25,7 @@ const Hero = ({ hero }) => {
                     sizes="100vw"
                 />
             </figure>
-            <div className={styles.heroContent}>
+            <div className={styles.contentWrapper}>
                 {hero.DisplayElectionNumber && (
                     <div className={styles.circleWrapper}>
                         <figure className={styles.circle}>
@@ -35,18 +35,16 @@ const Hero = ({ hero }) => {
                         </figure>
                     </div>
                 )}
-                <div className={styles.contentWrapper}>
-                    <div className={styles.content}>
-                        {hero.HeroTitle && <h1 className={styles.title}>{hero.HeroTitle}</h1>}
-                        {hero.HeroSubtitle && <h3 className={styles.subtitle}>{hero.HeroSubtitle}</h3>}
-                        {hero.CTAText && (
-                            <div className="buttonWrapper">
-                                <a className={`btn ${styles.button}`} href={hero.CTALink}>
-                                    {hero.CTAText}
-                                </a>
-                            </div>
-                        )}
-                    </div>
+                <div className={styles.textWrapper}>
+                    {hero.HeroTitle && <h1 className={styles.title}>{hero.HeroTitle}</h1>}
+                    {hero.HeroSubtitle && <h3 className={styles.subtitle}>{hero.HeroSubtitle}</h3>}
+                    {hero.CTAText && (
+                        <div className="buttonWrapper">
+                            <a className={`btn ${styles.button}`} href={hero.CTALink}>
+                                {hero.CTAText}
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
