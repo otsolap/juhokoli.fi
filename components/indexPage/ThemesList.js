@@ -4,9 +4,11 @@ import Image from "next/image"
 const ThemesList = ({ themes, }) => {
     return (
         <section className={styles.themesList}>
-            <header className={styles.header}>
-                {themes.sectionTitle && <h2 className={styles.title}>{themes.sectionTitle}</h2>}
-            </header>
+            {themes.sectionTitle && 
+                <header className={styles.header}>
+                    {themes.sectionTitle && <h2 className={styles.title}>{themes.sectionTitle}</h2>}
+                </header>
+            }
             <div className={styles.wrapper}>
                 {themes.themes.map((theme, i) => (
                     <div className={styles.item} id={`theme-item-${i}`} key={i}>

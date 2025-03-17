@@ -22,7 +22,7 @@
 .mobileLogo {
     height: 50px;
     width: 60px;
-    margin-right: 2rem;
+    margin-right: var(--spacing-double);
 }
 
 .logo {
@@ -38,7 +38,7 @@
 .nav a:focus {
     text-decoration-line: underline;
     text-decoration-color: var(--color-aquamarine);
-    text-underline-offset: var(--spacing-half);
+    text-underline-offset: var(--spacing-single);
     text-decoration-thickness: 8px;
 }
 
@@ -50,7 +50,6 @@
         padding: var(--spacing-single) var(--spacing-double);
     }
 
-
     .wrapper {
         max-width: var(--container-desktop);
         margin: 0 auto;
@@ -59,7 +58,6 @@
 
 	.logo {
 		font-size: 3rem;
-		line-height: 2.5;
 	}
 
 	.logoContainer {
