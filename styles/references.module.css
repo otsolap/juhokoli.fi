@@ -1,11 +1,16 @@
-.referenceSection {
+.references {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-single);
+    margin-bottom: 0;
 }
 
 .header {
     padding: var(--spacing-single) var(--spacing-single) 0 var(--spacing-single);
+}
+
+.title {
+    font-size: 2rem;
 }
 
 .imageContainer {
@@ -14,21 +19,29 @@
     margin-right: auto;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-double);
+}
+
 .item:nth-child(even) {
     flex-direction: row-reverse;
 }
+
 .referenceBuble {
     position: relative;
     text-align: left;
     background-color: var(--color-white);
     border-radius: var(--spacing-three-quarters);
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin: var(--spacing-single);
     padding: var(--spacing-single);
-    flex-direction: column;
 }
+
 .referenceBuble::before {
     position: absolute;
     width: 0px;
@@ -36,6 +49,7 @@
     bottom: 100%;
     border: 8px solid;
 }
+
 .referenceBuble.even::before,
 .referenceBuble.odd::before {
     content: "";
@@ -44,23 +58,30 @@
     border-top-color: transparent;
     border-bottom-color: var(--color-white);
 }
+
 .referee {
     font-weight: 700;
     text-align: left;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: var(--spacing-double);
 }
-.refereeWorkTitle {
+
+.profession {
     margin-top: -2rem;
     text-align: left;
     width: 100%;
 }
-.refereeWorkTitle::after {
+.profession::after {
     content: url("/images/sydan.png");
     margin-left: 2.5rem;
 }
 
 @media (width >= 1440px) {
+
+    .references {
+        margin-bottom: 0;
+        gap: var(--spacing-double);
+    }
 
     .reference {
         margin-left: auto;
@@ -68,8 +89,6 @@
     }
 
     .item {
-        padding-top: var(--spacing-double);
-        padding-bottom: var(--spacing-double);
         display: flex;
     }
 

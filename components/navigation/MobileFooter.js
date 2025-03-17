@@ -8,7 +8,7 @@ const MobileFooter = () => {
     const { Navigation } = Links
 
     return (
-        <footer className={`mobile-only ${styles.MobileFooterBar}`}>
+        <footer className={styles.mobileFooter}>
             <div className={styles.mobileMenuWrapper}>
                 <Link href="/">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.homeTitle} icon={faHouse} />

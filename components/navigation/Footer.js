@@ -17,7 +17,7 @@ const Footer = () => {
 
     const socialMediaMappings = {
         Instagram: { icon: faInstagram, prefix: '' },
-        Twitter: { icon: faXTwitter, prefix: '' },  // Using XTwitter instead of Twitter
+        Twitter: { icon: faXTwitter, prefix: '' }, 
         LinkedIn: { icon: faLinkedin, prefix: '' },
         Email: { icon: faEnvelope, prefix: 'mailto:' },
         Phone: { icon: faPhone, prefix: 'tel:' },
@@ -46,9 +46,9 @@ const Footer = () => {
       });
 
     return (
-        <footer id={styles.Footer}>
-            <div className={`container ${styles.footerContainer}`}>
-                <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
+        <footer className={styles.footer}>
+            <div className={styles.container}>
+                <div className={styles.desktopLogo}>
                     <Image
                         src={FooterContent.Footer.desktopLogoImage}
                         width={250}

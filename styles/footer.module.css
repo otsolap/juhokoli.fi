@@ -1,8 +1,70 @@
-#Footer {
+.footer {
     padding-bottom: 5rem;
-    background-color: #0525e2;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
+
+
+/* Mobile Footer */
+
+.moboleFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-width: 1px;
+    border-top-color: var(--color-white);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.mobileMenuWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mobileMenuWrapper a {
+    color: var(--color-white);
+    position: relative;
+    width: 5rem;
+    height: 4rem;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+    flex: 0 0 calc(100% / 4);
+    max-width: calc(100% / 4);
+}
+
+.mobileIcon {
+    margin-top: var(--spacing-three-quarters);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.mobileLinkText {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.625;
+}
+
+/* Desktop Wrapper */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 var(--spacing-double);
+    max-width: var(--container-desktop);
+}
+
 .footerSoMEContainer {
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -15,6 +77,13 @@
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
+
+.desktopLogo {
+    display:none;
+}
+
+/* Sub Footer */
+
 .footerDetailsContainer {
     display: flex;
     justify-content: center;
@@ -38,92 +107,59 @@
 .footerKultakammen {
     margin-left: .5rem;
 }
-.MobileFooterBar {
-    background-color: #0525e2;
-    border-width: 1px;
-    border-top-color: #ffffff;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 4.5rem;
-    width: 100%;
-    z-index: 50;
-    text-align: center;
-}
-.mobileMenuWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.mobileMenuWrapper a {
-    color: #ffffff;
-    position: relative;
-    width: 5rem;
-    height: 4rem;
-    text-align: center;
-    z-index: 10;
-    cursor: pointer;
-    flex: 0 0 calc(100% / 4);
-    max-width: calc(100% / 4);
-}
-.mobileIcon {
-    margin-top: 0.75rem;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
-.mobileLinkText {
-    display: flex;
-    justify-content: center;
-    padding-top: 0.5rem;
-    width: 100%;
-    font-size: 0.75rem;
-    line-height: 1.625;
-}
-@media
- (min-width: 1440px) {
-    #Footer {
+
+
+@media (width >= 1440px) {
+
+    .mobileFooter {
+        display: none;
+    }
+
+    .footer {
         padding-bottom: 0;
     }
-.footerSoMEContainer {
-    max-width: 50%;
-    align-items: center;
-    margin-left: 3rem;
-}
 
-.someIcons {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    .container {
+        flex-direction: row;
+    }
+    
+    .footerSoMEContainer {
+        max-width: 50%;
+        align-items: center;
+        margin-left: 3rem;
+    }
 
-.footerDetailsContainer {
-    width: 100%;
-    justify-content: flex-start;
-    border-top-width: 2px;
-    border-color: #ffffff;
-}
+    .someIcons {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-.DetailsDesktopContainer {
-    display: flex;
-    justify-content: center;
-    max-width: 55%;
-    width: 100%;
-}
+    .footerDetailsContainer {
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 2px;
+        border-color: var(--color-white);
+    }
 
-.footerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+    .DetailsDesktopContainer {
+        display: flex;
+        justify-content: center;
+        max-width: 55%;
+        width: 100%;
+    }
 
-.footerDesktopLogoContainer {
-    padding: 2rem;
-    max-width: 50%;
-    flex: 0 0 50%;
-}
+    .footerContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .desktopLogo {
+        display: flex;
+        padding: 2rem;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
 }

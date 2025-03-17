@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
 import ThemesList from '@components/indexPage/ThemesList'
-import ReferenceList from '@components/indexPage/ReferenceList'
+import References from '@components/indexPage/References'
 import Newsletter from '@components/Newsletter'
 import Script from 'next/script'
 
@@ -31,7 +31,7 @@ const Index = ({ meta, hero, themes, references, newsletter }) => {
           hero={hero}
         />
         <ThemesList themes={themes} />
-        <ReferenceList references={references} />
+        <References references={references} />
         <Newsletter newsletter={newsletter} />
       </main>
     </>

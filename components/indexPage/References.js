@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from '@/styles/references.module.css'
 
-const ReferenceList = ({ references, }) => {
+const References = ({ references, }) => {
     return (
         <div className="alt-bg">
             <section className={styles.references}>
@@ -32,7 +32,7 @@ const ReferenceList = ({ references, }) => {
                             <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
                                 <p>{reference.reference}</p>
                                 <h3 className={styles.referee}>{reference.referee}</h3>
-                                <p className={styles.refereeWorkTitle}>{reference.refereeTitle}</p>
+                                <p className={styles.profession}>{reference.refereeTitle}</p>
                             </div>
                         </article>
                     ))}
@@ -44,4 +44,4 @@ const ReferenceList = ({ references, }) => {
 
 }
 
-export default ReferenceList;
+export default References;
