@@ -16,7 +16,7 @@ body,
 	height: auto;
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
-	color: var(--color-primary);
+	color: var(--color-black);
 	scroll-behavior: smooth;
 	line-height: 1.5;
 }
@@ -36,19 +36,18 @@ section {
 	max-width: var(--container-desktop);
 }
 
-section > header {
+/* section > header {
 	padding-left: var(--spacing-single);
 	padding-right: var(--spacing-single);
 	padding-bottom: var(--spacing-single);
-}
+} */
 
-section > header h2,
+/* section > header h2,
 .content h2 {
-	margin: var(--spacing-single);
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2rem;
-}
+} */
 
 .alt-bg {
 	background-color: #f2f2f2;
@@ -75,12 +74,7 @@ section > header h2,
 		padding-top: var(--spacing-triple);
 		padding-bottom: var(--spacing-triple);
 		margin-bottom: var(--spacing-triple);
-	}
-
-	.container > .sectionHeader h2 {
-		padding-top: var(--spacing-double);
-		padding-left: var(--spacing-single);
-		font-size: 2.25rem;
-		line-height: 2.5rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

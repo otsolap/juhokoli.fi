@@ -1,6 +1,5 @@
 #referenceSection {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
 }
 .imageContainer {
     width: 10rem;
@@ -8,9 +7,6 @@
     margin-right: auto;
 }
 .referenceItem:nth-child(even) {
-    -webkit-flex-direction: row-reverse;
-    -moz-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 .referenceBuble {
@@ -18,21 +14,11 @@
     text-align: left;
     background-color: #ffffff;
     border-radius: .75rem;
-    -webkit-border-radius: .75rem;
-    -moz-border-radius: .75rem;
-    -ms-border-radius: .75rem;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 1rem;
     padding: 1rem;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 .referenceBuble::before {
@@ -40,9 +26,6 @@
     width: 0px;
     height: 0px;
     bottom: 100%;
-    -webkit-border: 8px solid;
-    -moz-border: 8px solid;
-    -ms-border: 8px solid;
     border: 8px solid;
 }
 .referenceBuble.even::before,

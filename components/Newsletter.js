@@ -26,7 +26,7 @@ const Newsletter = ({ newsletter }) => {
 
 
     return (
-        <section id="newsletter">
+        <div id="newsletter">
             <div className={styles.newsletterContent}>
                 <Image
                     src={newsletter.backgroundImage}
@@ -39,7 +39,7 @@ const Newsletter = ({ newsletter }) => {
                         objectFit: "cover",
                         objectPosition: "center"
                     }} />
-                <div className="container">
+                <section className="container">
                     <div className={styles.content}>
                         <Image
                             src={newsletter.logo}
@@ -71,9 +71,9 @@ const Newsletter = ({ newsletter }) => {
                             </form>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     );
 }
 

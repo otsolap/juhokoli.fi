@@ -28,17 +28,3 @@
 	margin-top: var(--spacing-single-half);
 	margin-bottom: var(--spacing-single-half);
 }
-
-@media (width >= 1440px) {
-
-	.container {
-		max-width: var(--container-desktop);
-	}
-
-	.container > .sectionHeader h2 {
-		padding-left: 1rem;
-		font-size: 2.25rem;
-		line-height: 2.5rem;
-		padding-top: var(--spacing-double);
-	}
-}

@@ -15,6 +15,11 @@
     object-position: center;
 }
 
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
 .circleWrapper {
     position: absolute;
     top: 11rem;
@@ -48,17 +53,14 @@
     font-weight: 700;
 }
 
-.contentWrapper {
+.content {
     background-color: var(--color-primary);
     color: var(--color-white);
-}
-
-.content {
     padding: var(--spacing-single);
 }
 
 .title {
-    font-size:  1.375rem;
+    font-size:  1.5rem;
     line-height: 2rem;
     font-weight: 700;
 }
@@ -87,15 +89,27 @@
     color: var(--color-white);
 }
 
+@media (width >= 720px) {
+
+}
 
 @media (width >= 1440px) {
+
+    .heroContent {
+        height: 658px;
+        max-width: var(--container-desktop);
+        margin: 0 auto;
+    }
+
     .imageDesktopWrapper {
         height: 658px;
+        position: absolute;
+        z-index: 0;
     }
 
     .circleWrapper {
         top: 10%;
-        right: 5%;
+        right: 5%; 
     }
 
     .circle {
@@ -106,12 +120,6 @@
     .circleText {
         font-size: 3.75rem;
         line-height: 1;
-    }
-
-    .contentWrapper {
-        position: absolute;
-        top: 5%;
-        left: 5%;
     }
 
     .content {
