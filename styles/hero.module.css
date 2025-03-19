@@ -31,8 +31,8 @@
 
 .circleWrapper {
     position: absolute;
-    top: 1rem;
-    right: 3.5rem;
+    top: -5rem;
+    right: 1rem;
     z-index: 10;
 }
 
