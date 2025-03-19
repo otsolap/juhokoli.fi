@@ -4,7 +4,7 @@ import Image from "next/image"
 const Hero = ({ hero }) => {
     return (
         <div className={styles.hero}>
-            <figure className={`${styles.imageDesktopWrapper} desktop-only`} >
+            <figure className={styles.imageDesktopWrapper}>
                 <Image
                     src={hero.DesktopHeroImage}
                     alt={hero.heroTitle}
@@ -15,7 +15,7 @@ const Hero = ({ hero }) => {
                     />
             </figure>
             <figure
-                className={`${styles.imageMobileWrapper} mobile-only`}>
+                className={styles.imageMobileWrapper}>
                 <Image
                     src={hero.MobileHeroImage}
                     alt={hero.heroTitle}

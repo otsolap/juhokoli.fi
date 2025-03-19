@@ -1,13 +1,22 @@
 .hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .imageDesktopWrapper,
 .imageMobileWrapper {
     position: relative; 
     width: 100%; 
-    height: 270px; 
     overflow: hidden; 
+}
+
+.imageMobileWrapper {
+    height: 270px; 
+}
+
+.imageDesktopWrapper {
+    display: none;
 }
 
 .image {
@@ -22,7 +31,7 @@
 
 .circleWrapper {
     position: absolute;
-    top: 11rem;
+    top: 1rem;
     right: 3.5rem;
     z-index: 10;
 }
@@ -57,8 +66,6 @@
     color: var(--color-white);
     background-color: var(--color-primary);
     padding: var(--spacing-double);
-    border: 1px solid transparent;
-    border-radius: 0.375rem;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-single-half);
@@ -96,22 +103,43 @@
 
 @media (width >= 720px) {
 
-}
+    .hero,
+    .imageDesktopWrapper {
+        display: block;
+    }
 
-@media (width >= 1440px) {
+    .imageMobileWrapper {
+        display: none;
+    }
+
+    .contentWrapper,
+    .imageDesktopWrapper {
+        height: 658px;
+    }
 
     .contentWrapper {
-        height: 658px;
-        max-width: var(--container-desktop);
-        margin: 0 auto;
         align-content: center;
         padding: var(--spacing-single) var(--spacing-double);
     }
 
     .imageDesktopWrapper {
-        height: 658px;
         position: absolute;
         z-index: 0;
+    }
+
+    .textWrapper {
+        max-width: 50%;
+        border: 1px solid transparent;
+        border-radius: 0.375rem;
+    }
+
+}
+
+@media (width >= 1440px) {
+
+    .contentWrapper {
+        max-width: var(--container-desktop);
+        margin: 0 auto;
     }
 
     .circleWrapper {
@@ -131,6 +159,7 @@
 
     .textWrapper {
         max-width: 720px;
+
     }
 
     .title {
