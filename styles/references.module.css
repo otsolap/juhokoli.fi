@@ -67,13 +67,15 @@
 }
 
 .profession {
-    margin-top: -2rem;
     text-align: left;
     width: 100%;
 }
+
 .profession::after {
     content: url("/images/sydan.png");
-    margin-left: 2.5rem;
+    position: absolute;
+    bottom: var(--spacing-half);
+    right: 2.5rem;
 }
 
 @media (width >= 1440px) {

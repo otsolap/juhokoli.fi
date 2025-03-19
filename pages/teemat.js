@@ -1,4 +1,4 @@
-import HeroAlt from "@components/HeroAlt"
+import Hero from "@components/Hero"
 import Meta from "@components/Meta"
 import ThemeBlock from "@components/themePage/ThemeBlock"
 import Newsletter from "@components/Newsletter"
@@ -10,11 +10,10 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
                 meta={meta}
             />
             <main id="themes" className="container">
-                <HeroAlt hero={hero} />
+                <Hero hero={hero} />
                 <ThemeBlock
                     themes={themes}
                 />
-                <Newsletter newsletter={newsletter} />
             </main>
         </>
     )

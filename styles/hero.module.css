@@ -1,22 +1,17 @@
 .hero {
-    position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.imageDesktopWrapper,
-.imageMobileWrapper {
-    position: relative; 
-    width: 100%; 
+.hero,
+.imageWrapper {
+    position: relative;
+    height: 329px;
+    width: 100%;
+}
+
+.imageWrapper {
     overflow: hidden; 
-}
-
-.imageMobileWrapper {
-    height: 270px; 
-}
-
-.imageDesktopWrapper {
-    display: none;
 }
 
 .image {
@@ -93,38 +88,40 @@
 
 /* ALT HERO */
 
-.altContainer {
+.contentWrapperAlternative {
     position: absolute;
     top: 50%;
     left: 5%;
     font-weight: 700;
     color: var(--color-white);
+    height: 658px;
+}
+
+.altImageContainer {
+    position: relative;
+    height: inherit;
+}
+
+.altImageContainer {
+    position: relative;
 }
 
 @media (width >= 720px) {
 
     .hero,
-    .imageDesktopWrapper {
+    .imageWrapper {
         display: block;
-    }
-
-    .imageMobileWrapper {
-        display: none;
-    }
-
-    .contentWrapper,
-    .imageDesktopWrapper {
         height: 658px;
+    }
+
+    .imageWrapper {
+        position: absolute;
+        z-index: 0;
     }
 
     .contentWrapper {
         align-content: center;
         padding: var(--spacing-single) var(--spacing-double);
-    }
-
-    .imageDesktopWrapper {
-        position: absolute;
-        z-index: 0;
     }
 
     .textWrapper {
@@ -138,13 +135,14 @@
 @media (width >= 1440px) {
 
     .contentWrapper {
+        height: inherit;
         max-width: var(--container-desktop);
         margin: 0 auto;
     }
 
     .circleWrapper {
-        top: 50%;
-        right: var(--spacing-quadruple); 
+        top: var(--spacing-single);
+        right: -2rem;
     }
 
     .circle {
@@ -172,7 +170,7 @@
         line-height: 2rem;
     }
 
-    .altContainer > .title {
+    .contentWrapperAlternative > h1.title {
         font-size: 80px;
     }
 

@@ -20,7 +20,7 @@ const Header = () => {
                             <Image
                                 src={Navigation.mobileImageLogo}
                                 alt={Navigation.mobileImageAlt}
-                                height={50}
+                                height={80}
                                 width={60}
                                 quality={100}
                                 style={{

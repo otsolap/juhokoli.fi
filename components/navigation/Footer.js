@@ -60,23 +60,9 @@ const Footer = () => {
                     {SoMe}
                 </div>
             </div>
-            <div className={styles.footerDetailsContainer}>
-                <div className={styles.DetailsDesktopContainer}>
+            <div className={styles.subFooter}>
+                <div className={styles.subFooterWrapper}>
                     <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
-                    <Link href="/tietosuojaseloste" className={styles.detailsTxt}>{FooterContent.Footer.privacyPolicy}</Link>
-                    <div className={styles.footerKultakammen}>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://www.kultakammen.fi">
-                            <Image
-                                src="/images/Kultakammen_white.png"
-                                height={30}
-                                width={30}
-                                alt="Toteutuksen tehnyt Kultakammen.fi"
-                            />
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>

@@ -7,7 +7,7 @@
 
 /* Mobile Footer */
 
-.moboleFooter {
+.mobileFooter {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -16,7 +16,7 @@
     z-index: 50;
     text-align: center;
     background-color: var(--color-primary);
-    border-width: 1px;
+    border: 1px solid;
     border-top-color: var(--color-white);
     border-left-color: transparent;
     border-right-color: transparent;
@@ -29,6 +29,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .mobileMenuWrapper a {
     color: var(--color-white);
     position: relative;
@@ -84,30 +85,29 @@
 
 /* Sub Footer */
 
-.footerDetailsContainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.DetailsDesktopContainer {
-    display: inline-flex;
-    width: fit-content;
-}
-.detailsTxt {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-}
-.detailsTxt::after {
-    content: '|';
-    margin-left: .25rem;
-}
-.footerKultakammen {
-    margin-left: .5rem;
+.subFooter {
+    padding-top: var(--spacing-single);
+    padding-bottom: var(--spacing-single);
 }
 
+.subFooterWrapper {
+    max-width: var(--container-desktop);
+    padding: 0 var(--spacing-double);
+    margin: 0 auto;
+}
+
+
+/* 
+
+    .detailsTxt::after {
+        content: '|';
+        margin-left: .25rem;
+    } 
+    .footerKultakammen {
+        margin-left: .5rem;
+    }
+
+*/
 
 @media (width >= 1440px) {
 
@@ -136,19 +136,6 @@
         padding-right: 1rem;
     }
 
-    .footerDetailsContainer {
-        width: 100%;
-        justify-content: flex-start;
-        border-top: 2px;
-        border-color: var(--color-white);
-    }
-
-    .DetailsDesktopContainer {
-        display: flex;
-        justify-content: center;
-        max-width: 55%;
-        width: 100%;
-    }
 
     .footerContainer {
         display: flex;

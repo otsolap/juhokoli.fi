@@ -40,7 +40,7 @@
 }
 .MobileFooterBar {
     background-color: #0525e2;
-    border-width: 1px;
+    border: 1px solid;
     border-top-color: #ffffff;
     border-left-color: transparent;
     border-right-color: transparent;

@@ -11,6 +11,7 @@
     min-height: 80px;
     align-items: center;
     justify-content: center;
+    padding: var(--spacing-single) var(--spacing-double);
 }
 
 .logoContainer {
@@ -45,7 +46,6 @@
 @media (width >= 1440px) {
 
     .header {
-        position: relative;
         max-height: 999px;
         padding: var(--spacing-single) var(--spacing-double);
     }

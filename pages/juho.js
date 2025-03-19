@@ -1,5 +1,5 @@
 import Meta from "@components/Meta"
-import HeroAlt from "@components/HeroAlt"
+import Hero from "@components/Hero"
 import Faq from "@components/aboutMePage/Faq"
 
 const aboutMe = ({ meta, hero, faq }) => {
@@ -7,7 +7,7 @@ const aboutMe = ({ meta, hero, faq }) => {
         <>
             <Meta meta={meta} />
             <main id="Juho" className="container">
-                <HeroAlt hero={hero} />
+                <Hero hero={hero} />
                 <Faq faq={faq} />
             </main>
         </>

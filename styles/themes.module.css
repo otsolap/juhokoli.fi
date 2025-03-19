@@ -57,7 +57,7 @@
 
 /* Theme: Block */
 
-.block.odd {
+.odd {
     background-color: #f2f2f2;
 }
 
@@ -84,23 +84,24 @@
     border: 1px transparent;
 }
 
-@media (width >= 1440px) {
+@media (width >= 720px) {
 
     .wrapper {
         flex-direction: row;
     }
-
 
     .item {
         flex: 0 0 50%;
         max-width: 50%;
         padding: var(--spacing-double);
     }
+}
+
+@media (width >= 1440px) {
 
     /* Theme: Block */
     .block {
         display: flex;
-        background-color: var(--color-white);
     }
 
     .blockWrapper {
@@ -111,7 +112,7 @@
         flex-direction: row-reverse;
     }
 
-    .block.odd .blockContent {
+    .odd .blockContent {
         flex-direction: row;
     }
 

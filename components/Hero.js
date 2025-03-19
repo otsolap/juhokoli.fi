@@ -4,7 +4,7 @@ import Image from "next/image"
 const Hero = ({ hero }) => {
     return (
         <div className={styles.hero}>
-            <figure className={styles.imageDesktopWrapper}>
+            <figure className={styles.imageWrapper}>
                 <Image
                     src={hero.DesktopHeroImage}
                     alt={hero.heroTitle}
@@ -13,17 +13,6 @@ const Hero = ({ hero }) => {
                     fill
                     sizes="100vw" 
                     />
-            </figure>
-            <figure
-                className={styles.imageMobileWrapper}>
-                <Image
-                    src={hero.MobileHeroImage}
-                    alt={hero.heroTitle}
-                    className={styles.heroImage}
-                    quality={100}
-                    fill
-                    sizes="100vw"
-                />
             </figure>
             <div className={styles.contentWrapper}>
                 {hero.DisplayElectionNumber && (

@@ -32,7 +32,6 @@ const Index = ({ meta, hero, themes, references, newsletter }) => {
         />
         <ThemesList themes={themes} />
         <References references={references} />
-        <Newsletter newsletter={newsletter} />
       </main>
     </>
   )
