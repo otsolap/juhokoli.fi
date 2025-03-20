@@ -10,19 +10,19 @@ const MobileFooter = () => {
     return (
         <footer className={styles.mobileFooter}>
             <div className={styles.mobileMenuWrapper}>
-                <Link href="/">
+                <Link className={styles.mobileMenuLink} href="/">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.homeTitle} icon={faHouse} />
                     <span className={styles.mobileLinkText}>{Navigation.homeTitle}</span>
                 </Link>
-                <Link href="/teemat">
+                <Link className={styles.mobileMenuLink} href="/teemat">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.themesTitle} icon={faBook} />
                     <span className={styles.mobileLinkText}>{Navigation.themesTitle}</span>
                 </Link>
-                <Link href="/juho">
+                <Link className={styles.mobileMenuLink} href="/juho">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.aboutMeTitle} icon={faUserTie} />
                     <span className={styles.mobileLinkText}>{Navigation.aboutMeTitle}</span>
                 </Link>
-                <Link href="/yhteydenotto">
+                <Link className={styles.mobileMenuLink} href="/yhteydenotto">
                     <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.contactTitle} icon={faEnvelopeOpenText} />
                     <span className={styles.mobileLinkText}>{Navigation.contactTitle}</span>
                 </Link>

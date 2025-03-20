@@ -47,7 +47,7 @@ const Footer = () => {
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.container}>
+            <div className={styles.wrapper}>
                 <div className={styles.desktopLogo}>
                     <Image
                         src={FooterContent.Footer.desktopLogoImage}
@@ -56,8 +56,13 @@ const Footer = () => {
                         alt={FooterContent.Footer.desktopLogoAlt}
                     />
                 </div>
-                <div className={styles.footerSoMEContainer}>
+                <div className={styles.someContainer}>
+                  <header className={styles.someTitle}>
+                    <h3>{FooterContent.Footer.socialMediaTitle}</h3>
+                  </header>
+                  <div className={styles.iconsWrapper}>
                     {SoMe}
+                  </div>
                 </div>
             </div>
             <div className={styles.subFooter}>

@@ -3,11 +3,10 @@
     "HeroTitle": "Vahvan talouden Turku",
     "HeroSubtitle":"Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki!",
     "DesktopHeroImage":"/images/JuhoKoliHero.png",
-    "MobileHeroImage":"/images/JuhoKoliMHero.png",
     "CTAText": "Tutustu Juhoon",
     "CTALink": "/teemat",
     "DisplayElectionNumber": true,
-    "ElectionNumber": "606"
+    "ElectionNumber": "419"
   },
   "ThemeSection": {
     "SectionTitle": "Vaaliteemat",
@@ -34,30 +33,16 @@
           "title": "Tarkkatalous",
           "description": "Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki."
         }
-      ],
-      "archiveLink": "/teemat",
-      "archiveLinkText": "Lue lisää teemoistani"
+      ]
     },
     "ReferenceSection": {
       "SectionTitle": "Mitä Juhosta sanotaan?",
       "referees": [
         {
-          "image": "/images/Taru.png",
-          "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-          "referee": "Taru Säteri",
-          "refereeTitle": "Rakennustekniikan insinööri"
-        },
-        {
           "image": "/images/Matti.png",
           "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
           "referee": "Matti Meikäläinen",
           "refereeTitle": "Säästöpankin johtoherra"
-        },
-        {
-          "image": "/images/VeliMatti.png",
-          "reference": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
-          "referee": "Veli-Matti Sandberg",
-          "refereeTitle": "Rakennuttajainsinööri"
         },
         {
           "image": "/images/Otso.png",

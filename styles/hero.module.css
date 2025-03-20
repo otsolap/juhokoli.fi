@@ -1,8 +1,3 @@
-.hero {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero,
 .imageWrapper {
     position: relative;
@@ -27,7 +22,7 @@
 .circleWrapper {
     position: absolute;
     top: -5rem;
-    right: 1rem;
+    right: var(--spacing-single);
     z-index: 10;
 }
 
@@ -107,10 +102,9 @@
 }
 
 @media (width >= 720px) {
-
+    
     .hero,
     .imageWrapper {
-        display: block;
         height: 658px;
     }
 
@@ -120,6 +114,7 @@
     }
 
     .contentWrapper {
+        height: inherit;
         align-content: center;
         padding: var(--spacing-single) var(--spacing-double);
     }
@@ -130,19 +125,24 @@
         border-radius: 0.375rem;
     }
 
+    .circleWrapper {
+        top: unset;
+        bottom: var(--spacing-double);
+        right: var(--spacing-double);
+    }
+
 }
 
 @media (width >= 1440px) {
 
     .contentWrapper {
-        height: inherit;
         max-width: var(--container-desktop);
         margin: 0 auto;
     }
 
     .circleWrapper {
-        top: var(--spacing-single);
         right: -2rem;
+        
     }
 
     .circle {
@@ -157,7 +157,6 @@
 
     .textWrapper {
         max-width: 720px;
-
     }
 
     .title {

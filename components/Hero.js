@@ -1,7 +1,8 @@
 import styles from '@/styles/hero.module.css'
 import Image from "next/image"
 
-const Hero = ({ hero }) => {
+const Hero = ({ hero, alternativeStyles }) => {
+    console.log(alternativeStyles)
     return (
         <div className={styles.hero}>
             <figure className={styles.imageWrapper}>

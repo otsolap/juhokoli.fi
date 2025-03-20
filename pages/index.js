@@ -46,37 +46,36 @@ export async function getStaticProps() {
   return {
     props: {
       meta: {
-        title: home.meta.title,
-        description: home.meta.description,
-        url: home.meta.url,
-        image: home.meta.image
+        title: home.meta.title ?? null,
+        description: home.meta.description ?? null,
+        url: home.meta.url ?? null,
+        image: home.meta.image ?? null,
       },
       hero: {
-        HeroTitle: home.Hero.HeroTitle,
-        HeroSubtitle: home.Hero.HeroSubtitle,
-        DesktopHeroImage: home.Hero.DesktopHeroImage,
-        MobileHeroImage: home.Hero.MobileHeroImage,
-        CTAText: home.Hero.CTAText,
-        CTALink: home.Hero.CTALink,
-        DisplayElectionNumber: home.Hero.DisplayElectionNumber,
-        ElectionNumber: home.Hero.ElectionNumber,
+        HeroTitle: home.Hero.HeroTitle ?? '',
+        HeroSubtitle: home.Hero.HeroSubtitle ?? '',
+        DesktopHeroImage: home.Hero.DesktopHeroImage ?? null,
+        CTAText: home.Hero.CTAText ?? '',
+        CTALink: home.Hero.CTALink ?? '',
+        DisplayElectionNumber: home.Hero.DisplayElectionNumber ?? false,
+        ElectionNumber: home.Hero.ElectionNumber ?? '',
       },
       themes: {
-        sectionTitle: home.ThemeSection.SectionTitle,
-        themes: home.ThemeSection.themes
+        sectionTitle: home.ThemeSection.SectionTitle ?? '',
+        themes: home.ThemeSection.themes ?? [],
       },
       references: {
-        sectionTitle: home.ReferenceSection.SectionTitle,
-        referees: home.ReferenceSection.referees,
-        heart: home.ReferenceSection.heart,
-        heartAlt: home.ReferenceSection.heartAlt,
+        sectionTitle: home.ReferenceSection.SectionTitle ?? '',
+        referees: home.ReferenceSection.referees ?? [],
+        heart: home.ReferenceSection.heart ?? null,
+        heartAlt: home.ReferenceSection.heartAlt ?? '',
       },
       newsletter: {
-        backgroundImage: site.newsletter.backgroundImage,
-        logo: site.newsletter.logo,
-        title: site.newsletter.title,
-        description: site.newsletter.description,
-        cta: site.newsletter.cta,
+        backgroundImage: site.newsletter.backgroundImage ?? null,
+        logo: site.newsletter.logo ?? null,
+        title: site.newsletter.title ?? '',
+        description: site.newsletter.description ?? '',
+        cta: site.newsletter.cta ?? '',
       }
     },
   }

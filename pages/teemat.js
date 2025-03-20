@@ -10,7 +10,7 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
                 meta={meta}
             />
             <main id="themes" className="container">
-                <Hero hero={hero} />
+                <Hero hero={hero} alternativeStyles={true} />
                 <ThemeBlock
                     themes={themes}
                 />
@@ -28,25 +28,24 @@ export async function getStaticProps() {
     return {
         props: {
             meta: {
-                title: themes.meta.title,
-                description: themes.meta.description,
+                title: themes.meta.title ?? '',
+                description: themes.meta.description ?? '',
                 url: themes.meta.url,
                 image: themes.meta.image
             },
             hero: {
-                HeroTitle: themes.Hero.HeroTitle,
-                DesktopHeroImage: themes.Hero.DesktopHeroImage,
-                MobileHeroImage: themes.Hero.MobileHeroImage,
+                HeroTitle: themes.Hero.HeroTitle ?? '',
+                DesktopHeroImage: themes.Hero.DesktopHeroImage ?? null 
             },
             themes: {
-                themes: themes.ThemeSection.themes
+                themes: themes.ThemeSection.themes ?? []
             },
             newsletter: {
-                backgroundImage: site.newsletter.backgroundImage,
-                logo: site.newsletter.logo,
-                title: site.newsletter.title,
-                description: site.newsletter.description,
-                cta: site.newsletter.cta,
+                backgroundImage: site.newsletter.backgroundImage ?? null,
+                logo: site.newsletter.logo ?? null,
+                title: site.newsletter.title ?? '',
+                description: site.newsletter.description ?? '',
+                cta: site.newsletter.cta ?? '',
             }
         }
     }

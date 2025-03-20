@@ -6,9 +6,8 @@ const ThemeBlock = ({ themes }) => {
         <>
             {themes.themes.map((theme, i) => {
                 return (
-                    <div className={`${i % 2 === 0 ? `` : `${styles.odd}`} `}>
+                    <div key={i} className={`${i % 2 === 0 ? `` : `${styles.odd}`} `}>
                         <section
-                            key={i}
                             id={theme.title}
                             className={styles.block}
                         >

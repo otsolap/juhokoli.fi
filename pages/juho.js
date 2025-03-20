@@ -21,21 +21,20 @@ export async function getStaticProps() {
     return {
         props: {
             meta: {
-                title: aboutMe.meta.title,
-                description: aboutMe.meta.description,
-                url: aboutMe.meta.url,
-                image: aboutMe.meta.image
+                title: aboutMe.meta.title ?? '',
+                description: aboutMe.meta.description ?? '',
+                url: aboutMe.meta.url ?? '',
+                image: aboutMe.meta.image ?? '',
             },
             hero: {
-                HeroTitle: aboutMe.Hero.HeroTitle,
-                HeroSubtitle: aboutMe.Hero.HeroSubtitle,
-                DesktopHeroImage: aboutMe.Hero.DesktopHeroImage,
-                MobileHeroImage: aboutMe.Hero.MobileHeroImage,
+                HeroTitle: aboutMe.Hero.HeroTitle ?? '',
+                HeroSubtitle: aboutMe.Hero.HeroSubtitle ?? '',
+                DesktopHeroImage: aboutMe.Hero.DesktopHeroImage ?? null,
             },
             faq: {
-                faqProfilePicture: aboutMe.FAQSection.faqProfilePicture,
-                faqProfilePictureAlt: aboutMe.FAQSection.faqProfilePictureAlt,
-                faqs: aboutMe.FAQSection.faqs
+                faqProfilePicture: aboutMe.FAQSection.faqProfilePicture ?? null,
+                faqProfilePictureAlt: aboutMe.FAQSection.faqProfilePictureAlt ?? '',
+                faqs: aboutMe.FAQSection.faqs ?? [],
             },
         }
     }
