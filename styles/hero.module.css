@@ -1,11 +1,11 @@
 .hero,
 .imageWrapper {
     position: relative;
-    height: 329px;
     width: 100%;
 }
 
 .imageWrapper {
+    height: 329px;
     overflow: hidden; 
 }
 

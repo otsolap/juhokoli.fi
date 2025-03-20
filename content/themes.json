@@ -1,8 +1,7 @@
 {
     "Hero": {
         "HeroTitle": "Vaaliteemani",
-        "DesktopHeroImage":"/images/Vaaliteemat_Hero.png",
-        "MobileHeroImage":"/images/Vaaliteemat_Hero_Mobiili.png"
+        "DesktopHeroImage":"/images/Vaaliteemat_Hero.png"
       },
       "ThemeSection": {
         "themes": 

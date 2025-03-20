@@ -6,7 +6,7 @@ const ThemeBlock = ({ themes }) => {
         <>
             {themes.themes.map((theme, i) => {
                 return (
-                    <div key={i} className={`${i % 2 === 0 ? `` : `${styles.odd}`} `}>
+                    <div key={i} className={`${ i % 2 === 0 ? '' : 'alt-bg'} `}>
                         <section
                             id={theme.title}
                             className={styles.block}
@@ -36,7 +36,7 @@ const ThemeBlock = ({ themes }) => {
 
                 );
             })}
-        </>
+       </>
     );
 }
 

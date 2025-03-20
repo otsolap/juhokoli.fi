@@ -2,8 +2,7 @@
     "Hero": {
         "HeroTitle": "Juho Koli",
         "HeroSubtitle":"",
-        "DesktopHeroImage":"/images/Koli_Hero.png",
-        "MobileHeroImage":"/images/Koli_Hero_Mobiili.png"
+        "DesktopHeroImage":"/images/Koli_Hero.png"
       },
       "FAQSection": {
         "faqProfilePicture": "/images/FAQ_Koli.png",
