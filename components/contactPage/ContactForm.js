@@ -1,4 +1,4 @@
-import styles from '../../styles/contact.module.css'
+import styles from '@/styles/contact.module.css'
 
 const ContactForm = ({ contact }) => {
     const contactSubmit = (e) => {
@@ -45,15 +45,6 @@ const ContactForm = ({ contact }) => {
                             id="message"
                             required
                         />
-                    </div>
-                    <div className={`${styles.formControl} ${styles.newsletterControl}`}>
-                        <input
-                            className={styles.newsletterCheckBox}
-                            type="checkbox"
-                            id="newsletter"
-                            name="newsletter"
-                        />
-                        <label className={styles.newsletterLabel} htmlFor="newsletter">Haluan tilata uutiskirjeen</label>
                     </div>
                     <div className={styles.formControl}>
                         <button
