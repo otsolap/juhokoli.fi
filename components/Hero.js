@@ -2,9 +2,8 @@ import styles from '@/styles/hero.module.css'
 import Image from "next/image"
 
 const Hero = ({ hero, alternativeStyles }) => {
-    console.log(alternativeStyles)
     return (
-        <div className={styles.hero}>
+        <div className={styles.hero + (alternativeStyles ? ` ${styles.alternativeStyle}` : '')}>
             <figure className={styles.imageWrapper}>
                 <Image
                     src={hero.DesktopHeroImage}

@@ -1,6 +1,6 @@
 import Hero from "@components/Hero"
 import Meta from "@components/Meta"
-import ThemeBlock from "@components/themePage/ThemeBlock"
+import ThemesBlock from "@components/themePage/ThemesBlock"
 import Newsletter from "@components/Newsletter"
 
 const Themes = ({ meta, hero, themes, newsletter }) => {
@@ -11,9 +11,7 @@ const Themes = ({ meta, hero, themes, newsletter }) => {
             />
             <main id="themes" className="container">
                 <Hero hero={hero} alternativeStyles={true} />
-                <ThemeBlock
-                    themes={themes}
-                />
+                <ThemesBlock themes={themes} />
             </main>
         </>
     )
