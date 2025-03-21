@@ -17,12 +17,12 @@
 
 .imageWrapper {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 100%;
 }
 
 .textWrapper {
-    padding: var(--spacing-single) var(--spacing-double); 
+    padding: var(--spacing-single);
 }
 
 .image {
@@ -40,6 +40,10 @@
 
 .description {
     padding: var(--spacing-single);
+}
+
+.alternativeStyle:last-of-type section {
+    margin-bottom: 0;
 }
 
 @media (width >= 720px) {
@@ -71,6 +75,12 @@
         width: 400px;
     }
 
+    .textWrapper {
+        padding: var(--spacing-single) var(--spacing-double); 
+        align-items: flex-start;
+        justify-content: center;
+    }
+
     .alternativeStyle:last-of-type section {
         margin-bottom: 0;
     }
@@ -84,20 +94,9 @@
 		max-width: var(--container-desktop);
     }
 
-    .imageWrapper,
-    .textWrapper {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
     .imageWrapper {
         height: 500px;
         width: 668px;
-    }
-
-    .textWrapper {
-        align-items: flex-start;
-        justify-content: center;
     }
 
 }
