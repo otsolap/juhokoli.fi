@@ -1,4 +1,4 @@
-.contactPageContainer {
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
 .someText {
     margin-left: 1.5rem;
 }
-#formSection {
+.formSection {
     padding-bottom: 1rem;
 }
 .formContainer {
@@ -76,7 +76,7 @@
     border-color: #211f1b;
     border-radius: .25rem;
     padding-left: 1rem;
-    background-color: #f2f2f2;
+    background-color: var(--color-grey);
     color: #211f1b;
     width: 100%;
 }
@@ -97,15 +97,14 @@
 
 @media
  (min-width: 1440px) {
-    .contactPageContainer {
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
+
+    .wrapper {
+
         flex-direction: row;
     }
     
     .detailsSection,
-    #formSection {
+    .formSection {
         max-width: 50%;
         flex: 0 0 50%;
     }

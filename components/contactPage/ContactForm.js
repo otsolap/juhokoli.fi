@@ -6,7 +6,7 @@ const ContactForm = ({ contact }) => {
     }
 
     return (
-        <section id={styles.formSection}>
+        <section id="yhteydenotto-lomake" className={styles.formSection}>
             <div className={styles.formContainer}>
                 <form
                     name="contact"
@@ -49,7 +49,7 @@ const ContactForm = ({ contact }) => {
                     <div className={styles.formControl}>
                         <button
                             type="submit"
-                            className="btn">
+                            className="button">
                             {contact.cta}
                         </button>
                     </div>

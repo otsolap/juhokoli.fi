@@ -1,7 +1,7 @@
-import { faLinkedin, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faInstagram, faXTwitter, } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from '../../styles/contact.module.css'
+import styles from '@/styles/contact.module.css'
 
 const ContactDetails = ({ contact }) => {
     const SoMe = contact.socialMedia.map((icons, i) => {
@@ -33,7 +33,7 @@ const ContactDetails = ({ contact }) => {
                 )}
                 {icons.icon === 'Twitter' ? (
                     <a className={styles.someLink} href={icons.url} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon className={styles.someIcon} aria-label="Twitter profile" icon={faTwitter} />
+                        <FontAwesomeIcon className={styles.someIcon} aria-label="Twitter profile" icon={faXTwitter} />
                         <span className={styles.someText}>{icons.description}</span>
                     </a>
                 ) : (
@@ -50,7 +50,6 @@ const ContactDetails = ({ contact }) => {
             </span>
         )
     })
-
 
     return (
         <section className={styles.detailsSection}>

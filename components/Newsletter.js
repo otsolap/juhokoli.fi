@@ -64,7 +64,7 @@ const Newsletter = ({ newsletter }) => {
                                     required
                                 />
                                 <button
-                                    className={`btn`}
+                                    className={`button`}
                                     type="submit">
                                     {newsletter.cta}
                                 </button>

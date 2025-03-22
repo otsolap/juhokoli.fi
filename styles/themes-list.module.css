@@ -51,7 +51,7 @@
     height: auto;
     object-fit: cover;
     object-position: center;
-    border-radius: 0.375rem;
+    border-radius: var(--spacing-single-quarter);
 }
 
 @media (width >= 720px) {

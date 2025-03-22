@@ -2,29 +2,26 @@
 	margin: 0 auto;
 	width: 100%;
 }
-.btn {
+
+button,
+.button {
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	font-weight: 700;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
-	padding-top: 0.375rem;
-	padding-bottom: 0.375rem;
-	padding-left: var(--spacing-three-quarters);
-	padding-right: var(--spacing-three-quarters);
+	padding: .375rem var(--spacing-three-quarters);
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	border: 1px transparent;
+	border-radius: var(--spacing-single);
 }
 
-.btn:hover,
-.btn:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
 	background-color: #69dee3;
-}
-
-.buttonWrapper {
-	margin-top: var(--spacing-single-half);
-	margin-bottom: var(--spacing-single-half);
 }

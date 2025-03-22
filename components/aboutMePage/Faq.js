@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from "next/image"
 import Question from './Question'
-import styles from '../../styles/faq.module.css'
+import styles from '@/styles/faq.module.css'
 
 const Faq = ({ faq }) => {
     const [faqs, setFaqs] = useState([faq.faqs])
@@ -16,6 +16,7 @@ const Faq = ({ faq }) => {
                     width={850}
                     height={1240}
                     quality={100}
+                    className={styles.image}
                     style={{
                         maxWidth: "100%",
                         height: "auto",
