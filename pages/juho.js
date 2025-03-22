@@ -1,6 +1,6 @@
 import Meta from "@components/Meta"
 import Hero from "@components/Hero"
-import Faq from "@components/aboutMePage/Faq"
+import Accordion from "@components/aboutMePage/Accordion"
 
 const aboutMe = ({ meta, hero, faq }) => {
     return (
@@ -8,7 +8,7 @@ const aboutMe = ({ meta, hero, faq }) => {
             <Meta meta={meta} />
             <main id="Juho" className="container">
                 <Hero hero={hero} />
-                <Faq faq={faq} />
+                <Accordion faq={faq} />
             </main>
         </>
     )
