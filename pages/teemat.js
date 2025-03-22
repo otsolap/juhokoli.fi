@@ -33,7 +33,7 @@ export async function getStaticProps() {
             },
             hero: {
                 HeroTitle: themes.Hero.HeroTitle ?? '',
-                DesktopHeroImage: themes.Hero.DesktopHeroImage ?? null 
+                HeroImage: themes.Hero.HeroImage ?? null 
             },
             themes: {
                 themes: themes.ThemeSection.themes ?? []

@@ -6,7 +6,7 @@ const Hero = ({ hero, alternativeStyles }) => {
         <div className={styles.hero + (alternativeStyles ? ` ${styles.alternativeStyle}` : '')}>
             <figure className={styles.imageWrapper}>
                 <Image
-                    src={hero.DesktopHeroImage}
+                    src={hero.HeroImage}
                     alt={hero.heroTitle}
                     className={styles.heroImage}
                     quality={100}

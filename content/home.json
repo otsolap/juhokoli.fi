@@ -2,7 +2,7 @@
   "Hero": {
     "HeroTitle": "Vahvan talouden Turku",
     "HeroSubtitle":"Vain hallitulla taloudenpidolla varmistamme, että Turku on tulevaisuudessakin kasvava, houkutteleva, mahdollisuuksia ja elämyksiä tarjoava Suomen paras kaupunki!",
-    "DesktopHeroImage":"/images/JuhoKoli2025.webp",
+    "HeroImage":"/images/JuhoKoli2025.webp",
     "CTAText": "Tutustu Juhoon",
     "CTALink": "/teemat",
     "DisplayElectionNumber": true,

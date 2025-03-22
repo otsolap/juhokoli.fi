@@ -54,7 +54,7 @@ export async function getStaticProps() {
       hero: {
         HeroTitle: home.Hero.HeroTitle ?? '',
         HeroSubtitle: home.Hero.HeroSubtitle ?? '',
-        DesktopHeroImage: home.Hero.DesktopHeroImage ?? null,
+        HeroImage: home.Hero.HeroImage ?? null,
         CTAText: home.Hero.CTAText ?? '',
         CTALink: home.Hero.CTALink ?? '',
         DisplayElectionNumber: home.Hero.DisplayElectionNumber ?? false,

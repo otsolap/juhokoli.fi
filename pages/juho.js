@@ -29,7 +29,7 @@ export async function getStaticProps() {
             hero: {
                 HeroTitle: aboutMe.Hero.HeroTitle ?? '',
                 HeroSubtitle: aboutMe.Hero.HeroSubtitle ?? '',
-                DesktopHeroImage: aboutMe.Hero.DesktopHeroImage ?? null,
+                HeroImage: aboutMe.Hero.HeroImage ?? null,
             },
             faq: {
                 faqProfilePicture: aboutMe.FAQSection.faqProfilePicture ?? null,

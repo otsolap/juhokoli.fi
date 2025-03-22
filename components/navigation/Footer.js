@@ -1,8 +1,7 @@
 import FooterContent from '@content/site.json'
 import Icons from '@content/site.json'
-import styles from '../../styles/footer.module.css'
+import styles from '@/styles/footer.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
 import { 
     faInstagram,
     faXTwitter,

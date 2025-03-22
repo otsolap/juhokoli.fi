@@ -19,7 +19,7 @@ collections:
           fields:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
+            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "string"}
             - { label: "Toimintakehotteen teksti", name: "CTAText", widget: "string"}
             - { label: "Linkki", name: "CTALink", widget: "string"}
             - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
@@ -69,7 +69,7 @@ collections:
           fields:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
+            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "image"}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
@@ -91,7 +91,7 @@ collections:
           fields:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
+            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "image"}
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
