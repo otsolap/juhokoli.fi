@@ -1,9 +1,35 @@
+'use client'
+import { useState } from 'react';
 import styles from '@/styles/contact.module.css'
 
 const ContactForm = ({ contact }) => {
-    const contactSubmit = (e) => {
-        e.preventDefault()
-    }
+    const [status, setStatus] = useState(null);
+    const [error, setError] = useState(null);
+
+    const contactSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            setStatus('pending');
+            setError(null);
+            const myForm = event.target;
+            const formData = new FormData(myForm);
+            const res = await fetch('/__forms.html', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            });
+            if (res.status === 200) {
+                setStatus('ok');
+            } else {
+                setStatus('error');
+                setError(`${res.status} ${res.statusText}`);
+            }
+        } catch (e) {
+            setStatus('error');
+            setError(`${e}`);
+        }
+    };
+
 
     return (
         <section id="yhteydenotto-lomake" className={styles.formSection}>
@@ -53,6 +79,13 @@ const ContactForm = ({ contact }) => {
                             {contact.cta}
                         </button>
                     </div>
+                    {status === 'ok' && (
+                        <div>Submitted!</div>
+                    )}
+                    {status === 'error' && (
+                        <div>{error}</div>
+                    )}
+
                 </form>
             </div>
         </section>
