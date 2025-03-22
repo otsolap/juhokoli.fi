@@ -4,13 +4,14 @@ import Image from "next/image"
 const Hero = ({ hero, alternativeStyles }) => {
     return (
         <div className={styles.hero + (alternativeStyles ? ` ${styles.alternativeStyle}` : '')}>
+            <div className={styles.overlay}></div>
             <figure className={styles.imageWrapper}>
                 <Image
                     src={hero.HeroImage}
                     alt={hero.heroTitle}
                     className={styles.heroImage}
                     quality={100}
-                    fill
+                    fill={true}
                     sizes="100vw" 
                     />
             </figure>
