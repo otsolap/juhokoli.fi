@@ -2,10 +2,6 @@
     padding-bottom: var(--spacing-single);
 }
 
-.container {
-    padding: var(--spacing-single);
-}
-
 .content {
     width: 100%;
     border: 2px solid;
@@ -51,6 +47,7 @@
 
 .closed {
     background-color: var(--color-grey);
+    color: var(--color-black);
 }
 
 .open {
@@ -90,6 +87,7 @@
     
     .container {
         display: flex;
+        padding: var(--spacing-single);
     }
 
     .imageWrapper,
@@ -109,9 +107,7 @@
         object-position: center;
     }
 
-
     .content {
-        flex-direction: column;
-        justify-content: flex-start;
+        height: fit-content;
     }
 }

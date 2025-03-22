@@ -17,7 +17,7 @@ const Question = ({ answer, question }) => {
     };
 
     return (
-        <button className={styles.button} onClick={toggleAccordion}>
+        <div role="button" className={styles.button} onClick={toggleAccordion}>
             <div className={styles.faq}>
                 <div className={active ? `${styles.open}` : `${styles.closed}`}>
                     <article className={styles.item}>
@@ -29,7 +29,7 @@ const Question = ({ answer, question }) => {
                     <p className={styles.answerText}>{answer}</p>
                 </div>
             </div>
-        </button >
+        </div>
     )
 }
 
