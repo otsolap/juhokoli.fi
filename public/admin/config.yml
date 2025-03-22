@@ -4,7 +4,7 @@ backend:
 media_folder: public/images
 public_folder: images
 # Uncomment local_backend when you need to develop in your local
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+local_backend: false # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     label: "Sivut"
@@ -20,7 +20,6 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "string"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "string"}
             - { label: "Toimintakehotteen teksti", name: "CTAText", widget: "string"}
             - { label: "Linkki", name: "CTALink", widget: "string"}
             - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
@@ -71,7 +70,6 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
@@ -94,7 +92,6 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string"}
             - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image"}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image"}
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
@@ -140,7 +137,7 @@ collections:
                     name: url
                     label: url
                     required: true
-                    hint: "Laita tähän URL:I SoMe kanavaasi"
+                    hint: "Laita tähän URL:i SoMe kanavaasi"
   - name: "general"
     label: "Sivun asetukset"
     files:
@@ -196,5 +193,5 @@ collections:
                     name: url
                     label: url
                     required: true
-                    hint: "Laita tähän URL:I SoMe kanavaasi"
+                    hint: "Laita tähän URL:i SoMe kanavaasi"
             
