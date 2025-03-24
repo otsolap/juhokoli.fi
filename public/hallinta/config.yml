@@ -4,7 +4,7 @@ backend:
 media_folder: public/images
 public_folder: images
 # Uncomment local_backend when you need to develop in your local
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+local_backend: false # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     label: "Sivut"
