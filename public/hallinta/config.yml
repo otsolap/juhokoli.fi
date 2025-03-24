@@ -4,7 +4,7 @@ backend:
 media_folder: public/images
 public_folder: images
 # Uncomment local_backend when you need to develop in your local
-local_backend: false # run npx netlify-cms-proxy-server for local testing
+local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     label: "Sivut"
@@ -113,31 +113,8 @@ collections:
           name: "ContactSection"
           widget: object
           fields: 
-            - { label: "Otsikko", name: "SectionTitle", widget: "string"}
-            - { label: "Kuvaus", name: "SectionDescription", widget: "text"}
-            -   label: "Sosiaalinen Media"
-                name: "socialMedia"
-                widget: list
-                collapsed: true
-                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
-                fields:
-                  - label: "Icons"
-                    name: "icon"
-                    widget: "select"
-                    options:
-                      [
-                        "Twitter",
-                        "LinkedIn",
-                        "Instagram",
-                        "Email",
-                        "Phone",
-                      ]
-                    hint: "Valitse ikoni"
-                  - widget: string
-                    name: url
-                    label: url
-                    required: true
-                    hint: "Laita tähän URL:i SoMe kanavaasi"
+            - { label: "Otsikko", name: "title", widget: "string"}
+            - { label: "Kuvaus", name: "description", widget: "text"}
   - name: "general"
     label: "Sivun asetukset"
     files:
@@ -146,52 +123,55 @@ collections:
       file: "content/site.json"
       fields:
         - label: "Yläpalkki"
-          name: "Header"
+          name: "Navigation"
           widget: object
           fields:
-           - { label: "Logo", name: "logo", widget: "string"}
-           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image"}
-           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string"}
-           - { label: "Etusivu", name: "homeTitle", widget: "string"}
-           - { label: "Vaaliteemat", name: "themesTitle", widget: "string"}
-           - { label: "Juho", name: "aboutMeTitle", widget: "string"}
-           - { label: "Ota Yhteyttä", name: "contactTitle", widget: "string"}
-        - label: "Uutiskirje"
-          name: "newsletter"
-          widget: object
-          fields:
-          - { label: "Logo", name: "logo", widget: "image"}
-          - { label: "Otsikko", name: "title", widget: "string"}
-          - { label: "kuvaus", name: "description", widget: "string"}
-          - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
-          - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
+           - { label: "Logo", name: "logo", widget: "string", required: false}
+           - { label: "Mobiili Kokoomuslogo", name: "mobileImageLogo", widget: "image", required: false}
+           - { label: "Mobiiliu Kokoomuslogon täsmennys", name: "mobileImageAlt", widget: "string", required: false}
+           - { label: "Etusivu", name: "homeTitle", widget: "string", default: "Etusivu", required: false}
+           - { label: "Vaaliteemat", name: "themesTitle", default: "Vaaliteemat", widget: "string", required: false}
+           - { label: "Juho", name: "aboutMeTitle", default: "Juho",  widget: "string", required: false}
+           - { label: "Ota Yhteyttä", name: "contactTitle", default: "Ota yhteyttä", widget: "string", required: false}
+        # - label: "Uutiskirje"
+        #   name: "newsletter"
+        #   widget: object
+        #   fields:
+        #   - { label: "Logo", name: "logo", widget: "image"}
+        #   - { label: "Otsikko", name: "title", widget: "string"}
+        #   - { label: "kuvaus", name: "description", widget: "string"}
+        #   - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
+        #   - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
         - label: "Alapalkki"
           name: "Footer"
           widget: object
           fields:
-           - { label: "Pöytäkoneen Kokoomuslogo", name: "desktopLogoImage", widget: "image"}
-           - { label: "Kokoomuslogon täsmennys", name: "desktopLogoAlt", widget: "string"}
-           -    label: "Sosiaalinen Media"
-                name: "socialMedia"
-                widget: list
-                collapsed: true
-                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
-                fields:
-                  - label: "Icons"
-                    name: "icon"
-                    widget: "select"
-                    options:
-                      [
-                        "Twitter",
-                        "LinkedIn",
-                        "Instagram",
-                        "Email",
-                        "Phone",
-                      ]
-                    hint: "Valitse ikoni"
-                  - widget: string
-                    name: url
-                    label: url
-                    required: true
-                    hint: "Laita tähän URL:i SoMe kanavaasi"
-            
+           - { label: "Pöytäkoneen Kokoomuslogo", name: "desktopLogoImage", widget: "image", required: false}
+           - { label: "Kokoomuslogon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
+           -   label: "Sosiaalinen Media"
+               name: "socialMedia"
+               widget: list
+               collapsed: true
+               required: false
+               hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
+               fields:
+                - label: "Icons"
+                  name: "icon"
+                  widget: "select"
+                  options:
+                    [
+                      "Twitter",
+                      "LinkedIn",
+                      "Instagram",
+                      "Email",
+                      "Phone",
+                    ]
+                  hint: "Valitse ikoni"
+                - widget: string
+                  name: url
+                  label: url
+                  hint: "Laita tähän URL:i SoMe kanavaasi"
+                - widget: string
+                  name: description
+                  label: description
+                  hint: "Laita tähän kuvaus kanavastasi. Esim käyttäjänimike."

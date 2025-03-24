@@ -9,7 +9,7 @@ const Contact = ({ meta, contact }) => {
             <Meta meta={meta} />
             <main id="yhteydenotto" className="container">
                 <section className={styles.wrapper}>
-                    <ContactDetails contact={contact} />
+                    <ContactDetails contact={contact} some={contact.socialMedia} />
                     <ContactForm contact={contact} />
                 </section>
             </main>
@@ -21,6 +21,8 @@ export default Contact
 
 export async function getStaticProps() {
     const contact = await import(`../content/contact.json`)
+    const site = await import(`../content/site.json`)
+
     return {
         props: {
             meta: {
@@ -30,10 +32,10 @@ export async function getStaticProps() {
                 image: contact.meta.image ?? '',
             },
             contact: {
-                SectionTitle: contact.ContactSection.SectionTitle ?? '',
-                SectionDescription: contact.ContactSection.SectionDescription ?? '',
+                title: contact.ContactSection.title ?? '',
+                description: contact.ContactSection.description ?? '',
                 cta: contact.ContactSection.cta ?? null,
-                socialMedia: contact.ContactSection.socialMedia ?? [],
+                socialMedia: site.Footer.socialMedia ?? [],
             },
         }
     }
