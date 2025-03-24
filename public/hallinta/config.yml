@@ -17,48 +17,50 @@ collections:
           name: "Hero"
           widget: object
           fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "string"}
-            - { label: "Toimintakehotteen teksti", name: "CTAText", widget: "string"}
-            - { label: "Linkki", name: "CTALink", widget: "string"}
-            - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean"}
-            - { label: "Vaalinumero", name: "ElectionNumber", widget: "string"}
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "string", required: false}
+            - { label: "Toimintakehotteen teksti", name: "CTAText", widget: "string", required: false}
+            - { label: "Linkki", name: "CTALink", widget: "string", required: false}
+            - { label: "Näytetäänkö Vaalinumero?", name: "DisplayElectionNumber", widget: "boolean", required: false}
+            - { label: "Vaalinumero", name: "ElectionNumber", widget: "string", required: false}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
           fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false }  
           - label: "Teemat"
             name: "themes"
             widget: list
+            required: false
             fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
-              - { label: "Napin teksti", name: "cta", widget: "string"}
-              - { label: "Linkki", name: "link", widget: "string"}
+              - { label: "Teeman otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false}
         - label: "Referenssit-osio"
           name: "ReferenceSection"
           widget: object
+          required: false
           fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string" }  
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false }  
           - label: "Referenssit"
             name: "referees"
             widget: list
+            required: false
             fields:
-              - { label: "Referoija", name: "referee", widget: "string"}
-              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string"}
-              - { label: "Referenssi", name: "reference", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Referoija", name: "referee", widget: "string", required: false}
+              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string", required: false}
+              - { label: "Referenssi", name: "reference", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false}
         - label: "Sivuston metatiedot"
           name: "meta"
           widget: object
+          required: false
           fields:
-          - { label: "Sivun otsikko", name: "title", widget: "string"}
-          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku"}
-          - { label: "Sivun linkki", name: "url", widget: "string"}
-          - { label: "Sivun kuva", name: "image", widget: "image"}
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "Vahvan talouden Turku", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Vaaliteemat"
       name: "themes"
       file: content/themes.json
@@ -66,21 +68,24 @@ collections:
         - label: "Herokuva"
           name: "Hero"
           widget: object
+          required: false
           fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
-            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "image"}
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "image", required: false}
         - label: 'Teemat-osio'
           name: "ThemeSection"
           widget: object
+          required: false
           fields:
           - label: "Teemat"
             name: "themes"
             widget: list
+            required: false
             fields:
-              - { label: "Teeman otsikko", name: "title", widget: "string"}
-              - { label: "Kuvaus", name: "description", widget: "text"}
-              - { label: "Kuva", name: "image", widget: "image" }
+              - { label: "Teeman otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false}
     - label: "Koli"
       name: "aboutMe"
       file: "content/aboutMe.json"
@@ -88,23 +93,26 @@ collections:
         - label: "Herokuva"
           name: "Hero"
           widget: object
+          required: false
           fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string"}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string"}
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "HeroImage", widget: "image"}
         - label: "Usein kysytyt kysymykset"
           name: "FAQSection"
           widget: object
+          required: false
           fields:
             - { label: "Pöytäkoneen Profiilikuva", name: "faqProfilePicture", widget: "image"}
-            - { label: "Profiilikuva selvennys", name: "faqProfilePictureAlt", widget: "string"}
+            - { label: "Profiilikuva selvennys", name: "faqProfilePictureAlt", widget: "string", required: false}
             - label: "Kysymykset"
               name: "faqs"
               widget: list
+              required: false
               fields:
-                - { label: "Kysymys", name: "question", widget: "string"}
-                - { label: "Vastaus", name: "answer", widget: "text"}
-                - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean" }
+                - { label: "Kysymys", name: "question", widget: "string", required: false}
+                - { label: "Vastaus", name: "answer", widget: "text", required: false}
+                - { label: "Vastaus näkyvissä?", name: "open", widget: "boolean", required: false}
     - label: "Yhteydenotto"
       name: "contact"
       file: "content/contact.json"
@@ -112,8 +120,9 @@ collections:
         - label: "Yhteydenotto"
           name: "ContactSection"
           widget: object
+          required: false
           fields: 
-            - { label: "Otsikko", name: "title", widget: "string"}
+            - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "text"}
   - name: "general"
     label: "Sivun asetukset"
@@ -133,15 +142,16 @@ collections:
            - { label: "Vaaliteemat", name: "themesTitle", default: "Vaaliteemat", widget: "string", required: false}
            - { label: "Juho", name: "aboutMeTitle", default: "Juho",  widget: "string", required: false}
            - { label: "Ota Yhteyttä", name: "contactTitle", default: "Ota yhteyttä", widget: "string", required: false}
-        # - label: "Uutiskirje"
-        #   name: "newsletter"
-        #   widget: object
-        #   fields:
-        #   - { label: "Logo", name: "logo", widget: "image"}
-        #   - { label: "Otsikko", name: "title", widget: "string"}
-        #   - { label: "kuvaus", name: "description", widget: "string"}
-        #   - { label: "Toimintakehotteen teksti", name: "cta", widget: "string"}
-        #   - { label: "Taustakuva", name: "backgroundImage", widget: "image"}
+        - label: "Uutiskirje"
+          name: "newsletter"
+          widget: object
+          required: false
+          fields:
+          - { label: "Logo", name: "logo", widget: "image", required: false}
+          - { label: "Otsikko", name: "title", widget: "string", required: false}
+          - { label: "kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Toimintakehotteen teksti", name: "cta", widget: "string", required: false}
+          - { label: "Taustakuva", name: "backgroundImage", widget: "image", required: false}
         - label: "Alapalkki"
           name: "Footer"
           widget: object
