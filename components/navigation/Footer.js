@@ -56,9 +56,11 @@ const Footer = () => {
                     />
                 </div>
                 <div className={styles.someContainer}>
-                  <header className={styles.someTitle}>
-                    <h3>{FooterContent.Footer.socialMediaTitle}</h3>
-                  </header>
+                  {FooterContent.Footer.socialMediaTitle &&
+                    <header className={styles.someTitle}>
+                      <h3>{FooterContent.Footer.socialMediaTitle}</h3>
+                    </header>
+                  }
                   <div className={styles.iconsWrapper}>
                     {SoMe}
                   </div>

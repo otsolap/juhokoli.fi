@@ -5,16 +5,18 @@ const Hero = ({ hero, alternativeStyles }) => {
     return (
         <div className={styles.hero + (alternativeStyles ? ` ${styles.alternativeStyle}` : '')}>
             <div className={styles.overlay}></div>
-            <figure className={styles.imageWrapper}>
-                <Image
-                    src={hero.HeroImage}
-                    alt={hero.heroTitle}
-                    className={styles.heroImage}
-                    quality={100}
-                    fill={true}
-                    sizes="100vw" 
-                    />
-            </figure>
+            {hero.HeroImage && 
+                <figure className={styles.imageWrapper}>
+                    <Image
+                        src={hero.HeroImage}
+                        alt={hero.heroTitle}
+                        className={styles.heroImage}
+                        quality={100}
+                        fill={true}
+                        sizes="100vw" 
+                        />
+                </figure>
+            }
             <div className={styles.contentWrapper}>
                 {hero.DisplayElectionNumber && (
                     <div className={styles.circleWrapper}>

@@ -24,7 +24,6 @@ const Newsletter = ({ newsletter }) => {
 
     }
 
-
     return (
         <div id="newsletter">
             <div className={styles.newsletterContent}>
