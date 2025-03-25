@@ -29,10 +29,10 @@ const References = ({ references, }) => {
                                         objectPosition: "center"
                                     }} />
                             </figure>
-                            <div className={`${styles.referenceBuble}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
-                                <p>{reference.reference}</p>
-                                <h3 className={styles.referee}>{reference.referee}</h3>
-                                <p className={styles.profession}>{reference.refereeTitle}</p>
+                            <div className={`${styles.content}  ${i % 2 === 0 ? `${styles.even}` : `${styles.odd}`}`}>
+                                <p className={styles.description}>{reference.reference}</p>
+                                <h3 className={styles.title}>{reference.referee}</h3>
+                                <p className={styles.subtitle}>{reference.refereeTitle}</p>
                             </div>
                         </article>
                     ))}

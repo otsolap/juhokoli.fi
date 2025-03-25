@@ -9,10 +9,6 @@
     padding: var(--spacing-single) var(--spacing-single) 0 var(--spacing-single);
 }
 
-.title {
-    font-size: 2rem;
-}
-
 .imageContainer {
     width: 10rem;
     margin-left: auto;
@@ -29,7 +25,7 @@
     flex-direction: row-reverse;
 }
 
-.referenceBuble {
+.content {
     position: relative;
     text-align: left;
     background-color: var(--color-white);
@@ -37,12 +33,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    gap: var(--spacing-single);
     margin: var(--spacing-single);
     padding: var(--spacing-single);
 }
 
-.referenceBuble::before {
+.content::before {
     position: absolute;
     width: 0px;
     height: 0px;
@@ -50,8 +46,8 @@
     border: 8px solid;
 }
 
-.referenceBuble.even::before,
-.referenceBuble.odd::before {
+.content.even::before,
+.content.odd::before {
     content: "";
     border-left-color: transparent;
     border-right-color: transparent;
@@ -66,20 +62,19 @@
     padding-top: var(--spacing-double);
 }
 
-.profession {
+.subtitle {
     text-align: left;
     width: 100%;
 }
 
-.profession::after {
+.subtitle::after {
     content: url("/images/sydan.png");
     position: absolute;
     bottom: var(--spacing-half);
     right: 2.5rem;
 }
 
-@media (width >= 1440px) {
-
+@media (width >= 720px) {
     .references {
         margin-bottom: 0;
         gap: var(--spacing-double);
@@ -94,15 +89,15 @@
         display: flex;
     }
 
-    .referenceBuble {
+    .content {
         width: 50%;
     }
 
-    .referenceBuble:before {
+    .content:before {
         bottom: 50%;
     }
 
-    .referenceBuble.even::before {
+    .content.even::before {
         left: -1rem;
         border-left-color: transparent;
         border-right-color: var(--color-white);
@@ -110,7 +105,7 @@
         border-bottom-color: transparent;
     }
 
-    .referenceBuble.odd::before {
+    .content.odd::before {
         right: -1rem;
         border-left-color: var(--color-white);
         border-right-color: transparent;

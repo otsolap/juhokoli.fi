@@ -22,14 +22,10 @@ const Index = ({ meta, hero, themes, references, newsletter }) => {
 
   return (
     <>
-      <Meta
-        meta={meta}
-      />
+      <Meta meta={meta} />
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <main id="home" className="container">
-        <Hero
-          hero={hero}
-        />
+        <Hero hero={hero} />
         <ThemesList themes={themes} />
         <References references={references} />
       </main>

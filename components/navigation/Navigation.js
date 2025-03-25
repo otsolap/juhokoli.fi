@@ -2,10 +2,10 @@ import Image from "next/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Links from '@content/site.json'
-import styles from '@/styles/header.module.css'
+import styles from '@/styles/navigation.module.css'
 
 
-const Header = () => {
+const Navigation = () => {
     const router = useRouter()
     const { Navigation } = Links
     return (
@@ -62,4 +62,4 @@ const Header = () => {
     );
 }
 
-export default Header
+export default Navigation
