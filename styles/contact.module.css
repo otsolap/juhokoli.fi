@@ -3,68 +3,78 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .detailsSection {
-    padding-top: 1rem;
+    padding-top: var(--spacing-single);
 }
+
 .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-right: var(--spacing-single);
+    padding-left: var(--spacing-single);
+    padding-top: var(--spacing-single);
 }
+
 .container h1 {
     font-weight: 700;
     font-size: 1.875rem;
     line-height: 2.25rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: var(--spacing-single-half);
 }
 
 .formSection {
-    padding-bottom: 1rem;
+    padding-bottom: var(--spacing-single);
 }
+
 .formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    padding: var(--spacing-single);
+    background-color: var(--color-grey);
 }
+
 .formControl {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: var(--spacing-half);
+    margin-bottom: var(--spacing-half);
     width: 100%;
 }
+
 .formControl label {
     display: block;
-    margin-bottom: 0.5rem;
-    margin-left: 0.75rem;
+    margin-bottom: var(--spacing-half);
+    margin-left: var(--spacing-three-quarters);
 }
+
 .formControl label:last-child {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-single-half);
 }
+
 .newsletterControl {
     display: flex;
     align-items: center;
 }
+
 .newsletterLabel {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: var(--spacing-quarter);
+    margin-bottom: var(--spacing-quarter);
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: var(--spacing-half);
 }
 .formControl textarea,
 .formControl input {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: var(--spacing-half);
+    margin-bottom: var(--spacing-single);
     border: 1px solid;
-    border-color: #211f1b;
-    border-radius: .25rem;
-    padding-left: 1rem;
-    background-color: var(--color-grey);
-    color: #211f1b;
+    border-color: var(--color-black);
+    border-radius: var(--spacing-quarter);
+    padding-left: var(--spacing-single);
+    background-color: var(--color-white);
+    color: var(--color-black);
     width: 100%;
 }
 .formControl textarea {
     height: 7rem;
-    padding-top: 1rem;
+    padding-top: var(--spacing-single);
 }
 .formControl input {
     height: 3.5rem;
@@ -74,14 +84,13 @@
     height: 2.25rem;
     width: 2.25rem;
     display: inline-block;
-    margin-left: .25rem;
+    margin-left: var(--spacing-quarter);
 }
 
 @media
  (min-width: 1440px) {
 
     .wrapper {
-
         flex-direction: row;
     }
     
