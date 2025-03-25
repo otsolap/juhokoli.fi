@@ -37,7 +37,7 @@ const Footer = () => {
               <FontAwesomeIcon 
                 className={styles.mobileIcon} 
                 icon={mapping.icon} 
-                aria-label={item.icon}
+                aria-label={item.description || item.icon}
               />
             </a>
           </span>

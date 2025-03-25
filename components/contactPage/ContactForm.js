@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from '@/styles/contact.module.css'
 
-const ContactForm = ({ contact }) => {
+const ContactForm = ({ cta }) => {
     const [status, setStatus] = useState(null);
     const [error, setError] = useState(null);
 
@@ -29,7 +29,6 @@ const ContactForm = ({ contact }) => {
             setError(`${e}`);
         }
     };
-
 
     return (
         <section id="yhteydenotto-lomake" className={styles.formSection}>
@@ -75,11 +74,11 @@ const ContactForm = ({ contact }) => {
                         <button
                             type="submit"
                             className="button">
-                            {contact.cta}
+                            {cta}
                         </button>
                     </div>
                     {status === 'ok' && (
-                        <div>Submitted!</div>
+                        <div>Viesti lähetetty eteenpäin!</div>
                     )}
                     {status === 'error' && (
                         <div>{error}</div>

@@ -175,6 +175,8 @@ collections:
                       "Instagram",
                       "Email",
                       "Phone",
+                      "Whatsapp",
+                      "Facebook",
                     ]
                   hint: "Valitse ikoni"
                 - widget: string

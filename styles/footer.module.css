@@ -66,29 +66,6 @@
     max-width: var(--container-desktop);
 }
 
-.someContainer {
-    padding-top: var(--spacing-double);
-    padding-bottom: var(--spacing-single);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-single);
-    justify-content: space-evenly;
-}
-
-.someTitle {
-    font-weight: 700;
-}
-
-.iconsWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-single);
-}
-
-.someIcons {
-    font-size: 1.875rem;
-}
-
 .desktopLogo {
     display:none;
 }
@@ -140,11 +117,6 @@
     .iconsWrapper {
         gap: var(--spacing-double);
     }
-
-    .someIcons {
-        font-size: 2.25rem;
-    }
-
 
     .footerContainer {
         display: flex;

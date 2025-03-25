@@ -10,7 +10,7 @@ const Contact = ({ meta, contact }) => {
             <main id="yhteydenotto" className="container">
                 <section className={styles.wrapper}>
                     <ContactDetails contact={contact} some={contact.socialMedia} />
-                    <ContactForm contact={contact} />
+                    <ContactForm cta={contact.contact} />
                 </section>
             </main>
         </>
