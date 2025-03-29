@@ -14,7 +14,7 @@ const socialMediaMappings = {
   Facebook: { icon: faFacebook, prefix: '' }
 };
 
-const SocialMedia = ({ some, showText = false}) => {
+const SocialMedia = ({ some, showText = false, alternativeStyles = false}) => {
   if (!some || !Array.isArray(some)) return null
 
   return (
@@ -33,7 +33,7 @@ const SocialMedia = ({ some, showText = false}) => {
               className={styles.link}
               >
               <FontAwesomeIcon
-                className={styles.icon}
+                className={`${styles.icon} ${alternativeStyles ? styles.iconAlternativeStyles : ''}`}
                 icon={mapping.icon}
                 aria-label={item.description || item.icon}
                 />

@@ -8,7 +8,7 @@ const ContactDetails = ({ contact, some }) => {
                 {contact.title && <h1>{contact.title}</h1>}
                 {contact.description && <p>{contact.description}</p>}
                 <div className={styles.someLinksWrapper}>
-                    <SocialMedia some={some} showText={true} />
+                    <SocialMedia some={some} showText={true} alternativeStyles={true} />
                 </div>
             </div>
         </section>

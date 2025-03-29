@@ -59,8 +59,8 @@
 .someLinksWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
+    gap: var(--spacing-single);
     padding-top: 0.75rem;
 }
 
