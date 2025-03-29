@@ -25,11 +25,13 @@
     [
       {
         "icon": "Email",
-        "url": "juho.koli@turku.fi"
+        "url": "juho.koli@turku.fi",
+        "description": "juho.koli@turku.fi" 
       },
       {
         "icon": "Phone",
-        "url": "(02) 330 000"
+        "url": "(02) 330 000",
+        "description":"(02) 330 000"
       },
       {
         "icon": "Instagram",

@@ -1,48 +1,11 @@
 import FooterContent from '@content/site.json'
-import Icons from '@content/site.json'
 import styles from '@/styles/footer.module.css'
 import Image from 'next/image'
-import { 
-    faInstagram,
-    faXTwitter,
-    faLinkedin,
-    faWhatsapp 
-  } from "@fortawesome/free-brands-svg-icons";
-  
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SocialMediaLinks from '@content/site.json'
+import SocialMedia from '@components/navigation/SocialMedia'
 
 const Footer = () => {
-
-    const socialMediaMappings = {
-        Instagram: { icon: faInstagram, prefix: '' },
-        Twitter: { icon: faXTwitter, prefix: '' }, 
-        LinkedIn: { icon: faLinkedin, prefix: '' },
-        Email: { icon: faEnvelope, prefix: 'mailto:' },
-        Phone: { icon: faPhone, prefix: 'tel:' },
-        WhatsApp: { icon: faWhatsapp, prefix: 'https://wa.me/' }
-      };
-      
-      const SoMe = Icons.Footer.socialMedia.map((item, i) => {
-        const mapping = socialMediaMappings[item.icon];
-        
-        // Skip if the icon type isn't in our mappings
-        if (!mapping) return null;
-      
-        const href = `${mapping.prefix}${item.url}`;
-      
-        return (
-          <span className={styles.someIcons} key={i}>
-            <a href={href} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon 
-                className={styles.mobileIcon} 
-                icon={mapping.icon} 
-                aria-label={item.description || item.icon}
-              />
-            </a>
-          </span>
-        );
-      });
+    const SoMe = SocialMediaLinks.Footer.socialMedia
 
     return (
         <footer className={styles.footer}>
@@ -61,8 +24,8 @@ const Footer = () => {
                       <h3>{FooterContent.Footer.socialMediaTitle}</h3>
                     </header>
                   }
-                  <div className={styles.iconsWrapper}>
-                    {SoMe}
+                  <div className={styles.someLinksWrapper}>
+                    <SocialMedia some={SoMe} showText={false} />
                   </div>
                 </div>
             </div>

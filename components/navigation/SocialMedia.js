@@ -1,6 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faInstagram, faXTwitter, faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styles from '@/styles/social-media.module.css' 
 
 
@@ -15,11 +15,10 @@ const socialMediaMappings = {
 };
 
 const SocialMedia = ({ some, showText = false}) => {
-  console.log(some)
   if (!some || !Array.isArray(some)) return null
 
   return (
-    <div className={styles.container}>
+    <>
       {some.map((item, index) => {
         const mapping = socialMediaMappings[item.icon]
         
@@ -32,12 +31,12 @@ const SocialMedia = ({ some, showText = false}) => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}
-            >
+              >
               <FontAwesomeIcon
                 className={styles.icon}
                 icon={mapping.icon}
                 aria-label={item.description || item.icon}
-              />
+                />
               {showText && item.description && (
                 <span className={styles.text}>{item.description}</span>
               )}
@@ -45,7 +44,7 @@ const SocialMedia = ({ some, showText = false}) => {
           </span>
         )
       })}
-    </div>
+    </>
   )
 }
 

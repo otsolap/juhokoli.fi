@@ -8,13 +8,13 @@
     padding-top: var(--spacing-single);
 }
 
-.container {
+.detailsWrapper {
     padding-right: var(--spacing-single);
     padding-left: var(--spacing-single);
     padding-top: var(--spacing-single);
 }
 
-.container h1 {
+.detailsWrapper h1 {
     font-weight: 700;
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -85,6 +85,25 @@
     width: 2.25rem;
     display: inline-block;
     margin-left: var(--spacing-quarter);
+}
+
+/* yhteydenotto page */
+
+.detailsWrapper {
+    padding-top: var(--spacing-double);
+    padding-bottom: var(--spacing-single);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-single);
+    justify-content: space-evenly;
+}
+
+.someLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0.75rem;
 }
 
 @media

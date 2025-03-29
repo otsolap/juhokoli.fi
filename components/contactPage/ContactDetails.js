@@ -1,13 +1,13 @@
 import styles from '@/styles/contact.module.css'
-import SocialMedia from '../../components/navigation/socialMedia'
+import SocialMedia from '@components/navigation/SocialMedia'
 
 const ContactDetails = ({ contact, some }) => {
     return (
         <section className={styles.detailsSection}>
-            <div className={styles.container}>
+            <div className={styles.detailsWrapper}>
                 {contact.title && <h1>{contact.title}</h1>}
                 {contact.description && <p>{contact.description}</p>}
-                <div className={styles.someContent}>
+                <div className={styles.someLinksWrapper}>
                     <SocialMedia some={some} showText={true} />
                 </div>
             </div>
