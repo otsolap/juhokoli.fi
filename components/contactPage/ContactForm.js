@@ -34,11 +34,11 @@ const ContactForm = ({ button }) => {
         <section id="yhteydenotto-lomake" className={styles.formSection}>
             <div className={styles.formContainer}>
                 <form
-                    name="contact"
+                    name="contact-form"
                     method="POST"
                     onSubmit={contactSubmit}
                 >
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contact-form" />
                     <div className={styles.formControl}>
                         <label htmlFor="fullname">Nimi *</label>
                         <input
