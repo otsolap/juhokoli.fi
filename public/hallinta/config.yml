@@ -124,6 +124,7 @@ collections:
           fields: 
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "text"}
+            - { label: "Lomakkeen painike", name: "button", widget: "text"}
   - name: "general"
     label: "Sivun asetukset"
     files:

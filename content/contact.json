@@ -2,7 +2,7 @@
    "ContactSection": {
        "title": "Ota Yhteyttä",
        "description": "Voit ottaa minuun yhteyttä some-kanavieni kautta, soittaa/viestitellä numeroon(02) 330 000 tai jättää viestin lomakkeen kautta.",
-       "cta": "Lähetä"
+       "button": "Lähetä"
    },
     "meta": {
         "title": "Juho Koli",

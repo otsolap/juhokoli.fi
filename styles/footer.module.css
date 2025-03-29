@@ -56,12 +56,23 @@
     line-height: 1.625;
 }
 
+.someContainer {
+    padding-top: var(--spacing-double);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-single);
+}
+
 .someLinksWrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: var(--spacing-single);
-    padding-top: 0.75rem;
+}
+
+.someTitle {
+    font-weight: 700;
 }
 
 /* Desktop Wrapper */
@@ -90,8 +101,6 @@
     padding: 0 var(--spacing-double);
     margin: 0 auto;
 }
-
-
 
 /* 
 

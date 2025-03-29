@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from '@/styles/contact.module.css'
 
-const ContactForm = ({ cta }) => {
+const ContactForm = ({ button }) => {
     const [status, setStatus] = useState(null);
     const [error, setError] = useState(null);
 
@@ -73,8 +73,8 @@ const ContactForm = ({ cta }) => {
                     <div className={styles.formControl}>
                         <button
                             type="submit"
-                            className="button">
-                            {cta}
+                            className={styles.button}>
+                            {button}
                         </button>
                     </div>
                     {status === 'ok' && (

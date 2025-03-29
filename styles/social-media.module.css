@@ -15,6 +15,9 @@
 
 .link {
     color: #0525e2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .link:hover,
@@ -27,5 +30,7 @@
 @media (width >= 720px) {
     .icon {
         font-size: 2.25rem;
+        width: 2.25rem;
+        height: 2.25rem;
     }
 }

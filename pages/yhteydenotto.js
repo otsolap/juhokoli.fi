@@ -10,7 +10,7 @@ const Contact = ({ meta, contact }) => {
             <main id="yhteydenotto" className="container">
                 <section className={styles.wrapper}>
                     <ContactDetails contact={contact} some={contact.socialMedia} />
-                    <ContactForm cta={contact.contact} />
+                    <ContactForm button={contact.button} />
                 </section>
             </main>
         </>
@@ -34,7 +34,7 @@ export async function getStaticProps() {
             contact: {
                 title: contact.ContactSection.title ?? '',
                 description: contact.ContactSection.description ?? '',
-                cta: contact.ContactSection.cta ?? null,
+                button: contact.ContactSection.button ?? null,
                 socialMedia: site.Footer.socialMedia ?? [],
             },
         }
