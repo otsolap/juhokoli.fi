@@ -19,11 +19,6 @@
     z-index: 1;
 }
 
-.contentWrapper.contentWrapperAlternative {
-    position: absolute;
-    bottom: 0;
-}
-
 .circleWrapper {
     position: absolute;
     top: -5rem;
@@ -67,6 +62,8 @@
 }
 
 .textWrapper.textWrapperAlternative {
+    position: absolute;
+    bottom: 0;
     background-color: transparent;
 }
 

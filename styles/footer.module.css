@@ -89,19 +89,6 @@
     display:none;
 }
 
-/* Sub Footer */
-
-.subFooter {
-    padding-top: var(--spacing-single);
-    padding-bottom: var(--spacing-single);
-}
-
-.subFooterWrapper {
-    max-width: var(--container-desktop);
-    padding: 0 var(--spacing-double);
-    margin: 0 auto;
-}
-
 /* 
 
     .detailsTxt::after {
@@ -148,9 +135,4 @@
         max-width: 50%;
         flex: 0 0 50%;
     }
-
-    .subFooterWrapper {
-        text-align: center;
-    }
-
 }

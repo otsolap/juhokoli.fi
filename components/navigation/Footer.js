@@ -27,11 +27,7 @@ const Footer = () => {
                   <div className={styles.someLinksWrapper}>
                     <SocialMedia some={SoMe} showText={false} />
                   </div>
-                </div>
-            </div>
-            <div className={styles.subFooter}>
-                <div className={styles.subFooterWrapper}>
-                    <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
+                  <p className={styles.detailsTxt}>&copy; {FooterContent.Footer.Owner}</p>
                 </div>
             </div>
         </footer>
