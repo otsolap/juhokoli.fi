@@ -1,13 +1,13 @@
 {
-   "ContactSection": {
-       "title": "Ota Yhteyttä",
-       "description": "Voit ottaa minuun yhteyttä some-kanavieni kautta, soittaa/viestitellä numeroon(02) 330 000 tai jättää viestin lomakkeen kautta.",
-       "button": "Lähetä"
-   },
-    "meta": {
-        "title": "Juho Koli",
-        "description": "Ota Yhteyttä",
-        "url": "https://juhokoli.fi/koli",
-        "image":"/images/JuhoKoliHero.png"
-      }
+  "ContactSection": {
+    "title": "Ota Yhteyttä",
+    "description": "Voit ottaa minuun yhteyttä some-kanavieni kautta, soittaa/viestitellä numeroon(02) 330 000 tai jättää viestin lomakkeen kautta.",
+    "button": "Lähetä viestisi"
+  },
+  "meta": {
+    "title": "Juho Koli",
+    "description": "Ota Yhteyttä",
+    "url": "https://juhokoli.fi/koli",
+    "image": "/images/JuhoKoliHero.png"
+  }
 }
