@@ -11,12 +11,7 @@
 }
 
 .title {
-    color: var(--color-primary);
 	font-weight: 700;
-}
-
-.description {
-    color: var(--color-black);
 }
 
 .themeTitle {
