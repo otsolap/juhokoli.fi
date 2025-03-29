@@ -38,7 +38,7 @@ const ContactForm = ({ button }) => {
                     method="POST"
                     onSubmit={contactSubmit}
                 >
-                    <input type="hidden" name="contact" value="contact" />
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className={styles.formControl}>
                         <label htmlFor="fullname">Nimi *</label>
                         <input
